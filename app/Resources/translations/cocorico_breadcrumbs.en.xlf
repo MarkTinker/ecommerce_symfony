@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="6c5aaeaf192814a5b3eb70769e55e1bf" resname="About me">
+        <source>About me</source>
+        <target>About me</target>
+      </trans-unit>
+      <trans-unit id="fe7014accd83f4d9344072dfb6b9ed79" resname="Asker">
+        <source>Asker</source>
+        <target>Asker</target>
+      </trans-unit>
+      <trans-unit id="05adcee99142c1a60fb38bb1330bbbc1" resname="Bank wire">
+        <source>Bank wire</source>
+        <target>Bank wire</target>
+      </trans-unit>
+      <trans-unit id="a35529bfcfdfab2dc01946af64cd2ce4" resname="Bookings">
+        <source>Bookings</source>
+        <target>Bookings</target>
+      </trans-unit>
+      <trans-unit id="8ff922bbcd8ad41cdfc48d3c5163b2ab" resname="Calendar">
+        <source>Calendar</source>
+        <target>Calendar</target>
+      </trans-unit>
+      <trans-unit id="93932ba537ba6424fb935c090e4d40a9" resname="Characteristics">
+        <source>Characteristics</source>
+        <target>Characteristics</target>
+      </trans-unit>
+      <trans-unit id="8413c683b4b27cc3f4dbd4c90329d8ba" resname="Comments">
+        <source>Comments</source>
+        <target>Comments</target>
+      </trans-unit>
+      <trans-unit id="c00c8ee9c3a4382d270dc939649f9b53" resname="Contact Information">
+        <source>Contact Information</source>
+        <target>Contact Information</target>
+      </trans-unit>
+      <trans-unit id="f48b9bedfdd060a6c615485523066eda" resname="Discussion with %name%">
+        <source>Discussion with %name%</source>
+        <target>Discussion with %name%</target>
+      </trans-unit>
+      <trans-unit id="8cf04a9734132302f96da8e113e80ce5" resname="Home">
+        <source>Home</source>
+        <target>Home</target>
+      </trans-unit>
+      <trans-unit id="56ee3495a32081ccb6d2376eab391bfa" resname="Listing">
+        <source>Listing</source>
+        <target>Listing</target>
+      </trans-unit>
+      <trans-unit id="41de6d6cfb8953c021bbe4ba0701c8a1" resname="Messages">
+        <source>Messages</source>
+        <target>Messages</target>
+      </trans-unit>
+      <trans-unit id="b77fe6c31775b9ef712ce9488111d60a" resname="My Alerts">
+        <source>My Alerts</source>
+        <target>My Alerts</target>
+      </trans-unit>
+      <trans-unit id="186c30cab59f6b64a453778330d4bbf0" resname="New comment">
+        <source>New comment</source>
+        <target>New comment</target>
+      </trans-unit>
+      <trans-unit id="a4b3b83f1d14f052b826299c51252f23" resname="Offerer">
+        <source>Offerer</source>
+        <target>Offerer</target>
+      </trans-unit>
+      <trans-unit id="5d3121fc5e724daa7416a9d810e8164b" resname="Payment Information">
+        <source>Payment Information</source>
+        <target>Payment Information</target>
+      </trans-unit>
+      <trans-unit id="daef64964ee3b9b904f5d467586e217f" resname="Payments">
+        <source>Payments</source>
+        <target>Payments</target>
+      </trans-unit>
+      <trans-unit id="b3328d03eac200213f592b85cabb1606" resname="Payments done">
+        <source>Payments done</source>
+        <target>Payments done</target>
+      </trans-unit>
+      <trans-unit id="eceac091650e97cec3a756eb1e3f4b96" resname="Payments refund">
+        <source>Payments refund</source>
+        <target>Payments refund</target>
+      </trans-unit>
+      <trans-unit id="5daaf223b01f8f3e1bd9287170826fbc" resname="Photos">
+        <source>Photos</source>
+        <target>Photos</target>
+      </trans-unit>
+      <trans-unit id="c7bc3fddddb62d5b656adc30cea77a55" resname="Presentation">
+        <source>Presentation</source>
+        <target>Presentation</target>
+      </trans-unit>
+      <trans-unit id="9000393ffd7afb07dc8a7172fd181ce1" resname="Price and conditions">
+        <source>Price and conditions</source>
+        <target>Price and conditions</target>
+      </trans-unit>
+      <trans-unit id="cce99c598cfdb9773ab041d54c3d973a" resname="Profile">
+        <source>Profile</source>
+        <target>Profile</target>
+      </trans-unit>
+      <trans-unit id="5bbaac3a54cc9a0d4b6fbc14f97d4bce" resname="Rating Made">
+        <source>Rating Made</source>
+        <target>Rating Made</target>
+      </trans-unit>
+      <trans-unit id="851fa98183469404dc95a17a11487393" resname="Rating Received">
+        <source>Rating Received</source>
+        <target>Rating Received</target>
+      </trans-unit>
+      <trans-unit id="54d1500948704bc6f2ee30ccb59850f6" resname="Reservation">
+        <source>Reservation</source>
+        <target>Reservation</target>
+      </trans-unit>
+      <trans-unit id="eb6b06cab0dd72e04c4da68d511facf2" resname="Search results">
+        <source>Search results</source>
+        <target>Search results</target>
+      </trans-unit>
+      <trans-unit id="91906e91632c6ca9210248abe8616b5c" resname="Various informations">
+        <source>Various informations</source>
+        <target>Various informations</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

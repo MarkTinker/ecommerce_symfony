@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="cbf73507986d517223247dbd44a6af77" resname="breadcrumb.link_dashboard">
+        <source>breadcrumb.link_dashboard</source>
+        <target>Dashboard</target>
+      </trans-unit>
+      <trans-unit id="1c1f2c1b61af3dc053d362d05a02b9f0" resname="breadcrumb.link_user_batch">
+        <source>breadcrumb.link_user_batch</source>
+        <target>breadcrumb.link_user_batch</target>
+      </trans-unit>
+      <trans-unit id="82f91bd318c6faae13ef7413b8dd7a53" resname="breadcrumb.link_user_create">
+        <source>breadcrumb.link_user_create</source>
+        <target>Create User</target>
+      </trans-unit>
+      <trans-unit id="5eb4635cbfa464de8eac0557b4540322" resname="breadcrumb.link_user_delete">
+        <source>breadcrumb.link_user_delete</source>
+        <target>Delete User</target>
+      </trans-unit>
+      <trans-unit id="b6762438056719c424870a7b46201035" resname="breadcrumb.link_user_edit">
+        <source>breadcrumb.link_user_edit</source>
+        <target>Edit User</target>
+      </trans-unit>
+      <trans-unit id="41cba0b4e00f88c92189fd823641fcab" resname="breadcrumb.link_user_list">
+        <source>breadcrumb.link_user_list</source>
+        <target>List Users</target>
+      </trans-unit>
+      <trans-unit id="b516336535a668d673e5cd647b1f84ce" resname="breadcrumb.link_user_update">
+        <source>breadcrumb.link_user_update</source>
+        <target>Update User</target>
+      </trans-unit>
+      <trans-unit id="dd6ca2a9cb746d3089a4ce8fc319ad8d" resname="filter.label_email">
+        <source>filter.label_email</source>
+        <target>Email</target>
+      </trans-unit>
+      <trans-unit id="c8d15f6ec57cfb60444f6f9c113d3c06" resname="filter.label_fullname">
+        <source>filter.label_fullname</source>
+        <target>Full Name</target>
+      </trans-unit>
+      <trans-unit id="975379793215d15dd7021b5c70a73850" resname="filter.label_groups">
+        <source>filter.label_groups</source>
+        <target>Groups</target>
+      </trans-unit>
+      <trans-unit id="81e5aef6f0193f383c582ed168883ec5" resname="filter.label_id">
+        <source>filter.label_id</source>
+        <target>Id</target>
+      </trans-unit>
+      <trans-unit id="8ff63e822c45d4d53ca5c9b8e03d471c" resname="filter.label_locked">
+        <source>filter.label_locked</source>
+        <target>Is Locked</target>
+      </trans-unit>
+      <trans-unit id="b6a6b3fcb027694f8d3490283ca26a26" resname="form.label_annual_income">
+        <source>form.label_annual_income</source>
+        <target>Annual Income</target>
+      </trans-unit>
+      <trans-unit id="b6acd0ea022ea6e64ae09603b131ac7c" resname="form.label_bank_owner_address">
+        <source>form.label_bank_owner_address</source>
+        <target>Bank Owner Address</target>
+      </trans-unit>
+      <trans-unit id="fad18d75b1ff20309b400cab59e2dcef" resname="form.label_bank_owner_name">
+        <source>form.label_bank_owner_name</source>
+        <target>Bank Owner Name</target>
+      </trans-unit>
+      <trans-unit id="3097092a72a514d0cb36bc3f22c7ee65" resname="form.label_bic">
+        <source>form.label_bic</source>
+        <target>BIC</target>
+      </trans-unit>
+      <trans-unit id="f81fc38fc2c004df53be70a669bafa4b" resname="form.label_birthday">
+        <source>form.label_birthday</source>
+        <target>Birthday</target>
+      </trans-unit>
+      <trans-unit id="b69bf980495741e4a0f5c67736afa70b" resname="form.label_created_at">
+        <source>form.label_created_at</source>
+        <target>Created at</target>
+      </trans-unit>
+      <trans-unit id="a2d94b476999335ebaec68960fd2c35a" resname="form.label_email">
+        <source>form.label_email</source>
+        <target>Email</target>
+      </trans-unit>
+      <trans-unit id="72fefbcfc391c6413920bbfa6af79127" resname="form.label_email_verified">
+        <source>form.label_email_verified</source>
+        <target>Email Verified</target>
+      </trans-unit>
+      <trans-unit id="dcf3cfc61e1d1c890eee73de0d5d33f2" resname="form.label_enabled">
+        <source>form.label_enabled</source>
+        <target>Enabled</target>
+      </trans-unit>
+      <trans-unit id="99bcbccebd4c7b89c2921ba9c74be420" resname="form.label_fee_as_asker">
+        <source>form.label_fee_as_asker</source>
+        <target>Fee as Asker</target>
+      </trans-unit>
+      <trans-unit id="5c062f6b6e4c43f9abf576534b38750d" resname="form.label_fee_as_offerer">
+        <source>form.label_fee_as_offerer</source>
+        <target>Fee as Offerer</target>
+      </trans-unit>
+      <trans-unit id="8d91a0adf2e29177469812b90e6c77b1" resname="form.label_first_name">
+        <source>form.label_first_name</source>
+        <target>First Name</target>
+      </trans-unit>
+      <trans-unit id="99d4cef85b4b02a7ede3451c2f910b23" resname="form.label_iban">
+        <source>form.label_iban</source>
+        <target>IBAN</target>
+      </trans-unit>
+      <trans-unit id="62dfc48c867d7ec5f0b992e2c6d6f117" resname="form.label_id">
+        <source>form.label_id</source>
+        <target>ID</target>
+      </trans-unit>
+      <trans-unit id="62db82d05f6d23a8f415f8c518fe1da9" resname="form.label_id_card_verified">
+        <source>form.label_id_card_verified</source>
+        <target>ID card Verified</target>
+      </trans-unit>
+      <trans-unit id="a0871db229bb6266932fe6027eda996f" resname="form.label_last_name">
+        <source>form.label_last_name</source>
+        <target>Last Name</target>
+      </trans-unit>
+      <trans-unit id="0b1c5b10d190da72b364085f82576648" resname="form.label_mangopay_bank_account_id">
+        <source>form.label_mangopay_bank_account_id</source>
+        <target>Mangopay bank account id</target>
+      </trans-unit>
+      <trans-unit id="02df63cfeaf7e7845176ae55e8f264f7" resname="form.label_mangopay_id">
+        <source>form.label_mangopay_id</source>
+        <target>Mangopay ID</target>
+      </trans-unit>
+      <trans-unit id="158179155af98760f27a35c710a2e01c" resname="form.label_mangopay_wallet_id">
+        <source>form.label_mangopay_wallet_id</source>
+        <target>Mangopay wallet id</target>
+      </trans-unit>
+      <trans-unit id="0e9a4a678a21e4a72abb58b05e80f6dd" resname="form.label_mother_tongue">
+        <source>form.label_mother_tongue</source>
+        <target>Where are you from</target>
+      </trans-unit>
+      <trans-unit id="ebb3ba1ccab0827feca58a15bd08056b" resname="form.label_nationality">
+        <source>form.label_nationality</source>
+        <target>Nationality</target>
+      </trans-unit>
+      <trans-unit id="4a0383e74bde31f1a652fa812ffb82f8" resname="form.label_nb_bookings_asker">
+        <source>form.label_nb_bookings_asker</source>
+        <target>Bookings as asker</target>
+      </trans-unit>
+      <trans-unit id="c9d5bf8684e73386915af4a257ad9872" resname="form.label_nb_bookings_offerer">
+        <source>form.label_nb_bookings_offerer</source>
+        <target>Bookings as offerer</target>
+      </trans-unit>
+      <trans-unit id="d7dad1ffa95c256a9ba8483d3e8ecb01" resname="form.label_phone">
+        <source>form.label_phone</source>
+        <target>Phone</target>
+      </trans-unit>
+      <trans-unit id="5c4396349240dc094b1884d8d9de8f43" resname="form.label_phone_prefix">
+        <source>form.label_phone_prefix</source>
+        <target>Phone prefix</target>
+      </trans-unit>
+      <trans-unit id="623d1a616314268605de7d480301910a" resname="form.label_phone_verified">
+        <source>form.label_phone_verified</source>
+        <target>Phone verified</target>
+      </trans-unit>
+      <trans-unit id="2a211431f47e153a928597a76e4f4ec6" resname="form.label_plain_password">
+        <source>form.label_plain_password</source>
+        <target>Plain password</target>
+      </trans-unit>
+      <trans-unit id="0c53b1b51479fc0681d04d8134b346de" resname="form.label_profession">
+        <source>form.label_profession</source>
+        <target>Profession</target>
+      </trans-unit>
+      <trans-unit id="8d58f7260382126d99bcac9c0becc6e4" resname="list.label__action">
+        <source>list.label__action</source>
+        <target>Action</target>
+      </trans-unit>
+      <trans-unit id="105a73c1dd6b1da9447c1de6a83b8d08" resname="list.label_created_at">
+        <source>list.label_created_at</source>
+        <target>Created at</target>
+      </trans-unit>
+      <trans-unit id="d62528c100ee5c556f574ba8c37a5363" resname="list.label_enabled">
+        <source>list.label_enabled</source>
+        <target>Enabled</target>
+      </trans-unit>
+      <trans-unit id="1af1e47fa81cdde58a1668a14f3e4e93" resname="list.label_fee_as_asker">
+        <source>list.label_fee_as_asker</source>
+        <target>Asker fee</target>
+      </trans-unit>
+      <trans-unit id="0c131a52819039a4766777f3cd9bc970" resname="list.label_fee_as_offerer">
+        <source>list.label_fee_as_offerer</source>
+        <target>Offerer fee</target>
+      </trans-unit>
+      <trans-unit id="de7cfa8f820600f27fb39f427f00bf89" resname="list.label_fullname">
+        <source>list.label_fullname</source>
+        <target>Full Name</target>
+      </trans-unit>
+      <trans-unit id="421a5f3d781498d72297405dffefb475" resname="list.label_id">
+        <source>list.label_id</source>
+        <target>ID</target>
+      </trans-unit>
+      <trans-unit id="b92371ec38c5e7b9e8e9d0a2da25923b" resname="list.label_impersonating">
+        <source>list.label_impersonating</source>
+        <target>Impersonating</target>
+      </trans-unit>
+      <trans-unit id="8de93579e76c6fb426e7746395d94d0a" resname="list.label_listings">
+        <source>list.label_listings</source>
+        <target>Listings</target>
+      </trans-unit>
+      <trans-unit id="85434e0bd8c750ceff222af2a4e40122" resname="list.label_locked">
+        <source>list.label_locked</source>
+        <target>Locked</target>
+      </trans-unit>
+      <trans-unit id="475bdf0130b8205bf0671e89e994f742" resname="list.label_mangopay_id">
+        <source>list.label_mangopay_id</source>
+        <target>Mangopay id</target>
+      </trans-unit>
+      <trans-unit id="c299325c13de3d9384a1c907f388ad50" resname="show.label_biography">
+        <source>show.label_biography</source>
+        <target>Biography</target>
+      </trans-unit>
+      <trans-unit id="9ef4e18ec5045f046194af05621e985a" resname="show.label_date_of_birth">
+        <source>show.label_date_of_birth</source>
+        <target>Date of Birth</target>
+      </trans-unit>
+      <trans-unit id="513701dc8ff82b597e31ad5faab58112" resname="show.label_email">
+        <source>show.label_email</source>
+        <target>Email</target>
+      </trans-unit>
+      <trans-unit id="07db304745f4cda9cf8f676ebbcb3ca8" resname="show.label_facebook_name">
+        <source>show.label_facebook_name</source>
+        <target>Facebook name</target>
+      </trans-unit>
+      <trans-unit id="c6640599e1f5e264e049cad4dd6cf995" resname="show.label_facebook_uid">
+        <source>show.label_facebook_uid</source>
+        <target>Facebook uid</target>
+      </trans-unit>
+      <trans-unit id="3417c8cb1dd1cf6a688db6f6ded80aed" resname="show.label_firstname">
+        <source>show.label_firstname</source>
+        <target>Firstname</target>
+      </trans-unit>
+      <trans-unit id="bb189e2099eed340f1f4af10e23d1da7" resname="show.label_gender">
+        <source>show.label_gender</source>
+        <target>Gender</target>
+      </trans-unit>
+      <trans-unit id="db98c4964bd29beb93ea6c1050de0c7e" resname="show.label_gplus_name">
+        <source>show.label_gplus_name</source>
+        <target>G plus name</target>
+      </trans-unit>
+      <trans-unit id="fea1ee1ba5cd7b14f0cd2a95f5cb0ebd" resname="show.label_gplus_uid">
+        <source>show.label_gplus_uid</source>
+        <target>G plus uid</target>
+      </trans-unit>
+      <trans-unit id="b4815d2fad4b99d49b70156158dec9ff" resname="show.label_groups">
+        <source>show.label_groups</source>
+        <target>Groups</target>
+      </trans-unit>
+      <trans-unit id="22b3799585ad3f30a4fc4e99febd52bf" resname="show.label_lastname">
+        <source>show.label_lastname</source>
+        <target>Lastname</target>
+      </trans-unit>
+      <trans-unit id="0b7680acfc6bc4b84aee24be70eca0f6" resname="show.label_locale">
+        <source>show.label_locale</source>
+        <target>Locale</target>
+      </trans-unit>
+      <trans-unit id="f7091444a5f5c45c872c2a50d32ee97d" resname="show.label_phone">
+        <source>show.label_phone</source>
+        <target>Phone</target>
+      </trans-unit>
+      <trans-unit id="325f535c652333d7a306fedfdf6c80bb" resname="show.label_timezone">
+        <source>show.label_timezone</source>
+        <target>Timezone</target>
+      </trans-unit>
+      <trans-unit id="aaae24714957ddaecfdccc9d53a1936b" resname="show.label_token">
+        <source>show.label_token</source>
+        <target>Token</target>
+      </trans-unit>
+      <trans-unit id="e8c55a15f85ff9e2fa7281baa1b7db56" resname="show.label_twitter_name">
+        <source>show.label_twitter_name</source>
+        <target>Twitter name</target>
+      </trans-unit>
+      <trans-unit id="85b78e16728230e20ea8942b6ae334bc" resname="show.label_twitter_uid">
+        <source>show.label_twitter_uid</source>
+        <target>Twitter uid</target>
+      </trans-unit>
+      <trans-unit id="4a16bbe3094580178dc6441839fe08d4" resname="show.label_two_step_verification_code">
+        <source>show.label_two_step_verification_code</source>
+        <target>Two step verification code</target>
+      </trans-unit>
+      <trans-unit id="0871eb8e2ac75e3a585fb294f261c363" resname="show.label_username">
+        <source>show.label_username</source>
+        <target>Username</target>
+      </trans-unit>
+      <trans-unit id="0dc0dda22849c2efde568f0a41cbaf7a" resname="show.label_website">
+        <source>show.label_website</source>
+        <target>Website</target>
+      </trans-unit>
+      <trans-unit id="7ee274552ffdcb8fd128768cfbb3c63e" resname="switch_user">
+        <source>switch_user</source>
+        <target>Switch user</target>
+      </trans-unit>
+      <trans-unit id="693e1005dac42c7ae358fba9d9d92c09" resname="user_block_logout">
+        <source>user_block_logout</source>
+        <target>Logout</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,73 @@
+breadcrumb.link_dashboard: Dashboard
+breadcrumb.link_user_batch: breadcrumb.link_user_batch
+breadcrumb.link_user_create: 'Create User'
+breadcrumb.link_user_delete: 'Delete User'
+breadcrumb.link_user_edit: 'Edit User'
+breadcrumb.link_user_list: 'List Users'
+breadcrumb.link_user_update: 'Update User'
+filter.label_email: Email
+filter.label_fullname: 'Full Name'
+filter.label_groups: Groups
+filter.label_id: Id
+filter.label_locked: 'Is Locked'
+form.label_annual_income: 'Annual Income'
+form.label_bank_owner_address: 'Bank Owner Address'
+form.label_bank_owner_name: 'Bank Owner Name'
+form.label_bic: BIC
+form.label_birthday: Birthday
+form.label_created_at: 'Created at'
+form.label_email: Email
+form.label_email_verified: 'Email Verified'
+form.label_enabled: Enabled
+form.label_fee_as_asker: 'Fee as Asker'
+form.label_fee_as_offerer: 'Fee as Offerer'
+form.label_first_name: 'First Name'
+form.label_iban: IBAN
+form.label_id: ID
+form.label_id_card_verified: 'ID card Verified'
+form.label_last_name: 'Last Name'
+form.label_mangopay_bank_account_id: 'Mangopay bank account id'
+form.label_mangopay_id: 'Mangopay ID'
+form.label_mangopay_wallet_id: 'Mangopay wallet id'
+form.label_mother_tongue: 'Where are you from'
+form.label_nationality: Nationality
+form.label_nb_bookings_asker: 'Bookings as asker'
+form.label_nb_bookings_offerer: 'Bookings as offerer'
+form.label_phone: Phone
+form.label_phone_prefix: 'Phone prefix'
+form.label_phone_verified: 'Phone verified'
+form.label_plain_password: 'Plain password'
+form.label_profession: Profession
+list.label__action: Action
+list.label_created_at: 'Created at'
+list.label_enabled: Enabled
+list.label_fee_as_asker: 'Asker fee'
+list.label_fee_as_offerer: 'Offerer fee'
+list.label_fullname: 'Full Name'
+list.label_id: ID
+list.label_impersonating: Impersonating
+list.label_listings: Listings
+list.label_locked: Locked
+list.label_mangopay_id: 'Mangopay id'
+show.label_biography: Biography
+show.label_date_of_birth: 'Date of Birth'
+show.label_email: Email
+show.label_facebook_name: 'Facebook name'
+show.label_facebook_uid: 'Facebook uid'
+show.label_firstname: Firstname
+show.label_gender: Gender
+show.label_gplus_name: 'G plus name'
+show.label_gplus_uid: 'G plus uid'
+show.label_groups: Groups
+show.label_lastname: Lastname
+show.label_locale: Locale
+show.label_phone: Phone
+show.label_timezone: Timezone
+show.label_token: Token
+show.label_twitter_name: 'Twitter name'
+show.label_twitter_uid: 'Twitter uid'
+show.label_two_step_verification_code: 'Two step verification code'
+show.label_username: Username
+show.label_website: Website
+switch_user: 'Switch user'
+user_block_logout: Logout

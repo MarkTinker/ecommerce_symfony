@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="11104cb05b81599da465083c4af52e0f" resname="account_created_user.email.message">
+        <source>account_created_user.email.message</source>
+        <target>Welcome %firstname%!
+
+                    Thank you for joining our website. Your account is now active.
+                </target>
+      </trans-unit>
+      <trans-unit id="d8a15c1bcb7fa5dfa0e81f916c2597fd" resname="account_created_user.email.subject">
+        <source>account_created_user.email.subject</source>
+        <target>Your account on %sitename% has been created</target>
+      </trans-unit>
+      <trans-unit id="d51502f98081a618bc25eacea47c8ed0" resname="all_the_best.email.footer">
+        <source>all_the_best.email.footer</source>
+        <target>All the best,</target>
+      </trans-unit>
+      <trans-unit id="3df53ec2215a73f34d80868507fc58b8" resname="booking.time_range.title">
+        <source>booking.time_range.title</source>
+        <target>
+                    - Time range:
+                </target>
+      </trans-unit>
+      <trans-unit id="ebac8b5fc86d4dedf8894dbc61c464fc" resname="booking_accepted_asker.email.message">
+        <source>booking_accepted_asker.email.message</source>
+        <target><![CDATA[Congratulations!
+
+Your booking has been confirmed and your payment of %booking_amount_asker% has been accepted.
+
+Here are the booking details:
+
+        - Listing: <a href="%listing_public_url%">%listing_title%</a>
+        - Start date: %booking_start_date%
+        - End date: %booking_end_date% %booking_time_range_title% %booking_time_range%
+        - Duration: %booking_duration%
+
+You can contact %offerer_firstname% %offerer_lastname% on this <a href="%booking_request_url%">page</a>.
+
+You can download your invoice <a href="%payments_asker_list%">here</a>.]]></target>
+      </trans-unit>
+      <trans-unit id="95687a9176cb2fd4e6820d753cd46dea" resname="booking_accepted_asker.email.subject">
+        <source>booking_accepted_asker.email.subject</source>
+        <target>Booking confirmation %booking_uid%</target>
+      </trans-unit>
+      <trans-unit id="71422e8d84e6fad6d958342da061358f" resname="booking_accepted_offerer.email.message">
+        <source>booking_accepted_offerer.email.message</source>
+        <target><![CDATA[Hi %firstname%,
+
+The booking made by %asker_firstname% %asker_lastname% is now confirmed.
+
+Here are the booking details:
+
+        - Listing: <a href="%listing_public_url%">%listing_title%</a>
+        - Start date: %booking_start_date%
+        - End date: %booking_end_date% %booking_time_range_title% %booking_time_range%
+        - Duration: %booking_duration%
+
+Your wire transfer of %booking_amount_offerer% will be made on the following date: %offerer_wiretransfer_date%
+
+If you haven’t already done so, please enter your bank account details so we may wire you your money by clicking on this <a href="%profile_payment_info_url%">link</a>.
+
+The cancellation policy you selected is the following:
+
+%cancellation_policy_title%:
+%cancellation_policy_description%
+
+You can contact %asker_firstname% %asker_lastname% on this <a href="%booking_request_url%">page</a>.]]></target>
+      </trans-unit>
+      <trans-unit id="91890d572232bcb09d8a497d57ab5198" resname="booking_accepted_offerer.email.subject">
+        <source>booking_accepted_offerer.email.subject</source>
+        <target>Your booking N°%booking_uid% has been confirmed</target>
+      </trans-unit>
+      <trans-unit id="f8af1dd65ec0dcc3079004e60f418b39" resname="booking_request_asker.email.message">
+        <source>booking_request_asker.email.message</source>
+        <target><![CDATA[Hi %firstname%,
+
+You have made a new booking request to %offerer_name%. Here are the details of your booking request:
+
+        - Listing: <a href="%listing_public_url%">%listing_title%</a>
+        - Start date: %booking_start_date%
+        - End date: %booking_end_date% %booking_time_range_title% %booking_time_range%
+        - Duration: %booking_duration%
+        - Price: %booking_amount_asker%
+
+You will only be charged if %offerer_name% accepts your request.
+
+This booking request will expire on %booking_request_expiry_date%.]]></target>
+      </trans-unit>
+      <trans-unit id="9101712fdce38c75bc05be73aaf473bb" resname="booking_request_asker.email.subject">
+        <source>booking_request_asker.email.subject</source>
+        <target>Confirmation of your booking request %booking_uid%</target>
+      </trans-unit>
+      <trans-unit id="989aa49a9d05137b7cb57920625c06c7" resname="booking_request_expired_asker.email.message">
+        <source>booking_request_expired_asker.email.message</source>
+        <target><![CDATA[Hi %firstname%,
+
+Your booking request has expired as we didn’t receive a confirmation in time. Nothing has been charged to you.
+
+Click <a href="%similar_booking_listings_url%">here</a> to view other listings to book from.]]></target>
+      </trans-unit>
+      <trans-unit id="8b9d003f719b7d82a173cd824222daf4" resname="booking_request_expired_asker.email.subject">
+        <source>booking_request_expired_asker.email.subject</source>
+        <target>Your booking request has expired %booking_uid%</target>
+      </trans-unit>
+      <trans-unit id="50a3ff781aea20e8c3b1a12566839ec4" resname="booking_request_expired_offerer.email.message">
+        <source>booking_request_expired_offerer.email.message</source>
+        <target><![CDATA[Hi %firstname%,
+
+The following reservation has expired:
+
+        - Listing: <a href="%listing_public_url%">%listing_title%</a>
+        - Start date: %booking_start_date%
+        - End date: %booking_end_date% %booking_time_range_title% %booking_time_range%
+        - Duration: %booking_duration%
+        - Your earnings: %booking_amount_offerer%
+
+If you wish you can still contact %asker_name% <a href="%booking_request_url%">here</a>.
+
+Be aware that it is best that you do not let the requests expire as that has a negative impact on your position in the search results.]]></target>
+      </trans-unit>
+      <trans-unit id="c95db97fef2b638bb8c46de1a9d4438e" resname="booking_request_expired_offerer.email.subject">
+        <source>booking_request_expired_offerer.email.subject</source>
+        <target>A reservation request has expired %booking_uid%</target>
+      </trans-unit>
+      <trans-unit id="2e05cb7aac3cca4f488eba7337b95674" resname="booking_request_offerer.email.message">
+        <source>booking_request_offerer.email.message</source>
+        <target><![CDATA[Hi %firstname%,
+
+You have a new booking request from %asker_name%. Here are the details:
+
+        - Listing: <a href="%listing_public_url%">%listing_title%</a>
+        - Start date: %booking_start_date%
+        - End date: %booking_end_date% %booking_time_range_title% %booking_time_range%
+        - Duration: %booking_duration%
+        - Your earnings: %booking_amount_offerer%
+
+<a href="%booking_request_url%">View this booking request to accept or decline it</a>.
+Keep in mind that this booking request will expire on %booking_request_expiry_date%.]]></target>
+      </trans-unit>
+      <trans-unit id="b1d131bb52d02eab5e679879457ac1bf" resname="booking_request_offerer.email.subject">
+        <source>booking_request_offerer.email.subject</source>
+        <target>New booking request (%booking_amount_offerer% %booking_currency%) - (%booking_uid%)</target>
+      </trans-unit>
+      <trans-unit id="7acc06ec960f0ac26471d0242439215f" resname="canceled_by_asker_asker.email.message">
+        <source>canceled_by_asker_asker.email.message</source>
+        <target><![CDATA[Hi %firstname%,
+
+You have cancelled the following booking:
+
+        - Listing: <a href="%listing_public_url%">%listing_title%</a>
+        - Start date: %booking_start_date%
+        - End date: %booking_end_date% %booking_time_range_title% %booking_time_range%
+        - Reservation number: %booking_uid%
+
+The cancellation policy for this booking is the following:
+
+%cancellation_policy_title%:
+%cancellation_policy_description%
+
+In accordance to this, the reimbursement to be made to you is %asker_cancellation_amount%.
+When an amount has to be paid, wire transfers are made 4 business days after the cancellation.
+
+To receive your funds please provide your bank account details by clicking on this <a href="%profile_payment_info_url%">link</a>.]]></target>
+      </trans-unit>
+      <trans-unit id="ddb3225fc4878081e649bf9d72365937" resname="canceled_by_asker_asker.email.subject">
+        <source>canceled_by_asker_asker.email.subject</source>
+        <target>You have cancelled your booking %booking_uid%</target>
+      </trans-unit>
+      <trans-unit id="d315668b6ba9438ceaf29a70069a42a9" resname="canceled_by_asker_offerer.email.message">
+        <source>canceled_by_asker_offerer.email.message</source>
+        <target><![CDATA[Hi %firstname%,
+
+The following reservation has been cancelled by %asker_firstname% %asker_lastname%:
+
+        - Listing: <a href="%listing_public_url%">%listing_title%</a>
+        - Start date: %booking_start_date%
+        - End date: %booking_end_date% %booking_time_range_title% %booking_time_range%
+        - Reservation number: %booking_uid%
+
+The cancellation policy you selected is the following:
+
+%cancellation_policy_title%:
+%cancellation_policy_description%
+
+In accordance to this, the outstanding payment to be made to you is %offerer_cancellation_amount%.
+When an amount has to be paid, wire transfers are made 4 business days after the cancellation.]]></target>
+      </trans-unit>
+      <trans-unit id="36fdad35362fc6442e395d1f930fed4d" resname="canceled_by_asker_offerer.email.subject">
+        <source>canceled_by_asker_offerer.email.subject</source>
+        <target>%asker_name% has cancelled his booking %booking_uid%</target>
+      </trans-unit>
+      <trans-unit id="3608bb471d0fff186e181b2d0d20476f" resname="contact.email.message">
+        <source>contact.email.message</source>
+        <target>
+
+                    Hello,
+
+                    You have a new information request via the contact form:
+                    - First name: %first_name%
+                    - Last name: %last_name%
+                    - Email : %email%
+                    - Phone : %phone%
+
+                    - Subject : %subject%
+                    - Message : %message%
+
+                </target>
+      </trans-unit>
+      <trans-unit id="98441f67956abbfe399e43e815c48fac" resname="contact.email.subject">
+        <source>contact.email.subject</source>
+        <target>Information request</target>
+      </trans-unit>
+      <trans-unit id="75e8031a866d8b77bd81d82a8403ac41" resname="expiration_alert_offerer.email.message">
+        <source>expiration_alert_offerer.email.message</source>
+        <target><![CDATA[Hi %firstname%,
+
+The following reservation is about to expire:
+
+        - Listing: <a href="%listing_public_url%">%listing_title%</a>
+        - Start date: %booking_start_date%
+        - End date: %booking_end_date% %booking_time_range_title% %booking_time_range%
+        - Duration: %booking_duration%
+        - Your earnings: %booking_amount_offerer%
+        - Expiry time: %booking_request_expiry_date%
+
+Be aware that it is best that you do not let the request expire as that will have a negative impact on your position in the search results.
+
+You can click on the following <a href="%booking_request_url%">link</a> to accept or reject the request.]]></target>
+      </trans-unit>
+      <trans-unit id="0524b9ffaedb763f3a90f4c900b36a5f" resname="expiration_alert_offerer.email.subject">
+        <source>expiration_alert_offerer.email.subject</source>
+        <target>A reservation request is about to expire %booking_amount_offerer% %booking_uid%</target>
+      </trans-unit>
+      <trans-unit id="bbe8d615caff47b6a5db21aa9dc181de" resname="forgot_password_user.email.message">
+        <source>forgot_password_user.email.message</source>
+        <target><![CDATA[Hello %firstname%,
+
+Click on the following <a href="%password_reset_link%">link</a> to set a new password. ]]></target>
+      </trans-unit>
+      <trans-unit id="2a477ad37c9beb65f3be27620ebe0da8" resname="forgot_password_user.email.subject">
+        <source>forgot_password_user.email.subject</source>
+        <target>Password recovery</target>
+      </trans-unit>
+      <trans-unit id="31de391ed0ddb969ffc71325574f66a5" resname="imminent_booking_asker.email.message">
+        <source>imminent_booking_asker.email.message</source>
+        <target><![CDATA[Hi %firstname%,
+
+This is a reminder that your booking will start soon.
+
+Here are the booking details:
+
+        - Listing: <a href="%listing_public_url%">%listing_title%</a>
+        - Start date: %booking_start_date%
+        - End date: %booking_end_date% %booking_time_range_title% %booking_time_range%
+        - Duration: %booking_duration%
+
+You can contact %offerer_firstname% %offerer_lastname% on this <a href="%booking_request_url%">page</a>.]]></target>
+      </trans-unit>
+      <trans-unit id="e97e620d4a4379a5efd93cccba37845d" resname="imminent_booking_asker.email.subject">
+        <source>imminent_booking_asker.email.subject</source>
+        <target>Your booking tomorrow %booking_uid%</target>
+      </trans-unit>
+      <trans-unit id="7cc554ce77c0a89c33507b656b92967c" resname="imminent_booking_offerer.email.message">
+        <source>imminent_booking_offerer.email.message</source>
+        <target><![CDATA[Hi %firstname%,
+
+This is a reminder that you have a booking tomorrow.
+
+Here are the booking details:
+        - Listing: <a href="%listing_public_url%">%listing_title%</a>
+        - Start date: %booking_start_date%
+        - End date: %booking_end_date% %booking_time_range_title% %booking_time_range%
+        - Duration: %booking_duration%
+
+You can contact %asker_firstname% %asker_lastname% on this <a href="%booking_request_url%">page</a>. ]]></target>
+      </trans-unit>
+      <trans-unit id="a0e18d26a8a1b9e58c36958ae4ead3b9" resname="imminent_booking_offerer.email.subject">
+        <source>imminent_booking_offerer.email.subject</source>
+        <target>Your booking tomorrow %booking_uid%</target>
+      </trans-unit>
+      <trans-unit id="29190c454a435126acad01e250038e0b" resname="listing_activated_offerer.email.message">
+        <source>listing_activated_offerer.email.message</source>
+        <target><![CDATA[Congratulations %firstname%!
+
+Your listing is now publicly visible. In order to push it to the top of the search results keep in mind the following:
+
+	- Keep your calendar updated. A listing with a recently updated calendar will show higher up in the rankings. <a href="%listing_calendar_edit_url%">(update your calendar)</a>
+	- You have %default_booking_expiry_length% to either accept or refuse requests. If you let them expire you’ll get negative points and your listing will rank down.
+	- Try to reply to messages quickly, faster response times are appreciated by users and provide a better ranking for your listing.
+
+<a href=%listing_public_url%>You can view your public listing here</a>]]></target>
+      </trans-unit>
+      <trans-unit id="6935a2286360e6e7279d95135c29af87" resname="listing_activated_offerer.email.subject">
+        <source>listing_activated_offerer.email.subject</source>
+        <target>Your listing has been published</target>
+      </trans-unit>
+      <trans-unit id="86868899c886881c95f5ca5137ecec5b" resname="new_message_user.email.message">
+        <source>new_message_user.email.message</source>
+        <target><![CDATA[Hi %firstname%,
+
+You have received a message, click <a href="%thread_url%">here</a> to read it.]]></target>
+      </trans-unit>
+      <trans-unit id="ef51a923faec91fe11f792bee3ac438d" resname="new_message_user.email.subject">
+        <source>new_message_user.email.subject</source>
+        <target>You have received a new message</target>
+      </trans-unit>
+      <trans-unit id="c5699d4e3511d654b4d35661287e073a" resname="payment_error_asker.email.message">
+        <source>payment_error_asker.email.message</source>
+        <target><![CDATA[Hi %firstname%,
+
+Unfortunately your payment for this reservation has been declined. As a result your request has been cancelled. You can try again by clicking on this link: %listing_public_url%
+
+You can contact %offerer_name% on this <a href="%booking_request_url%">page</a>.]]></target>
+      </trans-unit>
+      <trans-unit id="60afb7085debd280b6126f94a0d6f8ca" resname="payment_error_asker.email.subject">
+        <source>payment_error_asker.email.subject</source>
+        <target>Payment declined %booking_uid%</target>
+      </trans-unit>
+      <trans-unit id="bd5bf7942eab46b66149772f0c5ec67b" resname="payment_error_offerer.email.message">
+        <source>payment_error_offerer.email.message</source>
+        <target><![CDATA[Hi %firstname%,
+
+Unfortunately the payment for this reservation has been declined.%asker_name% has been asked to try again. In that case you will receive a new reservation request.
+
+You can contact %asker_name% on this <a href="%booking_request_url%">page</a>.]]></target>
+      </trans-unit>
+      <trans-unit id="6c6e34faad82eaea31fd6794b3f52396" resname="payment_error_offerer.email.subject">
+        <source>payment_error_offerer.email.subject</source>
+        <target>Payment declined %booking_uid%</target>
+      </trans-unit>
+      <trans-unit id="d04bc5c9ae8deb086eb386fed170152d" resname="refused_booking_asker.email.message">
+        <source>refused_booking_asker.email.message</source>
+        <target><![CDATA[Hi %firstname%,
+
+Your booking request has been rejected. Although very rare, refusals do occur mainly as a result of out of date calendars.
+
+Nothing has been charged to you.
+
+Click <a href="%similar_booking_listings_url%">here</a> to view other listings to book from.]]></target>
+      </trans-unit>
+      <trans-unit id="bd3f51ec0a1c57c39112adf73c99fad2" resname="refused_booking_asker.email.subject">
+        <source>refused_booking_asker.email.subject</source>
+        <target>Your booking request has been rejected %booking_uid%</target>
+      </trans-unit>
+      <trans-unit id="1279f9a07fe0c75ef26f9cd0e4eb4ac3" resname="refused_booking_offerer.email.message">
+        <source>refused_booking_offerer.email.message</source>
+        <target><![CDATA[Hi %firstname%,
+
+            You have turned down a reservation of %booking_amount_offerer%.
+
+We do our best to provide you with quality requests that match the availabilities and prices you have set.
+
+If you turned down this request because you were in fact unavailable then please update your calendar through this <a href="%listing_calendar_edit_url%">link</a>.
+
+Updating your calendar frequently pushes your listing to the top of the search results.
+
+Don’t hesitate to let us know if there is anything we can do to make these requests match your requirements better.]]></target>
+      </trans-unit>
+      <trans-unit id="68ec5e8cd585d7705e6692f547ef7e7d" resname="refused_booking_offerer.email.subject">
+        <source>refused_booking_offerer.email.subject</source>
+        <target>You have turned down a reservation %booking_uid%</target>
+      </trans-unit>
+      <trans-unit id="3a44fa6e88d373b878625c2938348940" resname="reminder_to_rate_asker_offerer.email.message">
+        <source>reminder_to_rate_asker_offerer.email.message</source>
+        <target><![CDATA[Hi %firstname%,
+
+By clicking on the following <a href="%offerer_to_asker_review_url%">link</a> you will be able to leave your review on %asker_name%.
+
+Leaving reviews greatly increases your ranking on our search engine as it indicates that you are an active member of our community.]]></target>
+      </trans-unit>
+      <trans-unit id="fc288fb90caee074911c127ded221cf6" resname="reminder_to_rate_asker_offerer.email.subject">
+        <source>reminder_to_rate_asker_offerer.email.subject</source>
+        <target>Please review %asker_name% (%booking_uid%)</target>
+      </trans-unit>
+      <trans-unit id="da66d6b764f9e93f097ebcb57ec83fc6" resname="reminder_to_rate_offerer_asker.email.message">
+        <source>reminder_to_rate_offerer_asker.email.message</source>
+        <target><![CDATA[Hi %firstname%,
+
+We hope that the review system helped you when you made your booking. We encourage you to help others in the same way.
+
+By clicking on the following <a href="%asker_to_offerer_review_url%">link</a>. you will be able to leave your review on %offerer_name%.]]></target>
+      </trans-unit>
+      <trans-unit id="3cacb3c44e64453421ad413ebf873d14" resname="reminder_to_rate_offerer_asker.email.subject">
+        <source>reminder_to_rate_offerer_asker.email.subject</source>
+        <target>Please review %offerer_name% (%booking_uid%)</target>
+      </trans-unit>
+      <trans-unit id="1babe8821e7ac8dd30864bdfd4d52cf3" resname="the_sitename_team.email.footer">
+        <source>the_sitename_team.email.footer</source>
+        <target>The %sitename% team</target>
+      </trans-unit>
+      <trans-unit id="6359267538aa351f774b9c9f5132278b" resname="update_your_calendar_offerer.email.message">
+        <source>update_your_calendar_offerer.email.message</source>
+        <target><![CDATA[Hi %firstname%,
+
+Updating your calendar will rank your listing up in the search results. In particular, you should specifically state the periods that are available (and not just leave them by default empty).
+
+You can click on the following <a href="%listing_calendar_edit_url%">link</a> to update your calendar.]]></target>
+      </trans-unit>
+      <trans-unit id="c8ecc96c817330ac08bf49c74198e069" resname="update_your_calendar_offerer.email.subject">
+        <source>update_your_calendar_offerer.email.subject</source>
+        <target>Rank up in our search results to get more bookings</target>
+      </trans-unit>
+      <trans-unit id="818434f40cc6825d48ee6e063e4bb642" resname="wiretransfer_offerer.email.message">
+        <source>wiretransfer_offerer.email.message</source>
+        <target><![CDATA[Hi %firstname%,
+
+              Your wiretransfer of %booking_amount_offerer% for booking <a href="%booking_request_url%">%booking_uid%</a> has been successfully executed.
+              Please allow for a couple of days for the funds to appear in your account.
+
+              You can view your payments: <a href="%offerer_payments_list%">here</a>]]></target>
+      </trans-unit>
+      <trans-unit id="b491f0a9f6cfcacd419d6de825763410" resname="wiretransfer_offerer.email.subject">
+        <source>wiretransfer_offerer.email.subject</source>
+        <target>Your wiretransfer of %booking_amount_offerer% has been executed (booking_amount_offerer)
+                </target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

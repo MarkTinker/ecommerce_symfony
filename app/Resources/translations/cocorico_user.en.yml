@@ -1,0 +1,108 @@
+Asker: Asker
+BIC: BIC
+'Bad credentials': 'Bad credentials'
+IBAN: IBAN
+Offerer: Offerer
+auto: auto
+change_password.submit: 'Change password'
+cocorico.en: English
+cocorico.fr: French
+cocorico.from: 'Translate from'
+cocorico.language: 'Languages spoken'
+cocorico.motherTongue: 'Mother tongue'
+cocorico.to: to
+form.address.address: 'Address street number and name'
+form.address.city: City
+form.address.country: Country
+form.address.zip: Zip
+form.contact.billingaddress.title: 'Billing Address'
+form.contact.phone.help: 'Phone:'
+form.email: Email
+form.first_name: 'First name'
+form.last_name: 'Last name'
+form.new_password: 'New password'
+form.new_password_confirmation: Verification
+form.password: Password
+form.password_confirmation: Verification
+form.user.annual_income: 'Annual income'
+form.user.bank_owner_address: 'Bank owner address'
+form.user.bank_owner_address.help: 'Help when hover with mouse arrow'
+form.user.bank_owner_name: 'Bank owner name'
+form.user.bank_owner_name.help: 'Help when hover with mouse arrow'
+form.user.bic.help: 'Help when hover with mouse arrow'
+form.user.birthday: Birthday
+form.user.countryOfResidence: 'Country of Residence'
+form.user.email: Email
+form.user.first_name: Firstname
+form.user.iban.help: 'Help when hover with mouse arrow'
+'form.user.id_card:': 'ID Card:'
+form.user.last_name: Lastname
+form.user.nationality: Nationality
+'form.user.nb_bookings_asker:': 'Already made a rental:'
+'form.user.nb_bookings_offerer:': 'Already rent:'
+form.user.phone: 'Phone :'
+'form.user.phone:': 'Phone:'
+form.user.phone_prefix: 'Phone prefix :'
+form.user.profession: Profession
+'form.user.username:': 'Email:'
+nav.user.about_me.link: 'About me'
+nav.user.contact.link: 'Contact information'
+nav.user.listing_alert.link: 'My alerts'
+nav.user.payment.link: 'Payment information'
+nav.user.show.link: 'See my profile'
+profile.drop.files: 'Drop your files here'
+profile.edit.submit: Update
+profile.images.to_upload.title: 'Images to upload'
+profile.languages.add: Add
+profile.languages.title: 'My languages'
+profile.moreinfo.title: 'Tell us about yourself'
+registration.back: 'Back to the originating page.'
+registration.check_email: "An email has been sent to %email%. It contains an activation link you must click to activate\n                    your account.\n                "
+registration.check_email.h1: 'Registration confirmation'
+registration.confirmed: 'Congrats %firstname%, your account is now activated.'
+registration.confirmed.title: 'Registration confirmed'
+registration.email.message: "Hello %firstname%!\n\n                    To finish activating your account - please visit %confirmationUrl%\n\n                    Regards,\n                    the Team.\n                "
+registration.email.subject: 'Welcome %firstname%!'
+registration.submit: Register
+resetting.check_email: "An email has been sent to %email%. It contains a link you must click to reset your password.\n                "
+resetting.password_already_requested: 'The password for this user has already been requested within the last 24 hours.'
+resetting.request.invalid_username: 'The username or email address "%username%" does not exist.'
+resetting.request.submit: 'Reset your password'
+resetting.request.username: 'Email:'
+resetting.reset.submit: 'Change password'
+user.about.language.select: Select
+user.about.title: About
+user.change_password.success: 'Your password has been modified successfully'
+user.comments.count.label: Comments
+user.edit.about_me.success: 'Your profile has been modified successfully'
+user.edit.completion_notice: 'Increase your chances to rent your listing or to be accepted for a booking by filling your profile informations.'
+user.edit.contact.success: 'Your contact informations has been modified successfully'
+user.edit.contact.title: 'Contact information'
+user.edit.payment.error: 'Please check that your informations are correct (IBAN, BIC, ...)'
+user.edit.payment.success: 'Your payment informations has been modified successfully'
+user.edit.payment.title: 'Provide your information so we can pay you.'
+user.facebook.login: 'Login with Facebook'
+user.facebook.login.title: 'Or login with your Facebook account'
+user.login.password: Password
+user.login.submit: Login
+user.login.subtitle: Login
+user.login.username: Email
+user.password_forgotten: 'Forgot your password'
+user.profile.h1: 'Hello and welcome to my profile'
+user.profile.languages: 'Spoken languages:'
+user.profile.my-listing: 'My listings'
+user.profile.subscribe-date.title: 'Member since'
+user.register.success: 'Your account has been created successfully'
+user.request.h1: 'Request new password'
+user.reset.error: Error
+user.reset.h1: 'Reset new password'
+user.reset.success: Success
+user.resetting.success: 'The password has been reset successfully'
+user.signin: Login
+user.signup: Subscribe
+user.signup.title: Subscribe
+user.translate.button: Translate
+'user_images.max {{ max_images }}': 'Max {{ max_images }}'
+'user_images.min {{ min_images }}': 'Min {{ min_images }}'
+user_translations_en_description_placeholder: Introduction
+user_translations_fr_description_placeholder: Introduction

@@ -1,0 +1,223 @@
+'': ''
+admin.listing.cancellation_policy.label: 'Cancellation policy'
+admin.listing.status.label: Status
+auto: auto
+booking.simulator.amount.help: 'Booking amount help while mouse hover 3'
+cocorico.en: English
+cocorico.fr: French
+entity.listing.cancellation_policy.flexible: Flexible
+entity.listing.cancellation_policy.strict: Strict
+entity.listing.cancellation_policy_desc.flexible: "> If the asker cancels more than X days before the start of the booking , he is reimbursed X% of the amount paid\n\n> If the asker cancels less than X days before the start of the booking , he is reimbursed X% of the amount paid\n"
+entity.listing.cancellation_policy_desc.strict: "> If the asker cancels more than X days before the start of the booking , he is reimbursed X% of the amount paid\n\n> If the asker cancels less than X days before the start of the booking , he is reimbursed X% of the amount paid"
+entity.listing.status.deleted: Deleted
+entity.listing.status.invalidated: Invalidated
+entity.listing.status.new: New
+entity.listing.status.published: Published
+entity.listing.status.suspended: Suspended
+entity.listing.status.to_validate: 'To Validate'
+entity.listing.type.one: 'Type one'
+entity.listing.type.three: 'Type three'
+entity.listing.type.two: 'Type two'
+entity.listing_availability.status.available: Available
+entity.listing_availability.status.booked: Booked
+entity.listing_availability.status.unavailable: Unavailable
+error: Error
+home.high.rank.section.header: 'OUR LAST OFFERS'
+listing.availability.edit.success: Saved
+listing.availability.new.success: Saved
+listing.availability.save: Save
+listing.calendar.available: Available
+listing.calendar.prices_help: 'Prices are expressed by'
+listing.calendar.unavailable: Unavailable
+listing.cancellation_policy.help: 'Cancellation policies'
+listing.comments.header: 'Lasts comments'
+listing.confirm.delete: 'Are you sure to want to delete this listing?'
+listing.currency_convert.title: 'Currency conversion'
+listing.description.title: 'Describe your listing'
+listing.drop.files: 'Drop your files here'
+listing.duplicate.error: 'An error occurred while duplication'
+listing.duplicate.success: 'Listing duplicated successfully. You can now edit it and publish it.'
+listing.edit.calendar.choose_times.title: 'Choose times'
+listing.edit.calendar.choose_weekdays.title: 'Choose weekdays'
+listing.edit.calendar.day_click.info: 'You can click on a date to change its availability'
+listing.edit.calendar.help: 'Choose relevant dates'
+listing.edit.calendar.range.title: 'Availabilities range'
+listing.edit.calendar.show.title: 'Calendar availabilities'
+listing.edit.calendar.title: Calendar
+listing.edit.categories.sub_title: 'Select one or more categories'
+listing.edit.categories.title: Categories
+listing.edit.characteristic.sub_title: 'Please fill your characteristics'
+listing.edit.characteristic.title: Characteristics
+listing.edit.completion_notice: 'Improve your listing by filling the following information :'
+listing.edit.completion_notice_characteristics: '<a href="%listing_edit_characteristic%">indicate your characteristics</a>'
+listing.edit.completion_notice_desc: '<a href="%listing_edit_presentation%">enter a description</a>'
+listing.edit.completion_notice_imgage: '<a href="%listing_edit_image%">add at least 3 photos</a>'
+listing.edit.completion_notice_price: '<a href="%listing_edit_price%">Set your price</a>'
+listing.edit.completion_notice_profile_desc: '<a href="%profile%">Introduce yourself.</a>'
+listing.edit.completion_notice_profile_photo: '<a href="%profile%">Add a profile photo</a>'
+listing.edit.completion_notice_title: '<a href="%listing_edit_presentation%">Enter a title</a>'
+listing.edit.discount.title: Discounts
+listing.edit.duplicate: Duplicate
+listing.edit.duplicate.modal.message: 'Duplication in progress: You will be redirected in a few moments on the new ad duplicated.'
+listing.edit.edit: Edit
+listing.edit.image.title: Images
+listing.edit.index.certified: 'Listing certified'
+listing.edit.location.title: Location
+listing.edit.options.title: 'Options management'
+listing.edit.policy.title: 'Cancellation policy and durations'
+listing.edit.presentation.title: Presentation
+listing.edit.price.calendar.day_click.info: 'You can click on a date to change its price'
+listing.edit.price.calendar.show.title: 'Calendar prices'
+listing.edit.price.choose_times.title: 'Choose times'
+listing.edit.price.choose_weekdays.title: 'Choose weekdays'
+listing.edit.price.default.title: 'Default price'
+listing.edit.price.help: 'Price help while mouse hover'
+listing.edit.price.range.title: 'Prices range'
+listing.edit.price.simulator.title: 'Price simulator'
+listing.edit.price.title: 'Prices & Politics'
+listing.edit.show: Show
+listing.edit.success: 'Update successful'
+listing.edit.various_information.title: 'Various informations'
+listing.edit_discount.success: Saved
+listing.edit_price.success: Saved
+listing.edit_status.success: 'Status updated'
+listing.filter: Filter
+listing.form.characteristic.choose: Select
+listing.form.description: Description
+listing.form.description.en: Description
+listing.form.description.fr: Description
+listing.form.end: End
+listing.form.location.city: City
+listing.form.location.country: Country
+listing.form.location.route: Route
+listing.form.location.street_number: Number
+listing.form.location.zip: Zip
+listing.form.price: Price
+listing.form.rules.en: Rules
+listing.form.rules.fr: Règles
+listing.form.start: Start
+listing.form.status: Status
+listing.form.tac: 'I accept'
+listing.form.title: Title
+listing.form.title.en: Title
+listing.form.title.fr: Titre
+listing.images.cancel.link: Cancel
+listing.images.to_upload.title: 'New images'
+listing.index.title: 'My Listings'
+listing.location.address_found: 'Address found:'
+listing.location.drag_message: 'If the marker on the map is not accurate, you can drag it.'
+listing.location.help: 'Ex: 12Bis, 12Ter, 12, ...'
+listing.location.none: None
+listing.location.private_message: 'This address will still private. Only the approximate zone will be shown.'
+listing.location.title: 'Listing address'
+listing.location.validate: 'Validate this address'
+listing.new.address.title: 'Adress - Fill your address :'
+listing.new.categories.title: 'Which listing types do you want to publish ?'
+listing.new.price.rent: 'Rent price'
+listing.new.price.title: 'Please set your price'
+listing.new.price_notice: 'You will have the opportunity to set different prices in your dashboard.'
+listing.new.publish.notice: 'You will be able to specify other informations about your company in your profile.'
+listing.new.save: 'Publish your listing'
+listing.new.signup.title: 'Subscribe or login'
+listing.new.success: 'You have created a new listing successfully'
+listing.new.tac.link: 'the terms of use'
+listing.new.title: 'Deposit your listing'
+listing.price_save: Save
+listing.price_simulator.cash_in: 'You will earn'
+listing.price_simulator.fee: 'Our fee'
+listing.price_simulator.fee.help: 'Display help while mouse hover'
+listing.price_simulator.help: 'Display help while mouse hover 2'
+listing.save: Save
+listing.search: Search
+listing.search.form.address: Place
+listing.search.form.address.placeholder: 'Enter a location'
+listing.search.result.alert.link: Alert
+listing.search.result.certified: Certified
+listing.search.result.results: '%nb_results% results'
+listing.search.result.title: 'Result for %listing_search_request%'
+listing.search.sort_by.distance: Distance
+listing.search.sort_by.price: Price
+listing.search.sort_by.recommended: Recommended
+listing.show.calendar: Calendar
+'listing.show.cancellation_policy:': 'Cancellation policy:'
+listing.show.categories: Categories
+'listing.show.categories:': 'Categories:'
+listing.show.characteristics: Characteristics
+listing.show.comments: Comments
+listing.show.description: Description
+'listing.show.discounts:': 'Discounts:'
+listing.show.email_verified.help: 'Display help while mouse hover'
+listing.show.favorites.add: 'Add to favorites'
+listing.show.id_card_verified.help: 'This user has provided a copy of his ID.'
+'listing.show.location:': 'Location:'
+listing.show.map: Map
+'listing.show.max_duration:': 'Maximum duration:'
+'listing.show.min_duration:': 'Minimum duration:'
+listing.show.nb_bookings_asker.help: listing.show.nb_bookings_asker.help
+listing.show.nb_bookings_offerer.help: 'Display help while mouse hover'
+listing.show.options: Options
+listing.show.phone_verified.help: 'This user''s phone number has been verified.'
+listing.show.photos.title: Photos
+listing.show.policy.title: 'Booking policy'
+listing.show.rules: Rules
+listing.show.user.contact: 'Contact me'
+listing.similaries.back_to_search: 'Back to search result'
+listing.similaries.heading: 'Similar Listings'
+listing.status_save: Save
+listing.translate.button: Translate
+listing.translate.error: 'An error has occurred'
+listing.translate.success: 'Translation done successfully'
+listing.type.title: listing.type.title
+'listing_categories.min {{ min_categories }}': 'At least {{ min_categories }} category needed'
+'listing_discount.discount.max {{ max_discount }}': 'Discount max. {{ max_discount }}'
+'listing_discount.discount.min {{ min_discount }}': 'Discount min.{{ min_discount }}'
+listing_duration.overlap: 'Maximum duration must be greater than minimum one'
+listing_edit.form.cancellation_policy: 'Cancellation policy'
+listing_edit.form.choose: Choose
+listing_edit.form.discount: 'Apply a discount of'
+listing_edit.form.from_quantity: 'on the price by %quantity_text%, from'
+listing_edit.form.from_quantity.bought: '%quantity_text% ordered'
+listing_edit.form.max_duration: 'Max duration'
+listing_edit.form.min_duration: 'Min duration'
+listing_edit.form.price: 'Price by'
+listing_edit.form.price_custom: Price
+listing_edit.photos.details: "Drag and drop your images in the desired order.\n                    The first image will be used as your cover image.\n                "
+listing_edit.photos.title: 'Manage your images. (Maximum %max_images% photos)'
+'listing_images.max {{ max_images }}': 'No more than {{ max_images }} images'
+'listing_images.min {{ min_images }}': 'At least {{ min_images }} images needed'
+listing_location_country.invalid: 'Invalid country'
+'listing_price.min {{ min_price }}': 'Price must be greater or equal than {{ min_price }}€'
+listing_search.form.categories: Categories
+listing_search.form.categories.empty_value: 'Select your category'
+listing_search.form.end: End
+listing_search.form.end_time: To
+listing_search.form.flexibility: Flexibility
+listing_search.form.flexibility_day: day(s)
+listing_search.form.sort_by.empty_value: 'Sort by'
+listing_search.form.start: Date
+listing_search.form.start_time: From
+listing_translations_en_description_placeholder: Introduction
+listing_translations_en_rules_placeholder: Rules
+listing_translations_en_title_placeholder: Title
+listing_translations_fr_description_placeholder: Introduction
+listing_translations_fr_rules_placeholder: Règles
+listing_translations_fr_title_placeholder: Title
+nav.listing.calendar.link: Calendar
+nav.listing.categories.link: Categories
+nav.listing.characteristic.link: Characteristics
+nav.listing.images.link: Photos
+nav.listing.location.link: Location
+nav.listing.presentation.link: Presentation
+nav.listing.price.link: 'Price & conditions'
+nav.tac.slug: terms-of-use
+'no': 'no'
+no_verified: 'Not verified'
+none: None
+success: Success
+time_range.end: 'End time'
+time_range.start: 'Start time'
+'time_ranges.max {{ limit }}': 'You have to add maximum {{ limit }} time range(s)'
+'time_ranges.min {{ limit }}': 'You have to add at least {{ limit }} time range(s)'
+time_ranges.overlap: 'Time ranges overlap'
+verified: verified
+'yes': 'yes'

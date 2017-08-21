@@ -1,0 +1,29 @@
+1: '1'
+2: '2'
+3: '3'
+4: '4'
+5: '5'
+cocorico_review.comment.not_blank: 'Please leave a comment, this is very useful for other users!'
+cocorico_review.rating.not_blank: 'Please leave a rating by giving a score'
+review.comment.add_rating: 'Add your rating'
+review.comment.cancel: Cancel
+review.comment.concerning: concerning
+review.comment.desc: Comment
+review.comment.end_date: 'End date'
+review.comment.for_ad: 'for listing'
+review.comment.note: Note
+review.comment.publish_this_comment: 'Publish this comment'
+review.comment.rate_user: 'Rate this user'
+review.comment.rating_made: 'Rating Made'
+review.comment.rating_note: 'You must make notation for booking'
+review.comment.rating_received: 'Rating Received'
+review.comment.ratings_to: 'The person you write'
+review.comment.reservation: Reservation
+review.comment.reviewed_user: 'User you have reviewed'
+review.comment.reviewer: Reviewer
+review.comment.start_date: 'Start date'
+review.comment.textarea.placeholder: 'Be polite, think about how your opinion can help others to form an opinion.'
+review.comment.your_comment: 'Your comment'
+review.form.comment.label: review.form.comment.label
+review.form.rating.label: review.form.rating.label
+review.new.success: 'Your review has been created successfully'

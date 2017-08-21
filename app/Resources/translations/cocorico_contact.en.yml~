@@ -1,0 +1,30 @@
+admin.contact.status.label: Status
+cocorico_contact.email.blank: 'Please provide email address.'
+cocorico_contact.email.invalid: 'Email is invalid'
+cocorico_contact.email.long: 'Email is too long'
+cocorico_contact.email.short: 'Email is too short'
+cocorico_contact.first_name.blank: 'Please provide First name.'
+cocorico_contact.first_name.long: 'first name is too long'
+cocorico_contact.first_name.short: 'First name is too short'
+cocorico_contact.last_name.blank: 'Please provide last name.'
+cocorico_contact.last_name.long: 'Last name is too long.'
+cocorico_contact.last_name.short: 'Last name is too short.'
+cocorico_contact.message.blank: 'Please provide message'
+cocorico_contact.message.short: 'Message is too short.'
+cocorico_contact.phone.long: 'Phone number is too long.'
+cocorico_contact.phone.short: 'Phone number is too short'
+cocorico_contact.subject.blank: 'Please provide subject'
+cocorico_contact.subject.long: 'Subject is too long'
+cocorico_contact.subject.short: 'Subject is too short.'
+contact.form.email.label: Email
+contact.form.first_name.label: 'First name'
+contact.form.last_name.label: 'Last name'
+contact.form.message.label: Message
+contact.form.phone.label: Phone
+contact.form.subject.label: Subject
+contact.form.submit.button: Submit
+contact.new.form.title: 'Contact Us'
+contact.new.success: 'Thanks for contacting us, we will try to reach you on provided contact details.'
+entity.contact.status.new: New
+entity.contact.status.read: Read
+form.error: 'Please fix following errors.'

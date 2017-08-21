@@ -1,0 +1,1211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="ca2ede7c0c7a5da497ed442ff90baa5f" resname="Access site">
+        <source>Access site</source>
+        <target>Access site</target>
+      </trans-unit>
+      <trans-unit id="004bf6c9a40003140292e97330236c53" resname="Action">
+        <source>Action</source>
+        <target>Action</target>
+      </trans-unit>
+      <trans-unit id="e3afed0047b08059d0fada10f400c1e5" resname="Admin">
+        <source>Admin</source>
+        <target>Admin</target>
+      </trans-unit>
+      <trans-unit id="ac101b32dda4448cf13a93fe283dddd8" resname="Body">
+        <source>Body</source>
+        <target>Body</target>
+      </trans-unit>
+      <trans-unit id="6adecbbdf72d3610a5213c4b952c5b73" resname="Booking Bank Wire Batch">
+        <source>Booking Bank Wire Batch</source>
+        <target>Booking Bank Wire Batch</target>
+      </trans-unit>
+      <trans-unit id="6bf682270fe1ea4a12d2b6dbf1ce199a" resname="Booking Bank Wire Create">
+        <source>Booking Bank Wire Create</source>
+        <target>Booking Bank Wire Create</target>
+      </trans-unit>
+      <trans-unit id="36fe5942e74dec3dd9a5c33f33c03627" resname="Booking Bank Wire Delete">
+        <source>Booking Bank Wire Delete</source>
+        <target>Booking Bank Wire Delete</target>
+      </trans-unit>
+      <trans-unit id="a44b7a53d6995d6cc285d8f491ecb4de" resname="Booking Bank Wire Edit">
+        <source>Booking Bank Wire Edit</source>
+        <target>Booking Bank Wire Edit</target>
+      </trans-unit>
+      <trans-unit id="796a1c7d063ebf2017e5ff9d7a826125" resname="Booking Bank Wire List">
+        <source>Booking Bank Wire List</source>
+        <target>Booking Bank Wire List</target>
+      </trans-unit>
+      <trans-unit id="5c8cdcdaec267411bbb18f5bb3173e1a" resname="Booking Bank Wire Update">
+        <source>Booking Bank Wire Update</source>
+        <target>Booking Bank Wire Update</target>
+      </trans-unit>
+      <trans-unit id="d5ffd9d0428d4729a884f5330d056f64" resname="Booking Batch">
+        <source>Booking Batch</source>
+        <target>Booking Batch</target>
+      </trans-unit>
+      <trans-unit id="8a82e1d32c7ccfc31fac7ca5ac3296d3" resname="Booking Create">
+        <source>Booking Create</source>
+        <target>Booking Create</target>
+      </trans-unit>
+      <trans-unit id="c6e5ae46c21839408f9675791869602f" resname="Booking Delete">
+        <source>Booking Delete</source>
+        <target>Booking Delete</target>
+      </trans-unit>
+      <trans-unit id="e037f2509f86262bded5b7f3e769e019" resname="Booking Edit">
+        <source>Booking Edit</source>
+        <target>Booking Edit</target>
+      </trans-unit>
+      <trans-unit id="dbce736582552bbf48e204f9d347f1ac" resname="Booking List">
+        <source>Booking List</source>
+        <target>Booking List</target>
+      </trans-unit>
+      <trans-unit id="07e63695b9cb9d8dae762406a528a2dd" resname="Booking Payin Refund Batch">
+        <source>Booking Payin Refund Batch</source>
+        <target>Booking Payin Refund Batch</target>
+      </trans-unit>
+      <trans-unit id="b449787d3cef245c3f3cc3d4bab2c3d8" resname="Booking Payin Refund Create">
+        <source>Booking Payin Refund Create</source>
+        <target>Booking Payin Refund Create</target>
+      </trans-unit>
+      <trans-unit id="8401f597e9dbe2219df10cd51f15aba2" resname="Booking Payin Refund Delete">
+        <source>Booking Payin Refund Delete</source>
+        <target>Booking Payin Refund Delete</target>
+      </trans-unit>
+      <trans-unit id="9f07857022c9581b6f29dda08a9784f5" resname="Booking Payin Refund Edit">
+        <source>Booking Payin Refund Edit</source>
+        <target>Booking Payin Refund Edit</target>
+      </trans-unit>
+      <trans-unit id="c05eb2591ff53d303f9f731b2939f97d" resname="Booking Payin Refund List">
+        <source>Booking Payin Refund List</source>
+        <target>Booking Payin Refund List</target>
+      </trans-unit>
+      <trans-unit id="83af1d97c8862731661119ecf16c13fa" resname="Booking Payin Refund Update">
+        <source>Booking Payin Refund Update</source>
+        <target>Booking Payin Refund Update</target>
+      </trans-unit>
+      <trans-unit id="0dacd3dd968abe19a36b6a3f080bcf59" resname="Booking Update">
+        <source>Booking Update</source>
+        <target>Booking Update</target>
+      </trans-unit>
+      <trans-unit id="3adbdb3ac060038aa0e6e6c138ef9873" resname="Category">
+        <source>Category</source>
+        <target>Category</target>
+      </trans-unit>
+      <trans-unit id="126897c8bf6e0732ee9a947571db4ecc" resname="Contact Batch">
+        <source>Contact Batch</source>
+        <target>Contact Batch</target>
+      </trans-unit>
+      <trans-unit id="0c2e438d5c1a8efdcb90be81caaee8fb" resname="Contact Create">
+        <source>Contact Create</source>
+        <target>Contact Create</target>
+      </trans-unit>
+      <trans-unit id="9ef34650bd992836657ed3fd5983faf7" resname="Contact Delete">
+        <source>Contact Delete</source>
+        <target>Contact Delete</target>
+      </trans-unit>
+      <trans-unit id="b71098b1bc6deb633f46ff478e0c2a53" resname="Contact Edit">
+        <source>Contact Edit</source>
+        <target>Contact Edit</target>
+      </trans-unit>
+      <trans-unit id="72ce83c2ba6c05dc29424a781188d212" resname="Contact List">
+        <source>Contact List</source>
+        <target>Contact List</target>
+      </trans-unit>
+      <trans-unit id="e238e853d83d4434c3f023591c0c569d" resname="Contact Update">
+        <source>Contact Update</source>
+        <target>Contact Update</target>
+      </trans-unit>
+      <trans-unit id="f8658aba2c96c51c6dd573fbcfe05371" resname="Content Batch">
+        <source>Content Batch</source>
+        <target>Content Batch</target>
+      </trans-unit>
+      <trans-unit id="401a66f4b63af8ffefa8744e431e0c3a" resname="Content Create">
+        <source>Content Create</source>
+        <target>Content Create</target>
+      </trans-unit>
+      <trans-unit id="c21b204f5e3a8e876bb0c35d903f0b8d" resname="Content Delete">
+        <source>Content Delete</source>
+        <target>Content Delete</target>
+      </trans-unit>
+      <trans-unit id="03ea93b82fe4c2bbffeaab7f6b79855c" resname="Content Edit">
+        <source>Content Edit</source>
+        <target>Content Edit</target>
+      </trans-unit>
+      <trans-unit id="17ce91a2d5c2a82f17a1cfba4d649d6b" resname="Content List">
+        <source>Content List</source>
+        <target>Content List</target>
+      </trans-unit>
+      <trans-unit id="db59588d01f64737af54c822ddf8b23d" resname="Content Update">
+        <source>Content Update</source>
+        <target>Content Update</target>
+      </trans-unit>
+      <trans-unit id="6e9a375edaa0f55f2b86e1f415a33172" resname="Created At">
+        <source>Created At</source>
+        <target>Created At</target>
+      </trans-unit>
+      <trans-unit id="2938c7f7e560ed972f8a4f68e80ff834" resname="Dashboard">
+        <source>Dashboard</source>
+        <target>Dashboard</target>
+      </trans-unit>
+      <trans-unit id="006300efaf063e1705dd614ea0ae9e8b" resname="Fees">
+        <source>Fees</source>
+        <target>Fees</target>
+      </trans-unit>
+      <trans-unit id="0222d394a8e8d5cdd6efa2ff8c92dac6" resname="Footer Batch">
+        <source>Footer Batch</source>
+        <target>Footer Batch</target>
+      </trans-unit>
+      <trans-unit id="918af87e843d952ae1b60d15ef6a1408" resname="Footer Create">
+        <source>Footer Create</source>
+        <target>Footer Create</target>
+      </trans-unit>
+      <trans-unit id="b41f10f37f7539b2e039f98e1b8773c6" resname="Footer Delete">
+        <source>Footer Delete</source>
+        <target>Footer Delete</target>
+      </trans-unit>
+      <trans-unit id="04a6f7725857a0fa984880ae69fda44d" resname="Footer Edit">
+        <source>Footer Edit</source>
+        <target>Footer Edit</target>
+      </trans-unit>
+      <trans-unit id="c5901629d6599cf26c1f6418ae49c1fc" resname="Footer List">
+        <source>Footer List</source>
+        <target>Footer List</target>
+      </trans-unit>
+      <trans-unit id="3e67b668ac57f41d1434e32c064ecfa2" resname="Footer Update">
+        <source>Footer Update</source>
+        <target>Footer Update</target>
+      </trans-unit>
+      <trans-unit id="490aa6e856ccf208a054389e47ce0d06" resname="Id">
+        <source>Id</source>
+        <target>Id</target>
+      </trans-unit>
+      <trans-unit id="9b30e2a05a7a220ba67b50314062a56b" resname="Listing Batch">
+        <source>Listing Batch</source>
+        <target>Listing Batch</target>
+      </trans-unit>
+      <trans-unit id="ca03294cb474bd1aab8e39593e2cd88b" resname="Listing Category Batch">
+        <source>Listing Category Batch</source>
+        <target>Listing Category Batch</target>
+      </trans-unit>
+      <trans-unit id="5acad17c96f05420039feb4a1f0629d5" resname="Listing Category Create">
+        <source>Listing Category Create</source>
+        <target>Listing Category Create</target>
+      </trans-unit>
+      <trans-unit id="be1c504290e342b8db62aad2f05b3cd0" resname="Listing Category Delete">
+        <source>Listing Category Delete</source>
+        <target>Listing Category Delete</target>
+      </trans-unit>
+      <trans-unit id="c10fe40968c54395e827ac5715437352" resname="Listing Category Edit">
+        <source>Listing Category Edit</source>
+        <target>Listing Category Edit</target>
+      </trans-unit>
+      <trans-unit id="d192d0f17c70de13fc6e07886302881d" resname="Listing Category Field Batch">
+        <source>Listing Category Field Batch</source>
+        <target>Listing Category Field Batch</target>
+      </trans-unit>
+      <trans-unit id="261074d2212b4f1367535dc7c379d370" resname="Listing Category Field Create">
+        <source>Listing Category Field Create</source>
+        <target>Listing Category Field Create</target>
+      </trans-unit>
+      <trans-unit id="668e6cb0301a9d413ef839aea9924493" resname="Listing Category Field Delete">
+        <source>Listing Category Field Delete</source>
+        <target>Listing Category Field Delete</target>
+      </trans-unit>
+      <trans-unit id="cabd0e47ccdd256624caf5c0b3817c06" resname="Listing Category Field Edit">
+        <source>Listing Category Field Edit</source>
+        <target>Listing Category Field Edit</target>
+      </trans-unit>
+      <trans-unit id="2cdc4b7bfdd016744f263bb5bacbd53f" resname="Listing Category Field Group Batch">
+        <source>Listing Category Field Group Batch</source>
+        <target>Listing Category Field Group Batch</target>
+      </trans-unit>
+      <trans-unit id="8cd4b331198842dd792efc6a32d44b18" resname="Listing Category Field Group Create">
+        <source>Listing Category Field Group Create</source>
+        <target>Listing Category Field Group Create</target>
+      </trans-unit>
+      <trans-unit id="f337ecd3ef7ecfdf357a0dbf08769a6a" resname="Listing Category Field Group Delete">
+        <source>Listing Category Field Group Delete</source>
+        <target>Listing Category Field Group Delete</target>
+      </trans-unit>
+      <trans-unit id="856d8718c562a078ee3525ea862101c8" resname="Listing Category Field Group Edit">
+        <source>Listing Category Field Group Edit</source>
+        <target>Listing Category Field Group Edit</target>
+      </trans-unit>
+      <trans-unit id="bc54629ee8b9442b8f06c58eb31b3a86" resname="Listing Category Field Group List">
+        <source>Listing Category Field Group List</source>
+        <target>Listing Category Field Group List</target>
+      </trans-unit>
+      <trans-unit id="46ddc70fe6bb323cdf45fdabc15cb81c" resname="Listing Category Field Group Update">
+        <source>Listing Category Field Group Update</source>
+        <target>Listing Category Field Group Update</target>
+      </trans-unit>
+      <trans-unit id="d14c390a0895c46a011236c4464b24c4" resname="Listing Category Field List">
+        <source>Listing Category Field List</source>
+        <target>Listing Category Field List</target>
+      </trans-unit>
+      <trans-unit id="22277af1d40333564ef412e5e35648e5" resname="Listing Category Field Update">
+        <source>Listing Category Field Update</source>
+        <target>Listing Category Field Update</target>
+      </trans-unit>
+      <trans-unit id="c5514779aba47cbeee984b15f6255036" resname="Listing Category List">
+        <source>Listing Category List</source>
+        <target>Listing Category List</target>
+      </trans-unit>
+      <trans-unit id="2ae1548c7125cff26253386c84ad43b1" resname="Listing Category Listing Category Field Batch">
+        <source>Listing Category Listing Category Field Batch</source>
+        <target>Listing Category Listing Category Field Batch</target>
+      </trans-unit>
+      <trans-unit id="977b07d0a74c7a353f8b9fc8035b86cd" resname="Listing Category Listing Category Field Create">
+        <source>Listing Category Listing Category Field Create</source>
+        <target>Listing Category Listing Category Field Create</target>
+      </trans-unit>
+      <trans-unit id="369253fe934bfa736e3e76aa86d04e35" resname="Listing Category Listing Category Field Delete">
+        <source>Listing Category Listing Category Field Delete</source>
+        <target>Listing Category Listing Category Field Delete</target>
+      </trans-unit>
+      <trans-unit id="9760a1c70f1ecb4afd79f0991f78b407" resname="Listing Category Listing Category Field Edit">
+        <source>Listing Category Listing Category Field Edit</source>
+        <target>Listing Category Listing Category Field Edit</target>
+      </trans-unit>
+      <trans-unit id="90a8de97d668cf2269e70497228cbed2" resname="Listing Category Listing Category Field List">
+        <source>Listing Category Listing Category Field List</source>
+        <target>Listing Category Listing Category Field List</target>
+      </trans-unit>
+      <trans-unit id="f6c2ad0952acb104645fc4e9c0722101" resname="Listing Category Listing Category Field Update">
+        <source>Listing Category Listing Category Field Update</source>
+        <target>Listing Category Listing Category Field Update</target>
+      </trans-unit>
+      <trans-unit id="ed1d84d97790f9ec348476bd18887e15" resname="Listing Category Update">
+        <source>Listing Category Update</source>
+        <target>Listing Category Update</target>
+      </trans-unit>
+      <trans-unit id="f22187292a2065ce71758a4af930a0c5" resname="Listing Characteristic Batch">
+        <source>Listing Characteristic Batch</source>
+        <target>Listing Characteristic Batch</target>
+      </trans-unit>
+      <trans-unit id="b935531d15673e4003896ea09a53d9c4" resname="Listing Characteristic Create">
+        <source>Listing Characteristic Create</source>
+        <target>Listing Characteristic Create</target>
+      </trans-unit>
+      <trans-unit id="94d3d8bb55303174748954bdd1220690" resname="Listing Characteristic Delete">
+        <source>Listing Characteristic Delete</source>
+        <target>Listing Characteristic Delete</target>
+      </trans-unit>
+      <trans-unit id="96a1b440b61d410dcb1b586d8bfbfff3" resname="Listing Characteristic Edit">
+        <source>Listing Characteristic Edit</source>
+        <target>Listing Characteristic Edit</target>
+      </trans-unit>
+      <trans-unit id="d24e21e0295f20ec5caaaa91ed649586" resname="Listing Characteristic Group Batch">
+        <source>Listing Characteristic Group Batch</source>
+        <target>Listing Characteristic Group Batch</target>
+      </trans-unit>
+      <trans-unit id="39defa0f53f7fe6693a8784e8851cfec" resname="Listing Characteristic Group Create">
+        <source>Listing Characteristic Group Create</source>
+        <target>Listing Characteristic Group Create</target>
+      </trans-unit>
+      <trans-unit id="156f427d0887eec8a8a6da7c456b0da7" resname="Listing Characteristic Group Delete">
+        <source>Listing Characteristic Group Delete</source>
+        <target>Listing Characteristic Group Delete</target>
+      </trans-unit>
+      <trans-unit id="637d0ced7c1bab7ba4afbde423a19606" resname="Listing Characteristic Group Edit">
+        <source>Listing Characteristic Group Edit</source>
+        <target>Listing Characteristic Group Edit</target>
+      </trans-unit>
+      <trans-unit id="a7b9a69c77ed9f9061b6ac8990190210" resname="Listing Characteristic Group List">
+        <source>Listing Characteristic Group List</source>
+        <target>Listing Characteristic Group List</target>
+      </trans-unit>
+      <trans-unit id="0f110bcb53dd00fda69e037b88280e91" resname="Listing Characteristic Group Update">
+        <source>Listing Characteristic Group Update</source>
+        <target>Listing Characteristic Group Update</target>
+      </trans-unit>
+      <trans-unit id="f8749dbd78fb4a397d70b203631ab2a2" resname="Listing Characteristic List">
+        <source>Listing Characteristic List</source>
+        <target>Listing Characteristic List</target>
+      </trans-unit>
+      <trans-unit id="999a0a9680a8c2ceedbb1157af3cc3f4" resname="Listing Characteristic Update">
+        <source>Listing Characteristic Update</source>
+        <target>Listing Characteristic Update</target>
+      </trans-unit>
+      <trans-unit id="7310d17a10262d7e37ac80af83141e0c" resname="Listing Create">
+        <source>Listing Create</source>
+        <target>Listing Create</target>
+      </trans-unit>
+      <trans-unit id="4fc2297b99dca33a2c8fbedecd34084c" resname="Listing Delete">
+        <source>Listing Delete</source>
+        <target>Listing Delete</target>
+      </trans-unit>
+      <trans-unit id="b95013f1f6030665bef33229025007d7" resname="Listing Edit">
+        <source>Listing Edit</source>
+        <target>Listing Edit</target>
+      </trans-unit>
+      <trans-unit id="02b8c35d7eb90f7a6888d907303f35e1" resname="Listing List">
+        <source>Listing List</source>
+        <target>Listing List</target>
+      </trans-unit>
+      <trans-unit id="b5bf71cbdf236811c1d14b218ed786d4" resname="Listing Update">
+        <source>Listing Update</source>
+        <target>Listing Update</target>
+      </trans-unit>
+      <trans-unit id="c54904129deec2a3985a5f0022f5a30a" resname="Mangopay Payout Id">
+        <source>Mangopay Payout Id</source>
+        <target>Mangopay Payout Id</target>
+      </trans-unit>
+      <trans-unit id="7f8e8027c5b0037d0e2a8bddb8811b19" resname="Mangopay Refund Id">
+        <source>Mangopay Refund Id</source>
+        <target>Mangopay Refund Id</target>
+      </trans-unit>
+      <trans-unit id="0a9a787f23e0fcbdf5995305752675d3" resname="Mangopay Transfer Id">
+        <source>Mangopay Transfer Id</source>
+        <target>Mangopay Transfer Id</target>
+      </trans-unit>
+      <trans-unit id="4c2a8fe7eaf24721cc7a9f0175115bd4" resname="Message">
+        <source>Message</source>
+        <target>Message</target>
+      </trans-unit>
+      <trans-unit id="60676af82b37a822512a6bfb0b3cb646" resname="Message Batch">
+        <source>Message Batch</source>
+        <target>Message Batch</target>
+      </trans-unit>
+      <trans-unit id="6950e12b0a151575acc4a8d98ad8ad89" resname="Message Create">
+        <source>Message Create</source>
+        <target>Message Create</target>
+      </trans-unit>
+      <trans-unit id="3353cb813f1717729263824ea1abe241" resname="Message Delete">
+        <source>Message Delete</source>
+        <target>Message Delete</target>
+      </trans-unit>
+      <trans-unit id="3179ee2e18fc5e86842200ad298cfc2f" resname="Message Edit">
+        <source>Message Edit</source>
+        <target>Message Edit</target>
+      </trans-unit>
+      <trans-unit id="05b87f4fec955526d3828c7cd95d2f82" resname="Message List">
+        <source>Message List</source>
+        <target>Message List</target>
+      </trans-unit>
+      <trans-unit id="db6985dab954c65e5aa0e89c3311e979" resname="Message Update">
+        <source>Message Update</source>
+        <target>Message Update</target>
+      </trans-unit>
+      <trans-unit id="41de6d6cfb8953c021bbe4ba0701c8a1" resname="Messages">
+        <source>Messages</source>
+        <target>Messages</target>
+      </trans-unit>
+      <trans-unit id="49ee3087348e8d44e1feda1917443987" resname="Name">
+        <source>Name</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="f9d5a687dc6892c5862d38f38a5d4d1d" resname="Page Batch">
+        <source>Page Batch</source>
+        <target>Page Batch</target>
+      </trans-unit>
+      <trans-unit id="1fedcb0bc8b1dde9c045200ec9918219" resname="Page Create">
+        <source>Page Create</source>
+        <target>Page Create</target>
+      </trans-unit>
+      <trans-unit id="05a5015935a459afea1a54da554854de" resname="Page Delete">
+        <source>Page Delete</source>
+        <target>Page Delete</target>
+      </trans-unit>
+      <trans-unit id="b2a54cbbf075b72ad60f3d2afc27e996" resname="Page Edit">
+        <source>Page Edit</source>
+        <target>Page Edit</target>
+      </trans-unit>
+      <trans-unit id="c43a3544f4b6646216ab7fe6020b84b2" resname="Page List">
+        <source>Page List</source>
+        <target>Page List</target>
+      </trans-unit>
+      <trans-unit id="c3aee6341ee5d12c72f759d44a7c8424" resname="Page Update">
+        <source>Page Update</source>
+        <target>Page Update</target>
+      </trans-unit>
+      <trans-unit id="88f141ae1a478e594d10e57018513c5b" resname="Parameter Batch">
+        <source>Parameter Batch</source>
+        <target>Parameter Batch</target>
+      </trans-unit>
+      <trans-unit id="887572cdc990bf7b23e7029cbdcaf89f" resname="Parameter Create">
+        <source>Parameter Create</source>
+        <target>Parameter Create</target>
+      </trans-unit>
+      <trans-unit id="aeb2d3f0ade06b62fbebe0cc30670308" resname="Parameter Delete">
+        <source>Parameter Delete</source>
+        <target>Parameter Delete</target>
+      </trans-unit>
+      <trans-unit id="cb71aba7e2113836332dab1c1a109a6c" resname="Parameter Edit">
+        <source>Parameter Edit</source>
+        <target>Parameter Edit</target>
+      </trans-unit>
+      <trans-unit id="18366dd901d6ed31a074c500208b9cc3" resname="Parameter List">
+        <source>Parameter List</source>
+        <target>Parameter List</target>
+      </trans-unit>
+      <trans-unit id="4d6b112d59041b6b15ee8fb00f36183e" resname="Parameter Update">
+        <source>Parameter Update</source>
+        <target>Parameter Update</target>
+      </trans-unit>
+      <trans-unit id="dda9c06f33071c9b6fc237ee164109d8" resname="Rating">
+        <source>Rating</source>
+        <target>Rating</target>
+      </trans-unit>
+      <trans-unit id="66f8c4e0282476773217a7e87248d065" resname="Reservation Message">
+        <source>Reservation Message</source>
+        <target>Reservation Message</target>
+      </trans-unit>
+      <trans-unit id="8c6ddca1e1ace6e442ad7cb45a6ab110" resname="Review Batch">
+        <source>Review Batch</source>
+        <target>Review Batch</target>
+      </trans-unit>
+      <trans-unit id="666e2302adc435caeb14c8ff37e7541a" resname="Review Create">
+        <source>Review Create</source>
+        <target>Review Create</target>
+      </trans-unit>
+      <trans-unit id="01e9329d36fcf52dc8054f0e3937c94b" resname="Review Delete">
+        <source>Review Delete</source>
+        <target>Review Delete</target>
+      </trans-unit>
+      <trans-unit id="1a389eb9330f7de375a2d597f79a7b54" resname="Review Edit">
+        <source>Review Edit</source>
+        <target>Review Edit</target>
+      </trans-unit>
+      <trans-unit id="0c0cff65fb03563422f1b77a3f60ff1b" resname="Review List">
+        <source>Review List</source>
+        <target>Review List</target>
+      </trans-unit>
+      <trans-unit id="6a157e02e49229acef2a5db808cac4f6" resname="Review Update">
+        <source>Review Update</source>
+        <target>Review Update</target>
+      </trans-unit>
+      <trans-unit id="8aace3ec18d83874d22850b7eee93c7d" resname="Sender">
+        <source>Sender</source>
+        <target>Sender</target>
+      </trans-unit>
+      <trans-unit id="ec53a8c4f07baed5d8825072c89799be" resname="Status">
+        <source>Status</source>
+        <target>Status</target>
+      </trans-unit>
+      <trans-unit id="03117fe8fea40be4ce35f62eb114dd50" resname="Thread Batch">
+        <source>Thread Batch</source>
+        <target>Thread Batch</target>
+      </trans-unit>
+      <trans-unit id="8b0ffb8e72dc42663847d5cd0dd5bfbe" resname="Thread Create">
+        <source>Thread Create</source>
+        <target>Thread Create</target>
+      </trans-unit>
+      <trans-unit id="4f49bb4eedbba2d30b93461787b3d07a" resname="Thread Delete">
+        <source>Thread Delete</source>
+        <target>Thread Delete</target>
+      </trans-unit>
+      <trans-unit id="1027105b3b58c8e93878cdbc048fd149" resname="Thread Edit">
+        <source>Thread Edit</source>
+        <target>Thread Edit</target>
+      </trans-unit>
+      <trans-unit id="4b79a68cc6a0602249eaac31b1e743a5" resname="Thread List">
+        <source>Thread List</source>
+        <target>Thread List</target>
+      </trans-unit>
+      <trans-unit id="cb93e0fa4d5bff9bc40fedcad6d4e019" resname="Thread Update">
+        <source>Thread Update</source>
+        <target>Thread Update</target>
+      </trans-unit>
+      <trans-unit id="0b8d92bc19b720bb1065649535463409" resname="Translations">
+        <source>Translations</source>
+        <target>Translations</target>
+      </trans-unit>
+      <trans-unit id="53447fd7f2816166d4de3de595394195" resname="User  Mangopay Bank Account Id">
+        <source>User  Mangopay Bank Account Id</source>
+        <target>User Mangopay Bank Account Id</target>
+      </trans-unit>
+      <trans-unit id="ea5084e9b353337be010eeb90ca7b5c1" resname="User  Mangopay Id">
+        <source>User  Mangopay Id</source>
+        <target>User Mangopay Id</target>
+      </trans-unit>
+      <trans-unit id="cdca6a7b2b0109227dff943ad386b3cb" resname="User  Mangopay Wallet Id">
+        <source>User  Mangopay Wallet Id</source>
+        <target>User Mangopay Wallet Id</target>
+      </trans-unit>
+      <trans-unit id="6ad59ebca319393df1860c1c03ff4f1a" resname="User Mangopay Bank Account Id">
+        <source>User Mangopay Bank Account Id</source>
+        <target>User Mangopay Bank Account Id</target>
+      </trans-unit>
+      <trans-unit id="4b9792e02b896872cb73931989765c4e" resname="User Mangopay Id">
+        <source>User Mangopay Id</source>
+        <target>User Mangopay Id</target>
+      </trans-unit>
+      <trans-unit id="689202409e48743b914713f96d93947c" resname="Value">
+        <source>Value</source>
+        <target>Value</target>
+      </trans-unit>
+      <trans-unit id="447911acbcea6397b999a0841db800e7" resname="Voucher Batch">
+        <source>Voucher Batch</source>
+        <target>Voucher Batch</target>
+      </trans-unit>
+      <trans-unit id="9f75634c045e6e5d6f959cb05fa24f5e" resname="Voucher Create">
+        <source>Voucher Create</source>
+        <target>Voucher Create</target>
+      </trans-unit>
+      <trans-unit id="2e67060c0ebf40d6c9c7dc2888c17c9f" resname="Voucher Delete">
+        <source>Voucher Delete</source>
+        <target>Voucher Delete</target>
+      </trans-unit>
+      <trans-unit id="6ff54af32c4271d28e3fb80c345e274a" resname="Voucher Edit">
+        <source>Voucher Edit</source>
+        <target>Voucher Edit</target>
+      </trans-unit>
+      <trans-unit id="71a7facf982e83218f66b1bced6e9288" resname="Voucher List">
+        <source>Voucher List</source>
+        <target>Voucher List</target>
+      </trans-unit>
+      <trans-unit id="fb66a68ff29694abe8fac78b649757a4" resname="Voucher Update">
+        <source>Voucher Update</source>
+        <target>Voucher Update</target>
+      </trans-unit>
+      <trans-unit id="088735e8f028de281fa94d9a1c40eb0e" resname="Wire Reference">
+        <source>Wire Reference</source>
+        <target>Wire Reference</target>
+      </trans-unit>
+      <trans-unit id="3c52f49af0f35d58f0ef6cc6f3649e60" resname="action_delete">
+        <source>action_delete</source>
+        <target>Delete</target>
+      </trans-unit>
+      <trans-unit id="cb578b01e21bc831871b0c8d07a8b270" resname="action_reset_fees">
+        <source>action_reset_fees</source>
+        <target>Reset user fees</target>
+      </trans-unit>
+      <trans-unit id="04e62102b2d60ba3f9b90fa2bbea13e7" resname="admin.booking.alerted_expiring.label">
+        <source>admin.booking.alerted_expiring.label</source>
+        <target>Alerted expiring</target>
+      </trans-unit>
+      <trans-unit id="0b9fb8efb4f7b50cbde3255f42f85bb6" resname="admin.booking.alerted_imminent.label">
+        <source>admin.booking.alerted_imminent.label</source>
+        <target>Alerted imminent</target>
+      </trans-unit>
+      <trans-unit id="a8b0edd10dbaf47dfddf997c065f8d6e" resname="admin.booking.amount.label">
+        <source>admin.booking.amount.label</source>
+        <target>Amount payed by asker</target>
+      </trans-unit>
+      <trans-unit id="8871f2f14552eaadb8d6ae04c26d43bd" resname="admin.booking.amount_discount_voucher.label">
+        <source>admin.booking.amount_discount_voucher.label</source>
+        <target>Amount discount voucher</target>
+      </trans-unit>
+      <trans-unit id="5de6cc8828aa05992660f6793aa935f6" resname="admin.booking.amount_excl_fees.label">
+        <source>admin.booking.amount_excl_fees.label</source>
+        <target>Amount excluding fees</target>
+      </trans-unit>
+      <trans-unit id="069959e54f7fbf281191f658ab630643" resname="admin.booking.amount_fee_as_asker.label">
+        <source>admin.booking.amount_fee_as_asker.label</source>
+        <target>Fee as asker</target>
+      </trans-unit>
+      <trans-unit id="6ca9a063900c6a6fa8b5379864677b3d" resname="admin.booking.amount_fee_as_offerer.label">
+        <source>admin.booking.amount_fee_as_offerer.label</source>
+        <target>Fee as offerer</target>
+      </trans-unit>
+      <trans-unit id="91a561986711dce5a28124537905f4d6" resname="admin.booking.amount_max.label">
+        <source>admin.booking.amount_max.label</source>
+        <target>Amount Maximum</target>
+      </trans-unit>
+      <trans-unit id="fc0b84df69cce8034f4247957173ff2a" resname="admin.booking.amount_min.label">
+        <source>admin.booking.amount_min.label</source>
+        <target>Amount Minimum</target>
+      </trans-unit>
+      <trans-unit id="fba03503010974b6f97de9d562ceccca" resname="admin.booking.amount_options.title">
+        <source>admin.booking.amount_options.title</source>
+        <target>Options amount</target>
+      </trans-unit>
+      <trans-unit id="9b529f850f326ecc403aed05e62b70fc" resname="admin.booking.amount_to_pay_by_asker.label">
+        <source>admin.booking.amount_to_pay_by_asker.label</source>
+        <target>Amount to pay / payed by asker</target>
+      </trans-unit>
+      <trans-unit id="f7035c220774a4d3991e2804884eb493" resname="admin.booking.amount_to_pay_to_offerer.label">
+        <source>admin.booking.amount_to_pay_to_offerer.label</source>
+        <target>Amount to pay / payed to offerer</target>
+      </trans-unit>
+      <trans-unit id="74e989ff6a49a0aaf28b6f574409f2e0" resname="admin.booking.amount_to_wire.label">
+        <source>admin.booking.amount_to_wire.label</source>
+        <target>Amount to wire to offerer</target>
+      </trans-unit>
+      <trans-unit id="941c3b7a58a2b0b26d4e3f6d2da5f32e" resname="admin.booking.asker.label">
+        <source>admin.booking.asker.label</source>
+        <target>Asker</target>
+      </trans-unit>
+      <trans-unit id="c4dffe230ee769defc033abb70da0c54" resname="admin.booking.canceled_asker_booking_at.label">
+        <source>admin.booking.canceled_asker_booking_at.label</source>
+        <target>Booking canceled by asker at</target>
+      </trans-unit>
+      <trans-unit id="7a52e946e76657f5277ade600f83e243" resname="admin.booking.code_voucher.label">
+        <source>admin.booking.code_voucher.label</source>
+        <target>Voucher code</target>
+      </trans-unit>
+      <trans-unit id="db3006372f2dd0fbba041692a0b065d2" resname="admin.booking.created_at.label">
+        <source>admin.booking.created_at.label</source>
+        <target>Created At</target>
+      </trans-unit>
+      <trans-unit id="aeef31197548b00725440d8cd08a837d" resname="admin.booking.delivery">
+        <source>admin.booking.delivery</source>
+        <target>Delivery</target>
+      </trans-unit>
+      <trans-unit id="2588ccb3b9dbf55f0c8ad4aa694900b6" resname="admin.booking.delivery_address.label">
+        <source>admin.booking.delivery_address.label</source>
+        <target>Delivery address</target>
+      </trans-unit>
+      <trans-unit id="65560ebdb4a42e668cca88a9919eaa56" resname="admin.booking.delivery_amount.label">
+        <source>admin.booking.delivery_amount.label</source>
+        <target>admin.booking.delivery_amount.label</target>
+      </trans-unit>
+      <trans-unit id="e876a0d7d7e9a7d68e0c4185a9a76c70" resname="admin.booking.discount_voucher.label">
+        <source>admin.booking.discount_voucher.label</source>
+        <target>Voucher discount percent or amount</target>
+      </trans-unit>
+      <trans-unit id="2d7f621b1eb993b58762397338d6393b" resname="admin.booking.end.label">
+        <source>admin.booking.end.label</source>
+        <target>Booking end day</target>
+      </trans-unit>
+      <trans-unit id="45c41f56321b60d883b1c1b7cb09f4a1" resname="admin.booking.end_time.label">
+        <source>admin.booking.end_time.label</source>
+        <target>Booking end time</target>
+      </trans-unit>
+      <trans-unit id="a4aba6f2359db497553b25facfb2823b" resname="admin.booking.expire_at.label">
+        <source>admin.booking.expire_at.label</source>
+        <target>Expire At</target>
+      </trans-unit>
+      <trans-unit id="5e3cbfd19cb253aa2a86f4b0702079ef" resname="admin.booking.label">
+        <source>admin.booking.label</source>
+        <target>Booking</target>
+      </trans-unit>
+      <trans-unit id="bcf0e1ba7a58c29d871f3d297cd90cf2" resname="admin.booking.listing_id.label">
+        <source>admin.booking.listing_id.label</source>
+        <target>Listing Id</target>
+      </trans-unit>
+      <trans-unit id="ba174ef82a6eb36e98a17245abccf648" resname="admin.booking.listing_title.label">
+        <source>admin.booking.listing_title.label</source>
+        <target>Listing</target>
+      </trans-unit>
+      <trans-unit id="86794b813bfb364fd3de2b4b598c7074" resname="admin.booking.mangopay_card_id.label">
+        <source>admin.booking.mangopay_card_id.label</source>
+        <target>Mangopay Card ID</target>
+      </trans-unit>
+      <trans-unit id="c6b5ff6faf87033005e9e1cf187de86d" resname="admin.booking.mangopay_card_pre_auth_id.label">
+        <source>admin.booking.mangopay_card_pre_auth_id.label</source>
+        <target>Mangopay Card Pre Auth ID</target>
+      </trans-unit>
+      <trans-unit id="af47ac9166cf402c8d9876ea0f051421" resname="admin.booking.mangopay_payin_pre_auth_id.label">
+        <source>admin.booking.mangopay_payin_pre_auth_id.label</source>
+        <target>Mangopay Payin Pre Auth ID</target>
+      </trans-unit>
+      <trans-unit id="3955dc5bf3348d649d3a7119d7027947" resname="admin.booking.new_booking_at.label">
+        <source>admin.booking.new_booking_at.label</source>
+        <target>New booking at</target>
+      </trans-unit>
+      <trans-unit id="b944f7c76fa4bf9f327d94473635e57e" resname="admin.booking.offerer.label">
+        <source>admin.booking.offerer.label</source>
+        <target>Offerer</target>
+      </trans-unit>
+      <trans-unit id="e9b331e8c485115cffd48538674841ea" resname="admin.booking.payed_booking_at.label">
+        <source>admin.booking.payed_booking_at.label</source>
+        <target>Payed at</target>
+      </trans-unit>
+      <trans-unit id="2241221c62162524c2e2892bcf82850a" resname="admin.booking.refused_booking_at.label">
+        <source>admin.booking.refused_booking_at.label</source>
+        <target>Refused booking at</target>
+      </trans-unit>
+      <trans-unit id="dc0dbc71ecdefe1bc611348817ac3038" resname="admin.booking.remaining_amount_to_pay_to_offerer.label">
+        <source>admin.booking.remaining_amount_to_pay_to_offerer.label</source>
+        <target>Remaining amount to pay to offerer</target>
+      </trans-unit>
+      <trans-unit id="2ec78f56fc6974a7e1797a52f31a375f" resname="admin.booking.start.label">
+        <source>admin.booking.start.label</source>
+        <target>Booking start day</target>
+      </trans-unit>
+      <trans-unit id="da109e9acbea59efd98b0b5dba8d3d4f" resname="admin.booking.start_time.label">
+        <source>admin.booking.start_time.label</source>
+        <target>Booking start time</target>
+      </trans-unit>
+      <trans-unit id="696496527b336c38d45e68ba21a7003b" resname="admin.booking.status.label">
+        <source>admin.booking.status.label</source>
+        <target>Status</target>
+      </trans-unit>
+      <trans-unit id="691641dbdba96c0c34e1aefe1b081362" resname="admin.booking.title">
+        <source>admin.booking.title</source>
+        <target>Booking</target>
+      </trans-unit>
+      <trans-unit id="338026c373783da97d6c9d4658184b8b" resname="admin.booking.updated_at.label">
+        <source>admin.booking.updated_at.label</source>
+        <target>Updated At</target>
+      </trans-unit>
+      <trans-unit id="8f6dbc44c05b005294f7c0a294570803" resname="admin.booking.validated.label">
+        <source>admin.booking.validated.label</source>
+        <target>Validated</target>
+      </trans-unit>
+      <trans-unit id="7e77e4cdf41c4087db1d15abbb56f22c" resname="admin.booking_bank_wire.amount.label">
+        <source>admin.booking_bank_wire.amount.label</source>
+        <target>Bank wire amount</target>
+      </trans-unit>
+      <trans-unit id="3f96913039e7a7b656bf4608309a3875" resname="admin.booking_bank_wire.amount_excl_discount_voucher.label">
+        <source>admin.booking_bank_wire.amount_excl_discount_voucher.label</source>
+        <target>Total amount excluding discount voucher to pay to offerer</target>
+      </trans-unit>
+      <trans-unit id="e0551aef08610b4730d8a4cc3c65f290" resname="admin.booking_bank_wire.booking.label">
+        <source>admin.booking_bank_wire.booking.label</source>
+        <target>Booking</target>
+      </trans-unit>
+      <trans-unit id="e58e28c73f263f6587107e7308c5db0c" resname="admin.booking_bank_wire.booking.status.label">
+        <source>admin.booking_bank_wire.booking.status.label</source>
+        <target>Booking status</target>
+      </trans-unit>
+      <trans-unit id="747a1f7142317d667330fcff1c6b4403" resname="admin.booking_bank_wire.booking_id.label">
+        <source>admin.booking_bank_wire.booking_id.label</source>
+        <target>Booking id</target>
+      </trans-unit>
+      <trans-unit id="67b5f19bccff0602a34ed9f532cea9e2" resname="admin.booking_bank_wire.payed_at.label">
+        <source>admin.booking_bank_wire.payed_at.label</source>
+        <target>Payed at</target>
+      </trans-unit>
+      <trans-unit id="1c14850ae286a73e19dd2557e2d6e050" resname="admin.booking_bank_wire.status.help">
+        <source>admin.booking_bank_wire.status.help</source>
+        <target>Do not forget to pass this status to "completed" once the transfer made</target>
+      </trans-unit>
+      <trans-unit id="ece506dbb1ecd9a301f5435267d50351" resname="admin.booking_bank_wire.status.label">
+        <source>admin.booking_bank_wire.status.label</source>
+        <target>Bank wire status</target>
+      </trans-unit>
+      <trans-unit id="029140a0002d227c687ee8189951c61a" resname="admin.booking_bank_wire.title">
+        <source>admin.booking_bank_wire.title</source>
+        <target>Bank Wire</target>
+      </trans-unit>
+      <trans-unit id="66cd6bebce673598815052295a95ca5a" resname="admin.booking_payin_refund.amount.label">
+        <source>admin.booking_payin_refund.amount.label</source>
+        <target>Payin Refund amount</target>
+      </trans-unit>
+      <trans-unit id="eca23a0322ce27f0ea0e6f1781b53a9b" resname="admin.booking_payin_refund.payed_at.label">
+        <source>admin.booking_payin_refund.payed_at.label</source>
+        <target>Payed at</target>
+      </trans-unit>
+      <trans-unit id="dd333bad9e0c4a15483e4b7665b928bd" resname="admin.booking_payin_refund.title">
+        <source>admin.booking_payin_refund.title</source>
+        <target>Payin Refund</target>
+      </trans-unit>
+      <trans-unit id="f08122fba72c996f18adcd7c777ca64b" resname="admin.contact.created_at.label">
+        <source>admin.contact.created_at.label</source>
+        <target>Created At</target>
+      </trans-unit>
+      <trans-unit id="ca656f003c21bbac8dcc7bc8ee3c2605" resname="admin.contact.email.label">
+        <source>admin.contact.email.label</source>
+        <target>Email</target>
+      </trans-unit>
+      <trans-unit id="fb22028da7918363a1816c4cd8b23ed4" resname="admin.contact.first_name.label">
+        <source>admin.contact.first_name.label</source>
+        <target>First name</target>
+      </trans-unit>
+      <trans-unit id="59626a16843912b9d00e8bdb713a3ccb" resname="admin.contact.last_name.label">
+        <source>admin.contact.last_name.label</source>
+        <target>Last name</target>
+      </trans-unit>
+      <trans-unit id="fa73fe36e252159b4f1c79faf73fc4af" resname="admin.contact.message.label">
+        <source>admin.contact.message.label</source>
+        <target>Message</target>
+      </trans-unit>
+      <trans-unit id="ae0cc2122d7eef128cc3c0a42eadf2fb" resname="admin.contact.phone.label">
+        <source>admin.contact.phone.label</source>
+        <target>Phone</target>
+      </trans-unit>
+      <trans-unit id="2996e41a18b2571d44c16065b37e6380" resname="admin.contact.status.label">
+        <source>admin.contact.status.label</source>
+        <target>Status</target>
+      </trans-unit>
+      <trans-unit id="2b0a64bf76184706252e085e905186c8" resname="admin.contact.subject.label">
+        <source>admin.contact.subject.label</source>
+        <target>Subject</target>
+      </trans-unit>
+      <trans-unit id="068f1fe6288a104c38d31b106b35a5d4" resname="admin.contact.title">
+        <source>admin.contact.title</source>
+        <target>Contact Us</target>
+      </trans-unit>
+      <trans-unit id="00a4dfa2229b6a735828734b9f16b22e" resname="admin.contact.updated_at.label">
+        <source>admin.contact.updated_at.label</source>
+        <target>Updated At</target>
+      </trans-unit>
+      <trans-unit id="69e2dbe4924f062ab55caddc10154b9f" resname="admin.footer.help">
+        <source>admin.footer.help</source>
+        <target><![CDATA[
+                
+            - If the URL field is blank the link appears on all pages <br>
+            - If the URL field is populated link appears on the page at the URL coorespondant
+            
+            ]]></target>
+      </trans-unit>
+      <trans-unit id="0c1a594adcff08854a0fb735ae860a68" resname="admin.footer.title">
+        <source>admin.footer.title</source>
+        <target>Footer</target>
+      </trans-unit>
+      <trans-unit id="e1b3f0605af903c6a7ea0b257e83f94b" resname="admin.footer.url.label">
+        <source>admin.footer.url.label</source>
+        <target>URL</target>
+      </trans-unit>
+      <trans-unit id="f6d72c856a9991c14e9fad6774cb1c8f" resname="admin.listing.admin_notation.label">
+        <source>admin.listing.admin_notation.label</source>
+        <target>Admin notation</target>
+      </trans-unit>
+      <trans-unit id="cdd071f76704f4b8db14329d7288bb42" resname="admin.listing.average_rating.label">
+        <source>admin.listing.average_rating.label</source>
+        <target>Average Rating</target>
+      </trans-unit>
+      <trans-unit id="0f793d5a58c1767b9fa830a6b459f9a9" resname="admin.listing.cancellation_policy.label">
+        <source>admin.listing.cancellation_policy.label</source>
+        <target>Cancellation policy</target>
+      </trans-unit>
+      <trans-unit id="b98c920cf7d1386067006e765ae98b96" resname="admin.listing.categories.label">
+        <source>admin.listing.categories.label</source>
+        <target>Categories</target>
+      </trans-unit>
+      <trans-unit id="08f4cb951bcb081a7408afd99f2bd697" resname="admin.listing.certified.label">
+        <source>admin.listing.certified.label</source>
+        <target>Certified</target>
+      </trans-unit>
+      <trans-unit id="ca3af74d1e14a1fb5e6766e7282fc005" resname="admin.listing.city.label">
+        <source>admin.listing.city.label</source>
+        <target>City</target>
+      </trans-unit>
+      <trans-unit id="67fccfe439fd19af6232b2b157950650" resname="admin.listing.country.label">
+        <source>admin.listing.country.label</source>
+        <target>Country</target>
+      </trans-unit>
+      <trans-unit id="9284b84f4e4e2f6f3422438a122c39e8" resname="admin.listing.created_at.label">
+        <source>admin.listing.created_at.label</source>
+        <target>Created At</target>
+      </trans-unit>
+      <trans-unit id="c52311414fc95f364e2dbb1b20bbd7cb" resname="admin.listing.images.label">
+        <source>admin.listing.images.label</source>
+        <target>Images</target>
+      </trans-unit>
+      <trans-unit id="44a809efa06e3bcaf87aaf0225d866f5" resname="admin.listing.impersonating.label">
+        <source>admin.listing.impersonating.label</source>
+        <target>Impersonating</target>
+      </trans-unit>
+      <trans-unit id="6c1241c46f0d648920784a0f6dcc1b2f" resname="admin.listing.label">
+        <source>admin.listing.label</source>
+        <target>Listing</target>
+      </trans-unit>
+      <trans-unit id="671e0c07abd38e18dad04b2dfee5c2f1" resname="admin.listing.offerer.label">
+        <source>admin.listing.offerer.label</source>
+        <target>Offerer</target>
+      </trans-unit>
+      <trans-unit id="b34e6f395fe582d94c59f3c68e03ea71" resname="admin.listing.price.label">
+        <source>admin.listing.price.label</source>
+        <target>Price</target>
+      </trans-unit>
+      <trans-unit id="892b5875040c5957ad0a8b6ddaafebb6" resname="admin.listing.price_max.label">
+        <source>admin.listing.price_max.label</source>
+        <target>Price Maximum</target>
+      </trans-unit>
+      <trans-unit id="5913cb586616f9efc3def01a918c2573" resname="admin.listing.price_min.label">
+        <source>admin.listing.price_min.label</source>
+        <target>Price Minimum</target>
+      </trans-unit>
+      <trans-unit id="994466ebe0034d5d1171a6a9fd858307" resname="admin.listing.status.label">
+        <source>admin.listing.status.label</source>
+        <target>Status</target>
+      </trans-unit>
+      <trans-unit id="ff56eefec21f92962579c50b4f1e384b" resname="admin.listing.title">
+        <source>admin.listing.title</source>
+        <target>Listing</target>
+      </trans-unit>
+      <trans-unit id="357f77b9431405862ec8d45180692557" resname="admin.listing.title.label">
+        <source>admin.listing.title.label</source>
+        <target>Listing Title</target>
+      </trans-unit>
+      <trans-unit id="edbf18685b48a36dd1d9ea7aa744a9df" resname="admin.listing.updated_at.label">
+        <source>admin.listing.updated_at.label</source>
+        <target>Updated At</target>
+      </trans-unit>
+      <trans-unit id="ebae416dd206a7f1b71f5e4e783a40b3" resname="admin.listing.user.label">
+        <source>admin.listing.user.label</source>
+        <target>Offerer</target>
+      </trans-unit>
+      <trans-unit id="2adfa2d79cbc499c40ede3b6c31cb3aa" resname="admin.listing.user_email.label">
+        <source>admin.listing.user_email.label</source>
+        <target>Email</target>
+      </trans-unit>
+      <trans-unit id="c4ee577044407ff7ab28d6188d5c3dff" resname="admin.listing.user_phone.label">
+        <source>admin.listing.user_phone.label</source>
+        <target>Phone</target>
+      </trans-unit>
+      <trans-unit id="e7fbbf33c1b3737dd0fc280c93f05f7e" resname="admin.listing_category.fields.label">
+        <source>admin.listing_category.fields.label</source>
+        <target>admin.listing_category.fields.label</target>
+      </trans-unit>
+      <trans-unit id="9018c8714a5bc9e386610aaf42de5e22" resname="admin.listing_category.name.label">
+        <source>admin.listing_category.name.label</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="549326c65441029e5590f6a816bfd454" resname="admin.listing_category.parent.label">
+        <source>admin.listing_category.parent.label</source>
+        <target>Parent category</target>
+      </trans-unit>
+      <trans-unit id="dca5d4dfde5dc787f95702b9427ec4f8" resname="admin.listing_category.title">
+        <source>admin.listing_category.title</source>
+        <target>Category</target>
+      </trans-unit>
+      <trans-unit id="a85df752a6ba70393147d03e80192519" resname="admin.listing_characteristic.group.label">
+        <source>admin.listing_characteristic.group.label</source>
+        <target>Group</target>
+      </trans-unit>
+      <trans-unit id="e7a21808ad686e4212b9a5cfb8815049" resname="admin.listing_characteristic.name.label">
+        <source>admin.listing_characteristic.name.label</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="f427a1e15600036e99f584077de4571f" resname="admin.listing_characteristic.position.label">
+        <source>admin.listing_characteristic.position.label</source>
+        <target>Position</target>
+      </trans-unit>
+      <trans-unit id="191a8fa06d0cc947cc909eed1a1b2837" resname="admin.listing_characteristic.title">
+        <source>admin.listing_characteristic.title</source>
+        <target>Characteristic</target>
+      </trans-unit>
+      <trans-unit id="e333ad433187fff833544c33372699df" resname="admin.listing_characteristic.type.label">
+        <source>admin.listing_characteristic.type.label</source>
+        <target>Type of Characteristic</target>
+      </trans-unit>
+      <trans-unit id="228c431364f15ad9be2319e4ef694c75" resname="admin.listing_characteristic_group.name.label">
+        <source>admin.listing_characteristic_group.name.label</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="623552b76437d2642196d5506bd8d1e3" resname="admin.listing_characteristic_group.position.label">
+        <source>admin.listing_characteristic_group.position.label</source>
+        <target>Position</target>
+      </trans-unit>
+      <trans-unit id="69bb9c934d540a6e3ee326eeb97f15ff" resname="admin.listing_characteristic_group.title">
+        <source>admin.listing_characteristic_group.title</source>
+        <target>Characteristic group</target>
+      </trans-unit>
+      <trans-unit id="3d2857272258e8e36c0e1899a8fece97" resname="admin.page.created_at.label">
+        <source>admin.page.created_at.label</source>
+        <target>Created at</target>
+      </trans-unit>
+      <trans-unit id="9789bf830771af58971c331795c0bd6f" resname="admin.page.description.label">
+        <source>admin.page.description.label</source>
+        <target>Description</target>
+      </trans-unit>
+      <trans-unit id="555dfd581325af534355329b6496bb4d" resname="admin.page.link.label">
+        <source>admin.page.link.label</source>
+        <target>Link</target>
+      </trans-unit>
+      <trans-unit id="76c59a18d5ad6e83493dc4d04163bdf3" resname="admin.page.published.label">
+        <source>admin.page.published.label</source>
+        <target>Published</target>
+      </trans-unit>
+      <trans-unit id="20be3002f02edbb3e00daf117cc883b9" resname="admin.page.title.label">
+        <source>admin.page.title.label</source>
+        <target>Title</target>
+      </trans-unit>
+      <trans-unit id="ee1f9f77d2cbab51d17e5c572a78798e" resname="admin.page.updated_at.label">
+        <source>admin.page.updated_at.label</source>
+        <target>Updated at</target>
+      </trans-unit>
+      <trans-unit id="4c635846275d807feb6ff0922fec05a4" resname="admin.parameter.name.label">
+        <source>admin.parameter.name.label</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="52063c69ca7b9b9497460047b9012a63" resname="admin.parameter.title">
+        <source>admin.parameter.title</source>
+        <target>Parameter</target>
+      </trans-unit>
+      <trans-unit id="3eb53464004c4605d7b51658b31020f5" resname="admin.parameter.value.label">
+        <source>admin.parameter.value.label</source>
+        <target>Value</target>
+      </trans-unit>
+      <trans-unit id="df9cc6ff3b3dabfae2472474cd418e6e" resname="admin.parameters.warning">
+        <source>admin.parameters.warning</source>
+        <target>Warning! Use sparingly: The update can occasioning momentary perfomance problems.</target>
+      </trans-unit>
+      <trans-unit id="2204d8d048fbcd741b5dc1892d0bd66c" resname="admin.review.comment.label">
+        <source>admin.review.comment.label</source>
+        <target>Rating comment</target>
+      </trans-unit>
+      <trans-unit id="d37c1ca143c9f97be799397f883d3d2a" resname="admin.review.created_at.label">
+        <source>admin.review.created_at.label</source>
+        <target>Date</target>
+      </trans-unit>
+      <trans-unit id="3592984d342e424ef296bfdbf7c183b2" resname="admin.review.listing.label">
+        <source>admin.review.listing.label</source>
+        <target>Listing title</target>
+      </trans-unit>
+      <trans-unit id="24e0de62cf1137bac43f6a381bb23c9f" resname="admin.review.rating.label">
+        <source>admin.review.rating.label</source>
+        <target>Rating</target>
+      </trans-unit>
+      <trans-unit id="3d881da058f74c48acb5830ab539e78f" resname="admin.review.reviewBy.label">
+        <source>admin.review.reviewBy.label</source>
+        <target>Review from</target>
+      </trans-unit>
+      <trans-unit id="1c800ec34877623f73cdc5d0d7c58d5a" resname="admin.review.reviewTo.label">
+        <source>admin.review.reviewTo.label</source>
+        <target>Review to</target>
+      </trans-unit>
+      <trans-unit id="0a055158d9f5897ab8d06d144ffc911b" resname="admin.review.search.label">
+        <source>admin.review.search.label</source>
+        <target>Search text in rating comment</target>
+      </trans-unit>
+      <trans-unit id="203cb74303a5447ac6da336c2b09d610" resname="admin.review.title">
+        <source>admin.review.title</source>
+        <target>admin.review.title</target>
+      </trans-unit>
+      <trans-unit id="d5e8cb97796de619d5f224ab13f228c8" resname="admin.thread.booking.label">
+        <source>admin.thread.booking.label</source>
+        <target>Id Reservation</target>
+      </trans-unit>
+      <trans-unit id="288c1bb07e6a7c10b30df1c987123129" resname="admin.thread.createdAt.label">
+        <source>admin.thread.createdAt.label</source>
+        <target>Date</target>
+      </trans-unit>
+      <trans-unit id="901a0332a0f4d92d625457a958174896" resname="admin.thread.created_at.label">
+        <source>admin.thread.created_at.label</source>
+        <target>Date</target>
+      </trans-unit>
+      <trans-unit id="c932a1ee339f2e891248d7bd13d5c1dd" resname="admin.thread.from.label">
+        <source>admin.thread.from.label</source>
+        <target>From</target>
+      </trans-unit>
+      <trans-unit id="cf81710cd1afd11e0982bd767ec3ae92" resname="admin.thread.listing.label">
+        <source>admin.thread.listing.label</source>
+        <target>Listing title</target>
+      </trans-unit>
+      <trans-unit id="f96e21db33b5ead0350eebc3c0e1080d" resname="admin.thread.search.label">
+        <source>admin.thread.search.label</source>
+        <target>Search text</target>
+      </trans-unit>
+      <trans-unit id="6cba3f086aa0ad9a2d9f793dded4b1b4" resname="admin.thread.to.label">
+        <source>admin.thread.to.label</source>
+        <target>To</target>
+      </trans-unit>
+      <trans-unit id="7206e50bf971aa8c23027062f1a95d73" resname="admin.thread.type.label">
+        <source>admin.thread.type.label</source>
+        <target>Type of message</target>
+      </trans-unit>
+      <trans-unit id="57abf867d4ea0517ef21b512890f8914" resname="admin.thread.view.label">
+        <source>admin.thread.view.label</source>
+        <target>Threads</target>
+      </trans-unit>
+      <trans-unit id="cbf73507986d517223247dbd44a6af77" resname="breadcrumb.link_dashboard">
+        <source>breadcrumb.link_dashboard</source>
+        <target>Admin Dashboard</target>
+      </trans-unit>
+      <trans-unit id="851c29be23cc513190907f1a58b4554e" resname="btn_create">
+        <source>btn_create</source>
+        <target>Create</target>
+      </trans-unit>
+      <trans-unit id="402b4835d72634a5df74375b484b1ef7" resname="btn_create_and_create_a_new_one">
+        <source>btn_create_and_create_a_new_one</source>
+        <target>Create and add another</target>
+      </trans-unit>
+      <trans-unit id="b830b9a0f15849b83d96a2d431b76f28" resname="btn_create_and_edit_again">
+        <source>btn_create_and_edit_again</source>
+        <target>Create</target>
+      </trans-unit>
+      <trans-unit id="500eea98dff78213f49aac2f3f759051" resname="btn_create_and_return_to_list">
+        <source>btn_create_and_return_to_list</source>
+        <target>Create and return to list</target>
+      </trans-unit>
+      <trans-unit id="76b32e548b51d9c755b1c2a982fdc2df" resname="btn_preview">
+        <source>btn_preview</source>
+        <target>Preview</target>
+      </trans-unit>
+      <trans-unit id="185181c517088a9336888984e14db6fc" resname="btn_update">
+        <source>btn_update</source>
+        <target>Update</target>
+      </trans-unit>
+      <trans-unit id="176019351641e46872e32a5a30cf0dde" resname="btn_update_and_edit_again">
+        <source>btn_update_and_edit_again</source>
+        <target>Update</target>
+      </trans-unit>
+      <trans-unit id="420cdba0c533015affa0aceb88be9951" resname="btn_update_and_return_to_list">
+        <source>btn_update_and_return_to_list</source>
+        <target>Update and close</target>
+      </trans-unit>
+      <trans-unit id="16bcf824e5db3784fca980ec8c8c7d44" resname="confirm_exit">
+        <source>confirm_exit</source>
+        <target>Are you sure to want to logout?</target>
+      </trans-unit>
+      <trans-unit id="c412f2412872f2d989913997b3bcdba1" resname="delete_or">
+        <source>delete_or</source>
+        <target>or</target>
+      </trans-unit>
+      <trans-unit id="452c7e450da75caf67a3c08b764147cf" resname="flash_batch_reset_fees_error">
+        <source>flash_batch_reset_fees_error</source>
+        <target>An error occurred while resetting commissions</target>
+      </trans-unit>
+      <trans-unit id="46703a3f78796b4bd7166175b0405123" resname="flash_batch_reset_fees_success">
+        <source>flash_batch_reset_fees_success</source>
+        <target>Fees reset successfully</target>
+      </trans-unit>
+      <trans-unit id="1ff697db40f700e112f02c96cade3539" resname="form_not_available">
+        <source>form_not_available</source>
+        <target>form_not_available</target>
+      </trans-unit>
+      <trans-unit id="96fc48602588ebe7dda3bd6e447e4e28" resname="label_compare_revision">
+        <source>label_compare_revision</source>
+        <target>Compare revision</target>
+      </trans-unit>
+      <trans-unit id="8c5bd8b75a550fe717292ad3ad158682" resname="label_view_revision">
+        <source>label_view_revision</source>
+        <target>View revision</target>
+      </trans-unit>
+      <trans-unit id="a231a51fc19229ca8e6786f19c33a98a" resname="link_actions">
+        <source>link_actions</source>
+        <target>Actions</target>
+      </trans-unit>
+      <trans-unit id="5032ace841772a80ae3312054731aa48" resname="link_delete">
+        <source>link_delete</source>
+        <target>Delete</target>
+      </trans-unit>
+      <trans-unit id="bcf8a76ef392968e6e7caed541c1f573" resname="link_edit_acl">
+        <source>link_edit_acl</source>
+        <target>Edit ACL</target>
+      </trans-unit>
+      <trans-unit id="86c08bca226b07fb256fbbf6ad54e636" resname="list_booking_with_voucher">
+        <source>list_booking_with_voucher</source>
+        <target>See bookings</target>
+      </trans-unit>
+      <trans-unit id="7985a561131f1cc7ba983ec4bb483a2a" resname="list_user_listings">
+        <source>list_user_listings</source>
+        <target>Display his listings</target>
+      </trans-unit>
+      <trans-unit id="f3bc8e97c7b615dd6600efb4de38dea4" resname="message_form_group_empty">
+        <source>message_form_group_empty</source>
+        <target>message_form_group_empty</target>
+      </trans-unit>
+      <trans-unit id="1993a1ad41bbfceb7fa4c29ea205725d" resname="noscript_warning">
+        <source>noscript_warning</source>
+        <target>noscript_warning</target>
+      </trans-unit>
+      <trans-unit id="ed71b5d4b3e2db6b0aa89e980aedec08" resname="search_placeholder">
+        <source>search_placeholder</source>
+        <target>Search</target>
+      </trans-unit>
+      <trans-unit id="58ae1a52162436d2c2a6eec67f0eb576" resname="td_action">
+        <source>td_action</source>
+        <target>Action</target>
+      </trans-unit>
+      <trans-unit id="dfbb79b3bd1d5f4e2cb89e779c9383f3" resname="td_compare">
+        <source>td_compare</source>
+        <target>Compare</target>
+      </trans-unit>
+      <trans-unit id="d5d6cf3e4fdc0a9b354f0b39d840f47f" resname="td_revision">
+        <source>td_revision</source>
+        <target>Revisions</target>
+      </trans-unit>
+      <trans-unit id="4a4d9b3afc04bd69b6cdec76edf3a65c" resname="td_timestamp">
+        <source>td_timestamp</source>
+        <target>Date</target>
+      </trans-unit>
+      <trans-unit id="40030c2802f79c80f2623e2fe5d3503f" resname="td_username">
+        <source>td_username</source>
+        <target>Author</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="98eb002ad64145d0af31764ea3c8134b" resname="Bank Wires">
+        <source>Bank Wires</source>
+        <target>Bank Wires</target>
+      </trans-unit>
+      <trans-unit id="a35529bfcfdfab2dc01946af64cd2ce4" resname="Bookings">
+        <source>Bookings</source>
+        <target>Bookings</target>
+      </trans-unit>
+      <trans-unit id="3adbdb3ac060038aa0e6e6c138ef9873" resname="Category">
+        <source>Category</source>
+        <target>Category</target>
+      </trans-unit>
+      <trans-unit id="7c3745ec54e369b544124097facefff6" resname="Characteristic">
+        <source>Characteristic</source>
+        <target>Characteristic</target>
+      </trans-unit>
+      <trans-unit id="8b04cc72ae8e113c16166a568becbdb1" resname="Characteristic Group">
+        <source>Characteristic Group</source>
+        <target>Characteristic Group</target>
+      </trans-unit>
+      <trans-unit id="41fa38d4d150a15c453a16d7baf41429" resname="Listings">
+        <source>Listings</source>
+        <target>Listings</target>
+      </trans-unit>
+      <trans-unit id="5d6e777197f8f857666af150d27d0943" resname="Payin Refunds">
+        <source>Payin Refunds</source>
+        <target>Payin Refunds</target>
+      </trans-unit>
+      <trans-unit id="34e80a799d144cfe4af46815e103f017" resname="Reviews">
+        <source>Reviews</source>
+        <target>Reviews</target>
+      </trans-unit>
+      <trans-unit id="f9aae5fda8d810a29f12d1e61b4ab25f" resname="Users">
+        <source>Users</source>
+        <target>Users</target>
+      </trans-unit>
+      <trans-unit id="f15c1cae7882448b3fb0404682e17e61" resname="Content">
+        <source>Content</source>
+        <target>Contenus</target>
+      </trans-unit>
+      <trans-unit id="1af85687f4d37290f06d9b684c7cdc15" resname="Footers">
+        <source>Footers</source>
+        <target>Footers</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

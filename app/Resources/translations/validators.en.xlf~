@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="42417a7029b20f1dd1bad00b70e01018" resname="The entity does not exist.">
+        <source>The entity does not exist.</source>
+        <target>The entity does not exist.</target>
+      </trans-unit>
+      <trans-unit id="9c598b1a37dd1dc5857c324bb7cedb5a" resname="assert.max_length {{ limit }}">
+        <source>assert.max_length {{ limit }}</source>
+        <target>{{ limit }} characters maximum</target>
+      </trans-unit>
+      <trans-unit id="49cc4ee69ab9abe7456369fbb86e22f5" resname="assert.min_length {{ limit }}">
+        <source>assert.min_length {{ limit }}</source>
+        <target>{{ limit }} characters minimum</target>
+      </trans-unit>
+      <trans-unit id="9fe062eac14ed9d49e1962b0988bcf31" resname="assert.not_blank">
+        <source>assert.not_blank</source>
+        <target>Required</target>
+      </trans-unit>
+      <trans-unit id="25f169bba3ca7e6af220ffaf3c9cb1f6" resname="assert.unique">
+        <source>assert.unique</source>
+        <target>Value must be unique</target>
+      </trans-unit>
+      <trans-unit id="ca0eb8b12a55633c40267bb39066724e" resname="cocorico_contact.email.blank">
+        <source>cocorico_contact.email.blank</source>
+        <target>Email required</target>
+      </trans-unit>
+      <trans-unit id="56e5fee13398613cde7886791a65190b" resname="cocorico_contact.email.invalid">
+        <source>cocorico_contact.email.invalid</source>
+        <target>Email invalid</target>
+      </trans-unit>
+      <trans-unit id="933a159bc3c5a1a8a52339f1b8c332cc" resname="cocorico_contact.email.long">
+        <source>cocorico_contact.email.long</source>
+        <target>Email too long</target>
+      </trans-unit>
+      <trans-unit id="fe9dba1c38fe895bc86179cdb8957838" resname="cocorico_contact.email.short">
+        <source>cocorico_contact.email.short</source>
+        <target>Email too short</target>
+      </trans-unit>
+      <trans-unit id="4e9bbd33611873e63efc2c28f9c430e7" resname="cocorico_contact.first_name.blank">
+        <source>cocorico_contact.first_name.blank</source>
+        <target>First name required</target>
+      </trans-unit>
+      <trans-unit id="e4b9d09efceb1d3804835b223b88b86e" resname="cocorico_contact.first_name.long">
+        <source>cocorico_contact.first_name.long</source>
+        <target>First name too long</target>
+      </trans-unit>
+      <trans-unit id="2db615ae307001548c906455ac136f5c" resname="cocorico_contact.first_name.short">
+        <source>cocorico_contact.first_name.short</source>
+        <target>First name too short</target>
+      </trans-unit>
+      <trans-unit id="f4280f916aeefaebe09d39bbc22a8cfd" resname="cocorico_contact.last_name.blank">
+        <source>cocorico_contact.last_name.blank</source>
+        <target>Last name required</target>
+      </trans-unit>
+      <trans-unit id="bb65661bf78c041f37d1b06c329f3b58" resname="cocorico_contact.last_name.long">
+        <source>cocorico_contact.last_name.long</source>
+        <target>Last name too long</target>
+      </trans-unit>
+      <trans-unit id="fe53b3ef81f543292fffa769d3f5d84e" resname="cocorico_contact.last_name.short">
+        <source>cocorico_contact.last_name.short</source>
+        <target>Last name too short</target>
+      </trans-unit>
+      <trans-unit id="1fdb40a6c591ae26fa769d744ccd57dd" resname="cocorico_contact.message.blank">
+        <source>cocorico_contact.message.blank</source>
+        <target>Message required</target>
+      </trans-unit>
+      <trans-unit id="93e5e95d2bf0abffcfd70b468bd7212e" resname="cocorico_contact.message.short">
+        <source>cocorico_contact.message.short</source>
+        <target>Message too short</target>
+      </trans-unit>
+      <trans-unit id="323bf04874960bf23eab2e5b6f35f7a6" resname="cocorico_contact.phone.long">
+        <source>cocorico_contact.phone.long</source>
+        <target>Phone too long</target>
+      </trans-unit>
+      <trans-unit id="1efa0406f9dcb977fe36a26ae465a3ec" resname="cocorico_contact.phone.short">
+        <source>cocorico_contact.phone.short</source>
+        <target>Phone too short</target>
+      </trans-unit>
+      <trans-unit id="2e661847f6ce861336781385b12fbe1b" resname="cocorico_contact.subject.blank">
+        <source>cocorico_contact.subject.blank</source>
+        <target>Subject required</target>
+      </trans-unit>
+      <trans-unit id="5d6b7238bdd205176242f419909a67c3" resname="cocorico_contact.subject.long">
+        <source>cocorico_contact.subject.long</source>
+        <target>Subject too long</target>
+      </trans-unit>
+      <trans-unit id="0721fa397fcdd093c692dfe110ab0757" resname="cocorico_contact.subject.short">
+        <source>cocorico_contact.subject.short</source>
+        <target>Subject too short</target>
+      </trans-unit>
+      <trans-unit id="3964bab42770432d1c9c6320ac5a0d78" resname="cocorico_review.comment.not_blank">
+        <source>cocorico_review.comment.not_blank</source>
+        <target>Please leave a comment, this is very useful for other users!</target>
+      </trans-unit>
+      <trans-unit id="74d23dc18080d3f7a43b87eb58177233" resname="cocorico_review.rating.not_blank">
+        <source>cocorico_review.rating.not_blank</source>
+        <target>Please leave a rating by giving a score</target>
+      </trans-unit>
+      <trans-unit id="47869570bdb9dcfe0e8fac975f9889af" resname="cocorico_user.bank_owner_address.blank">
+        <source>cocorico_user.bank_owner_address.blank</source>
+        <target>Bank owner address required</target>
+      </trans-unit>
+      <trans-unit id="ea93dba49e05ed8b8580436950fe8caf" resname="cocorico_user.bank_owner_name.blank">
+        <source>cocorico_user.bank_owner_name.blank</source>
+        <target>Bank owner name required</target>
+      </trans-unit>
+      <trans-unit id="27e65f95b71eb24d7535e4d1d362b240" resname="cocorico_user.bic.blank">
+        <source>cocorico_user.bic.blank</source>
+        <target>BIC required</target>
+      </trans-unit>
+      <trans-unit id="e88cc59fa71d9248d13cb7904e7116c4" resname="cocorico_user.birthday.blank">
+        <source>cocorico_user.birthday.blank</source>
+        <target>Birthday required</target>
+      </trans-unit>
+      <trans-unit id="1850922b377723d87ac4fb47e2ac15be" resname="cocorico_user.countryOfResidence.blank">
+        <source>cocorico_user.countryOfResidence.blank</source>
+        <target>Country Of Residence required</target>
+      </trans-unit>
+      <trans-unit id="716aaf978562ed97e45bf733a635ebbe" resname="cocorico_user.countryOfResidence.invalid">
+        <source>cocorico_user.countryOfResidence.invalid</source>
+        <target>Country of residence invalid</target>
+      </trans-unit>
+      <trans-unit id="89940679484fd22ba03ded9877e93f4e" resname="cocorico_user.country_of_residence.blank">
+        <source>cocorico_user.country_of_residence.blank</source>
+        <target>Country of residence required</target>
+      </trans-unit>
+      <trans-unit id="6b5f443a1cd1eafdbb85bbc697baae40" resname="cocorico_user.email.already_used">
+        <source>cocorico_user.email.already_used</source>
+        <target>This email is already used</target>
+      </trans-unit>
+      <trans-unit id="7900e4cacf28dc796d957fe4c06716e1" resname="cocorico_user.email.blank">
+        <source>cocorico_user.email.blank</source>
+        <target>Please enter an email</target>
+      </trans-unit>
+      <trans-unit id="b91c2a459dd9a67537a160275b14f502" resname="cocorico_user.email.invalid">
+        <source>cocorico_user.email.invalid</source>
+        <target>This email is not valid</target>
+      </trans-unit>
+      <trans-unit id="a1d3c64adee5208c8467d1499218903a" resname="cocorico_user.first_name.blank">
+        <source>cocorico_user.first_name.blank</source>
+        <target>Please enter your first name</target>
+      </trans-unit>
+      <trans-unit id="d01a0eb0b77ed67ece69e4d0511684cd" resname="cocorico_user.first_name.invalid">
+        <source>cocorico_user.first_name.invalid</source>
+        <target>First name invalid</target>
+      </trans-unit>
+      <trans-unit id="591856e7e1a3de32802879710e2ea3d0" resname="cocorico_user.first_name.long">
+        <source>cocorico_user.first_name.long</source>
+        <target>[-Inf,Inf]Your first name is too long</target>
+      </trans-unit>
+      <trans-unit id="b597db7e3f68f70c8394e8adf855ce73" resname="cocorico_user.first_name.short">
+        <source>cocorico_user.first_name.short</source>
+        <target>[-Inf,Inf]Your first name is too short</target>
+      </trans-unit>
+      <trans-unit id="d91cdf1a2e6244f2b2671b6ef4412416" resname="cocorico_user.iban.blank">
+        <source>cocorico_user.iban.blank</source>
+        <target>IBAN required</target>
+      </trans-unit>
+      <trans-unit id="97ac34db37fddf73de7f0f7a85d49051" resname="cocorico_user.iban.invalid">
+        <source>cocorico_user.iban.invalid</source>
+        <target>This email IBAN not valid</target>
+      </trans-unit>
+      <trans-unit id="3b46530e3bfc934c1d488c7703f86842" resname="cocorico_user.last_name.blank">
+        <source>cocorico_user.last_name.blank</source>
+        <target>Please enter your last name</target>
+      </trans-unit>
+      <trans-unit id="87fcbad6f16c185f035b3a55c989ac37" resname="cocorico_user.last_name.invalid">
+        <source>cocorico_user.last_name.invalid</source>
+        <target>Last name invalid</target>
+      </trans-unit>
+      <trans-unit id="8be0a795fec0a95316bfeeef26c6042a" resname="cocorico_user.last_name.long">
+        <source>cocorico_user.last_name.long</source>
+        <target>[-Inf,Inf]Your last name is too long</target>
+      </trans-unit>
+      <trans-unit id="66ea0cafd652af0585f97bd792071a66" resname="cocorico_user.last_name.short">
+        <source>cocorico_user.last_name.short</source>
+        <target>[-Inf,Inf]Your last name is too short</target>
+      </trans-unit>
+      <trans-unit id="8b71b1c1fced260bc5ffd6e967d554c2" resname="cocorico_user.motherTongue.blank">
+        <source>cocorico_user.motherTongue.blank</source>
+        <target>Mother tongue required</target>
+      </trans-unit>
+      <trans-unit id="c267f34b74ca711ed9146b97fa48f791" resname="cocorico_user.plainPassword.first.blank">
+        <source>cocorico_user.plainPassword.first.blank</source>
+        <target>Password required</target>
+      </trans-unit>
+      <trans-unit id="62194205eeca2b01784c97a3770aebb1" resname="cocorico_user.plainPassword.first.invalid">
+        <source>cocorico_user.plainPassword.first.invalid</source>
+        <target>Password invalid</target>
+      </trans-unit>
+      <trans-unit id="330bd4e8f4fe72b8b75e319a550de26b" resname="cocorico_user.plainPassword.second.blank">
+        <source>cocorico_user.plainPassword.second.blank</source>
+        <target>Password required</target>
+      </trans-unit>
+      <trans-unit id="abe9b99c5a991d73a817b6cb5d2eea98" resname="cocorico_user.plainPassword.second.invalid">
+        <source>cocorico_user.plainPassword.second.invalid</source>
+        <target>Password invalid</target>
+      </trans-unit>
+      <trans-unit id="5936cf0b8d7cf32f5c9d8a8ad1541d88" resname="cocorico_user.username.long">
+        <source>cocorico_user.username.long</source>
+        <target>This username is too long</target>
+      </trans-unit>
+      <trans-unit id="de0609b680c435c8ae58934e17f216ec" resname="cocorico_user.username.short">
+        <source>cocorico_user.username.short</source>
+        <target>This username is too short</target>
+      </trans-unit>
+      <trans-unit id="c0dd183b906e6a4aa14314fa8504b1fb" resname="entity.review.max_limit">
+        <source>entity.review.max_limit</source>
+        <target>entity.review.max_limit</target>
+      </trans-unit>
+      <trans-unit id="2e38f93bc23f75ac54e5e1e7c02740ce" resname="entity.review.min_limit">
+        <source>entity.review.min_limit</source>
+        <target>entity.review.min_limit</target>
+      </trans-unit>
+      <trans-unit id="1b240376d23b8f3e4f1f65356f9a4dbe" resname="entity.review.unique_allowed">
+        <source>entity.review.unique_allowed</source>
+        <target>Maximum one review authorized</target>
+      </trans-unit>
+      <trans-unit id="a55be57cc201693bfdc2c9021f8fd48d" resname="fos_user.email.already_used">
+        <source>fos_user.email.already_used</source>
+        <target>This email is already used</target>
+      </trans-unit>
+      <trans-unit id="6ff439fdb45d5bd0d58e8d210df8be77" resname="fos_user.email.blank">
+        <source>fos_user.email.blank</source>
+        <target>Please enter an email</target>
+      </trans-unit>
+      <trans-unit id="fc6c24981b4c0a57ce247c8687a585ea" resname="fos_user.email.invalid">
+        <source>fos_user.email.invalid</source>
+        <target>The email is not valid</target>
+      </trans-unit>
+      <trans-unit id="966201b57a32472001eeb20f251cce59" resname="fos_user.email.long">
+        <source>fos_user.email.long</source>
+        <target>[-Inf,Inf]The email is too long</target>
+      </trans-unit>
+      <trans-unit id="f21278704589f38c6334b87af1479cf9" resname="fos_user.email.short">
+        <source>fos_user.email.short</source>
+        <target>[-Inf,Inf]The email is too short</target>
+      </trans-unit>
+      <trans-unit id="444a31e89e0320314cdd1b4d9f693447" resname="fos_user.group.blank">
+        <source>fos_user.group.blank</source>
+        <target>fos_user.group.blank</target>
+      </trans-unit>
+      <trans-unit id="cb4f03d698d34db020dcdfb4422024d0" resname="fos_user.group.long">
+        <source>fos_user.group.long</source>
+        <target>fos_user.group.long</target>
+      </trans-unit>
+      <trans-unit id="ae2e51c83ca7620416400ccc476363ad" resname="fos_user.group.short">
+        <source>fos_user.group.short</source>
+        <target>fos_user.group.short</target>
+      </trans-unit>
+      <trans-unit id="dcd6d14d0786e48363cedfda2f1ae893" resname="fos_user.password.blank">
+        <source>fos_user.password.blank</source>
+        <target>Please enter your password</target>
+      </trans-unit>
+      <trans-unit id="3667cc0b146684942ce0704d5e42a9b2" resname="fos_user.password.mismatch">
+        <source>fos_user.password.mismatch</source>
+        <target>The entered passwords don't match</target>
+      </trans-unit>
+      <trans-unit id="208830cde0e30a97e31cae31d1815c35" resname="fos_user.password.short">
+        <source>fos_user.password.short</source>
+        <target>[-Inf,Inf]The password is too short</target>
+      </trans-unit>
+      <trans-unit id="717412185b61194420c7def0b42418f1" resname="fos_user.username.already_used">
+        <source>fos_user.username.already_used</source>
+        <target>This username is already used</target>
+      </trans-unit>
+      <trans-unit id="e6b436802106350f126526dff34d889c" resname="fos_user.username.blank">
+        <source>fos_user.username.blank</source>
+        <target>Please enter your username</target>
+      </trans-unit>
+      <trans-unit id="8eb91da705aa09b820f19e5a4e06d1fe" resname="fos_user.username.long">
+        <source>fos_user.username.long</source>
+        <target>[-Inf,Inf]The username is too long</target>
+      </trans-unit>
+      <trans-unit id="a96e6b81d15a20e05150a905e30d70c4" resname="fos_user.username.short">
+        <source>fos_user.username.short</source>
+        <target>[-Inf,Inf]The username is too short</target>
+      </trans-unit>
+      <trans-unit id="7679a1143e40be0c6f1b4d2e27a66652" resname="geo.location.address_invalid">
+        <source>geo.location.address_invalid</source>
+        <target>Your address is invalid</target>
+      </trans-unit>
+      <trans-unit id="6c5de30f92c60ed4ebee306b9f5e2ddc" resname="{{ limit }}cocorico_user.password.short">
+        <source>{{ limit }}cocorico_user.password.short</source>
+        <target>Your password must be at least {{ limit }} characters long</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

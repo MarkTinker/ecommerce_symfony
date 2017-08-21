@@ -1,0 +1,125 @@
+'<=': '<='
+'>=': '>='
+Asker: Asker
+Description: Description
+Descriptions: Descriptions
+Link: Link
+'Meta Description': 'Meta Description'
+'Meta Title': 'Meta Title'
+Name: Name
+Offerer: Offerer
+Rules: Rules
+Title: Title
+URL: URL
+'URL Hash': 'URL Hash'
+'View Thread': 'View Thread'
+admin.booking.alerted_expiring.label: 'Alerted expiring'
+admin.booking.alerted_imminent.label: admin.booking.alerted_imminent.label
+admin.booking.amount.label: admin.booking.amount.label
+admin.booking.amount_discount_voucher.label: admin.booking.amount_discount_voucher.label
+admin.booking.amount_excl_fees.label: admin.booking.amount_excl_fees.label
+admin.booking.amount_fee_as_asker.label: admin.booking.amount_fee_as_asker.label
+admin.booking.amount_fee_as_offerer.label: admin.booking.amount_fee_as_offerer.label
+admin.booking.amount_max.label: admin.booking.amount_max.label
+admin.booking.amount_min.label: admin.booking.amount_min.label
+admin.booking.amount_options.title: admin.booking.amount_options.title
+admin.booking.amount_to_pay_by_asker.label: 'Amount to pay by asker'
+admin.booking.amount_to_pay_to_offerer.label: 'Amount to pay to offerer'
+admin.booking.amount_to_wire.label: admin.booking.amount_to_wire.label
+admin.booking.asker.label: Asker
+admin.booking.canceled_asker_booking_at.label: admin.booking.canceled_asker_booking_at.label
+admin.booking.code_voucher.label: admin.booking.code_voucher.label
+admin.booking.created_at.label: 'Booking creation date'
+admin.booking.delivery_address.label: admin.booking.delivery_address.label
+admin.booking.delivery_amount.label: admin.booking.delivery_amount.label
+admin.booking.discount_voucher.label: admin.booking.discount_voucher.label
+admin.booking.end.label: 'Booking end date'
+admin.booking.end_time.label: 'Booking end time'
+admin.booking.expire_at.label: 'Expiration date'
+admin.booking.label: admin.booking.label
+admin.booking.listing_id.label: 'Listing ID'
+admin.booking.listing_title.label: 'Listing title'
+admin.booking.mangopay_card_id.label: admin.booking.mangopay_card_id.label
+admin.booking.mangopay_card_pre_auth_id.label: admin.booking.mangopay_card_pre_auth_id.label
+admin.booking.mangopay_payin_pre_auth_id.label: admin.booking.mangopay_payin_pre_auth_id.label
+admin.booking.new_booking_at.label: admin.booking.new_booking_at.label
+admin.booking.offerer.label: admin.booking.offerer.label
+admin.booking.payed_booking_at.label: admin.booking.payed_booking_at.label
+admin.booking.refused_booking_at.label: admin.booking.refused_booking_at.label
+admin.booking.remaining_amount_to_pay_to_offerer.label: admin.booking.remaining_amount_to_pay_to_offerer.label
+admin.booking.start.label: admin.booking.start.label
+admin.booking.start_time.label: admin.booking.start_time.label
+admin.booking.status.label: admin.booking.status.label
+admin.booking.updated_at.label: admin.booking.updated_at.label
+admin.booking.validated.label: admin.booking.validated.label
+admin.booking_bank_wire.amount.label: admin.booking_bank_wire.amount.label
+admin.booking_bank_wire.amount_excl_discount_voucher.label: admin.booking_bank_wire.amount_excl_discount_voucher.label
+admin.booking_bank_wire.booking.label: admin.booking_bank_wire.booking.label
+admin.booking_bank_wire.booking_id.label: admin.booking_bank_wire.booking_id.label
+admin.booking_bank_wire.payed_at.label: admin.booking_bank_wire.payed_at.label
+admin.booking_bank_wire.status.label: admin.booking_bank_wire.status.label
+admin.booking_payin_refund.amount.label: admin.booking_payin_refund.amount.label
+admin.booking_payin_refund.payed_at.label: admin.booking_payin_refund.payed_at.label
+admin.contact.created_at.label: admin.contact.created_at.label
+admin.contact.email.label: admin.contact.email.label
+admin.contact.first_name.label: admin.contact.first_name.label
+admin.contact.last_name.label: admin.contact.last_name.label
+admin.contact.message.label: admin.contact.message.label
+admin.contact.phone.label: admin.contact.phone.label
+admin.contact.status.label: admin.contact.status.label
+admin.contact.subject.label: admin.contact.subject.label
+admin.contact.updated_at.label: admin.contact.updated_at.label
+admin.footer.url.label: admin.footer.url.label
+admin.listing.admin_notation.label: admin.listing.admin_notation.label
+admin.listing.average_rating.label: admin.listing.average_rating.label
+admin.listing.categories.label: admin.listing.categories.label
+admin.listing.certified.label: admin.listing.certified.label
+admin.listing.city.label: admin.listing.city.label
+admin.listing.country.label: admin.listing.country.label
+admin.listing.created_at.label: admin.listing.created_at.label
+admin.listing.images.label: admin.listing.images.label
+admin.listing.impersonating.label: admin.listing.impersonating.label
+admin.listing.label: admin.listing.label
+admin.listing.offerer.label: admin.listing.offerer.label
+admin.listing.price.label: admin.listing.price.label
+admin.listing.price_max.label: admin.listing.price_max.label
+admin.listing.price_min.label: admin.listing.price_min.label
+admin.listing.status.label: admin.listing.status.label
+admin.listing.title.label: admin.listing.title.label
+admin.listing.updated_at.label: admin.listing.updated_at.label
+admin.listing.user.label: admin.listing.user.label
+admin.listing.user_email.label: admin.listing.user_email.label
+admin.listing.user_phone.label: admin.listing.user_phone.label
+admin.listing_category.fields.label: admin.listing_category.fields.label
+admin.listing_category.name.label: admin.listing_category.name.label
+admin.listing_category.parent.label: admin.listing_category.parent.label
+admin.listing_characteristic.group.label: admin.listing_characteristic.group.label
+admin.listing_characteristic.name.label: admin.listing_characteristic.name.label
+admin.listing_characteristic.position.label: admin.listing_characteristic.position.label
+admin.listing_characteristic.type.label: admin.listing_characteristic.type.label
+admin.listing_characteristic_group.name.label: admin.listing_characteristic_group.name.label
+admin.listing_characteristic_group.position.label: admin.listing_characteristic_group.position.label
+admin.page.created_at.label: admin.page.created_at.label
+admin.page.description.label: admin.page.description.label
+admin.page.link.label: admin.page.link.label
+admin.page.published.label: admin.page.published.label
+admin.page.title.label: admin.page.title.label
+admin.page.updated_at.label: admin.page.updated_at.label
+admin.parameter.name.label: admin.parameter.name.label
+admin.parameter.value.label: admin.parameter.value.label
+admin.review.comment.label: admin.review.comment.label
+admin.review.created_at.label: admin.review.created_at.label
+admin.review.listing.label: admin.review.listing.label
+admin.review.rating.label: admin.review.rating.label
+admin.review.reviewBy.label: admin.review.reviewBy.label
+admin.review.reviewTo.label: admin.review.reviewTo.label
+admin.review.search.label: admin.review.search.label
+admin.thread.booking.label: admin.thread.booking.label
+admin.thread.createdAt.label: admin.thread.createdAt.label
+admin.thread.created_at.label: admin.thread.created_at.label
+admin.thread.from.label: admin.thread.from.label
+admin.thread.listing.label: admin.thread.listing.label
+admin.thread.search.label: admin.thread.search.label
+admin.thread.to.label: admin.thread.to.label
+admin.thread.type.label: admin.thread.type.label
+admin.thread.view.label: admin.thread.view.label

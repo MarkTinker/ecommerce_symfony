@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="d41d8cd98f00b204e9800998ecf8427e" resname="">
+        <source></source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="902b0d55fddef6f8d651fe1035b7d4bd" resname="Error">
+        <source>Error</source>
+        <target>Error</target>
+      </trans-unit>
+      <trans-unit id="505a83f220c02df2f85c3810cd9ceb38" resname="Success">
+        <source>Success</source>
+        <target>Success</target>
+      </trans-unit>
+      <trans-unit id="da3d6797eacfce3f16650e9cbcc73c69" resname="booking.form.message.error">
+        <source>booking.form.message.error</source>
+        <target>Please let a message</target>
+      </trans-unit>
+      <trans-unit id="3bf9fb1a510b132f295a2ea9379f99d6" resname="booking.form.tac.error">
+        <source>booking.form.tac.error</source>
+        <target>Please accept the Terms and conditions in order to make a booking</target>
+      </trans-unit>
+      <trans-unit id="c52141bb255f5f4b541fa293fba0af5c" resname="booking.new.error.amount_invalid {{ min_price }}">
+        <source>booking.new.error.amount_invalid {{ min_price }}</source>
+        <target>Amount minimum: {{ min_price }}</target>
+      </trans-unit>
+      <trans-unit id="235749abe8dc1eeda7bc9ea5d79064dc" resname="booking.new.error.unavailable">
+        <source>booking.new.error.unavailable</source>
+        <target>Listing unavailable for this dates</target>
+      </trans-unit>
+      <trans-unit id="cdb3a0653503fd55535973fdf5e2ead3" resname="cocorico.friday">
+        <source>cocorico.friday</source>
+        <target>Friday</target>
+      </trans-unit>
+      <trans-unit id="15472c489c91a74e4112131e6e5c0325" resname="cocorico.monday">
+        <source>cocorico.monday</source>
+        <target>Monday</target>
+      </trans-unit>
+      <trans-unit id="b87ab5455222b3f9bfe2c7047352e934" resname="cocorico.saturday">
+        <source>cocorico.saturday</source>
+        <target>Saturday</target>
+      </trans-unit>
+      <trans-unit id="f58bcb226953ca7413c4b3a853004bde" resname="cocorico.search.extended.warning %location%">
+        <source>cocorico.search.extended.warning %location%</source>
+        <target>Insufficient results, search area is going to be expanded to: %location%</target>
+      </trans-unit>
+      <trans-unit id="9e7e6a37e45116839a85a7070c6616d8" resname="cocorico.search.invalidate.address">
+        <source>cocorico.search.invalidate.address</source>
+        <target>Please enter an address to view make a search.</target>
+      </trans-unit>
+      <trans-unit id="9a26a450f96924d7bce1031596da71c1" resname="cocorico.sunday">
+        <source>cocorico.sunday</source>
+        <target>Sunday</target>
+      </trans-unit>
+      <trans-unit id="5f5c6ca343df17e6019dd79a884289d8" resname="cocorico.thursday">
+        <source>cocorico.thursday</source>
+        <target>Thursday</target>
+      </trans-unit>
+      <trans-unit id="e8b2a03f82ecc7baa141b64d1fac662d" resname="cocorico.tuesday">
+        <source>cocorico.tuesday</source>
+        <target>Tuesday</target>
+      </trans-unit>
+      <trans-unit id="e5584802889d8ce7efd4bd067652a35e" resname="cocorico.wednesday">
+        <source>cocorico.wednesday</source>
+        <target>Wednesday</target>
+      </trans-unit>
+      <trans-unit id="8d0ea49941574a13cd46394ea10d9384" resname="collection.add_item">
+        <source>collection.add_item</source>
+        <target>Add</target>
+      </trans-unit>
+      <trans-unit id="c8116da717d77586ea38fea0df682f9a" resname="collection.remove_item">
+        <source>collection.remove_item</source>
+        <target>Remove</target>
+      </trans-unit>
+      <trans-unit id="2fe71ebe49c9ae3a58cd32e25e823354" resname="company_info">
+        <source>company_info</source>
+        <target>company_info</target>
+      </trans-unit>
+      <trans-unit id="63ac33fffefd38ee4c906ee7e3d2be7f" resname="date_range.invalid.end_before_start">
+        <source>date_range.invalid.end_before_start</source>
+        <target>End date must be after start date</target>
+      </trans-unit>
+      <trans-unit id="c745897d5fa252aa777de752180db259" resname="date_range.invalid.end_in_past">
+        <source>date_range.invalid.end_in_past</source>
+        <target>Invalid end date</target>
+      </trans-unit>
+      <trans-unit id="0a43221b256a4fbf6293118fc38825bd" resname="date_range.invalid.max_end {{ date_max }}">
+        <source>date_range.invalid.max_end {{ date_max }}</source>
+        <target>End date must be less than {{ date_max }}</target>
+      </trans-unit>
+      <trans-unit id="c1a9ccaee565b383774298c98070a40f" resname="date_range.invalid.min_start {{ min_start_day }}">
+        <source>date_range.invalid.min_start {{ min_start_day }}</source>
+        <target>Start date must be at least equal to {{ min_start_day }}</target>
+      </trans-unit>
+      <trans-unit id="1e11156e5a03e6f733e9bebd25543025" resname="date_range.invalid.required">
+        <source>date_range.invalid.required</source>
+        <target>Dates are required</target>
+      </trans-unit>
+      <trans-unit id="bd26be5dec29f98605d7dec99bbfd8b2" resname="date_range.invalid.single_day">
+        <source>date_range.invalid.single_day</source>
+        <target>Dates must be different</target>
+      </trans-unit>
+      <trans-unit id="994fce398711aa771db7e453c48fd420" resname="date_range.nb_days">
+        <source>date_range.nb_days</source>
+        <target>Day(s)</target>
+      </trans-unit>
+      <trans-unit id="7e48a5296a2f49678212bfe87a8a36ed" resname="exit_impersonation">
+        <source>exit_impersonation</source>
+        <target>Exit Impersonation</target>
+      </trans-unit>
+      <trans-unit id="f18954b85dc4aa6a472baa206816960c" resname="footer.about.title">
+        <source>footer.about.title</source>
+        <target>About</target>
+      </trans-unit>
+      <trans-unit id="972eec43f0a4067d163383c16058de02" resname="footer.all_right_reserved">
+        <source>footer.all_right_reserved</source>
+        <target>all right reserved</target>
+      </trans-unit>
+      <trans-unit id="6c6a3c58bb07bf334801540543b3edd9" resname="footer.contact_us.link">
+        <source>footer.contact_us.link</source>
+        <target>Contact us</target>
+      </trans-unit>
+      <trans-unit id="6217c4aec79a575a14e3ff493d45c68a" resname="footer.contact_us.title">
+        <source>footer.contact_us.title</source>
+        <target>Contact us</target>
+      </trans-unit>
+      <trans-unit id="d7887fb148867c83cc48656befe14145" resname="footer.faq.link">
+        <source>footer.faq.link</source>
+        <target>FAQ</target>
+      </trans-unit>
+      <trans-unit id="491b3aa2db0a6fa017924ff849664aa2" resname="footer.help.title">
+        <source>footer.help.title</source>
+        <target><![CDATA[Help & Contact]]></target>
+      </trans-unit>
+      <trans-unit id="718790a5c8e26f46e7129415a9aa4a5f" resname="footer.how_it_works.link">
+        <source>footer.how_it_works.link</source>
+        <target>How it works?</target>
+      </trans-unit>
+      <trans-unit id="4c1b8fe78c5f8b72b29a73918ed0f2b7" resname="footer.legal_notices.link">
+        <source>footer.legal_notices.link</source>
+        <target>Legal notices</target>
+      </trans-unit>
+      <trans-unit id="3b2f39b8c08b7dab232e1bc4bd77ec02" resname="footer.the_team.link">
+        <source>footer.the_team.link</source>
+        <target>The team</target>
+      </trans-unit>
+      <trans-unit id="a602d2645e03027f1bc1cbc1078f6e1e" resname="footer.title.various">
+        <source>footer.title.various</source>
+        <target>Various</target>
+      </trans-unit>
+      <trans-unit id="d303bbf24ef8b9173aabb09a7e094b14" resname="footer.who_we_are.link">
+        <source>footer.who_we_are.link</source>
+        <target>Who we are?</target>
+      </trans-unit>
+      <trans-unit id="20394d005bfb4a2033e847a0d4a68820" resname="form.error">
+        <source>form.error</source>
+        <target>An error has occurred.</target>
+      </trans-unit>
+      <trans-unit id="dea8c8df98f3b2737f3a9959632f0fb3" resname="listing.file.button.text">
+        <source>listing.file.button.text</source>
+        <target>Choose file</target>
+      </trans-unit>
+      <trans-unit id="d3abf999921f02c107b812e6a3a1d8a0" resname="listing.file.placeholder.text">
+        <source>listing.file.placeholder.text</source>
+        <target>No file chosen</target>
+      </trans-unit>
+      <trans-unit id="09699845a0b5d35ba5e574d9da7adfe9" resname="listing.form.tac.error">
+        <source>listing.form.tac.error</source>
+        <target>Please accept the Terms and conditions in order to make a booking</target>
+      </trans-unit>
+      <trans-unit id="ba333bdc9b23f652f8f37ec21db251ca" resname="listing.search.form.country.not_blank">
+        <source>listing.search.form.country.not_blank</source>
+        <target>The search must be made at least by country.</target>
+      </trans-unit>
+      <trans-unit id="635e3839f6307c5ea43000e3dc5819c6" resname="message.body.not_blank">
+        <source>message.body.not_blank</source>
+        <target>Message missing</target>
+      </trans-unit>
+      <trans-unit id="47bff31d7cb18b881d0380c3beb00b93" resname="multiselect.all_selected">
+        <source>multiselect.all_selected</source>
+        <target>All selected</target>
+      </trans-unit>
+      <trans-unit id="cdf7be49e7a4a607881ad63aaf990dcf" resname="multiselect.none_selected">
+        <source>multiselect.none_selected</source>
+        <target>None selected</target>
+      </trans-unit>
+      <trans-unit id="1995776d0abed00ca1cacd0ae459382f" resname="multiselect.num_selected">
+        <source>multiselect.num_selected</source>
+        <target>selected</target>
+      </trans-unit>
+      <trans-unit id="dd29df5a63412b2213c3f581251a073e" resname="nav.asker.link">
+        <source>nav.asker.link</source>
+        <target>Asker</target>
+      </trans-unit>
+      <trans-unit id="b623dc1969fa97351500bc7bd5fcfb45" resname="nav.dashboard.bookings.link">
+        <source>nav.dashboard.bookings.link</source>
+        <target>Bookings</target>
+      </trans-unit>
+      <trans-unit id="2505b1215080fe0964f588e4cae447fe" resname="nav.dashboard.comments.link">
+        <source>nav.dashboard.comments.link</source>
+        <target>Comments</target>
+      </trans-unit>
+      <trans-unit id="6e44d94bf0f5e01143e055713c483627" resname="nav.dashboard.link">
+        <source>nav.dashboard.link</source>
+        <target>My Dashboard</target>
+      </trans-unit>
+      <trans-unit id="e65d183b20ef8de25557f0bceec6013f" resname="nav.dashboard.listings.link">
+        <source>nav.dashboard.listings.link</source>
+        <target>Listings</target>
+      </trans-unit>
+      <trans-unit id="d8f3040a38c5672b4876c2440d1a5c20" resname="nav.dashboard.messages.link">
+        <source>nav.dashboard.messages.link</source>
+        <target>Messages</target>
+      </trans-unit>
+      <trans-unit id="0156726b215a380d990ade9bd0291d44" resname="nav.dashboard.payments.link">
+        <source>nav.dashboard.payments.link</source>
+        <target>Payments</target>
+      </trans-unit>
+      <trans-unit id="3bf37a547f970ddc718a3de3b4a275ae" resname="nav.dashboard.profile.link">
+        <source>nav.dashboard.profile.link</source>
+        <target>Profile</target>
+      </trans-unit>
+      <trans-unit id="423fcd7be59def47cd7ca71388fe773c" resname="nav.faq.slug">
+        <source>nav.faq.slug</source>
+        <target>faq</target>
+      </trans-unit>
+      <trans-unit id="291b0fcb0cb39ab1f7817fc0f5707ce2" resname="nav.favorites.link">
+        <source>nav.favorites.link</source>
+        <target>Favorites</target>
+      </trans-unit>
+      <trans-unit id="e220793bcf9da7a4a929f61412b3d5b0" resname="nav.home.link">
+        <source>nav.home.link</source>
+        <target>Home</target>
+      </trans-unit>
+      <trans-unit id="a8056cf44029e253e82b8ec79396ddc6" resname="nav.how_it_works.slug">
+        <source>nav.how_it_works.slug</source>
+        <target>how-it-works</target>
+      </trans-unit>
+      <trans-unit id="62bc067b363ac31a729288df9f326531" resname="nav.legal_notices.slug">
+        <source>nav.legal_notices.slug</source>
+        <target>legal-notices</target>
+      </trans-unit>
+      <trans-unit id="b7505be016bff11c0f772f897e9cefa9" resname="nav.listing.new.link">
+        <source>nav.listing.new.link</source>
+        <target>Publish your listing</target>
+      </trans-unit>
+      <trans-unit id="b2114a0538108fa49a10b04265823ccc" resname="nav.listing.show.link">
+        <source>nav.listing.show.link</source>
+        <target>Show my listing</target>
+      </trans-unit>
+      <trans-unit id="8884ea2a6a3207da36e28acfe8284325" resname="nav.login.link">
+        <source>nav.login.link</source>
+        <target>Login</target>
+      </trans-unit>
+      <trans-unit id="7f46f17bf3c90169ae92ce5a6561d7a7" resname="nav.logout.link">
+        <source>nav.logout.link</source>
+        <target>Logout</target>
+      </trans-unit>
+      <trans-unit id="941e7162b8177ef8bcc8490f99ff7e49" resname="nav.offerer.link">
+        <source>nav.offerer.link</source>
+        <target>Offerer</target>
+      </trans-unit>
+      <trans-unit id="102fedd2d881759de4c5dd7a094bd360" resname="nav.register.link">
+        <source>nav.register.link</source>
+        <target>Register</target>
+      </trans-unit>
+      <trans-unit id="32c2173223fc82abe26ab13cf7c01fb9" resname="nav.the_team.slug">
+        <source>nav.the_team.slug</source>
+        <target>the-team</target>
+      </trans-unit>
+      <trans-unit id="4f85420c63a013ad485af996d7235f14" resname="nav.who_we_are.link">
+        <source>nav.who_we_are.link</source>
+        <target>Who we are?</target>
+      </trans-unit>
+      <trans-unit id="e70dc4302fbfb466d8d787761f2db4d9" resname="nav.who_we_are.slug">
+        <source>nav.who_we_are.slug</source>
+        <target>who-we-are</target>
+      </trans-unit>
+      <trans-unit id="7ca07e87b46ec2b159f687b70d72e681" resname="page.error">
+        <source>page.error</source>
+        <target>Erreur</target>
+      </trans-unit>
+      <trans-unit id="0065f91dc7febb9657b4262611177177" resname="page.forbidden">
+        <source>page.forbidden</source>
+        <target>Access forbidden</target>
+      </trans-unit>
+      <trans-unit id="2afbc70ee3437e2e678d825a2cfb5262" resname="page.not.found">
+        <source>page.not.found</source>
+        <target>Page not found</target>
+      </trans-unit>
+      <trans-unit id="7142265e90ef51a00c1ce89e66b0e671" resname="time_range.invalid.duration">
+        <source>time_range.invalid.duration</source>
+        <target>Times duration greater than allowed</target>
+      </trans-unit>
+      <trans-unit id="83e9e8cde0d06b07a8c77e91991aa742" resname="time_range.invalid.end_before_start">
+        <source>time_range.invalid.end_before_start</source>
+        <target>End time must be after the start time</target>
+      </trans-unit>
+      <trans-unit id="1f3bff96a338ad04bd83164e34a78e42" resname="time_range.invalid.min_start {{ min_start_time }}">
+        <source>time_range.invalid.min_start {{ min_start_time }}</source>
+        <target>Start date must be posterior to {{ min_start_time }}</target>
+      </trans-unit>
+      <trans-unit id="11791f6fe2b91eb20e436578e729aafb" resname="time_range.invalid.required">
+        <source>time_range.invalid.required</source>
+        <target>Times are required</target>
+      </trans-unit>
+      <trans-unit id="6bf6399c968268355091314f780fa9f5" resname="time_range.invalid.single_time">
+        <source>time_range.invalid.single_time</source>
+        <target>Start and end times must be different</target>
+      </trans-unit>
+      <trans-unit id="bc54ef536de50378e3c0daaa5d2d1aac" resname="time_unit_month">
+        <source>time_unit_month</source>
+        <target>{-3} by month|{-1} month(s)|{0} month|{1} %count% month|]1,Inf]%count% months</target>
+      </trans-unit>
+      <trans-unit id="a5cd70d55d2edb1aca9d228d0deb8205" resname="time_unit_day">
+        <source>time_unit_day</source>
+        <target>{-3} by day|{-1} day(s)|{0} day|{1} %count% day|]1,Inf]%count% days</target>
+      </trans-unit>
+      <trans-unit id="fa7ad58cb4f9e27aabec2b6767a50f99" resname="time_unit_hour">
+        <source>time_unit_hour</source>
+        <target>{-3} by hour|{-1} hour(s)|{0} hour|{1} %count% hour|]1,Inf]%count% hours</target>
+      </trans-unit>
+      <trans-unit id="e19cdb75e9fdd4e17cad7b72c484f485" resname="time_unit_night">
+        <source>time_unit_night</source>
+        <target>{-3} by night|{-1} night(s)|{0} night|{1} %count% night|]1,Inf]%count% nights</target>
+      </trans-unit>
+      <trans-unit id="aed2aeec96eb4d45747de6222932f4d9" resname="user.form.credential.error">
+        <source>user.form.credential.error</source>
+        <target>Invalid email or password</target>
+      </trans-unit>
+      <trans-unit id="8a4fde38e554c2bc9b777d4802cd1b14" resname="vat_excluded">
+        <source>vat_excluded</source>
+        <target>excl tax</target>
+      </trans-unit>
+      <trans-unit id="57e9926e4d423bd4ee4ae54ffc5d134d" resname="vat_included">
+        <source>vat_included</source>
+        <target>incl tax</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
