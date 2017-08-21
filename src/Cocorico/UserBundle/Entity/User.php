@@ -345,6 +345,13 @@ class User extends BaseUser implements ParticipantInterface
     protected $languages;
 
     /**
+     * @ORM\OneToMany(targetEntity="UserLink", mappedBy="user", cascade={"persist", "remove"}, orphanRemoval=true)
+     *
+     * @var UserLink[]
+     */
+    protected $links;
+
+    /**
      *
      * @ORM\OneToMany(targetEntity="Cocorico\CoreBundle\Entity\Booking", mappedBy="user", cascade={"persist", "remove"}, orphanRemoval=true)
      * @ORM\OrderBy({"createdAt" = "desc"})
@@ -384,6 +391,7 @@ class User extends BaseUser implements ParticipantInterface
         $this->listings = new ArrayCollection();
         $this->images = new ArrayCollection();
         $this->languages = new ArrayCollection();
+        $this->links = new ArrayCollection();
         $this->messages = new ArrayCollection();
         $this->reviewsBy = new ArrayCollection();
         $this->reviewsTo = new ArrayCollection();
@@ -969,6 +977,40 @@ class User extends BaseUser implements ParticipantInterface
         return $this->languages;
     }
 
+    /**
+     * Add language
+     *
+     * @param \Cocorico\UserBundle\Entity\UserLink $link
+     *
+     * @return Listing
+     */
+     public function addLink(UserLink $link)
+     {
+         $link->setUser($this);
+         $this->links[] = $link;
+ 
+         return $this;
+     }
+ 
+     /**
+      * Remove link
+      *
+      * @param \Cocorico\UserBundle\Entity\UserLink $link
+      */
+     public function removeLink(UserLink $link)
+     {
+         $this->links->removeElement($link);
+     }
+ 
+     /**
+      * Get links
+      *
+      * @return \Doctrine\Common\Collections\Collection|UserLink[]
+      */
+     public function getLinks()
+     {
+         return $this->links;
+     }
 
     /**
      * @return mixed

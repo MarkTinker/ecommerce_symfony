@@ -144,7 +144,7 @@ class ProfileAboutMeFormType extends AbstractType implements TranslationContaine
                     'allow_delete' => true,
                     'allow_add' => true,
                     'by_reference' => false,
-                    'type' => new UserLinksType(),
+                    'type' => new UserLinkType(),
                     /** @Ignore */
                     'label' => false
                 )
