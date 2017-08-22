@@ -356,7 +356,7 @@ abstract class BaseListing
      * @param  string $salenotes
      * @return Listing
     */
-    public function setSalenotes($sellprice)
+    public function setSalenotes($salenotes)
     {
         $this->salenotes = $salenotes;
 
