@@ -11630,6 +11630,30 @@ h1.listing-title a {
     padding: 0 5px 10px;
 }
 
+.links-list li {
+    float: left;
+    position: relative;
+    padding: 0 5px 10px;
+}
+
+.links-list .btn {
+    color: #58595b;
+    display: block;
+    padding: 7px 5px;
+    background: #ffffff;
+    text-transform: capitalize;
+    border: #dedede solid 1px;
+    -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.07);
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.07);
+}
+
+#add_links {
+    margin: 10px 0px;
+}
+
+.links-list .close {
+    right: -4px;
+}
 .btns-list .btn {
     color: #58595b;
     display: block;

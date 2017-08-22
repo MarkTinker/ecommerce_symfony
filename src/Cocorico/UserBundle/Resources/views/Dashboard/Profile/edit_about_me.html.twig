@@ -208,8 +208,8 @@
                                                     <i class="icon-cancel"></i>
                                                     <span class="hidden">close</span>
                                                 </a>
-                                                <a href="#" class="btn btn-default">
-                                                    {{ link.code.vars.value }}
+                                                <a href="{{ link.url.vars.value }}" class="btn btn-default">
+                                                    {{ link.url.vars.value }}
                                                 </a>
                                                 {{ form_row(link) }}
                                             </li>
@@ -273,7 +273,7 @@
                     return;
                 var item = jQuery('<li>' +
                         '<a href="#" id="' + itemText + '" class="close" data-dismiss="alert" aria-label="Close"><i class="icon-cancel"></i><span class="hidden">close</span></a>' +
-                        '<a href="#" class="btn btn-default">' + itemText + '</a>' +
+                        '<a href="'+ itemText +'" class="btn btn-default">' + itemText + '</a>' +
                         '</li>').appendTo(itemsList);     
                         console.log(item);
                         console.log(itemsList);
@@ -295,7 +295,7 @@
             $collectionHolder.data('index', index + 1);
             // Display the form in the page in an li, before the "Add a tag" link li
             $(item).append(newForm);
-            $('#user_links_' + index + '_code').val(selectedValue);
+            $('#user_links_' + index + '_url').val(selectedValue);
         }
     </script>
 
