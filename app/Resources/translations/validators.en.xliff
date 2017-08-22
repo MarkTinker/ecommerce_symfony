@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
-  <file date="2017-08-22T17:59:04Z" source-language="en" target-language="en" datatype="plaintext" original="not.available">
+  <file date="2017-08-22T18:25:32Z" source-language="en" target-language="en" datatype="plaintext" original="not.available">
     <header>
       <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
@@ -111,11 +111,11 @@
       </trans-unit>
       <trans-unit id="b8f0c97fdb7875edcc14727663f7a8ac5c0e436e" resname="cocorico_user.account.blank">
         <source>cocorico_user.account.blank</source>
-        <target state="new">Account required</target>
+        <target state="new">cocorico_user.account.blank</target>
       </trans-unit>
       <trans-unit id="784edc1facd50a087f1097f5815fe71df34b92cd" resname="cocorico_user.bank_account_name.blank">
         <source>cocorico_user.bank_account_name.blank</source>
-        <target state="new">Bank account name required</target>
+        <target state="new">cocorico_user.bank_account_name.blank</target>
       </trans-unit>
       <trans-unit id="e8ee39994157c732ee47d48f80f11704edb3e652" resname="cocorico_user.birthday.blank">
         <source>cocorico_user.birthday.blank</source>
@@ -123,16 +123,16 @@
       </trans-unit>
       <trans-unit id="af0dc0dafd46e5c2cfe99f534533fc215176616e" resname="cocorico_user.bsb.blank">
         <source>cocorico_user.bsb.blank</source>
-        <target state="new">BSB required</target>
+        <target state="new">cocorico_user.bsb.blank</target>
       </trans-unit>
       <trans-unit id="fe5d878ea8abf516340e8d2b6b854ec2a58434e3" resname="cocorico_user.countryOfResidence.blank">
         <source>cocorico_user.countryOfResidence.blank</source>
-        <target state="new">cocorico_user.countryOfResidence.blank</target>
+        <target>Country Of Residence required</target>
         <jms:reference-file line="86">Frontend/Common/_register.html.twig</jms:reference-file>
       </trans-unit>
       <trans-unit id="a233f035a152744ca09d068f6a9aeb53621ca167" resname="cocorico_user.countryOfResidence.invalid">
         <source>cocorico_user.countryOfResidence.invalid</source>
-        <target state="new">cocorico_user.countryOfResidence.invalid</target>
+        <target>Country of residence invalid</target>
         <jms:reference-file line="87">Frontend/Common/_register.html.twig</jms:reference-file>
       </trans-unit>
       <trans-unit id="346e54252c56b95b9483d4cfc832a85a76ef2d6d" resname="cocorico_user.email.already_used">

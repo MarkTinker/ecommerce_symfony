@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
-  <file date="2017-08-22T17:59:04Z" source-language="en" target-language="en" datatype="plaintext" original="not.available">
+  <file date="2017-08-22T18:25:33Z" source-language="en" target-language="en" datatype="plaintext" original="not.available">
     <header>
       <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
@@ -13,7 +13,7 @@
       </trans-unit>
       <trans-unit id="7434fa918f1cff45a2f9455ad4b6d3de9edd5560" resname="BIC">
         <source>BIC</source>
-        <target state="new">BIC</target>
+        <target>BIC</target>
         <jms:reference-file line="113">Form/Type/ProfilePaymentFormType.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="0828f2267dede17e5cb43ef677550849ac50110b" resname="Bad credentials">
@@ -22,7 +22,7 @@
       </trans-unit>
       <trans-unit id="e81566a5d5243429545b3a76547f60514550632b" resname="IBAN">
         <source>IBAN</source>
-        <target state="new">IBAN</target>
+        <target>IBAN</target>
         <jms:reference-file line="105">Form/Type/ProfilePaymentFormType.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="b6efbc728e20a592f93cc71db4d9e5cfe7f9e414" resname="Offerer">
@@ -75,17 +75,17 @@
       </trans-unit>
       <trans-unit id="7493734ead0bdedfe7aea277ad64272939c9c914" resname="form.address.address">
         <source>form.address.address</source>
-        <target state="new">form.address.address</target>
+        <target>Address street number and name</target>
         <jms:reference-file line="28">Form/Type/UserAddressFormType.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="fe38cd8aee1623366d35ae0c216af5a56de8f6a4" resname="form.address.address1">
         <source>form.address.address1</source>
-        <target state="new">Address1</target>
+        <target state="new">form.address.address1</target>
         <jms:reference-file line="28">Form/Type/UserAddressFormType.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="1797462e069549dc7c08ebc200fd5a8d62d19404" resname="form.address.address2">
         <source>form.address.address2</source>
-        <target state="new">Address2</target>
+        <target state="new">form.address.address2</target>
         <jms:reference-file line="36">Form/Type/UserAddressFormType.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="b28c4ad5e834b173a41fde062a04a1ee6456e5d3" resname="form.address.city">
@@ -102,57 +102,57 @@
       </trans-unit>
       <trans-unit id="d22eedcf96ce79526644bdf2a4a793c0f00e3713" resname="form.address.postcode">
         <source>form.address.postcode</source>
-        <target state="new">Post Code</target>
+        <target state="new">form.address.postcode</target>
         <jms:reference-file line="69">Form/Type/UserAddressFormType.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="15e2c7466da80bf96a350b7f346f77855a040841" resname="form.address.state">
         <source>form.address.state</source>
-        <target state="new">State</target>
+        <target state="new">form.address.state</target>
         <jms:reference-file line="52">Form/Type/UserAddressFormType.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="cd80590240e95fa6b87ff1f9a0ed26b37bcb2ecd" resname="form.address.state.NSW">
         <source>form.address.state.NSW</source>
-        <target state="new">NSW</target>
+        <target state="new">form.address.state.NSW</target>
         <jms:reference-file line="54">Form/Type/UserAddressFormType.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="ebccf0b9f7db5b30b3928ffbdb3fda947282b8e3" resname="form.address.state.QLD">
         <source>form.address.state.QLD</source>
-        <target state="new">QLD</target>
+        <target state="new">form.address.state.QLD</target>
         <jms:reference-file line="55">Form/Type/UserAddressFormType.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="4184801666b9c378a0bfa4f58abee5c74de5f302" resname="form.address.state.SA">
         <source>form.address.state.SA</source>
-        <target state="new">SA</target>
+        <target state="new">form.address.state.SA</target>
         <jms:reference-file line="56">Form/Type/UserAddressFormType.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="b997f7bf2798bb8cb7dc8026dcdaaf846edcbda6" resname="form.address.state.TAS">
         <source>form.address.state.TAS</source>
-        <target state="new">TAS</target>
+        <target state="new">form.address.state.TAS</target>
         <jms:reference-file line="57">Form/Type/UserAddressFormType.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="6e97b0600e4cf1bf8d8e337b28c12ee8a1aed193" resname="form.address.state.VIC">
         <source>form.address.state.VIC</source>
-        <target state="new">VIC</target>
+        <target state="new">form.address.state.VIC</target>
         <jms:reference-file line="58">Form/Type/UserAddressFormType.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="e1894efb1e890aaf6f7c3d4177ed9ec60d024ec0" resname="form.address.state.WA">
         <source>form.address.state.WA</source>
-        <target state="new">WA</target>
+        <target state="new">form.address.state.WA</target>
         <jms:reference-file line="59">Form/Type/UserAddressFormType.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="8e429cf6802a2864ffd2d99ad6110a91682010c8" resname="form.address.zip">
         <source>form.address.zip</source>
-        <target state="new">form.address.zip</target>
+        <target>Zip</target>
         <jms:reference-file line="44">Form/Type/UserAddressFormType.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="61b32eac6566d52a8d37c32bf81338f3353915fd" resname="form.contact.billingaddress.title">
         <source>form.contact.billingaddress.title</source>
-        <target state="new">form.contact.billingaddress.title</target>
+        <target>Billing Address</target>
         <jms:reference-file line="110">Dashboard/Profile/edit_contact.html.twig</jms:reference-file>
       </trans-unit>
       <trans-unit id="87e8377aa9adcff88f9ef1fdc5bc109f56d65d77" resname="form.contact.deliveryaddress.title">
         <source>form.contact.deliveryaddress.title</source>
-        <target state="new">Delivery Address</target>
+        <target state="new">form.contact.deliveryaddress.title</target>
         <jms:reference-file line="110">Dashboard/Profile/edit_contact.html.twig</jms:reference-file>
       </trans-unit>
       <trans-unit id="688577b0535ad8ca72e0c605e4b7eb69a8c90bcb" resname="form.contact.phone.help">
@@ -180,7 +180,7 @@
       </trans-unit>
       <trans-unit id="7034eafc175bb9730a6741eba2c7abccc9e5305e" resname="form.new.tac.link">
         <source>form.new.tac.link</source>
-        <target state="new">the terms of use</target>
+        <target state="new">form.new.tac.link</target>
         <jms:reference-file line="131">Frontend/Common/_register.html.twig</jms:reference-file>
       </trans-unit>
       <trans-unit id="210f8b7cbd19367b2ca1332f3cd00b7a06f7e0a0" resname="form.new_password">
@@ -211,37 +211,37 @@
       </trans-unit>
       <trans-unit id="1cf33a12679cfea1c2366d71632fd248faa8c985" resname="form.tac">
         <source>form.tac</source>
-        <target state="new">I accept</target>
+        <target state="new">form.tac</target>
         <jms:reference-file line="90">Form/Type/RegistrationFormType.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="6ee9abe1d259f9ed2dd711165fe1525907b32ebe" resname="form.user.account">
         <source>form.user.account</source>
-        <target state="new">Account</target>
+        <target state="new">form.user.account</target>
         <jms:reference-file line="70">Form/Type/ProfilePaymentFormType.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="fb270ffdb0aecc48a246ffa57e8820e26170da5d" resname="form.user.annual_income">
         <source>form.user.annual_income</source>
-        <target state="new">form.user.annual_income</target>
+        <target>Annual income</target>
         <jms:reference-file line="79">Form/Type/ProfilePaymentFormType.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="e171749d03586c8ed73353c0e6e42100639f5d48" resname="form.user.bank_account_name">
         <source>form.user.bank_account_name</source>
-        <target state="new">Bank account name</target>
+        <target state="new">form.user.bank_account_name</target>
         <jms:reference-file line="53">Form/Type/ProfilePaymentFormType.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="d45413bab3db2bfb0f28eb800bb8cfc772c3ccfc" resname="form.user.bank_owner_address">
         <source>form.user.bank_owner_address</source>
-        <target state="new">form.user.bank_owner_address</target>
+        <target>Bank owner address</target>
         <jms:reference-file line="97">Form/Type/ProfilePaymentFormType.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="fb1370b89f5b24926ad82c569574ce9acc0bff61" resname="form.user.bank_owner_address.help">
         <source>form.user.bank_owner_address.help</source>
-        <target state="new">form.user.bank_owner_address.help</target>
+        <target>Help when hover with mouse arrow</target>
         <jms:reference-file line="156">Dashboard/Profile/edit_payment.html.twig</jms:reference-file>
       </trans-unit>
       <trans-unit id="2ee502191b684c7674d67e6b430bbb723fee67ce" resname="form.user.bank_owner_name">
         <source>form.user.bank_owner_name</source>
-        <target state="new">form.user.bank_owner_name</target>
+        <target>Bank owner name</target>
         <jms:reference-file line="88">Form/Type/ProfilePaymentFormType.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="27dd741dbbd8e3b73c5ce3f06b593f86fe6d5f98" resname="form.user.bank_owner_name.help">
@@ -265,12 +265,12 @@
       </trans-unit>
       <trans-unit id="1cf8a684db482eb26080461d8855bd4beaa78c07" resname="form.user.bsb">
         <source>form.user.bsb</source>
-        <target state="new">BSB</target>
+        <target state="new">form.user.bsb</target>
         <jms:reference-file line="62">Form/Type/ProfilePaymentFormType.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="de7924085357b56b06a5cbfebff2d624266c5960" resname="form.user.countryOfResidence">
         <source>form.user.countryOfResidence</source>
-        <target state="new">form.user.countryOfResidence</target>
+        <target>Country of Residence</target>
         <jms:reference-file line="62">Form/Type/ProfilePaymentFormType.php</jms:reference-file>
         <jms:reference-file line="70">Form/Type/RegistrationFormType.php</jms:reference-file>
       </trans-unit>
@@ -351,7 +351,7 @@
       </trans-unit>
       <trans-unit id="c7a4298347ed905bf82c406276876396d2b49a12" resname="nav.tac.slug">
         <source>nav.tac.slug</source>
-        <target state="new">terms-of-use</target>
+        <target state="new">nav.tac.slug</target>
         <jms:reference-file line="129">Frontend/Common/_register.html.twig</jms:reference-file>
       </trans-unit>
       <trans-unit id="9f92ae96e8c9f7661c8f46a371f6a85a487e8fd2" resname="nav.user.about_me.link">

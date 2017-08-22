@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
-  <file date="2017-08-22T17:59:04Z" source-language="en" target-language="en" datatype="plaintext" original="not.available">
+  <file date="2017-08-22T18:25:33Z" source-language="en" target-language="en" datatype="plaintext" original="not.available">
     <header>
       <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
@@ -84,7 +84,7 @@
       </trans-unit>
       <trans-unit id="7f3482805a3819f1882576ff44ba36ecb41718b6" resname="entity.listing.status.draft">
         <source>entity.listing.status.draft</source>
-        <target state="new">entity.listing.status.draft</target>
+        <target state="new">Draft</target>
         <jms:reference-file line="45">CoreBundle/Model/BaseListing.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="a63f8ae54b464c70007db9a046f850723fa04b9e" resname="entity.listing.status.invalidated">
@@ -554,13 +554,13 @@
       </trans-unit>
       <trans-unit id="6103a66666606b2f8dc54665932a74597fc46e14" resname="listing.form.salenotes">
         <source>listing.form.salenotes</source>
-        <target state="new">Sale notes(optional)</target>
+        <target state="new">listing.form.salenotes</target>
         <jms:reference-file line="171">Type/Frontend/ListingNewType.php</jms:reference-file>
         <jms:reference-file line="176">Frontend/Listing/new.html.twig</jms:reference-file>
       </trans-unit>
       <trans-unit id="74658918f5e5cc62f39427b740fb7cf45ea765b7" resname="listing.form.selloption">
         <source>listing.form.selloption</source>
-        <target state="new">Sell option</target>
+        <target state="new">listing.form.selloption</target>
         <jms:reference-file line="157">Type/Frontend/ListingNewType.php</jms:reference-file>
         <jms:reference-file line="152">Frontend/Listing/new.html.twig</jms:reference-file>
       </trans-unit>
@@ -583,7 +583,7 @@
       </trans-unit>
       <trans-unit id="68af81ad015bd138bbb52a137e8a782c7136b7d3" resname="listing.form.tac">
         <source>listing.form.tac</source>
-        <target state="new">listing.form.tac</target>
+        <target>I accept</target>
         <jms:reference-file line="187">Type/Frontend/ListingNewType.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="b32775cc4444951b78d8abe0d68e1cb394515443" resname="listing.form.title">
@@ -654,7 +654,7 @@
       </trans-unit>
       <trans-unit id="a5143cc0200aa3d4c5765f1ae3476581d08b686a" resname="listing.new.preview">
         <source>listing.new.preview</source>
-        <target state="new">Preview</target>
+        <target state="new">listing.new.preview</target>
         <jms:reference-file line="198">Type/Frontend/ListingNewType.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="10c64b246aa5847e69aa2e4d0b57c39bb7bad697" resname="listing.new.price.rent">
@@ -664,7 +664,7 @@
       </trans-unit>
       <trans-unit id="fb8b60286c392e28487403adce767df48206d10e" resname="listing.new.price.retail">
         <source>listing.new.price.retail</source>
-        <target state="new">Retail price</target>
+        <target state="new">listing.new.price.retail</target>
         <jms:reference-file line="135">Frontend/Listing/new.html.twig</jms:reference-file>
       </trans-unit>
       <trans-unit id="7cdb4945f2b3c3fc503e0aeb41361ed246766c28" resname="listing.new.price.title">
@@ -691,7 +691,7 @@
       </trans-unit>
       <trans-unit id="dd6cd9333af3638b87b785fff1317b005ca5b003" resname="listing.new.save.exit">
         <source>listing.new.save.exit</source>
-        <target state="new">Save and Exit</target>
+        <target state="new">listing.new.save.exit</target>
         <jms:reference-file line="206">Type/Frontend/ListingNewType.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="a81c08ca39057623265fcf541e0aab54c70ec3de" resname="listing.new.signup.title">
@@ -709,7 +709,7 @@
       </trans-unit>
       <trans-unit id="91f0ae365b42ca15297e24469531596860d6e62c" resname="listing.new.tac.link">
         <source>listing.new.tac.link</source>
-        <target state="new">listing.new.tac.link</target>
+        <target>the terms of use</target>
         <jms:reference-file line="165">Frontend/Listing/new.html.twig</jms:reference-file>
       </trans-unit>
       <trans-unit id="099bd9fd3eb8ecdfa47a2bf51cd486c5094cfae0" resname="listing.new.title">
@@ -1181,7 +1181,7 @@
       </trans-unit>
       <trans-unit id="c7a4298347ed905bf82c406276876396d2b49a12" resname="nav.tac.slug">
         <source>nav.tac.slug</source>
-        <target state="new">nav.tac.slug</target>
+        <target>terms-of-use</target>
         <jms:reference-file line="163">Frontend/Listing/new.html.twig</jms:reference-file>
       </trans-unit>
       <trans-unit id="fd1286353570c5703799ba76999323b7c7447b06" resname="no">
