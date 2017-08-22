@@ -184,32 +184,43 @@
                                             <span>{{ 'user.translate.button'|trans }}</span>
                                         </a>
                                     </div>
-                                </div>
+                                </div>                                
+                            </div> <!-- /.messaegs-area -->
 
-                                <div class="area">
-                                    <h2>{{'social.link.and.blog'|trans}}</h2>
-                                    <ul>
-                                        {% if form.links %}
+                            <div class="field-row">
+                                <h2>{{'social.link.and.blog'|trans}}</h2>
+                                <label>{{ 'profile.url.label'|trans }}</label>
+                                <div class="input-group">
+                                    <input type="text" id="url_input" class="form-control">
+                                    <span class="input-group-btn">
+                                        <button id="add_links" type="button" class="btn btn-default btn-add">
+                                            {{ 'profile.links.add'|trans }}
+                                        </button>
+                                    </span>                                            
+                                </div>                                        
+                                
+                                <ul class="list-inline links-list links"
+                                    data-prototype="{{ form_widget(form.links.vars.prototype)|e }}">
+                                    {% if form.links %}
                                         {% for link in form.links %}
-                                                <li>
-                                                    <a href="#" class="close" data-dismiss="alert" aria-label="Close">
-                                                        <i class="icon-cancel"></i>
-                                                        <span class="hidden">close</span>
-                                                    </a>
-                                                    <a href="#" class="btn btn-default">
-                                                        {{ link.code.vars.value}}
-                                                    </a>
-                                                    {{ form_row(link) }}
-                                                </li>
-                                            {% endfor %}
-                                        {% else %}
-                                            {{ form_row(link) }}
-                                        {% endif %}
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                                            <li>
+                                                <a href="#" class="close" data-dismiss="alert" aria-label="Close">
+                                                    <i class="icon-cancel"></i>
+                                                    <span class="hidden">close</span>
+                                                </a>
+                                                <a href="#" class="btn btn-default">
+                                                    {{ link.code.vars.value }}
+                                                </a>
+                                                {{ form_row(link) }}
+                                            </li>
+                                        {% endfor %}
+                                    {% else %}
+                                        {{ form_row(links) }}
+                                    {% endif %}
+                                </ul>
 
+                            </div> <!-- /.field-row -->
+                        </div>
                     </div>
                 </div>
                 <div class="btn-block text-center">
@@ -234,5 +245,58 @@
     } only %}
 
     {% include '@CocoricoUser/Dashboard/Profile/js/_translator_js.html.twig' only %}
+
+    <script>
+        jQuery(function () {
+            initLinks();
+            
+        });
+
+        function initLinks()
+        {
+            var $userLinks = $('#user_links');
+            if ($userLinks) {
+                $userLinks.parent().remove();
+            }
+
+            // Get the ul that holds the collection of tags
+            var $collectionHolder = $('ul.links');
+    
+            // add the "add a tag" anchor and li to the tags ul
+            $collectionHolder.data('index', $collectionHolder.find('li').length);
+
+            $('#add_links').on('click', function(e){
+                
+                var itemsList = $('.links-list');
+                var itemText = $('#url_input').val();                
+                if(itemText == "")
+                    return;
+                var item = jQuery('<li>' +
+                        '<a href="#" id="' + itemText + '" class="close" data-dismiss="alert" aria-label="Close"><i class="icon-cancel"></i><span class="hidden">close</span></a>' +
+                        '<a href="#" class="btn btn-default">' + itemText + '</a>' +
+                        '</li>').appendTo(itemsList);     
+                        console.log(item);
+                        console.log(itemsList);
+                jQuery(window).trigger('refreshHeight');
+
+                addLinkForm($collectionHolder, itemText, item);
+            });
+        }
+
+        function addLinkForm($collectionHolder, selectedValue, item) {
+            // Get the data-prototype explained earlier
+            var prototype = $collectionHolder.data('prototype');
+            // get the new index
+            var index = $collectionHolder.data('index');
+            // Replace '__name__' in the prototype's HTML to
+            // instead be a number based on how many items we have
+            var newForm = prototype.replace(/__name__/g, index);
+            // increase the index with one for the next item
+            $collectionHolder.data('index', index + 1);
+            // Display the form in the page in an li, before the "Add a tag" link li
+            $(item).append(newForm);
+            $('#user_links_' + index + '_code').val(selectedValue);
+        }
+    </script>
 
 {% endblock %}

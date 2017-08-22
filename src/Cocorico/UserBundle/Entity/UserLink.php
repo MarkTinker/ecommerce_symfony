@@ -42,7 +42,7 @@ class UserLink
     protected $url;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Cocorico\UserBundle\Entity\User", inversedBy="languages")
+     * @ORM\ManyToOne(targetEntity="Cocorico\UserBundle\Entity\User", inversedBy="links")
      * @ORM\JoinColumn(name="user_id", referencedColumnName="id", nullable=false, onDelete="CASCADE")
      */
     private $user;
