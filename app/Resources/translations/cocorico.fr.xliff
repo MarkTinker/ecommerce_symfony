@@ -410,11 +410,6 @@
                 <source>time_range.invalid.single_time</source>
                 <target>L'heure de fin ne peut pas être la même que l'heure de début</target>
             </trans-unit>
-            <trans-unit id="b6e6d9e4278ebf117483fbbfdd7a2da3d50bc08c" resname="time_unit_week">
-                <source>time_unit_week</source>
-                <target state="new">{-3} par semaine|{-1} semaine(s)|{0} semaine|{1} %count% semaine|]1,Inf]%count% semaines</target>
-                <jms:reference-file line="196">CoreBundle/Twig/CoreExtension.php</jms:reference-file>
-            </trans-unit>            
             <trans-unit id="b6e6d9e4278ebf117483fbbfdd7a2da3d50bc08b" resname="time_unit_day">
                 <source>time_unit_day</source>
                 <target state="new">{-3} par jour|{-1} jour(s)|{0} jour|{1} %count% jour|]1,Inf]%count% jours</target>

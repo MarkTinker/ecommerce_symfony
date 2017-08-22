@@ -263,6 +263,8 @@ abstract class BaseListing
             $availableStatus[] = self::STATUS_TO_VALIDATE;
         } elseif ($status == self::STATUS_SUSPENDED) {
             $availableStatus[] = self::STATUS_PUBLISHED;
+        } elseif ($status == self::STATUS_DRAFT) {
+            $availableStatus[] = self::STATUS_DRAFT;
         }
 
         //Prepend current status to visible status
