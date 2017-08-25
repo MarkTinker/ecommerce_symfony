@@ -196,7 +196,10 @@ class ListingNewType extends AbstractType implements TranslationContainerInterfa
                 'button',
                 array(
                     'label'=>'listing.new.preview',
-                    'attr' => array('class' => 'btn btn-default col-md-3')
+                    'attr' => array(
+                        'class' => 'btn btn-default col-md-3',
+                        'data-toggle' => 'modal'
+                        )
                 )
             )
             ->add(
@@ -204,7 +207,9 @@ class ListingNewType extends AbstractType implements TranslationContainerInterfa
                 'submit',
                 array(
                     'label'=>'listing.new.save.exit',
-                    'attr'=>array('class' => 'btn btn-default col-md-3')
+                    'attr'=>array(
+                        'class' => 'btn btn-default col-md-3'                        
+                        )
                 )
             );
         
