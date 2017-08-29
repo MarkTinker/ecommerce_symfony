@@ -223,17 +223,255 @@
 
     {% endembed %}
 
-    <div id="list_preview" class="modal fade" role="dialog">
-        <div class="modal-dialog">
+    <div id="list_preview" class="modal fade" role="dialog" >
+        <div class="modal-dialog" style="width:1400px;">
       
           <!-- Modal content-->
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Modal Header</h4>
+              
             </div>
             <div class="modal-body">
-              <p>Some text in the modal.</p>
+                <div id="content" class="listing-area col-xs-12 col-md-9">
+                    <div class="content-holder">
+                        <div class="listing-container">
+                            <h1>Testing Publish</h1>
+                            <div role="tabpanel">
+                                <nav class="tabset-holder">
+                                    <ul class="nav nav-tabs" rol="tablist">
+                                        <li role="presentation" class="active">
+                                            <a href="#photos" data-toggle="tab" role="tab" data-text="Photos">Photos</a>
+                                        </li>
+                                        <li role="presentation" rol="presentation">
+                                            <a href="#calendar" data-toggle="tab" role="tab" data-text="Calendar">Calendar</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav nav-tabs -->
+                                    <a class="link-favourit favourit">
+                                                            Add to favorites
+                                                            <i class="icon-heart"></i>
+                                                        </a>
+                                </nav>
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="photos">
+                                        <div class="gallery-slider gallery-js-ready not-enough-slides autorotation-disabled">
+                                            <div class="gallery-slideset">
+                                                <div class="slide active" style="display: block;">
+                                                    <canvas id="preview_canvas"></canvas>
+                                                </div>
+                                            </div>
+                                            <!-- gallery-slideset -->
+                                        </div>
+                                        <!-- gallery-slider -->
+                                    </div>
+                                    <!-- #photos -->
+                                    <div role="tabpanel" class="tab-pane active" id="calendar">
+                                        <div class="date-slider">
+                                            <div id="calendar-container">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- #calendar -->
+                                </div>
+                                <!-- /.tab-content" -->
+                            </div>
+                            <!-- /.tab-panel-->
+                            <div role="tabpanel">
+                                <nav class="tabset-holder">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="active">
+                                            <a data-toggle="tab" data-text="Description">Description</a>
+                                        </li>
+                                        <li>
+                                            <a href="#conditions" data-toggle="tab" data-text="Rules">Rules</a>
+                                        </li>
+                                        <li>
+                                            <a href="#features" data-toggle="tab" data-text="Characteristics">Characteristics</a>
+                                        </li>
+                                        <li>
+                                            <a href="#comments" data-toggl="tab" data-text="Comments">Comments</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <!-- tabset-holder-->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="description">
+                                        <p>Testing Publish</p>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="conditions">
+                                        <p></p>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="features">
+                                        <div class="features-area"></div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="comments">
+                                        <div class="blog">
+                                            <div class="head">
+                                                <h2>Last comments</h2>
+                                            </div>
+                                            <div class="posts-holder">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- tab-content -->
+                            </div>
+                        </div>
+                        <!-- /.listing-container -->
+                    </div>
+                    <!-- /.content-holder -->
+                </div>
+                <!-- /.listing-area -->
+
+                <aside id="sidebar" class="col-xs-12 col-md-3">
+                    <div class="holder">
+                        <div class="sub-head">
+                            <ul class="list-inline social-networks text-right">
+                                <li><a><i class="icon-facebook"><span class="hidden">facebook</span></i></a></li>
+                                <li><a><i class="icon-twitter"><span class="hidden">twiter</span></i></a></li>
+                                <li><a><i class="icon-gplus"><span class="hidden">Google Plus</span></i></a></li>
+                            </ul>
+                            <span class="counter">
+                                                    (
+                                                        <span>0</span> comments)
+                            </span>
+                        </div>
+                        <!-- /.sub-head -->
+
+                        <section class="widget reservation ajax-container">
+                            <form>
+                                <fieldset>
+                                    <legend class="hidden">date-selection</legend>
+                                    <div class="datepicker-holder-ajax">
+                                        <div class="col">
+                                            <strong class="title">
+                                                                    <label for="date_range_start" class="required">Start</label>
+                                                                    <span>*</span>
+                                                                </strong>
+                                            <div class="input-append date field-holder">
+                                                <span class="add-on">
+                                                                        <i data-date-icon="icon-calendar" data-time-icon="icon-time" class="icon-calendar"></i>
+                                                                    </span>
+                                                <input type="text" id="start-date" required="required" class="form-control from hasDatepicker" placeholder="/   /" title="start-date">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <strong class="title">
+                                                                    <label for="date_range_end" class="required">End</label>
+                                                                </strong>
+                                            <div class="input-append date field-holder">
+                                                <span clas="add-on">
+                                                                        <i data-date-icon="icon-calendar" data-time-icon="icon-time" class="icon-calendar"></i>
+                                                                    </span>
+                                                <input type="text" id="end-date" required="required" class="form-control from hadDatepicker" placeholder="/     /" title="end-date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                            <div class="add-info">
+                                <strong class="price">
+                                                        $0
+                                                    </strong>
+                                <a href="" id="submit-booking" class="btn btn-default">Book now</a>
+                                <span class="text">Excluding booking fees</span>
+                            </div>
+                        </section>
+
+                        <section class="widget prices-conditions">
+                            <h2>Booking policy</h2>
+                            <ul>
+                                <li>
+                                    Cancellation policy:
+                                    <strong>Flexible</strong>
+                                    <button data-placement="right" data-toggle="tooltip" class="tooltip-button" data-html="true" type="button"> ? </button>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="widget members-list">
+                            <div id="user_contact" class="gallery-small slideshow gallery-js-ready not-enough-slides autorotation-disabled">
+                                <div class="slideset">
+                                    <div class="slide active" style="display: block;">
+                                    </div>
+                                </div>
+
+                                <h2>
+                                    <a href="">
+                                                            Matthieu
+                                                        </a>
+                                </h2>
+
+                                <form class="widget form-msg" method="post" action="/en/dashboard/message/1162958599/new" novalidate="novalidate">
+                                    <fieldset>
+                                        <a class="contact-opener btn btn-default no-margin">Contact me</a>
+                                        <div class="form-holder" style="display:none;">
+                                            <span class="jcf-textarea"><div class="jcf-scrollable-wrapper" style="position: relative; width: 100px; height: 0px;"><textarea id="message_body" name="message[body]" required="required" rows="6" style="overflow: hidden; resize: none; width: 91px; height: 0px; touch-action: none;"></textarea><div class="jcf-scrollbar jcf-scrollbar-vertical jcf-inactive" style="touch-action: pan-x; position: absolute; height: 0px;"><div class="jcf-scrollbar-dec jcf-inactive" style=""></div><div class="jcf-scrollbar-slider" style="position: relative; height: 0px;"><div class="jcf-scrollbar-handle" style="touch-action: none; position: absolute; top: 0px;"></div></div><div class="jcf-scrollbar-inc jcf-inactive" style=""></div></div><div class="jcf-scrollbar jcf-scrollbar-horizontal" style="touch-action: pan-y; position: absolute; width: 91px;"><div class="jcf-scrollbar-dec"></div><div class="jcf-scrollbar-slider" style="position: relative; width: 63px;"><div class="jcf-scrollbar-handle" style="touch-action: none; position: absolute; left: 63px;"></div></div><div class="jcf-scrollbar-inc jcf-inactive"></div></div></div><span class="jcf-resize" style=""></span></span>
+                                            <input type="hidden" id="message__token" name="message[_token]" value="BA9hGnT7Y89Wn9MBSwW7Vynu8VIaloIQylAYMWdbWS0">
+                                            <input type="hidden" id="message_listing" name="message[listing]" value="1162958599"><input type="hidden"
+                                                id="message_recipient" name="message[recipient]" value="1765653660"><input type="hidden" id="message_subject"
+                                                name="message[subject]" value="Contact">
+                                            <input type="submit" class="btn submit-contact btn-default" value="Send">
+                                        </div>
+                                    </fieldset>
+                                </form>
+
+                                <ul class="info-list">
+                                    <li>
+                                        <i class="icon-cancel"></i> Phone:
+                                        <strong>Not verified</strong>
+                                        <button title="" data-placement="right" data-toggle="tooltip" class="tooltip-button" type="button" data-original-title="This user's phone number has been verified.">?
+                                                                </button>
+                                    </li>
+
+                                    <li>
+                                        Email:
+                                        <i class="icon-cancel"></i>
+                                        <strong>Not verified</strong>
+                                        <button title="" data-placement="right" data-toggle="tooltip" class="tooltip-button" type="button" data-original-title="Display help while mouse hover">?
+                                                                </button>
+                                    </li>
+                                    <li>
+                                        ID Card:
+                                        <i class="icon-cancel"></i>
+                                        <strong>Not verified</strong>
+                                        <button title="" data-placement="right" data-toggle="tooltip" class="tooltip-button" type="button" data-original-title="This user has provided a copy of his ID.">?
+                                                                </button>
+                                    </li>
+                                    <li>
+                                        Already rent:
+                                        <i class="icon-cancel"></i>
+                                        <strong>no</strong>
+                                        <button title="" data-placement="right" data-toggle="tooltip" class="tooltip-button" type="button" data-original-title="Display help while mouse hover">?
+                                                                </button>
+                                    </li>
+
+                                </ul>
+
+                                <a href="#" class="btn-prev">previous
+                                                        <span></span>
+                                                    </a>
+                                <a href="#" class="btn-next">next
+                                                        <span></span>
+                                                    </a>
+                            </div>
+                        </section>
+
+                        <section class="widget similar-ads">
+                            <h2>Similar Listings</h2>
+
+                            <div class="listing-holder">
+                                <!-- post -->
+                            </div>
+                            <a class="btn btn-default" href="/en/listing/search_result">Back to search result</a>
+                        </section>
+                    </div>
+                    <!-- /.holder -->
+                </aside>
+                <!-- /#sidebar -->
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
