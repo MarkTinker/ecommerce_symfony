@@ -565,7 +565,8 @@
                 $('#preview_title').html($('#listing_translations_en_title').val());
                 
                 // Set Price value
-                $('#preview_price').html('$' + $('#listing_price').val());
+                if ($('#listing_price').val() !='')
+                    $('#preview_price').html('$' + $('#listing_price').val());
                 
                 $('#list_preview').modal('toggle');
             });
