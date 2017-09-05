@@ -15,13 +15,13 @@ filter="?jsqueeze" output='js/compiled/upload.js' %}
 {% endjavascripts %}
 
 <script>
+    var filesToUpload = []; //Files to upload
+    var fileId = 0;
     $(function () {
         'use strict';
         var $uploadElt = $("{{ upload_elt }}"),
                 $form = $uploadElt.closest("form"),
-                $images = $("{{ upload_images }}"), //Hidden field to memorize uploaded files
-                filesToUpload = [], //Files to upload
-                fileId = 0; //Id of files in the list. Used to order
+                $images = $("{{ upload_images }}"); //Hidden field to memorize uploaded files                
 
         if ($uploadElt.length && $form.length) {
             $uploadElt.fileupload({
@@ -169,12 +169,12 @@ filter="?jsqueeze" output='js/compiled/upload.js' %}
 
                 return false;
             }
-
+            console.log(data);
             data.context = $('<li data-id="' + fileId + '"/>').appendTo("#files-to-upload");
             fileId++;
 
             $.each(data.files, function (index, file) {
-                var node = $('<div />');
+                var node = $('<div />');                
                 node.appendTo(data.context);
 
                 var cancelLink = $('<a class="cancel-upload" href="javascript:void(0)">' +
