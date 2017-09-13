@@ -1,36 +1,14 @@
 {% trans_default_domain 'cocorico' %}
 
 <!-- header of the page -->
-<header id="header">
-    <!-- topbar -->
-    <div class="topbar">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="tel:{{ cocorico_phone|replace({'+': '', '(': '', ')': '', ' ': ''}) }}"
-                               tabindex="10">
-                                <i class="icon-phone"></i>{{ cocorico_phone }}
-                            </a>
-                        </li>
-                        <li>
-                            <a tabindex="11" href="mailto:{{ cocorico_contact_mail_obfuscated|raw }}">
-                                <i class="icon-mail-alt"></i>{{ cocorico_contact_mail_obfuscated|raw }}
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+<header id="header">    
 
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
                 <!-- main navigation of the page -->
                 <nav class="navbar navbar-default">
-                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <!-- Brand and toggle get grouped for better mobile display -->                    
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                                 data-target="#bs-example-navbar-collapse-1" tabindex="2">
@@ -41,8 +19,7 @@
                         </button>
                         <!-- page logo -->
                         <a class="navbar-brand" href="{{ path('cocorico_home') }}" tabindex="3">
-                            <img src="{{ asset('images/logo.png') }}" alt="{{ 'nav.home.link'|trans }}" width="190"
-                                 height="29">
+                            iShareCloset
                         </a>
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
