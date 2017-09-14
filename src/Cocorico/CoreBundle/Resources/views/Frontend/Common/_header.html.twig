@@ -18,21 +18,30 @@
                             <span class="icon-bar"></span>
                         </button>
                         <!-- page logo -->
-                        <a class="navbar-brand" href="{{ path('cocorico_home') }}" tabindex="3">
+                        <a class="navbar-brand color-pink" href="{{ path('cocorico_home') }}" tabindex="3">
                             iShareCloset
                         </a>
+                    </div>
+
+                    <div class="logo">
+                        <a href="{{ path('cocorico_home') }}">
+                            <img src="{{ asset('images/logo.png') }}" alt="{{ 'nav.home.link'|trans }}" width="55"
+                            height="130">
+                        </a>                            
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li>
-                                <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
-                                   tabindex="4">{{ 'nav.who_we_are.link'|trans }}
+                                <img class="bag" src="{{ asset('images/bag.png') }}">
+                                <a class="color-pink" href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
+                                   tabindex="4"> $0.00
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ path('cocorico_listing_favourite') }}"
-                                   tabindex="5">{{ 'nav.favorites.link'|trans }}
+                                <img class="heart" src="{{ asset('images/heart.png') }}">
+                                <a class="color-pink" href="{{ path('cocorico_listing_favourite') }}"
+                                tabindex="5"> {{ 'nav.favorites.link'|trans }}
                                     <span id="fav-count"></span>
                                 </a>
                             </li>
@@ -51,12 +60,12 @@
                                 </li>
                             {%- else -%}
                                 <li>
-                                    <a href="{{ path('cocorico_user_register') }}" tabindex="6">
+                                    <a class="color-pink" href="{{ path('cocorico_user_register') }}" tabindex="6">
                                         {{ 'nav.register.link'|trans }}
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{ path('cocorico_user_login') }}" tabindex="7">
+                                    <a class="color-pink" href="{{ path('cocorico_user_login') }}" tabindex="7">
                                         {{ 'nav.login.link'|trans }}
                                     </a>
                                 </li>
@@ -66,12 +75,7 @@
                             {# Language switcher. #}
                             {{ render(controller('CocoricoCoreBundle:Frontend/Language:switch', {'request': app.request} )) }}
 
-                        </ul>
-
-                        {# New listing link #}
-                        <a href="{{ path('cocorico_listing_new') }}" class="btn btn-primary navbar-right" tabindex="9">
-                            {{ 'nav.listing.new.link'|trans }}
-                        </a>
+                        </ul>                        
                     </div>
                     <!-- /.navbar-collapse -->
                 </nav>

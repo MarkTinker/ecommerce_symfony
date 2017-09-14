@@ -2591,3 +2591,70 @@ ul.collection {
 .col-centered * {
     float:none;
 }
+
+/*
+
+iShareCloset Colors
+
+*/
+
+.color-pink {
+    color : #be2b57 !important;
+}
+
+.color-white {
+    color: #fff !important; 
+}
+
+.logo {
+    position: absolute;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logo > a > img{
+    margin: 0 auto;
+    display: block;
+}
+
+.navbar {
+    min-height: 170px;
+}
+
+.navbar-default .navbar-header {
+    margin-top: 60px;
+}
+
+.navbar-default .navbar-collapse {
+    margin-top: 60px;
+}    
+
+@media (min-width: 768px) {
+    #header > .container {
+        width: 890px;
+    }
+}
+
+@media (min-width: 992px) {
+    #header > .container {
+        width: 1110px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #header > .container {
+        width : 1350px;
+    }
+}
+
+.bag {
+    margin-top: -8px;
+}
+.heart {
+    margin-top: -8px;
+}
+
+.navbar-default .navbar-nav > li {
+    margin: 0 0 0 45px;
+}
