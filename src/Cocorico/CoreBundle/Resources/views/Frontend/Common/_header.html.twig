@@ -7,11 +7,11 @@
         <div class="row">
             <div class="col-xs-12">
                 <!-- main navigation of the page -->
-                <nav class="navbar navbar-default">
+                <nav class="navbar navbar-default topnav">
                     <!-- Brand and toggle get grouped for better mobile display -->                    
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                data-target="#bs-example-navbar-collapse-2" tabindex="2">
+                                data-target="#nav" tabindex="2">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -74,56 +74,56 @@
                     </div>
                     <!-- /.navbar-collapse -->
                 </nav>
-            </div>
-
-            <div class="col-xs-12">
-                <nav class="navbar navbar-default">
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-                        <ul class="nav navbar-nav">
-                            <li>                                
-                                <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
-                                   tabindex="8"> {{ 'nav.menu.home'|trans }}
-                                </a>
-                            </li>
-                            <li>                                
-                                <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
-                                   tabindex="9"> {{ 'nav.menu.whatnew'|trans }}
-                                </a>
-                            </li>
-                            <li>                                
-                                <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
-                                   tabindex="10"> {{ 'nav.menu.featurecollect'|trans }}
-                                </a>
-                            </li>
-                            <li>                                
-                                <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
-                                   tabindex="11"> {{ 'nav.menu.designers'|trans }}
-                                </a>
-                            </li>
-                            <li>                                
-                                <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
-                                   tabindex="12"> {{ 'nav.menu.clothing'|trans }}
-                                </a>
-                            </li>
-                            <li>                                
-                                <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
-                                   tabindex="13"> {{ 'nav.menu.shoes'|trans }}
-                                </a>
-                            </li>
-                            <li>                                
-                                <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
-                                   tabindex="14"> {{ 'nav.menu.bags'|trans }}
-                                </a>
-                            </li>
-                            <li>                                
-                                <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
-                                   tabindex="15"> {{ 'nav.menu.accessories'|trans }}
-                                </a>
-                            </li>
-                        </ul>
-                    </div><!-- /#bs-example-navbar-collapse-2 -->
-                </nav>
-            </div>
+            </div>            
         </div>
+    </div>
+
+    <div id="menu" class="col-xs-12">
+        <nav class="navbar navbar-default">
+            <div id="nav">
+                <ul class="nav nav-justified">
+                    <li>                                
+                        <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
+                           tabindex="8"> {{ 'nav.menu.home'|trans }}
+                        </a>
+                    </li>
+                    <li>                                
+                        <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
+                           tabindex="9"> {{ 'nav.menu.whatnew'|trans }}
+                        </a>
+                    </li>
+                    <li>                                
+                        <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
+                           tabindex="10"> {{ 'nav.menu.featurecollect'|trans }}
+                        </a>
+                    </li>
+                    <li>                                
+                        <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
+                           tabindex="11"> {{ 'nav.menu.designers'|trans }}
+                        </a>
+                    </li>
+                    <li>                                
+                        <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
+                           tabindex="12"> {{ 'nav.menu.clothing'|trans }}
+                        </a>
+                    </li>
+                    <li>                                
+                        <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
+                           tabindex="13"> {{ 'nav.menu.shoes'|trans }}
+                        </a>
+                    </li>
+                    <li>                                
+                        <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
+                           tabindex="14"> {{ 'nav.menu.bags'|trans }}
+                        </a>
+                    </li>
+                    <li>                                
+                        <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
+                           tabindex="15"> {{ 'nav.menu.accessories'|trans }}
+                        </a>
+                    </li>
+                </ul>
+            </div><!-- /#nav -->
+        </nav>
     </div>
 </header>

@@ -2618,7 +2618,7 @@ iShareCloset Colors
     display: block;
 }
 
-.navbar {
+.topnav {
     min-height: 170px;
 }
 
@@ -2657,4 +2657,34 @@ iShareCloset Colors
 
 .navbar-default .navbar-nav > li {
     margin: 0 0 0 45px;
+}
+
+#nav {
+    list-style: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: #e7e7e8;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+    font-family: "gothamrnd_book";
+}
+
+.navbar-default .nav-justified > li > a {
+    font-family: "gothamrnd_book";
+}
+
+.navbar-default .nav-justified > li > a {
+    padding: 0;
+    display: inline;
+    text-decoration: none;
+}
+
+#menu {
+    padding-left: 0;
+    padding-right: 0;
+
 }

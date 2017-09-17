@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
-  <file date="2017-08-22T18:25:32Z" source-language="en" target-language="en" datatype="plaintext" original="not.available">
+  <file date="2017-09-14T17:37:27Z" source-language="en" target-language="en" datatype="plaintext" original="not.available">
     <header>
       <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
@@ -270,6 +270,7 @@
       <trans-unit id="00968900491344d2b7b09d638da429219ae8f879" resname="nav.dashboard.link">
         <source>nav.dashboard.link</source>
         <target>My Dashboard</target>
+        <jms:reference-file line="55">Frontend/Common/_header.html.twig</jms:reference-file>
         <jms:reference-file line="69">Frontend/Common/_header.html.twig</jms:reference-file>
       </trans-unit>
       <trans-unit id="2b90079d3b97e0e14afdfe1289c39edc3548586d" resname="nav.dashboard.listings.link">
@@ -310,11 +311,13 @@
       <trans-unit id="5d333c9dad0a06048316f4b2174c9fce03a73b2a" resname="nav.favorites.link">
         <source>nav.favorites.link</source>
         <target>Favorites</target>
+        <jms:reference-file line="44">Frontend/Common/_header.html.twig</jms:reference-file>
         <jms:reference-file line="58">Frontend/Common/_header.html.twig</jms:reference-file>
       </trans-unit>
       <trans-unit id="4b578fb3be67b06f105daa2f8d907066fe9993ce" resname="nav.home.link">
         <source>nav.home.link</source>
         <target>Home</target>
+        <jms:reference-file line="28">Frontend/Common/_header.html.twig</jms:reference-file>
         <jms:reference-file line="44">Frontend/Common/_header.html.twig</jms:reference-file>
       </trans-unit>
       <trans-unit id="7b82d68a47d23888af84cb20db4bcd9734f3b056" resname="nav.how_it_works.slug">
@@ -340,6 +343,7 @@
       <trans-unit id="e81ca0f115e88b1aa90d0ca41cfeb6dc9ff53a07" resname="nav.login.link">
         <source>nav.login.link</source>
         <target>Login</target>
+        <jms:reference-file line="69">Frontend/Common/_header.html.twig</jms:reference-file>
         <jms:reference-file line="83">Frontend/Common/_header.html.twig</jms:reference-file>
       </trans-unit>
       <trans-unit id="d13f16f09cc2e151ed6ba6daafb7dc57387b3fa0" resname="nav.logout.link">
@@ -347,6 +351,46 @@
         <target>Logout</target>
         <jms:reference-file line="30">Frontend/Common/_nav.html.twig</jms:reference-file>
         <jms:reference-file line="57">Frontend/Common/_nav.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="6b359cdf76e855151211383a9d12881c8efc2259" resname="nav.menu.accessories">
+        <source>nav.menu.accessories</source>
+        <target state="new">Accessories</target>
+        <jms:reference-file line="120">Frontend/Common/_header.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="c7ef02dd42b107f56b7722f2b3da0014507cf117" resname="nav.menu.bags">
+        <source>nav.menu.bags</source>
+        <target state="new">Bags</target>
+        <jms:reference-file line="115">Frontend/Common/_header.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="cab82888f12c6a595ee9b24823e7c07e3a9bfb8e" resname="nav.menu.clothing">
+        <source>nav.menu.clothing</source>
+        <target state="new">Clothing</target>
+        <jms:reference-file line="105">Frontend/Common/_header.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="cf1c9de382b07b4e524d94fcce08de7b9f698282" resname="nav.menu.designers">
+        <source>nav.menu.designers</source>
+        <target state="new">Designers</target>
+        <jms:reference-file line="100">Frontend/Common/_header.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="74f645d871ff5bff5d5d75a4ec93d540f2c55e35" resname="nav.menu.featurecollect">
+        <source>nav.menu.featurecollect</source>
+        <target state="new">Featured Collections</target>
+        <jms:reference-file line="95">Frontend/Common/_header.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="d81ba50cadc3fd7f2a2cb30971ea66aa21cb9198" resname="nav.menu.home">
+        <source>nav.menu.home</source>
+        <target state="new">Home</target>
+        <jms:reference-file line="85">Frontend/Common/_header.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="3ebdde9865c0462380fe086ab5a1d526b0b5e704" resname="nav.menu.shoes">
+        <source>nav.menu.shoes</source>
+        <target state="new">Shoes</target>
+        <jms:reference-file line="110">Frontend/Common/_header.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="e003aab83f20ac305be3c5ceecf7aa4a10b599fd" resname="nav.menu.whatnew">
+        <source>nav.menu.whatnew</source>
+        <target state="new">What's New?</target>
+        <jms:reference-file line="90">Frontend/Common/_header.html.twig</jms:reference-file>
       </trans-unit>
       <trans-unit id="c196e5e09e7055e5a42642875a4c0891203888db" resname="nav.offerer.link">
         <source>nav.offerer.link</source>
@@ -356,6 +400,7 @@
       <trans-unit id="405cbec13b0e25e8c2f8c13ce8d130ef15189168" resname="nav.register.link">
         <source>nav.register.link</source>
         <target>Register</target>
+        <jms:reference-file line="64">Frontend/Common/_header.html.twig</jms:reference-file>
         <jms:reference-file line="78">Frontend/Common/_header.html.twig</jms:reference-file>
       </trans-unit>
       <trans-unit id="4d66148bc56e54a9936116977b8f8bbdf6092335" resname="nav.the_team.slug">
@@ -372,6 +417,15 @@
         <source>nav.who_we_are.slug</source>
         <target>who-we-are</target>
         <jms:reference-file line="35">Frontend/Common/_footer.html.twig</jms:reference-file>
+        <jms:reference-file line="37">Frontend/Common/_header.html.twig</jms:reference-file>
+        <jms:reference-file line="84">Frontend/Common/_header.html.twig</jms:reference-file>
+        <jms:reference-file line="89">Frontend/Common/_header.html.twig</jms:reference-file>
+        <jms:reference-file line="94">Frontend/Common/_header.html.twig</jms:reference-file>
+        <jms:reference-file line="99">Frontend/Common/_header.html.twig</jms:reference-file>
+        <jms:reference-file line="104">Frontend/Common/_header.html.twig</jms:reference-file>
+        <jms:reference-file line="109">Frontend/Common/_header.html.twig</jms:reference-file>
+        <jms:reference-file line="114">Frontend/Common/_header.html.twig</jms:reference-file>
+        <jms:reference-file line="119">Frontend/Common/_header.html.twig</jms:reference-file>
         <jms:reference-file line="52">Frontend/Common/_header.html.twig</jms:reference-file>
       </trans-unit>
       <trans-unit id="774b40fc90dcebf1a82352cb39f44e3e36120bad" resname="time_range.invalid.duration">
