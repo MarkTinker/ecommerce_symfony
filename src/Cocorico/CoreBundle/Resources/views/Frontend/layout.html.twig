@@ -5,14 +5,12 @@
 
     <!-- contain main informative part of the site -->
     <main id="main" role="main">
-        <div class="container">
-            <div class="row">
-                {% block breadcrumbs %}{% endblock %}
+        <div class="row">
+            {% block breadcrumbs %}{% endblock %}
 
-                {% block search_form %}{% endblock %}
+            {% block search_form %}{% endblock %}
 
-                {% block main %}{% endblock %}
-            </div>
+            {% block main %}{% endblock %}
         </div>
         {#popin#}
         {% block modal %}{% endblock %}
