@@ -2912,3 +2912,14 @@ iShareCloset Colors
     font-weight: 200;
     font-size: 50pt;
 }
+
+.rent > .img-out-text > p{
+    text-align: center;
+    font-family: "robotolight";
+    font-size: 19pt;
+    font-weight: 200;
+    color: #a7a9ac;
+}
+.rent > .img-out-text > p > b {
+    color:#000 !important;
+}
