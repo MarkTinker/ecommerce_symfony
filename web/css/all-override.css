@@ -2800,9 +2800,51 @@ iShareCloset Colors
 
 .trend .trend-title {
     font-family: "rounded_eleganceregular";
+    font-size: 18pt;
 }
 
 .trend .trend-description {
     font-family: "robotolight";
-    color: #333
+    color: #a7a9ac;
+    font-size:16pt;
+}
+
+#trend_thismonth > .container > .content-container > .row {
+    width: 100%;
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+#trend_thismonth > .container > .content-container > .row > .trend {
+    display: inline-block;
+    font-weight: 100;
+    float: none;
+    position: relative;
+}
+
+#trend_thismonth > .container > .content-container > .line1 > .trend {
+    vertical-align: middle;
+}
+
+#trend_thismonth > .container > .content-container > .line2 > .trend {
+    vertical-align: middle;
+}
+#trend_thismonth > .container > .content-container > .line1 > .trend > .description-container {
+    position: absolute;
+}
+.trend img {
+    width: 100%;
+}
+.trend .img-container {
+    overflow: hidden;
+}
+
+#trend2 {
+    padding: 0 50px;
+    width:48%;
+}
+
+#trend5 {
+    padding: 0 50px;
+    width:48%;
 }
