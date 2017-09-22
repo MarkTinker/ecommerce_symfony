@@ -2923,3 +2923,64 @@ iShareCloset Colors
 .rent > .img-out-text > p > b {
     color:#000 !important;
 }
+
+#how_it_works {
+    position: relative;
+}
+#how_it_works > .img-container {
+    overflow: hidden;
+    height: 500px;
+}
+
+#how_it_works > .img-container > img {
+    width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: -12%;
+}
+
+#how_it_works > .img-container > .mask{
+    width: 100%;
+    position: absolute;
+    height: 500px;
+    opacity: 0.5;
+    top:0;
+    background-color: #404041;
+}
+
+#how_it_works > .content-container {
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    top:0;
+    padding: 0 40px;
+}
+
+#how_it_works > .content-container p {
+    color:#fff;
+    font-size: 18pt;
+    font-family: "robotolight";
+    font-weight: 100;
+    text-align: center;
+}
+
+#how_it_works > .content-container p b {
+    color:#fff;
+    font-size: 20pt;
+    font-family: "rounded_eleganceregular";
+}
+
+#how_it_works > .content-container p.title {
+    color:#fff;
+    font-size: 50pt;
+    font-family: "rounded_eleganceregular";
+    text-align: center;
+}
+
+#how_it_works > .content-container p.description {
+    font-family: "robotolight";
+    font-weight: 200;
+    text-align: center;
+    color:#a39592;
+}
+
