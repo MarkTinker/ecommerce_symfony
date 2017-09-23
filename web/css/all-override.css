@@ -3063,3 +3063,33 @@ iShareCloset Colors
     text-decoration: none;
 
 }
+
+.aside-footer .foot-logo {
+    color:#404041;
+    font-family: "rounded_eleganceregular";
+    font-size: 29pt;
+    margin-top: 30px;
+    margin-right: 87px;
+    text-decoration: none;
+}
+
+.aside-footer {
+    background: #e7e7e8;
+    display: inline-block;
+    width: 100%;
+}
+
+.aside-footer h3 {
+    color: #404041;
+    font-family: "gothamrnd_book";
+}
+
+.aside-footer ul > li {
+    list-style: none;
+    color: #404041;
+    font-family: "robotolight";
+}
+
+.aside-footer ul {
+    padding: 0;
+}
