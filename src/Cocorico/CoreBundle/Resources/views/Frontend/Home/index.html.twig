@@ -223,66 +223,64 @@
                                     <p><b>MONETIZE</b><br/>Lorem Ipsum</p>
                                 </div>
                             </div>
-                            <div class="row">
-                                <p class="text-center"> Full terms & Conditions </p>
+                            <br/>
+                            <div class="row text-center">
+                                <a href="{{ path('cocorico_page_show', { 'slug': 'nav.tac.slug'|trans }) }}" class="text-center"> Full terms & Conditions </a>
                             </div>
                         </div> <!-- /.col-md-8 -->
                     </div> <!-- /.row -->
                 </div> <!-- /.content-container -->
             </div><!-- /#how_it_works -->
-
-            <!-- infoarea -->
-            <div class="infoarea container">
-                <div class="row">
-                    <!-- info-box -->
-                    <div class="col-xs-12 col-sm-6 col-md-4 info-box">
-                        <img src="{{ asset('images/icon1.png') }}" alt="icon description" class="pull-left icon">
-
-                        <div class="textbox">
-                            <h2><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing.</a></h2>
-
-                            <p>
-                                Mipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore.
-                            </p>
+            <div id="isc_community" class="row section">
+                <div class="container">
+                    <h1 class="title">iSC COMMUNITY</h1>
+                    <div class="row">
+                        <div class="col-md-4 review-container">
+                            <div class="img-container">
+                                <img src="{{ asset('images/community/community1.jpg')}}">
+                            </div>
+                            <p class="text-center"><span class="fa fa-heart heart"></span></p>
+                            <p class="review">...Strutting around in these black over-the-knee boots & black cross body bag today :)</p>
+                            <p class="rentername">RENTER NAME</p>
                         </div>
-                    </div>
-                    <!-- info-box -->
-                    <div class="col-xs-12 col-sm-6 col-md-4 info-box">
-                        <img src="{{ asset('images/icon2.png') }}" alt="icon description" class="pull-left icon">
-
-                        <div class="textbox">
-                            <h2><a href="#">Lorem ipsum dolor sit amet ?</a></h2>
-
-                            <p>
-                                Mipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore.
-                            </p>
+                        <div class="col-md-4 review-container">
+                            <div class="img-container">
+                                <img src="{{ asset('images/community/community2.jpg')}}">
+                            </div>
+                            <p class="text-center"><span class="fa fa-heart heart"></span></p>
+                            <p class="review">Adding some flashy flavor to my routine minimalist-outfit pairing with these inch high heels... </p>
+                            <p class="rentername">RENTER NAME</p>
                         </div>
-                    </div>
-                    <div class="clearfix visible-sm"></div>
-                    <!-- info-box -->
-                    <div class="col-xs-12 col-sm-6 col-md-4 info-box">
-                        <img src="{{ asset('images/icon3.png') }}" alt="icon description" class="pull-left icon">
 
-                        <div class="textbox">
-                            <h2><a href="#">Lorem ipsum dolor sit amet, consect</a></h2>
-                            <p>
-                                Mipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore.
-                            </p>
+                        <div class="col-md-4 review-container">
+                            <div class="img-container">
+                                <img src="{{ asset('images/community/community3.jpg')}}">
+                            </div>
+                            <p class="text-center"><span class="fa fa-heart heart"></span></p>
+                            <p class="review">These satin wrap-around sandals pair so nicely with my blush body suit! Match made in heaven? I think so!</p>
+                            <p class="rentername">RENTER NAME</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            {% include 'CocoricoCoreBundle:Frontend/Home:high_rank.html.twig'  with {
-            'listings': listings
-            } only %}
-
+                    </div> <!-- /.row -->
+                    <br/>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-4 text-center">
+                            <a class="morereview" href="">MORE REVIEWS</a>
+                        </div>                        
+                        <div class="col-md-4">
+                            {% include 'CocoricoCoreBundle:Frontend/SocialButton:all.html.twig' with {'title': 'title'} only %}
+                        </div>
+                    </div> <!-- /.row -->
+                    <br/>
+                    <br/>
+                    <div class="row join-section text-center">
+                        <p class="text-center">Get all the lates looks & style tips</p>
+                        <br/>
+                        <a class="text-center" href="">JOIN NOW</a>
+                    </div> <!-- /.row -->
+                </div> <!-- /.container -->           
+            </div><!-- /#isc_community -->
+            
         {% endblock %}
         {% block modal %}
             {% include 'CocoricoCoreBundle:Frontend/Common:_modal.html.twig' only %}

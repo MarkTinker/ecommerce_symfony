@@ -2921,7 +2921,7 @@ iShareCloset Colors
     color: #a7a9ac;
 }
 .rent > .img-out-text > p > b {
-    color:#000 !important;
+    color:#404041 !important;
 }
 
 #how_it_works {
@@ -2958,7 +2958,7 @@ iShareCloset Colors
 
 #how_it_works > .content-container p {
     color:#fff;
-    font-size: 18pt;
+    font-size: 14pt;
     font-family: "robotolight";
     font-weight: 100;
     text-align: center;
@@ -2966,7 +2966,7 @@ iShareCloset Colors
 
 #how_it_works > .content-container p b {
     color:#fff;
-    font-size: 20pt;
+    font-size: 19pt;
     font-family: "rounded_eleganceregular";
 }
 
@@ -2979,8 +2979,87 @@ iShareCloset Colors
 
 #how_it_works > .content-container p.description {
     font-family: "robotolight";
-    font-weight: 200;
+    font-weight: 400;
+    font-size: 20pt;
     text-align: center;
     color:#a39592;
 }
 
+#how_it_works > .content-container a {
+    font-family: "rounded_eleganceregular";
+    font-size: 18pt;
+    font-weight: 200;
+    color:#fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+#isc_community > .container > h1.title {
+    font-family: "rounded_eleganceregular";
+    font-size: 47pt;
+    color:#be2b57;
+    text-align: center;
+    font-weight: 200;
+    margin: 130px 0 60px 0;
+}
+
+#isc_community > .container > .row >.review-container > p {
+    font-family: "robotolight";
+    font-weight: 200;
+    font-size: 15pt;
+    text-align: center;
+}
+#isc_community > .container > .row > .review-container > p > .heart {
+    font-size: 15pt;
+    color: #e4a4b6;
+}
+#isc_community > .container > .row > .review-container > .review {
+    font-style: italic;
+    color: #404041;
+}
+
+#isc_community > .container > .row > .review-container > .rentername {
+    font-style: italic;
+    color: #e4a4b6;
+}
+
+#isc_community > .container > .row > .review-container > .img-container > img {
+    width: 100%;
+    height: 440px;
+}
+
+#isc_community > .container > .row > .review-container > .img-container {
+    overflow: hidden;
+    display: block;
+}
+
+#isc_community > .container > .row > div > a.morereview {
+    font-family: "rounded_eleganceregular";
+    font-size: 17pt;
+    color : #be2b57;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+#isc_community > .review-container {
+    padding: 0 20px;
+}
+
+#isc_community > .container > .join-section {
+    margin-bottom: 100px;
+}
+#isc_community > .container > .join-section > p{
+    font-family: "robotolight";
+    font-size: 16pt;
+    color: #404041;
+    font-weight: 200;
+}
+
+#isc_community > .container > .join-section > a {
+    font-family: "rounded_eleganceregular";
+    font-size: 31pt;
+    color: #be2b57;
+    font-weight: 200;
+    text-decoration: none;
+
+}
