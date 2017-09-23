@@ -77,61 +77,61 @@
             </div>            
         </div>
     </div>
-
-    <div id="menu" class="col-xs-12">
-        <nav class="navbar navbar-default">
-            <div id="nav">
-                <ul class="nav nav-justified">
-                    <li>                                
-                        <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
-                           tabindex="8"> {{ 'nav.menu.home'|trans }}
-                        </a>
-                    </li>
-                    <li>                                
-                        <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
-                           tabindex="9"> {{ 'nav.menu.whatnew'|trans }}
-                        </a>
-                    </li>
-                    <li>                                
-                        <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
-                           tabindex="10"> {{ 'nav.menu.featurecollect'|trans }}
-                        </a>
-                    </li>
-                    <li>                                
-                        <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
-                           tabindex="11"> {{ 'nav.menu.designers'|trans }}
-                        </a>
-                    </li>
-                    <li>                                
-                        <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
-                           tabindex="12"> {{ 'nav.menu.clothing'|trans }}
-                        </a>
-                    </li>
-                    <li>                                
-                        <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
-                           tabindex="13"> {{ 'nav.menu.shoes'|trans }}
-                        </a>
-                    </li>
-                    <li>                                
-                        <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
-                           tabindex="14"> {{ 'nav.menu.bags'|trans }}
-                        </a>
-                    </li>
-                    <li>                                
-                        <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
-                           tabindex="15"> {{ 'nav.menu.accessories'|trans }}
-                        </a>
-                    </li>
-                    <li>
-                        <div id="search-ajaxform">
-                            <input type="text" placeholder=" search...">
-                            <a data-ajax="">
-                                <span class="fa fa-search"></span>
+    
+    <div class="row">
+        <div id="menu" class="col-xs-10">
+            <nav class="navbar navbar-default">
+                <div id="nav" class="collapse navbar-collapse">
+                    <ul class="nav nav-justified">
+                        <li class="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path('cocorico_home') ? 'selected': '' }}">                                
+                            <a href="{{ path('cocorico_home') }}"
+                                tabindex="8"> {{ 'nav.menu.home'|trans }}
                             </a>
-                        </div>                        
-                    </li>
-                </ul>
-            </div><!-- /#nav -->
-        </nav>
-    </div>
+                        </li>
+                        <li>                                
+                            <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
+                                tabindex="9"> {{ 'nav.menu.whatnew'|trans }}
+                            </a>
+                        </li>
+                        <li>                                
+                            <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
+                                tabindex="10"> {{ 'nav.menu.featurecollect'|trans }}
+                            </a>
+                        </li>
+                        <li>                                
+                            <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
+                                tabindex="11"> {{ 'nav.menu.designers'|trans }}
+                            </a>
+                        </li>
+                        <li>                                
+                            <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
+                                tabindex="12"> {{ 'nav.menu.clothing'|trans }}
+                            </a>
+                        </li>
+                        <li>                                
+                            <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
+                                tabindex="13"> {{ 'nav.menu.shoes'|trans }}
+                            </a>
+                        </li>
+                        <li>                                
+                            <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
+                                tabindex="14"> {{ 'nav.menu.bags'|trans }}
+                            </a>
+                        </li>
+                        <li>                                
+                            <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
+                                tabindex="15"> {{ 'nav.menu.accessories'|trans }}
+                            </a>
+                        </li>
+                    </ul>                
+                </div><!-- /#nav -->            
+            </nav>
+        </div>
+        <div id="search-ajaxform" class="col-xs-2">
+            <input type="text" placeholder=" search...">
+            <a data-ajax="">
+                <span class="fa fa-search"></span>
+            </a>
+        </div>
+    </div>    
 </header>

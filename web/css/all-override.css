@@ -2627,7 +2627,7 @@ iShareCloset Colors
 }
 
 .navbar-default .navbar-collapse {
-    margin-top: 60px;
+    margin-top: 0px;
 }    
 
 @media (min-width: 768px) {
@@ -2662,12 +2662,13 @@ iShareCloset Colors
 #nav {
     list-style: none;
     font-weight: bold;
-    margin-bottom: 10px;
-    width: 100%;
     text-align: center;
     background-color: #e7e7e8;
 }
 
+#nav > ul {
+    margin: 6px 0 6px 0;
+}
 
 .navbar-default .navbar-nav > li > a {
     font-family: "gothamrnd_book";
@@ -2693,16 +2694,24 @@ iShareCloset Colors
 #menu {
     padding-left: 0;
     padding-right: 0;
-
+    margin-bottom: -1px;
 }
 
+#search-ajaxform {
+    background-color: #e7e7e8;
+    padding: 5px 0 2px 50px;
+    margin-top: 1px;
+}
 #search-ajaxform input {
     width: 180px;
     border: none;
-    margin: 6px 0px 6px 0px;
+    margin: 1px 0px 1px 0px;
     border-radius: 14px 14px;
 }
 
+#bs-example-navbar-collapse-1 {
+    margin-top: 60px;
+}
 #search-ajaxform a {
     width: 23px;
     height: 23px;
@@ -2710,6 +2719,7 @@ iShareCloset Colors
     background-color: #404041;
     border-radius: 50%;
     display: inline-block;
+    text-align: center;
     -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);

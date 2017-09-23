@@ -5463,7 +5463,7 @@ span.btn:focus {
 /* header styles */
 #header {
     margin: 0 0 20px;
-    padding: 0 0 21px;
+    padding: 0 0 0px;
     border-bottom: #dfe3e6 solid 1px;
 }
 
