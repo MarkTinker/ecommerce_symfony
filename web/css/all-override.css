@@ -3082,6 +3082,7 @@ iShareCloset Colors
 .aside-footer h3 {
     color: #404041;
     font-family: "gothamrnd_book";
+    font-weight: 100;
 }
 
 .aside-footer ul > li {
@@ -3092,4 +3093,8 @@ iShareCloset Colors
 
 .aside-footer ul {
     padding: 0;
+}
+
+.aside-footer > .col-md-3 {
+    margin-top: 31px;
 }
