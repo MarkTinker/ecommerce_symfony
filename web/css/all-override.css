@@ -2598,6 +2598,11 @@ iShareCloset Colors
 
 */
 
+/*
+
+1. Home Page
+
+*/
 .color-pink {
     color : #be2b57 !important;
 }
@@ -3107,4 +3112,23 @@ iShareCloset Colors
 
 .aside-footer > .col-md-3 {
     margin-top: 31px;
+}
+
+/*
+
+1.1 Home Page Mobile Responsive
+
+*/
+
+@media screen and (max-width: 767px) {
+    
+}
+
+.container-padding {
+    padding: 0;
+}
+@media (min-width: 768px) {
+    .container-padding {
+        padding: 0 60px;
+    }
 }

@@ -3,7 +3,8 @@
 {% include 'CocoricoCoreBundle:Frontend/Common:_flash.html.twig' %}
 <!-- form-category -->
 
-{{ form_start(form, {'attr': {'class': 'form-category alt col-xs-12'}}) }}
+<div class="container-padding">
+{{ form_start(form, {'attr': {'class': 'form-category alt col-sm-2 col-xs-12'}}) }}
 
 {{ form_errors(form) }}
 
@@ -56,3 +57,4 @@
 </fieldset>
 
 {{ form_end(form) }}
+</div>

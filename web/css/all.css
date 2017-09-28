@@ -3157,7 +3157,6 @@ input[type="button"].btn-block {
 
 .navbar {
     position: relative;
-    min-height: 45px;
     margin-bottom: 0;
     border: 1px solid transparent;
 }
