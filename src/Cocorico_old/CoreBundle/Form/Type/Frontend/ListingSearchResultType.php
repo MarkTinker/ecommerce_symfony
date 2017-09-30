@@ -107,6 +107,7 @@ class ListingSearchResultType extends AbstractType
             $this->locale
         );
 
+        /*
         $builder
             ->add(
                 'categories',
@@ -121,7 +122,7 @@ class ListingSearchResultType extends AbstractType
                 )
             );
 
-
+            */
         //Dispatch LISTING_SEARCH_RESULT_FORM_BUILD Event. Listener listening this event can add fields and validation
         //Used for example to add fields to listing search form
         $this->dispatcher->dispatch(
@@ -138,6 +139,7 @@ class ListingSearchResultType extends AbstractType
         }
 
         $builder
+        /*
             ->add(
                 'date_range',
                 'date_range',
@@ -153,13 +155,13 @@ class ListingSearchResultType extends AbstractType
                     'allow_single_day' => $this->allowSingleDay,
                     'end_day_included' => $this->endDayIncluded,
                     'required' => false,
-                    /** @Ignore */
+                    /** @Ignore *//*
                     'label' => false,
                     'block_name' => 'date_range',
                     'display_mode' => $this->daysDisplayMode,
                     'min_start_delay' => $this->minStartDelay
                 )
-            )
+            )*/
             ->add(
                 'price_range',
                 new PriceRangeType($this->currency),
@@ -172,6 +174,7 @@ class ListingSearchResultType extends AbstractType
         //CHARACTERISTICS
         $characteristics = $listingSearchRequest->getCharacteristics();
         $builder
+        /*
             ->add(
                 'characteristics',
                 'listing_characteristic',
@@ -188,7 +191,7 @@ class ListingSearchResultType extends AbstractType
                     'empty_value' => 'listing_search.form.sort_by.empty_value',
                     'choices_as_values' => true
                 )
-            )
+            )*/
             ->add(
                 'page',
                 'hidden'

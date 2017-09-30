@@ -217,6 +217,27 @@
         </script>
     {% endif %}
 
+    <script type="text/javascript">
+        $( document ).ready( function () {
+            handleSidebarMenu();
+        });
+        
+        var handleSidebarMenu = function () {
+            $(".sidebar .dropdown > a").click(function (event) {
+                if ($(this).next().hasClass('dropdown-menu')) {
+                    event.preventDefault();
+                    if ($(this).hasClass("collapsed") == false) {
+                        $(this).addClass("collapsed");
+                        $(this).siblings(".dropdown-menu").slideDown(300);
+                    } else {
+                        $(this).removeClass("collapsed");
+                        $(this).siblings(".dropdown-menu").slideUp(300);
+                    }
+                } 
+            });
+        }
+    </script>
+
     <script>
         $(function () {
             //Refresh map on load
@@ -238,12 +259,12 @@
 //            });
 
             // Categories
-            initMultiSelect(
+           /* initMultiSelect(
                     '#categories',
                     '{{ "multiselect.all_selected"|trans({}, "cocorico") }}',
                     '{{ "multiselect.none_selected"|trans({}, "cocorico") }}',
                     '{{ "multiselect.num_selected"|trans({}, "cocorico") }}'
-            );
+            );*/
 
             $(".datepicker").datepicker({
                 dateFormat: "dd/mm/yy"

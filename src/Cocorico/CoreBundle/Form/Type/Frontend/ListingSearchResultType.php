@@ -137,7 +137,7 @@ class ListingSearchResultType extends AbstractType
             $dateRangeEnd = $dateRange->getEnd();
         }
 
-        $builder
+       /* $builder
             ->add(
                 'date_range',
                 'date_range',
@@ -153,7 +153,7 @@ class ListingSearchResultType extends AbstractType
                     'allow_single_day' => $this->allowSingleDay,
                     'end_day_included' => $this->endDayIncluded,
                     'required' => false,
-                    /** @Ignore */
+                    /** @Ignore *//*
                     'label' => false,
                     'block_name' => 'date_range',
                     'display_mode' => $this->daysDisplayMode,
@@ -164,14 +164,15 @@ class ListingSearchResultType extends AbstractType
                 'price_range',
                 new PriceRangeType($this->currency),
                 array(
-                    /** @Ignore */
+                    /** @Ignore *//*
                     'label' => false
                 )
-            );
+            );*/
 
         //CHARACTERISTICS
         $characteristics = $listingSearchRequest->getCharacteristics();
         $builder
+        /*
             ->add(
                 'characteristics',
                 'listing_characteristic',
@@ -188,7 +189,7 @@ class ListingSearchResultType extends AbstractType
                     'empty_value' => 'listing_search.form.sort_by.empty_value',
                     'choices_as_values' => true
                 )
-            )
+            )*/
             ->add(
                 'page',
                 'hidden'
