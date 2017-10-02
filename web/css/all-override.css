@@ -2721,8 +2721,12 @@ iShareCloset Colors
     border: none;
     margin: 1px 0px 1px 0px;
     border-radius: 14px 14px;
+    padding-left: 12px;
 }
 
+#search-ajaxform input:focus {
+    outline: none;
+}
 #bs-example-navbar-collapse-1 {
     margin-top: 60px;
 }
@@ -3266,4 +3270,8 @@ iShareCloset Colors
     font-size:  14pt;
     cursor: pointer; cursor: hand;
     color: #000 !important;
+}
+
+.form-category .form-holder {
+    padding: 0;
 }

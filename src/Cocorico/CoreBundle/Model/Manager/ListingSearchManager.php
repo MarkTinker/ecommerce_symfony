@@ -238,6 +238,15 @@ class ListingSearchManager
         $queryBuilder->addOrderBy("l.averageRating", "DESC");
         $queryBuilder->addOrderBy("l.adminNotation", "DESC");
 
+        //Keyword
+        $keyword = $listingSearchRequest->getKeyword();
+        echo $keyword;
+        exit;
+        if($keyword)
+        {            
+            $queryBuilder->where('t.title LIKE :keyword OR t.description LIKE :keyword')
+                        ->setParameter('keyword', $keyword);
+        }
 
         $event = new ListingSearchEvent($listingSearchRequest, $queryBuilder);
         $this->dispatcher->dispatch(ListingSearchEvents::LISTING_SEARCH, $event);

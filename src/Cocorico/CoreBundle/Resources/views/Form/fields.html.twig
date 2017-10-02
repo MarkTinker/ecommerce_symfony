@@ -149,10 +149,10 @@
         
         {% if(pastlvl < curlvl) %}
             {% set pastlvl = curlvl %}
-            {%- if not category.isLeaf -%}
+            {%- if (not category.isLeaf or curlvl == 0) -%}
             <li class="list-group-item dropdown clearfix">
-                <a> {{ category.getName() }}</a>
-                <ul class="dropdown-menu">
+                <a class="{{ curlvl == 0 ? 'collapsed':'' }}"> {{ category.getName() }}</a>
+                <ul class="dropdown-menu" style="{{ curlvl == 0 ? 'display:block;':'' }}">
             {% else %}
                 <li>
                     <a href="">{{ choice.label }}</a>
@@ -161,15 +161,15 @@
         {% elseif pastlvl == curlvl %}
             <li>
                 <a href="">{{ choice.label }}</a>
-            </li>        
+            </li>   
         {% else %}
             {% set pastlvl = curlvl %}
                 </ul>                
             </li>
-            {%- if not category.isLeaf -%}
+            {%- if (not category.isLeaf or curlvl == 0) -%}
             <li class="list-group-item dropdown clearfix">
-                <a> {{ category.getName() }}</a>
-                <ul class="dropdown-menu">
+                <a class="{{ curlvl == 0 ? 'collapsed':'' }}"> {{ category.getName() }}</a>
+                <ul class="dropdown-menu" style="{{ curlvl == 0 ? 'display:block;':'' }}">
             {% else %}
                 <li>
                     <a href="">{{ choice.label }}</a>
