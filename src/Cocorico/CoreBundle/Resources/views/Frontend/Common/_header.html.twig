@@ -128,11 +128,7 @@
             </nav>
         </div>
         <div id="search-ajaxform" class="col-xs-2">
-            <input type="text" placeholder="search...">
-            <a data-ajax="">
-                <span class="fa fa-search"></span>
-            </a>
+            {{ render(controller('CocoricoCoreBundle:Frontend/ListingSearch:searchHomeForm')) }}
         </div>
-
     </div>    
 </header>

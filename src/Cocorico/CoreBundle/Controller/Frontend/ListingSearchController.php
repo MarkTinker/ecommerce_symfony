@@ -44,7 +44,7 @@ class ListingSearchController extends Controller
         $form = $this->createSearchResultForm($listingSearchRequest);
 
         $form->handleRequest($request);
-
+       
         if ($form->isSubmitted() && $form->isValid()) {
             $listingSearchRequest = $form->getData();
 

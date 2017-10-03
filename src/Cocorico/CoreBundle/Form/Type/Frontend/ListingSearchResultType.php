@@ -253,6 +253,7 @@ class ListingSearchResultType extends AbstractType
                 'csrf_protection' => false,
                 'data_class' => 'Cocorico\CoreBundle\Model\ListingSearchRequest',
                 'translation_domain' => 'cocorico_listing',
+                'allow_extra_fields' => true,
             )
         );
     }

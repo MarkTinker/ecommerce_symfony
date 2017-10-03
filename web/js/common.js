@@ -115,6 +115,13 @@ $(function () {
     //syncTimeFields(".time-fields");
 
     fixIEMobile10();
+
+    // Search-Ajax Form Enter Event
+    $('#searchword').on('keyup', function(e) {
+        if(e.keycode == 13) {
+            $('#search-ajaxform > form').submit();            
+        }
+    });
 });
 
 /**

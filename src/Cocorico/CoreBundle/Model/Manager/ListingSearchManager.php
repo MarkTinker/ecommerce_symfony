@@ -239,13 +239,12 @@ class ListingSearchManager
         $queryBuilder->addOrderBy("l.adminNotation", "DESC");
 
         //Keyword
-        $keyword = $listingSearchRequest->getKeyword();
-        echo $keyword;
-        exit;
-        if($keyword)
+        $searchWord = $listingSearchRequest->getSearchword();
+        
+        if($searchWord)
         {            
-            $queryBuilder->where('t.title LIKE :keyword OR t.description LIKE :keyword')
-                        ->setParameter('keyword', $keyword);
+            $queryBuilder->where('t.title LIKE :searchword OR t.description LIKE :searchword')
+                        ->setParameter('searchword', '%'.$searchWord.'%');
         }
 
         $event = new ListingSearchEvent($listingSearchRequest, $queryBuilder);

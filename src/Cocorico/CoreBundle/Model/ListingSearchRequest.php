@@ -45,8 +45,8 @@ class ListingSearchRequest implements TranslationContainerInterface
     protected $categoriesFields;
     protected $delivery;
 
-    //keyword
-    protected $keyword;
+    //searchword
+    protected $searchword;
 
     public static $sortByValues = array(
         'recommended' => 'listing.search.sort_by.recommended',
@@ -112,10 +112,10 @@ class ListingSearchRequest implements TranslationContainerInterface
             $this->delivery = $delivery;
         }
 
-        //Keyword        
-        $keyword = $this->request->query->get("keyword");
-        if($keyword) {
-            $this->keyword = $keyword;
+        //Searchword        
+        $searchword = $this->request->query->get("searchword");
+        if($searchword) {
+            $this->searchword = $searchword;
         }
     }
 
@@ -168,19 +168,19 @@ class ListingSearchRequest implements TranslationContainerInterface
     }
 
     /**
-     * @param mixed $keyword
+     * @param mixed $searchword
      */
-    public function setKeyword($keyword)
+    public function setSearchword($searchword)
     {
-        $this->keyword = $keyword;
+        $this->searchword = $searchword;
     }
 
     /**
      * @return ListingLocationSearchRequest
      */
-     public function getKeyword()
+     public function getSearchword()
      {
-         return $this->keyword;
+         return $this->searchword;
      }
  
      /**

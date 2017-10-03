@@ -26,7 +26,17 @@ class ListingSearchHomeType extends ListingSearchResultType
             ->remove('characteristics')
             ->remove('sort_by')
             ->remove('delivery')
-            ->remove('categories_fields');
+            ->remove('categories_fields')
+            ->remove('categories')
+            ->add('searchword', 
+                'text',
+                array(
+                    'label' => false,
+                    'mapped' => false,
+                    'attr' => array (
+                        'placeholder' => 'search...',
+                    ),                    
+                ));
 
         if ($this->timeUnitFlexibility) {
             $builder->remove('flexibility');
