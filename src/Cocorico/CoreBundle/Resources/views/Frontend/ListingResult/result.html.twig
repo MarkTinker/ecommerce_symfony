@@ -89,9 +89,10 @@
                                 {% set listing_image = listing.images|length ? listing.images[0].name : ListingImageConstants.IMAGE_DEFAULT %}
                                 {% set user_image = listing_user.images|length ? listing_user.images[0].name : UserImageConstants.IMAGE_DEFAULT %}
     
-                                <article class="listing-post col-sm-4 col-xs-12">
+                                <article class="listing-post col-md-4 col-sm-6 col-xs-12">
                                     <a href="javascript:void(0)" id="favourite-{{ listing.id }}" class="favourit">
-                                        <i class="icon-heart"></i>
+                                        <i class="fa fa-heart-o"></i>
+                                        <i class="fa fa-heart"></i>
                                         <span class="hidden">favourit</span>
                                     </a>
                                     <a href="{{ path('cocorico_listing_show', { 'slug': listing_translation.slug }) }}"

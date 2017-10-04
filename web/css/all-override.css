@@ -13,9 +13,9 @@ a:active, a:hover {
     cursor: pointer;
 }
 
-.listing-post .active, .tabset-holder .active .icon-heart {
+.listing-post .active, .tabset-holder .active .fa-heart-o {
     text-decoration: none;
-    background: #c53f4e;
+    background: none;
 }
 
 .listing-area, .listing-holder {
@@ -1250,6 +1250,7 @@ images css for making it 4:3
     width: 384px;
     height: 440px;
     position: relative;
+    margin: 0 auto;
 }
 
 .images-list li {
@@ -3276,14 +3277,6 @@ iShareCloset Colors
     padding: 0;
 }
 
-.listing-box {
-    padding: 0 40px;
-}
-
 .listing-area .listing-holder .listing-post .listing-box h1 {
     font-family: "gothamrnd_book";
-}
-
-.listing-area .listing-holder .listing-post .frame .post-info .img-holder {
-    background: #f1f1f1;    
 }
