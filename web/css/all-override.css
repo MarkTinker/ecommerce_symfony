@@ -1246,9 +1246,9 @@ images css for making it 4:3
 }
 
 .container .row .twocolumns .listing-area .listing-holder .listing-post .listing-box .frame .post-info .img-holder,
-.listing-area .listing-holder .listing-post .listing-box .frame .post-info .img-holder {
+.listing-area .listing-holder .listing-post .frame .post-info .img-holder {
     width: 384px;
-    height: 288px;
+    height: 440px;
     position: relative;
 }
 
@@ -2685,7 +2685,7 @@ iShareCloset Colors
 }
 
 .navbar-default .navbar-nav > li > a {
-    font-family: "gothamrnd_book";
+    font-family: "c";
 }
 
 .navbar-default .nav-justified > li > a {
@@ -3274,4 +3274,16 @@ iShareCloset Colors
 
 .form-category .form-holder {
     padding: 0;
+}
+
+.listing-box {
+    padding: 0 40px;
+}
+
+.listing-area .listing-holder .listing-post .listing-box h1 {
+    font-family: "gothamrnd_book";
+}
+
+.listing-area .listing-holder .listing-post .frame .post-info .img-holder {
+    background: #f1f1f1;    
 }

@@ -6458,7 +6458,7 @@ span.btn:focus {
 }
 
 .listing-post .favourit {
-    top: 0;
+    bottom: 75px;
     right: 0;
     z-index: 2;
     width: 46px;

@@ -3,9 +3,10 @@
 {% trans_default_domain 'cocorico_listing' %}
 
 {% set location = listing_search_request.location %}
+{% set searchword = listing_search_request.searchword %}
 
 {# SEO #}
-{% set seo_title = 'listing.search.result.title'|trans({'%listing_search_request%': location.address }) %}
+{% set seo_title = 'listing.search.result.title'|trans({'%listing_search_request%': searchword }) %}
 {% set seo_desc = '' %}
 {% set seo_meta_tile = 'listing.search.result.meta_title'|trans({'%listing_search_request%': location.address }, 'cocorico_meta') ~ " - " ~ cocorico_site_name %}
 {% set seo_meta_desc = 'listing.search.result.meta_desc'|trans({'%nb_results%': nb_results}, 'cocorico_meta') %}
@@ -84,6 +85,7 @@
                                 {% set listing_location = listing.location %}
                                 {% set listing_user = listing.user %}
                                 {% set price = (listing.price / 100) | format_price(app.request.locale, 0) %}
+                                {% set retailprice = (listing.retailprice / 100) | format_price(app.request.locale, 0) %}
                                 {% set listing_image = listing.images|length ? listing.images[0].name : ListingImageConstants.IMAGE_DEFAULT %}
                                 {% set user_image = listing_user.images|length ? listing_user.images[0].name : UserImageConstants.IMAGE_DEFAULT %}
     
@@ -101,63 +103,25 @@
                                                     <img src="{{ (ListingImageConstants.IMAGE_FOLDER ~  listing_image) | imagine_filter('listing_large') }}"
                                                             alt="{{ listing_translation.title ~ " " ~ price }}"/>
                                                 </div>
-    
-                                                <div class="box">
-                                                    <div class="box-holder">
-                                                        <div class="head">
-                                                            <div class="time-price">
-                                                                <strong class="price">{{ price }}</strong>
-    
-                                                                <p>
-                                                                    {{ vatInclusionText(app.request.getLocale()) }}
-                                                                    / {{ (0)|add_time_unit_text }}
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="foot">
-                                                            <div class="area">
-                                                                <!-- rating -->
-                                                                {% if listing.averageRating %}
-                                                                    {{ listing.averageRating | cocorico_star_rating }}
-                                                                {% endif %}
-                                                                {% if  listing.certified %}
-                                                                    <span class="certified">
-                                                                        <i class="icon-ok"></i>
-                                                                        {{ 'listing.search.result.certified'|trans }}
-                                                                    </span>
-                                                                {% endif %}
-                                                            </div>
-                                                            <strong class="title">
-                                                                {% for listingListingCategory in listing.listingListingCategories %}
-                                                                    {{ listingListingCategory.category.translations[app.request.locale].name }},
-                                                                {% endfor %}
-                                                            </strong>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                             </div>
     
-                                            <div class="post-content">
-                                                <div class="alignleft">
-                                                    <img src="{{ (UserImageConstants.IMAGE_FOLDER ~ user_image) | imagine_filter('user_xsmall') }}"
-                                                            alt="{{ listing_user.firstName }}"/>
-                                                </div>
+                                            <div class="post-content">                                                
                                                 <div class="textbox">
-                                                    {% if bundleExist('CocoricoDeliveryBundle') %}
-                                                        {% include '@CocoricoDelivery/Frontend/Listing/_show_delivery.html.twig' with {
-                                                        'listing_delivery': listing.delivery
-                                                        } only %}
-                                                    {% endif %}
-    
+                                                    <h2>{{ listing_user.firstName|upper }} {{ listing_user.lastName|upper }}</h2>
                                                     <h2>{{ listing_translation.title }}</h2>
-    
+                                                    <h2>{{ retailprice }}</h2>
+                                                    <div class="row">
+
+                                                        <h2 class="color-pink col-sm-6" >{{ price }}</h2>
+                                                        <p class="color-pink col-sm-6 text-right">ADD TO CLOSET</p>
+                                                    </div>
                                                     <!--Debug:
                                                     accuracy : {{ listing["accuracy"]|default(0) }}<br />
                                                     distance : {{ listing["distance"]|default(0) }}<br />
                                                     platformNotation : {{ listing.platformNotation|default(0) }}<br />
                                                     reallyAvailable : {{ listing["really_available"]|default(0) }}<br />
                                                     -->
-                                                </div>
+                                                </div> <!-- /.text-box -->
                                             </div>
                                         </div>
                                     </a>
