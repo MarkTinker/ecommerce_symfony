@@ -589,9 +589,9 @@ pre code {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1492px) {
     .container {
-        width: 1200px;
+        width: 1400px;
     }
 }
 
@@ -6879,7 +6879,7 @@ span.btn:focus {
 
 #sidebar .sub-head {
     text-align: right;
-    padding: 0 0 16px;
+    padding: 65px 0 16px;
 }
 
 #sidebar .sub-head .rating {

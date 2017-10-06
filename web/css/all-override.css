@@ -306,6 +306,7 @@ a:active, a:hover {
 
 #photos .gallery-slider .gallery-slideset .slide:first-child {
     display: block;
+    border: none;
 }
 
 .gallery-slider .slide img,
@@ -3279,4 +3280,125 @@ iShareCloset Colors
 
 .listing-area .listing-holder .listing-post .listing-box h1 {
     font-family: "gothamrnd_book";
+}
+
+#photos > .gallery-slider {
+    margin: 0 auto;
+
+}
+
+#photos > .gallery-slider > .gallery-slideset > .slide {
+    margin: 0 auto;
+}
+.gallery-slider .slide img {
+    width: 100%;
+    max-width: 646px;
+    margin: 0 auto;
+}
+#main > .row > .container-fluid {
+    padding: 0 40px;
+}
+
+.gallery-slider > .vertical-container {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+#sidebar .sub-head > .designer-name {
+    font-family: "rounded_eleganceregular";
+    font-weight: 400;
+}
+
+#sidebar .sub-head > .listing-title {
+    font-family: "robotolight";
+    font-weight: 200;   
+}
+
+@media (min-width: 992px) {
+    #sidebar {
+        padding: 0 30px;
+    }
+
+    #sidebar .listing-info{
+        padding-left: 60px;
+    }
+}
+
+#sidebar .listing-info > h3{
+    font-family: "robotolight";
+    font-weight: 200;
+}
+
+#sidebar .listing-info > h2{
+    font-family: "rounded_eleganceregular";
+    font-weight: 200;
+}
+
+#sidebar .action-box a > h3 {
+    font-family: "rounded_eleganceregular";
+    color: #b0aaac;
+    font-weight: 200;
+}
+
+#sidebar #sizefit-box a h3,
+#sidebar #ownernote-box a h3{
+    font-family: "rounded_eleganceregular";
+    color:#414042;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+#sidebar #sizefit-box i,
+#sidebar #ownernote-box i {
+    color:#414042;
+    font-size: 14pt;
+}
+#sidebar #sizefit-box #sizefit-info p,
+#sidebar #ownernote-box #note-info p{
+    color: #b0aaac;
+    padding-left: 20px;
+}
+
+.collapse {
+    display: none;
+}
+
+.collapse.in {
+    display: block;
+}
+
+.collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-property: height, visibility;
+    transition-property: height, visibility;
+    -webkit-transition-duration: 0.35s;
+    transition-duration: 0.35s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+#sidebar .info-section a .fa-plus {
+    display: none;
+}
+
+#sidebar .info-section a .fa-minus {
+    display: inline-block;
+}
+
+#sidebar .info-section a.collapsed .fa-plus {
+    display: inline-block;
+}
+
+#sidebar .info-section a.collapsed .fa-minus {
+    display: none;
+}
+
+#pair-with h2,
+#pair-with h3,
+#pair-with h4 {
+    font-family: "rounded_eleganceregular";
+    font-weight: 200;
+    color: #404041;
 }
