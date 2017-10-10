@@ -3514,7 +3514,7 @@ iShareCloset Colors
 
 #profile .img-container {
     width: 100%;
-    min-height: 400px;    
+    max-height: 400px;    
     display: block;
     margin: 0 auto;
     display: block;
@@ -3532,10 +3532,11 @@ iShareCloset Colors
 
 #profile h1.profile-name {
     font-family: "rounded_eleganceregular";
+    font-weight: 200;
 }
 
 #profile .description {
-    min-height: 400px;
+    max-height: 320px;
     background-color: #f1f1f2;
 }
 
@@ -3543,4 +3544,54 @@ iShareCloset Colors
     font-family: "robotolight";
     font-size: 20pt;
     padding: 10px 8px;
+}
+
+#profile .profile-favourite > h3 {
+    font-family: "rounded_eleganceregular";
+    font-weight: 200;
+    margin-bottom: 25px;
+}
+
+#profile .profile-favourite .row {
+    margin-bottom: 20px;
+}
+
+#profile .profile-favourite .fav-2 {
+    margin-top: 15px;
+}
+
+#profile .profile-favourite .fav-3 {
+    margin-top: 60px;
+}
+
+#profile .img-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+#profile .img-container img {
+    width: 100%;
+}
+
+#profile .profile-style > h3 {
+    font-family: "rounded_eleganceregular";
+    font-weight: 200;
+}
+
+#profile .profile-style > p {
+    font-family: "robotolight";
+    font-size: 18pt;
+    margin: 0 0 0 5px;
+}
+
+#profile .profile-style > .fav-designers > p {
+    color: #a8a9ac;
+    font-family: "rounded_eleganceregular";
+    font-weight: 200;
+    font-size: 18pt;
+    margin: 0 0 0 5px;
+}
+
+#profile .profile-detail {
+    margin-top: 50px;
 }
