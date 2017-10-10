@@ -106,7 +106,7 @@
                 <aside id="sidebar" class="col-xs-12 col-md-4">
                     <div class="holder">
                         <div class="sub-head">
-                            <h1 class="color-pink text-left designer-name">{{ listing_user.firstName|upper }} {{ listing_user.lastName|upper }}</h1>
+                            <h1 class="color-pink text-left designer-name"><a class="color-pink" href="{{ path('cocorico_user_profile_show', { 'id': listing_user.id }) }}">{{ listing_user.firstName|upper }} {{ listing_user.lastName|upper }}</a></h1>
                             <h2 class="text-left listing-title">{{ listing_translation.title }}</h2>
                             <!-- rating -->
                             {% if listing.averageRating %}
