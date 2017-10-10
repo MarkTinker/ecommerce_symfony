@@ -9,6 +9,7 @@
 {% set listing_location = listing.location %}
 {% set price = listing.priceDecimal | format_price(app.request.locale, 0) %}
 {% set listing_user = listing.user %}
+{% set listing_image = listing.images|length ? listing.images[0].name : ListingImageConstants.IMAGE_DEFAULT %}
 
 {%- block meta_title -%}
     {{ 'listing.show.meta_title'|trans({}, 'cocorico_meta') ~ " " ~ listing_translation.title ~ " - " ~ listing.priceDecimal ~ " " ~ currencySymbol(currentCurrency) ~ "/" ~  0|add_time_unit_text ~ " - " ~ cocorico_site_name }} }}
@@ -48,7 +49,7 @@
         {% trans_default_domain 'cocorico_listing' %}
 
         {% block main %}
-        <div class="content">
+        <div class="container">
             <!-- two-columns -->
             <div class="twocolumns row alt">
                 <!-- contain the main content of the page -->
@@ -169,21 +170,112 @@
                             <h4>Handbag</h4>
                             <h3>JENNIFER FISHER</h3>
                             <h4>Jewellry</h4>
-
-                        </div>
-                        {# similar results#}
-                        {{ render(controller('CocoricoCoreBundle:Frontend/ListingSearch:similarListing',
-                        { 'id': listing.id }
-                        )) }}
+                        </div>                        
                     </div>
                 </aside> <!-- /.sidebar -->
             </div> <!-- /.twocolumns -->
 
             <div id="howtowearit" class="row">
+                <div class="col-md-2 col-xs-12"><h1>HOW TO WEAR IT</h1></div>
+                <div class="col-md-9 col-xs-12">
+                    {% for i in 0..2 %}
+                    <article class="listing-post col-md-4 col-sm-6 col-xs-12">
+                        <a href="javascript:void(0)" id="favourite-{{ listing.id }}" class="favourit">
+                            <i class="fa fa-heart-o"></i>
+                            <i class="fa fa-heart"></i>
+                            <span class="hidden">favourit</span>
+                        </a>
+                        <a href="{{ path('cocorico_listing_show', { 'slug': listing_translation.slug }) }}"
+                            class="listing-box">
+                            <div class="frame">
 
+                                <div class="post-info">
+                                    <div class="img-holder">
+                                        <img src="{{ (ListingImageConstants.IMAGE_FOLDER ~  listing_image) | imagine_filter('listing_large') }}"
+                                                alt="{{ listing_translation.title ~ " " ~ price }}"/>
+                                    </div>
+                                </div>
+
+                                <div class="post-content">                                                
+                                    <div class="textbox">
+                                        <h2>{{ listing_user.firstName|upper }} {{ listing_user.lastName|upper }}</h2>
+                                        <h2>{{ listing_translation.title }}</h2>
+                                        <h2>{{ retailprice }}</h2>
+                                        <div class="row">
+                                            <h2 class="color-pink col-sm-6" >{{ price }}</h2>
+                                            <p class="color-pink col-sm-6 text-right">ADD TO CLOSET</p>
+                                        </div>
+                                    </div> <!-- /.text-box -->
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    {% endfor %}
+                </div>
+            </div>
+        </div><!-- /.container -->       
+        
+        {# similar results#}
+        {{ render(controller('CocoricoCoreBundle:Frontend/ListingSearch:similarListing',
+        { 'id': listing.id }
+        )) }}
+
+        <div class="row moreinfo container">
+            <div class="row">
+                <div class="col-md-6 text-left leftpart">
+                    <a href="">Rent from this designer</a>
+                    <a href="">Rent from this owner</a>
+                </div>
+                <div class="col-md-6 text-right rightpart">
+                    <a href="" class="color-pink">Rent more</a>
+                    <a href="">Clothing</a>
+                    <a href="">Shoes</a>
+                    <a href="">Bags</a>
+                    <a href="">Accessories</a>
+                </div>
+            </div>            
+
+            <div class="infosection row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="row">
+                        <div class="col-md-4">                            
+                            <img src="{{ asset('images/delivery.png') }}">
+                            <h3 class="text-center color-pink">DELIVERY</h3>
+                            <p class="text-center">
+                                Sed ut perspiciatis unde omnis
+                                iste natus error sit voluptatem
+                                accusantium doloremque
+                                laudantium, totam rem aperiam,
+                                eaque ipsa illo inventore.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="{{ asset('images/return.png') }}">
+                            <h3 class="text-center color-pink">RETURN</h3>
+                            <p class="text-center">
+                                Nam libero tempore, cum soluta
+                                nobis est eligendi optio cumque
+                                nihil impedit quo minus id quod
+                                maxime placeat facere possimus,
+                                omnis voluptas 
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="{{ asset('images/help_and_advice.png') }}">
+                            <h3 class="text-center color-pink">HELP & ADVICE</h3>
+                            <p class="text-center">
+                                At vero eos et accusamus
+                                et iusto odio dignissimos
+                                ducimus qui blanditiis
+                                praesentium voluptatum deleniti
+                                atque corrupti est, omnis dolor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-            
+        
         {% endblock %}
         {% block modal %}
             {% include 'CocoricoCoreBundle:Frontend/Common:_modal.html.twig' only %}

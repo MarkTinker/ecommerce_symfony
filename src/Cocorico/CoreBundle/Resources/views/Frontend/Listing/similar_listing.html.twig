@@ -1,57 +1,63 @@
 {% trans_default_domain 'cocorico_listing' %}
 
 <section class="widget similar-ads">
-    <h2>{{ 'listing.similaries.heading'|trans }}</h2>
+    <h1 class="text-center color-pink">YOU MAY ALSO LIKE</h1>
 
-    <div class="listing-holder">
+    <div class="listing-holder row">
         <!-- post -->
+        
+        {% if results|length > 6 %}
+            {% set articlestyle = "col-md-2 col-xs-12" %}
+        {% elseif results|length == 5 %}
+            {% set articlestyle = "col-md-5ths col-xs-12" %}
+        {% elseif results|length == 4 %}
+            {% set articlestyle = "col-md-3 col-xs-12" %}
+        {% elseif results|length == 3 %}
+            {% set articlestyle = "col-md-3 col-md-offset-1 col-xs-12" %}
+        {% elseif results|length == 2 %}
+            {% set articlestyle = "col-md-4 col-md-offset-2 col-xs-12" %}    
+        {% else %}
+            {% set articlestyle = "col-md-4 col-xs-12 col-md-offset-4" %}
+        {% endif %}
         {%- for result in results.getIterator() -%}
             {% set listing = result[0] %}
+            {% set listing_user = listing.user %}
             {% set listing_translation = listing.translations[app.request.locale] %}
             {% set price = (listing.price / 100) | format_price(app.request.locale, 0) %}
+            {% set retailprice = (listing.retailprice / 100) | format_price(app.request.locale, 0) %}
             {% set listing_image = listing.images|length ? listing.images[0].name : ListingImageConstants.IMAGE_DEFAULT %}
 
-            <article class="post">
-                <div class="alignleft">
-                    <a href="{{ path('cocorico_listing_show', { 'slug': listing_translation.slug }) }}"
-                       class="listing-post listing-box"
-                       style="display:block">
-                        <img alt="{{ listing_translation.title }}"
-                             src="{{ (ListingImageConstants.IMAGE_FOLDER ~ listing_image) | imagine_filter('listing_xsmall') }}">
+            <article class="listing-post {{articlestyle}} ">
+                <a href="javascript:void(0)" id="favourite-{{ listing.id }}" class="favourit">
+                    <i class="fa fa-heart-o"></i>
+                    <i class="fa fa-heart"></i>
+                    <span class="hidden">favourit</span>
+                </a>
+                <a href="{{ path('cocorico_listing_show', { 'slug': listing_translation.slug }) }}"
+                    class="listing-box">
+                    <div class="frame">
 
-                        <div class="listing-post head">
-                            <div class="time-price">
-                                <strong class="price">
-                                    {{ price }}
-                                    <sup>
-                                        <small>{{ vatInclusionText(app.request.getLocale()) }}</small>
-                                    </sup>
-                                    /{{ (0)|add_time_unit_text|first }}
-                                </strong>
+                        <div class="post-info">
+                            <div class="img-holder">
+                                <img src="{{ (ListingImageConstants.IMAGE_FOLDER ~  listing_image) | imagine_filter('listing_large') }}"
+                                        alt="{{ listing_translation.title ~ " " ~ price }}"/>
                             </div>
                         </div>
 
-                        {% if listing.averageRating %}
-                            {{ listing.averageRating | cocorico_star_rating }}
-                        {% endif %}
-                    </a>
-                </div>
-                <div class="post-content">
-                    <h2>
-                        <a href="{{ path('cocorico_listing_show', { 'slug': listing_translation.slug }) }}">
-                            {{ listing_translation.title }}
-                        </a>
-                    </h2>
-
-                    <p>{{ listing_translation.description | truncate(50,true) }}</p>
-                </div>
+                        <div class="post-content">                                                
+                            <div class="textbox">
+                                <h2>{{ listing_user.firstName|upper }} {{ listing_user.lastName|upper }}</h2>
+                                <h2>{{ listing_translation.title }}</h2>
+                                <h2>{{ retailprice }}</h2>
+                                <div class="row">
+                                    <h2 class="color-pink col-sm-6" >{{ price }}</h2>
+                                    <p class="color-pink col-sm-6 text-right">ADD TO CLOSET</p>
+                                </div>
+                            </div> <!-- /.text-box -->
+                        </div>
+                    </div>
+                </a>
             </article>
         {% endfor %}
-    </div>
-    {% if ('search_result?location' in app.request.headers.get('referer')) or ('resultat-recherche?location' in app.request.headers.get('referer')) %}
-        {% set referer = app.request.headers.get('referer') %}
-    {% else %}
-        {% set referer = path('cocorico_listing_search_result') %}
-    {% endif %}
-    <a class="btn btn-default" href="{{ referer }}">{{ 'listing.similaries.back_to_search'|trans }}</a>
+    </div>    
 </section>

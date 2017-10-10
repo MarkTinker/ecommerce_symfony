@@ -3402,3 +3402,145 @@ iShareCloset Colors
     font-weight: 200;
     color: #404041;
 }
+
+#howtowearit {
+    margin: 100px 0;
+}
+
+#howtowearit h1 {
+    font-family: "rounded_eleganceregular";
+    font-weight: 200;
+}
+
+.widget.similar-ads h1 {
+    font-family: "rounded_eleganceregular";
+    font-weight: 200;
+    margin: 17px 0;
+    font-size: 30pt;
+}
+.widget.similar-ads { 
+    border: none;
+    background-color: #f3f3f4;    
+}
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+.similar-ads .listing-holder .listing-post .frame .post-info .img-holder {
+    width: 100%;
+    height: 298px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.similar-ads .listing-post .listing-box .frame .post-info .img-holder img {
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+}
+
+
+.similar-ads .listing-post .frame .post-content {
+    background-color: #f3f3f4;
+    font-family: "rounded_eleganceregular";
+}
+
+.listing-post {
+    max-width: 400px;
+}
+
+.moreinfo .leftpart a{
+    color: #b0aaac;
+    font-family: "rounded_eleganceregular";
+    font-size: 15pt;
+    margin: 0 20px;
+}
+
+.moreinfo .rightpart a{
+    font-family: "rounded_eleganceregular";
+    font-size: 15pt;
+    margin: 0 20px;
+    color: #000;
+}
+
+.infosection img{
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+    .moreinfo .infosection {
+        padding: 180px 0;
+    }
+}
+
+#profile .img-container {
+    width: 100%;
+    min-height: 400px;    
+    display: block;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+}
+
+#profile .img-container img {
+    width:100%;    
+}
+
+#profile > div > h3 {
+    font-family: "robotolight";
+    font-weight: 200;
+}
+
+#profile h1.profile-name {
+    font-family: "rounded_eleganceregular";
+}
+
+#profile .description {
+    min-height: 400px;
+    background-color: #f1f1f2;
+}
+
+#profile .description p {
+    font-family: "robotolight";
+    font-size: 20pt;
+    padding: 10px 8px;
+}
