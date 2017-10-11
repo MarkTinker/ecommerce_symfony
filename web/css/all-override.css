@@ -2818,7 +2818,7 @@ iShareCloset Colors
     margin-right: 15px;
 }
 
-.title-container > h1 ? span:after {
+.title-container > h1 > span:after {
     left: 100%;
     margin-left: 15px;
 }
@@ -3339,6 +3339,12 @@ iShareCloset Colors
     color: #b0aaac;
     font-weight: 200;
 }
+#sidebar .action-box a > h3 i
+ {
+    font-family: "rounded_eleganceregular";
+    color: #b0aaac;
+    font-weight: 200;
+}
 
 #sidebar #sizefit-box a h3,
 #sidebar #ownernote-box a h3{
@@ -3595,4 +3601,20 @@ iShareCloset Colors
 
 #profile .profile-detail {
     margin-top: 50px;
+}
+
+#sidebar .favourit.active .fa-heart-o {
+    display: none;
+}
+
+#sidebar .favourit.active .fa-heart {
+    display: block;
+}
+
+#sidebar .favourit .fa-heart-o {
+    display: block;
+}
+
+#sidebar .favourit .fa-heart {
+    display: none;
 }
