@@ -3335,13 +3335,13 @@ iShareCloset Colors
 }
 
 #sidebar .action-box a > h3 {
-    font-family: "rounded_eleganceregular";
+    /*font-family: "rounded_eleganceregular";*/
     color: #b0aaac;
     font-weight: 200;
 }
 #sidebar .action-box a > h3 i
  {
-    font-family: "rounded_eleganceregular";
+    /*font-family: "rounded_eleganceregular";*/
     color: #b0aaac;
     font-weight: 200;
 }
