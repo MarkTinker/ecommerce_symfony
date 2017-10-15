@@ -93,10 +93,33 @@
                                 tabindex="9"> {{ 'nav.menu.whatnew'|trans }}
                             </a>
                         </li>
-                        <li>                                
+                        <li class="dropdown">                                
                             <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
-                                tabindex="10"> {{ 'nav.menu.featurecollect'|trans }}
+                                class="dropbtn" tabindex="10"> {{ 'nav.menu.featurecollect'|trans }}
                             </a>
+                            <div class="dropdown-content">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <li><a href="">Casual Fridays</a></li>
+                                            <li><a href="">Work</a></li>
+                                            <li><a href="">Weekend Brunch</a></li>
+                                            <li><a href="">Date Night</a></li>
+                                            <li><a href="">Casual</a></li>
+                                            <li><a href="">Night Out</a></li>
+                                            <li><a href="">Holiday</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="img-container">
+                                            <img src="{{ asset('images/category/featuredcollection.png') }}">
+                                            <p class="text-right">The original designer vintage piecess </p>
+                                        </div>                                        
+                                    </div>                                   
+                                </div>
+                            </div>
+
                         </li>
                         <li>                                
                             <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"

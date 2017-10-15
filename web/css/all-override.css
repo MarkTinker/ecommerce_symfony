@@ -2682,10 +2682,6 @@ iShareCloset Colors
     background-color: #e7e7e8;
 }
 
-#nav > ul {
-    margin: 6px 0 6px 0;
-}
-
 .navbar-default .navbar-nav > li > a {
     font-family: "c";
 }
@@ -2701,6 +2697,7 @@ iShareCloset Colors
     display: inline;
     text-decoration: none;
     font-size: 1.1em;
+    line-height: 32px;
 }
 
 .navbar-default .nav-justified > li.selected > a {
@@ -2711,6 +2708,7 @@ iShareCloset Colors
     padding-left: 0;
     padding-right: 0;
     margin-bottom: -1px;
+    z-index: 5;
 }
 
 #search-ajaxform {
@@ -3617,4 +3615,40 @@ iShareCloset Colors
 
 #sidebar .favourit .fa-heart {
     display: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #f3f3f4;
+    border-bottom: 3px solid #be2b57;
+}
+@media (min-width: 768px) {
+    .dropdown:hover .dropdown-content {
+        width: 500px;
+    }
+}
+
+.dropdown .dropdown-content ul {
+    list-style: none;
+}
+
+.dropdown .dropdown-content .img-container {
+    width: 100%;
+    overflow: hidden;    
+}
+
+.dropdown .dropdown-content .img-container img{
+    width: 100%;
 }
