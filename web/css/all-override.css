@@ -2708,6 +2708,7 @@ iShareCloset Colors
     padding-left: 0;
     padding-right: 0;
     margin-bottom: -1px;
+    position: static;
     z-index: 5;
 }
 
@@ -3618,9 +3619,9 @@ iShareCloset Colors
 }
 
 .dropdown {
-    position: relative;
     display: inline-block;
     z-index: 1;
+    position: static !important;
 }
 
 .dropdown-content {
@@ -3631,17 +3632,18 @@ iShareCloset Colors
 
 .dropdown:hover .dropdown-content {
     display: block;
+    width: 100%;
+    left: 0;
+    z-index: 9999;
     background-color: #f3f3f4;
     border-bottom: 3px solid #be2b57;
-}
-@media (min-width: 768px) {
-    .dropdown:hover .dropdown-content {
-        width: 500px;
-    }
 }
 
 .dropdown .dropdown-content ul {
     list-style: none;
+    margin: 0 auto;
+    display: inline-block;
+    padding-top: 130px;
 }
 
 .dropdown .dropdown-content .img-container {
@@ -3651,4 +3653,31 @@ iShareCloset Colors
 
 .dropdown .dropdown-content .img-container img{
     width: 100%;
+}
+.navbar {
+    position: static;
+}
+
+.dropdown ul li,
+.dropdown ul li a {
+    font-family: "rounded_eleganceregular";
+    font-weight: 200;
+    text-align: left;
+}
+
+.dropdown ul li.color-pink {
+    font-size: 15pt;
+}
+.dropdown h2 {
+    font-family: "rounded_eleganceregular";
+    font-weight: 200;
+}
+
+.dropdown ul li a {
+    color: #000;
+    font-size: 13pt;
+    cursor: pointer;
+}
+.dropdown a.color-pink {
+    font-size: 15pt;
 }

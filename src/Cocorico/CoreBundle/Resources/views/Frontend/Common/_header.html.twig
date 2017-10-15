@@ -78,29 +78,59 @@
         </div>
     </div>
     
-    <div class="row">
+    <div class="row">        
+        <form id="category_form" method="get" action="/en/listing/search_result" novalidate="novalidate">
+        <input type="hidden" value="" name="searchword">
         <div id="menu" class="col-xs-10">
             <nav class="navbar navbar-default">
                 <div id="nav" class="collapse navbar-collapse">
                     <ul class="nav nav-justified">
-                        <li class="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path('cocorico_home') ? 'selected': '' }}">                                
+                        <li class="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path('cocorico_home') ? 'selected': '' }}">
                             <a href="{{ path('cocorico_home') }}"
                                 tabindex="8"> {{ 'nav.menu.home'|trans }}
                             </a>
                         </li>
-                        <li>                                
+                        <!-- .dropdown -->
+                        <li class="dropdown">                                
                             <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
-                                tabindex="9"> {{ 'nav.menu.whatnew'|trans }}
+                               class="dropbtn" tabindex="9"> {{ 'nav.menu.whatnew'|trans }}
                             </a>
-                        </li>
+                            <!-- .dropdown-content -->
+                            <div class="dropdown-content">
+                                <div class="row">
+                                    <!-- .col-md-6 -->
+                                    <div class="col-md-6">                                        
+                                        <ul>
+                                            <h2 class="text-left color-pink">EDITOR'S PICKS</h2>
+                                            <li><a href="">Editor's Picks</a></li>
+                                            <li><a href="">Added this Week</a></li>
+                                            <li><a href="">Added this Month</a></li>
+                                            <li><a href="">Featured Gallery</a></li>
+                                        </ul>
+                                    </div> <!-- /.col-md-6 -->
+                                    <!-- .col-md-6 -->
+                                    <div class="col-md-6">
+                                        <div class="img-container">
+                                            <img src="{{ asset('images/category/featuredcollection.png') }}">
+                                            <p class="text-right">The original designer vintage piecess </p>
+                                        </div>                                        
+                                    </div> <!-- /.col-md-6 -->
+                                </div><!-- /.row -->
+                            </div> <!-- /.dropdown-content -->
+                        </li><!-- /.dropdown -->
+
+                        <!-- .dropdown -->
                         <li class="dropdown">                                
                             <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
                                 class="dropbtn" tabindex="10"> {{ 'nav.menu.featurecollect'|trans }}
                             </a>
+                            <!-- .dropdown-content -->
                             <div class="dropdown-content">
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <!-- .col-md-6 -->
+                                    <div class="col-md-6">                                        
                                         <ul>
+                                            <h2 class="text-left color-pink">Featured Collection</h2>
                                             <li><a href="">Casual Fridays</a></li>
                                             <li><a href="">Work</a></li>
                                             <li><a href="">Weekend Brunch</a></li>
@@ -108,50 +138,180 @@
                                             <li><a href="">Casual</a></li>
                                             <li><a href="">Night Out</a></li>
                                             <li><a href="">Holiday</a></li>
+                                            <li><a class="color-pink" href="">Browse All</a></li>
                                         </ul>
-                                    </div>
-
+                                    </div> <!-- /.col-md-6 -->
+                                    <!-- .col-md-6 -->
                                     <div class="col-md-6">
                                         <div class="img-container">
                                             <img src="{{ asset('images/category/featuredcollection.png') }}">
                                             <p class="text-right">The original designer vintage piecess </p>
                                         </div>                                        
-                                    </div>                                   
+                                    </div>    <!-- /.col-md-6 -->                               
+                                </div> <!-- /.row -->
+                            </div> <!-- /.drop-downcontent -->
+                        </li> <!-- /.drop-down -->
+
+                        <!-- .dropdown -->
+                        <li class="dropdown">                                
+                            <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
+                                class="dropbtn" tabindex="11"> {{ 'nav.menu.designers'|trans }}
+                            </a>
+                            <!-- .dropdown-content -->
+                            <div class="dropdown-content">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="search-form row">
+                                            <div class="col-4">Search:</div>
+                                            <div class="col-8">
+                                                <input class="form-control" type="text">
+                                            </div>
+                                        </div>
+                                        <br/>
+                                        <ul>
+                                            <li>Gucci</li>
+                                            <li>Prada</li>
+                                            <li>Chanel</li>
+                                            <li>Zimmerman</li>
+                                        </ul>
+                                    </div> <!-- /.col-md-6-->
+                                    <div class="col-md-6">
+                                        <div class="img-container">
+                                            <img src="{{ asset('images/category/featuredcollection.png') }}">
+                                            <p class="text-right">The original designer vintage piecess </p>
+                                        </div>                                        
+                                    </div> <!-- /.col-md-6-->
+                                </div> <!-- /.row -->
+                            </div><!-- /.dropdown-content -->                            
+                        </li> <!-- /.dropdown -->
+                        <li class="dropdown">                                
+                            <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
+                                class="dropbtn" tabindex="12"> {{ 'nav.menu.clothing'|trans }}
+                            </a>
+                            <div class="dropdown-content">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <ul>
+                                                    <li class="color-pink">RENT BY</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <ul>
+                                                    <li class="color-pink">Featured Collection</li>
+                                                    <li><a>Casual Fridays</a></li>
+                                                    <li><a>Work</a></li>
+                                                    <li><a>Weekend Brunch</a></li>
+                                                    <li><a>Date Night</a></li>
+                                                    <li><a>Casual</a></li>
+                                                    <li><a>Night Out</a></li>
+                                                    <li><a>Holiday</a></li>
+                                                    <li><a class="color-pink">Browse All</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-4">                                                                                                
+                                                <ul>                                                    
+                                                    <li class="color-pink">Clothing</li>
+                                                    <li><a data-id="all">All Clothes</a></li>
+                                                    <li><a data-id="dresses">Dresses</a></li>
+                                                    <li><a data-id="suits">Suits</a></li>
+                                                    <li><a data-id="skirts">Skirts</a></li>
+                                                    <li><a data-id="pants">Pants</a></li>
+                                                    <li><a data-id="leggings">Leggings</a></li>
+                                                    <li><a data-id="shorts">Shorts</a></li>
+                                                    <li><a data-id="knitwear">Knitwear</a></li>
+                                                    <li><a data-id="blouses">Blouses</a></li>
+                                                    <li><a data-id="shirts">Shirts</a></li>
+                                                    <li><a data-id="tops">Tops</a></li>
+                                                    <li><a data-id="jumpsuits">Jumpsuits & Playsuits</a></li>
+                                                    <li><a data-id="coats">Coats & Jackets</a></li>
+                                                </ul>
+                                            </div>
+                                        </div><!-- /.row -->
+                                    </div> <!-- /.col-md-6-->
+                                    <div class="col-md-6">
+                                        <div class="img-container">
+                                            <img src="{{ asset('images/category/featuredcollection.png') }}">
+                                            <p class="text-right">The original designer vintage piecess </p>
+                                        </div>                                        
+                                    </div> <!-- /.col-md-6-->
+                                </div> <!-- /.row -->
+                            </div> <!-- /.dropdown-content-->
+                        </li>
+                        <li class="dropdown">                                
+                            <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
+                                class="dropbtn" tabindex="13"> {{ 'nav.menu.shoes'|trans }}
+                            </a>
+                            <div class="dropdown-content">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                       <ul>
+                                            <h2 class="color-pink text-left">Shoes</h2>                                        
+                                            <li><a href="">Boots</a></li>
+                                            <li><a href="">Heels</a></li>
+                                            <li><a href="">Flats</a></li>
+                                            <li><a href="">Bridal Shoes</a></li>
+                                            <li><a href="">Sandals and Thongs</a></li>
+                                            <li><a href="">Sneakers, Loafers and Slip ons</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="img-container">
+                                            <img src="{{ asset('images/category/featuredcollection.png') }}">
+                                            <p class="text-right">The original designer vintage piecess </p>
+                                        </div>                                        
+                                    </div>
                                 </div>
                             </div>
-
-                        </li>
-                        <li>                                
-                            <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
-                                tabindex="11"> {{ 'nav.menu.designers'|trans }}
-                            </a>
-                        </li>
-                        <li>                                
-                            <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
-                                tabindex="12"> {{ 'nav.menu.clothing'|trans }}
-                            </a>
-                        </li>
-                        <li>                                
-                            <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
-                                tabindex="13"> {{ 'nav.menu.shoes'|trans }}
-                            </a>
                         </li>
                         <li>                                
                             <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
                                 tabindex="14"> {{ 'nav.menu.bags'|trans }}
                             </a>
                         </li>
-                        <li>                                
+                        <li class="dropdown">                                
                             <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
-                                tabindex="15"> {{ 'nav.menu.accessories'|trans }}
+                                class="dropbtn" tabindex="15"> {{ 'nav.menu.accessories'|trans }}
                             </a>
+                            <div class="dropdown-content">
+                                <div class="row">
+                                    <div class="col-md-6">                                        
+                                        <ul>
+                                            <h2 class="color-pink text-left">Accessories</h2>
+                                            <li><a href="">Jewellery</a></li>
+                                            <li><a href="">Hats and Fascinators</a></li>
+                                            <li><a href="">Scarves and Wraps</a></li>
+                                            <li><a href="">Sunglasses</a></li>
+                                            <li><a href="">Watches</a></li>
+                                            <li><a href="">Belts</a></li>
+                                            <li><a href="">Everything Else</a></li>
+                                        </ul>
+                                    </div> <!-- /.col-md-6 -->
+                                    <div class="col-md-6">
+                                        <div class="img-container">
+                                            <img src="{{ asset('images/category/featuredcollection.png') }}">
+                                            <p class="text-right">The original designer vintage piecess </p>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div> <!-- /.drop-content -->
                         </li>
                     </ul>                
                 </div><!-- /#nav -->            
             </nav>
-        </div>
+        </div> <!-- /#menu -->
+        </form>
         <div id="search-ajaxform" class="col-xs-2">
             {{ render(controller('CocoricoCoreBundle:Frontend/ListingSearch:searchHomeForm')) }}
         </div>
     </div>    
 </header>
+<script>
+    $( document ).ready( function() {
+        $('.dropdown-content li a').click(function(){
+            $('#category_form input[type=hidden]').val($(this).data('id'));
+            $('#category_form').submit();
+        });
+    });
+</script>
