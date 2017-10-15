@@ -80,7 +80,7 @@
     
     <div class="row">        
         <form id="category_form" method="get" action="/en/listing/search_result" novalidate="novalidate">
-        <input type="hidden" value="" name="searchword">
+        <input id="searchword" type="hidden" value="" name="searchword">
         <input type="hidden" id="page" name="page" value="1">
         <div id="menu" class="col-xs-10">
             <nav class="navbar navbar-default">
@@ -311,7 +311,7 @@
 <script>
     $( document ).ready( function() {
         $('.dropdown-content li a').click(function(){
-            $('#category_form input[type=hidden]').val($(this).data('id'));
+            $('#category_form #searchword').val($(this).data('id'));
             $('#category_form').submit();
         });
     });
