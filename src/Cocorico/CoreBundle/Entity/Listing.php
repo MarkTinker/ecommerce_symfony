@@ -63,6 +63,16 @@ class Listing extends BaseListing
     private $user;
 
     /**
+     * @Assert\NotBlank(message="assert.not_blank")
+     * 
+     * @ORM\ManyToOne(targetEntity="Designer")
+     * @ORM\JoinColumn(name="designer_id", referencedColumnName="id", nullable=false, onDelete="CASCADE")
+     * 
+     * @var Designer
+     */
+    private $designer;
+
+    /**
      * @ORM\OneToOne(targetEntity="ListingLocation", inversedBy="listing", cascade={"persist", "remove"}, orphanRemoval=true)
      * @ORM\JoinColumn(name="location_id", referencedColumnName="id", onDelete="CASCADE")
      *

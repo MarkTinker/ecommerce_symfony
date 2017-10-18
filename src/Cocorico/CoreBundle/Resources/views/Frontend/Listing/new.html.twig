@@ -33,192 +33,193 @@
         {% endblock %}
         
         {% block main %}
-            <div class="col-xs-12">
-
-                {{ form_start(form, {'attr': {'class': 'form'}}) }}
-
-                <div class="listing-section">
-                    <fieldset>
-                        <legend class="hidden">listing-section</legend>
-                        <!-- alert -->
-                        <div class="head">
-                            <h1>{{ 'listing.new.title'|trans }}</h1>
-
-                            <p><strong>{{ 'listing.new.publish.notice'|trans }}</strong></p>
-                        </div>
-
-                        {% include 'CocoricoCoreBundle:Frontend/Common:_flash.html.twig' %}
-                        {{ form_errors(form) }}
-
-                        <div class="holder">
-                            <div class="form-selection">
-                                <div class="form-block block1">
-                                    <div class="selection-holder">
-                                        {{ render(controller('CocoricoCoreBundle:Frontend/ListingCategories:categoriesForm', {'listing': listing})) }}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-listing-info">
-                                <h2>{{ 'listing.description.title'|trans }}</h2>
-                                {#For html customizations see views\form\translations.html.twig#}                                
-                                {{ form_widget(form.translations) }}
-                            </div>
-                            <div class="file-selection">
-
-                                <h2>{{ 'listing.edit.various_information.title'|trans }}</h2>
-                                <strong class="sub-heading">{{ 'listing_edit.photos.title'|trans({'%max_images%': listing_img_max}) }}</strong>
-
-                                <div class="area">
-                                    <div class="uploader">
-                                        <div id="images-new">
-                                            {{ form_errors(form.image.new) }}
-                                            {{ form_widget(form.image.new) }}
-
-                                            {{ form_errors(form.image.uploaded) }}
-                                            {{ form_widget(form.image.uploaded ) }}
-                                        </div>
-                                    </div>
-                                    <div class="detail">
-                                        <p>{{ 'listing_edit.photos.details'|trans }}</p>
-                                    </div>
-                                    <div style="clear:both"></div>
-                                    <div id="drop-zone">
-                                        {{ 'listing.drop.files'|trans }}
-                                    </div>
-                                    <h3>{{ 'listing.images.to_upload.title'|trans }}</h3>
-                                    <ul id="files-to-upload" class="images-list"></ul>
-                                </div>
-                                <!-- files-list -->
-                                <div class="files-list">
-                                    <ul class="images-list">
-                                        {% for image in listing.images %}
-                                            <li>
-                                                <img src="{{ image.getWebPath | imagine_filter('listing_xsmall') }}"
-                                                     alt=""/>
-                                            </li>
-                                        {% endfor %}
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="block">
-                                <h2>{{ 'listing.new.price.title'|trans }}</h2>                            
-                                <!-- price-box -->
-                                <div class="area">
-                                    <div class="price-box">
-                                        <strong class="title">
-                                            {{ 'listing.new.price.rent'|trans }}
-                                        </strong>
-
-                                        <div class="field-row">
-                                            {{ form_errors(form.price) }}
-                                            <span class="label">
-                                                {{ form_label(form.price, 0|add_time_unit_text|capitalize) }}
-                                            </span>
-                                            {{ form_widget(form.price, {
-                                                'attr': {
-                                                    'class': 'numbers-only form-control',
-                                                    'help':  'listing.edit.price.help'|trans
-                                                }
-                                            }) }}
-                                        </div>
-
-                                        {% if bundleExist('CocoricoDeliveryBundle') %}
-                                            {% include '@CocoricoDelivery/Frontend/Listing/_form_delivery.html.twig' with {
-                                            'form': form
-                                            } only %}
-                                        {% endif %}
-                                    </div>
-
-                                    <div class="price-box small-box">
-                                        <strong class="title">
-                                            {{ 'listing.new.price.retail'|trans }}
-                                        </strong>
-                                        
-                                        <div class="field-row">
-                                            {{ form_errors(form.retailprice) }}
-                                            {{ form_widget(form.retailprice, {
-                                                'attr': {
-                                                    'class': 'numbers-only form-control',
-                                                    'help': 'listing.edit.retailprice.help'|trans
-                                                }
-                                            }) }}
-                                        </div>
-                                    </div>                                    
-                                </div>
-
-                                <div class="area">
-                                    <div class="row">
-                                        <h2 class="float-left">{{ 'listing.form.selloption'|trans }}</h2>
-                                        <div class="float-left">
-                                            {{ form_widget(form.selloption) }}
-                                        </div>                                        
-                                    </div> 
-
-                                    <div id="sell-price-box" class="price-box small-box">
-                                        <strong class="title">
-                                            {{ 'listing.form.sellprice'|trans }}
-                                        </strong>
-
-                                        <div class="field-row">
-                                            {{ form_errors(form.sellprice) }}
-                                            {{ form_widget(form.sellprice, {
-                                                'attr':{
-                                                    'class': 'numbers-only form-control',
-                                                    'help': 'listing.edit.sellprice.help'|trans
-                                                }
-                                            }) }}                                            
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="area">
-                                    <h2>{{ 'listing.form.salenotes'|trans }}</h2>
-                                    {{ form_widget(form.salenotes) }}
-                                </div>
-
-
-
-                                <!-- alert -->
-                                <div role="alert" class="alert alert-warning">
-                                    <i class="ico exclamation">!</i>
-
-                                    <p>
-                                        {{ 'listing.new.price_notice'| trans }}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </fieldset>
-                </div>
-                {% if not is_granted("IS_AUTHENTICATED_FULLY") %}
-                    <div class="form-signup validate-form">
+            <div class="container">
+                <div class="col-xs-12">
+                        
+                    {{ form_start(form, {'attr': {'class': 'form'}}) }}
+    
+                    <div class="listing-section">
                         <fieldset>
-                            <legend class="hidden">form signup</legend>
-                            <h2>{{ 'listing.new.signup.title'|trans }}</h2>
-                            {% include '@CocoricoUser/Frontend/Common/_login_register.html.twig' with {
-                            'form_registration' : form.user,
-                            'form_login': form.user_login
-                            } only %}
+                            <legend class="hidden">listing-section</legend>
+                            <!-- alert -->
+                            <div class="head">
+                                <h1>{{ 'listing.new.title'|trans }}</h1>
+    
+                                <p><strong>{{ 'listing.new.publish.notice'|trans }}</strong></p>
+                            </div>
+    
+                            {% include 'CocoricoCoreBundle:Frontend/Common:_flash.html.twig' %}
+                            {{ form_errors(form) }}
+    
+                            <div class="holder">
+                                <div class="form-selection">
+                                    <div class="form-block block1">
+                                        <div class="selection-holder">
+                                            {{ render(controller('CocoricoCoreBundle:Frontend/ListingCategories:categoriesForm', {'listing': listing})) }}
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="form-listing-info">
+                                    <h2>{{ 'listing.description.title'|trans }}</h2>
+                                    {#For html customizations see views\form\translations.html.twig#}                                
+                                    {{ form_widget(form.translations) }}
+                                </div>
+                                <div class="file-selection">
+    
+                                    <h2>{{ 'listing.edit.various_information.title'|trans }}</h2>
+                                    <strong class="sub-heading">{{ 'listing_edit.photos.title'|trans({'%max_images%': listing_img_max}) }}</strong>
+    
+                                    <div class="area">
+                                        <div class="uploader">
+                                            <div id="images-new">
+                                                {{ form_errors(form.image.new) }}
+                                                {{ form_widget(form.image.new) }}
+    
+                                                {{ form_errors(form.image.uploaded) }}
+                                                {{ form_widget(form.image.uploaded ) }}
+                                            </div>
+                                        </div>
+                                        <div class="detail">
+                                            <p>{{ 'listing_edit.photos.details'|trans }}</p>
+                                        </div>
+                                        <div style="clear:both"></div>
+                                        <div id="drop-zone">
+                                            {{ 'listing.drop.files'|trans }}
+                                        </div>
+                                        <h3>{{ 'listing.images.to_upload.title'|trans }}</h3>
+                                        <ul id="files-to-upload" class="images-list"></ul>
+                                    </div>
+                                    <!-- files-list -->
+                                    <div class="files-list">
+                                        <ul class="images-list">
+                                            {% for image in listing.images %}
+                                                <li>
+                                                    <img src="{{ image.getWebPath | imagine_filter('listing_xsmall') }}"
+                                                            alt=""/>
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="block">
+                                    <h2>{{ 'listing.new.price.title'|trans }}</h2>                            
+                                    <!-- price-box -->
+                                    <div class="area">
+                                        <div class="price-box">
+                                            <strong class="title">
+                                                {{ 'listing.new.price.rent'|trans }}
+                                            </strong>
+    
+                                            <div class="field-row">
+                                                {{ form_errors(form.price) }}
+                                                <span class="label">
+                                                    {{ form_label(form.price, 0|add_time_unit_text|capitalize) }}
+                                                </span>
+                                                {{ form_widget(form.price, {
+                                                    'attr': {
+                                                        'class': 'numbers-only form-control',
+                                                        'help':  'listing.edit.price.help'|trans
+                                                    }
+                                                }) }}
+                                            </div>
+    
+                                            {% if bundleExist('CocoricoDeliveryBundle') %}
+                                                {% include '@CocoricoDelivery/Frontend/Listing/_form_delivery.html.twig' with {
+                                                'form': form
+                                                } only %}
+                                            {% endif %}
+                                        </div>
+    
+                                        <div class="price-box small-box">
+                                            <strong class="title">
+                                                {{ 'listing.new.price.retail'|trans }}
+                                            </strong>
+                                            
+                                            <div class="field-row">
+                                                {{ form_errors(form.retailprice) }}
+                                                {{ form_widget(form.retailprice, {
+                                                    'attr': {
+                                                        'class': 'numbers-only form-control',
+                                                        'help': 'listing.edit.retailprice.help'|trans
+                                                    }
+                                                }) }}
+                                            </div>
+                                        </div>                                    
+                                    </div>
+    
+                                    <div class="area">
+                                        <div class="row">
+                                            <h2 class="float-left">{{ 'listing.form.selloption'|trans }}</h2>
+                                            <div class="float-left">
+                                                {{ form_widget(form.selloption) }}
+                                            </div>                                        
+                                        </div> 
+    
+                                        <div id="sell-price-box" class="price-box small-box">
+                                            <strong class="title">
+                                                {{ 'listing.form.sellprice'|trans }}
+                                            </strong>
+    
+                                            <div class="field-row">
+                                                {{ form_errors(form.sellprice) }}
+                                                {{ form_widget(form.sellprice, {
+                                                    'attr':{
+                                                        'class': 'numbers-only form-control',
+                                                        'help': 'listing.edit.sellprice.help'|trans
+                                                    }
+                                                }) }}                                            
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="area">
+                                        <h2>{{ 'listing.form.salenotes'|trans }}</h2>
+                                        {{ form_widget(form.salenotes) }}
+                                    </div>
+    
+    
+    
+                                    <!-- alert -->
+                                    <div role="alert" class="alert alert-warning">
+                                        <i class="ico exclamation">!</i>
+    
+                                        <p>
+                                            {{ 'listing.new.price_notice'| trans }}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </fieldset>
                     </div>
-                {% endif %}
-                <div class="btns-area new-listing">
-
-                    <div id="progress" class="progress">
-                        <div class="progress-bar progress-bar-success"></div>
+                    {% if not is_granted("IS_AUTHENTICATED_FULLY") %}
+                        <div class="form-signup validate-form">
+                            <fieldset>
+                                <legend class="hidden">form signup</legend>
+                                <h2>{{ 'listing.new.signup.title'|trans }}</h2>
+                                {% include '@CocoricoUser/Frontend/Common/_login_register.html.twig' with {
+                                'form_registration' : form.user,
+                                'form_login': form.user_login
+                                } only %}
+                            </fieldset>
+                        </div>
+                    {% endif %}
+                    <div class="btns-area new-listing">
+    
+                        <div id="progress" class="progress">
+                            <div class="progress-bar progress-bar-success"></div>
+                        </div>
+                        {{ form_widget(form.action) }}
+                        <div class="text-center row col-centered">
+                            {{ form_widget(form.publish) }}
+                            {{ form_widget(form.preview) }}
+                            {{ form_widget(form.draft) }}                        
+                        </div>
+    
                     </div>
-                    {{ form_widget(form.action) }}
-                    <div class="text-center row col-centered">
-                        {{ form_widget(form.publish) }}
-                        {{ form_widget(form.preview) }}
-                        {{ form_widget(form.draft) }}                        
-                    </div>
-
-                </div>
-                {{ form_end(form) }}
-            </div>
-
+                    {{ form_end(form) }}
+                </div> <!-- /.col-xs-12 -->
+            </div> <!-- /.container -->
         {% endblock %}
 
     {% endembed %}

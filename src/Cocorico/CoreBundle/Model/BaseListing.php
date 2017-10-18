@@ -130,6 +130,13 @@ abstract class BaseListing
     protected $salenotes;
 
     /**
+     * @ORM\Column(name="sizefitinfo", type="text", nullable=true)
+     *
+     * @var string
+     */
+    protected $sizefitinfo;
+
+    /**
      *
      * @ORM\Column(name="certified", type="boolean", nullable=true)
      *
@@ -371,6 +378,29 @@ abstract class BaseListing
     public function getSalenotes()
     {
         return $this->salenotes;
+    }
+
+    /**
+     * Set sizefitinfo
+     *
+     * @param  string $sizefitinfo
+     * @return Listing
+    */
+    public function setSizefitinfo($sizefitinfo)
+    {
+        $this->sizefitinfo = $sizefitinfo;
+
+        return $this;
+    }
+
+    /**
+    * Get sizefitinfo
+    *
+    * @return string
+    */
+    public function getSizefitinfo()
+    {
+        return $this->sizefitinfo;
     }
     
     /**

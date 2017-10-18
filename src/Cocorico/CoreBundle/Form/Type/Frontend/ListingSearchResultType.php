@@ -115,7 +115,7 @@ class ListingSearchResultType extends AbstractType
                     'label' => 'listing_search.form.categories',
                     'mapped' => false,
                     'data' => $categories,
-                    'block_name' => 'listing_categories',
+                    'block_name' => 'listing_categories_searchresult',
                     'multiple' => true,
                     'empty_value' => 'listing_search.form.categories.empty_value',
                 )
