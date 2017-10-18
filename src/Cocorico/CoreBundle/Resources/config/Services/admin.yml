@@ -12,6 +12,15 @@ services:
             - [ setLocales, [%cocorico.locales%]]
             - [ setIncludeVat, [%cocorico.include_vat%]]
 
+    sonata.admin.designer:
+        class: Cocorico\CoreBundle\Admin\DesignerAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Users", label: "Designer", label_caalogue: "cocorico_admin_menu" }
+        arguments:
+            - ~
+            - Cocorico\CoreBundle\Entity\Designer
+            - ~        
+
     sonata.admin.booking:
         class: Cocorico\CoreBundle\Admin\BookingAdmin
         tags:

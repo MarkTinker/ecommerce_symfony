@@ -12,6 +12,7 @@
 namespace Cocorico\CoreBundle\Form\Type\Frontend;
 
 use Cocorico\CoreBundle\Entity\Listing;
+use Cocorico\CoreBundle\Entity\Designer;
 use Cocorico\CoreBundle\Entity\ListingLocation;
 use Cocorico\CoreBundle\Event\ListingFormBuilderEvent;
 use Cocorico\CoreBundle\Event\ListingFormEvents;
@@ -169,6 +170,21 @@ class ListingNewType extends AbstractType implements TranslationContainerInterfa
                 'textarea',
                 array(
                     'label' => 'listing.form.salenotes'
+                )
+            )
+            ->add(
+                'sizefitinfo',
+                'textarea',
+                array(
+                    'label' => 'Size, fit & Condition'
+                )
+            )
+            ->add(
+                'designer',
+                'entity',
+                array(
+                    'class' => 'Cocorico\CoreBundle\Entity\Designer',
+                    'choice_label' => 'name',
                 )
             )
             ->add(

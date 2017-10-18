@@ -103,6 +103,9 @@
                                     </div>
                                 </div>
                                 <div class="block">
+                                    <h2>{{ form_label(form.designer) }}</h2>
+                                    {{ form_widget(form.designer) }}
+
                                     <h2>{{ 'listing.new.price.title'|trans }}</h2>                            
                                     <!-- price-box -->
                                     <div class="area">
@@ -176,6 +179,11 @@
                                     <div class="area">
                                         <h2>{{ 'listing.form.salenotes'|trans }}</h2>
                                         {{ form_widget(form.salenotes) }}
+                                    </div>
+
+                                    <div class="area">
+                                        <h2>{{ form_label(form.sizefitinfo) }}</h2>
+                                        {{ form_widget(form.sizefitinfo) }}
                                     </div>
     
     

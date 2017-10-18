@@ -65,7 +65,7 @@ class Listing extends BaseListing
     /**
      * @Assert\NotBlank(message="assert.not_blank")
      * 
-     * @ORM\ManyToOne(targetEntity="Designer")
+     * @ORM\ManyToOne(targetEntity="Cocorico\CoreBundle\Entity\Designer", inversedBy="listings", cascade={"persist"})
      * @ORM\JoinColumn(name="designer_id", referencedColumnName="id", nullable=false, onDelete="CASCADE")
      * 
      * @var Designer
@@ -302,6 +302,29 @@ class Listing extends BaseListing
     public function getUser()
     {
         return $this->user;
+    }
+
+    /**
+     * Set designer
+     *
+     * @param  \Cocorico\CoreBundle\Entity\Designer $designer
+     * @return Listing
+     */
+    public function setDesigner($designer = null)
+    {
+        $this->designer = $designer;
+
+        return $this;
+    }
+
+    /**
+     * Get designer
+     *
+     * @return \Cocorico\CoreBundle\Entity\Designer
+     */
+    public function getDesigner()
+    {
+        return $this->designer;
     }
 
     /**
