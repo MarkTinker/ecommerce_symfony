@@ -325,7 +325,7 @@ a:active, a:hover {
 #reservations .postarea .posts-holder .post .post-area .img-holder img,
 #comments .postarea .posts-holder .post .img-holder img,
 .container .row .twocolumns .listing-area .listing-holder .listing-post .listing-box .frame .post-info .img-holder img,
-.vertical-holder .vertical-slider .vertical-slideset .vertical-slide img,
+.vertical-holder .vertical-slider .vertical-slideset,
 .listing-area .listing-holder .listing-post .listing-box .frame .post-info .img-holder img {
     height: auto;
     position: absolute;
@@ -337,6 +337,16 @@ a:active, a:hover {
     width: auto;
 }
 
+.vertical-slide img {
+    height: 100%;
+    margin: 0 auto;
+}
+
+.gallery-slider .vertical-slide img {
+    width: auto;
+    margin: 0 auto;
+    height: 100%;
+}
 #user_contact.gallery-small .slideset,
 #user_contact.gallery-small .slideset .slide {
     width: 213px;
