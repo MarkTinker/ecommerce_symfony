@@ -336,17 +336,6 @@ a:active, a:hover {
     margin: auto;
     width: auto;
 }
-
-.vertical-slide img {
-    height: 100%;
-    margin: 0 auto;
-}
-
-.gallery-slider .vertical-slide img {
-    width: auto;
-    margin: 0 auto;
-    height: 100%;
-}
 #user_contact.gallery-small .slideset,
 #user_contact.gallery-small .slideset .slide {
     width: 213px;
@@ -2690,6 +2679,8 @@ iShareCloset Colors
     font-weight: bold;
     text-align: center;
     background-color: #e7e7e8;
+    width: 100%;
+    margin: 0;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -2726,6 +2717,7 @@ iShareCloset Colors
     background-color: #e7e7e8;
     padding: 5px 0 2px 50px;
     margin-top: 1px;
+    margin-left: -1px;
 }
 #search-ajaxform input {
     width: 180px;
@@ -3502,6 +3494,9 @@ iShareCloset Colors
     max-width: 400px;
 }
 
+.moreinfo {
+    padding-top: 10px;
+}
 .moreinfo .leftpart a{
     color: #b0aaac;
     font-family: "rounded_eleganceregular";
@@ -3690,4 +3685,41 @@ iShareCloset Colors
 }
 .dropdown a.color-pink {
     font-size: 15pt;
+}
+
+/*
+ Detail Page
+*/
+
+.gallery-slider .vertical-slide a {
+    border: none;
+}
+
+.vertical-holder .vertical-slider .vertical-slideset .vertical-slide {
+    border-radius: 5p;
+    border: #ebeced solid 1px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.vertical-holder .vertical-slider .vertical-slideset .vertical-slide.active {
+    border: #000 solid 1px;
+}
+.gallery-slider .vertical-slide a  {
+    margin-top: 0;
+}
+
+.gallery-slider .grey-background {
+    display: block;
+    background-color: #e7e7e8;
+    position: absolute;    
+    top: 0;
+    left: 25%;
+    width: 50%;
+    height: 100%;
+    z-index: 0;
+}
+
+.vertical-holder .vertical-slider .vertical-slideset {
+    z-index: 1;
 }

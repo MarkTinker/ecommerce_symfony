@@ -40,8 +40,16 @@ class BookingPriceController extends Controller
 
         $form = $this->createBookingPriceForm($booking);
 
-        return $this->render(
+        /*return $this->render(
             '@CocoricoCore/Frontend/Booking/form_booking_price.html.twig',
+            array(
+                'form' => $form->createView(),
+                'booking' => $booking
+            )
+        );
+        */
+        return $this->render(
+            '@CocoricoCore/Frontend/Booking/form_date_range.html.twig',
             array(
                 'form' => $form->createView(),
                 'booking' => $booking
@@ -74,8 +82,7 @@ class BookingPriceController extends Controller
         );
 
         return $form;
-    }
-
+    } 
 
     /**
      * Get Booking Price

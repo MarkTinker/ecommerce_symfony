@@ -9,6 +9,7 @@
 {% set listing_location = listing.location %}
 {% set price = listing.priceDecimal | format_price(app.request.locale, 0) %}
 {% set listing_user = listing.user %}
+{% set listing_designer = listing.designer %}
 {% set listing_image = listing.images|length ? listing.images[0].name : ListingImageConstants.IMAGE_DEFAULT %}
 
 {%- block meta_title -%}
@@ -93,6 +94,9 @@
                                                 {% endfor %}
                                             </div>
                                         </div>
+                                        <div class="grey-background">
+
+                                        </div>
                                     </div>
                                     <a href="#" class="btn-prev text-center">previous</a>
                                     <a href="#" class="btn-next text-center">next</a>
@@ -106,17 +110,12 @@
                 <aside id="sidebar" class="col-xs-12 col-md-4">
                     <div class="holder">
                         <div class="sub-head">
-                            <h1 class="color-pink text-left designer-name"><a class="color-pink" href="{{ path('cocorico_user_profile_show', { 'id': listing_user.id }) }}">{{ listing_user.firstName|upper }} {{ listing_user.lastName|upper }}</a></h1>
+                            <h1 class="color-pink text-left designer-name"><a class="color-pink">{{ listing_designer.name|upper }}</a></h1>
                             <h2 class="text-left listing-title">{{ listing_translation.title }}</h2>
                             <!-- rating -->
                             {% if listing.averageRating %}
                                 {{ listing.averageRating | cocorico_star_rating }}
-                            {% endif %}
-                            <span class="counter">
-                                (
-                                <span>{{ listing.commentCount }}</span>
-                                {{ 'listing.show.comments'|trans }})
-                            </span>
+                            {% endif %}                            
                         </div>
                         {% set retailprice = (listing.retailprice / 100) | format_price(app.request.locale, 0) %}
                         {% set price = (listing.price / 100) | format_price(app.request.locale, 0) %}
@@ -127,6 +126,11 @@
                             <h3><b>Colour:</b> Salmon Pink</h3>
                         </div>
 
+                        {#booking form#}
+                        {{ render(controller('CocoricoCoreBundle:Frontend/BookingPrice:bookingPriceForm', {
+                            'listing': listing
+                        })) }}
+                        
                         <div class="action-box row">
                             <div class="col-xs-12 col-md-6">
                                 <a class=""><h3><img class="bag" src="{{ asset('images/bag_grey.png') }}"> &nbsp;&nbsp;Add to Bag</h3></a>
@@ -142,7 +146,7 @@
                             </div>
                         </div>
                         <div id="sizefit-box" class="row info-section">
-                            <a data-toggle="collapse" data-target="#sizefit-info"><h3>Size& Fit Information &nbsp;&nbsp;<i class="fa fa-plus"></i><i class="fa fa-minus"></i></h3></a>
+                            <a data-toggle="collapse" data-target="#sizefit-info"><h3>Size, Fit & Condition &nbsp;&nbsp;<i class="fa fa-plus"></i><i class="fa fa-minus"></i></h3></a>
                             <div id="sizefit-info" class="collapse in">
                                 <p>Fits true to your size, take your normal size.
                                         · Designed to be fitted at the bust and loose

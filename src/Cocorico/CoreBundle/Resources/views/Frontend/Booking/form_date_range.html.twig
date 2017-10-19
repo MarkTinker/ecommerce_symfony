@@ -1,0 +1,78 @@
+{% trans_default_domain 'cocorico_booking' %}
+
+<section class="reservation ajax-container">
+
+    <div class="date-selection">
+        {% if app.request.isXmlHttpRequest %}
+            {% include 'CocoricoCoreBundle:Frontend/Common:_flash.html.twig' %}
+        {% endif %}
+
+        {{ form_errors(form) }}
+
+        <div id="time-error" class="errors" style="display:none">
+            <i class="icon-error-field"></i>
+            {{ 'time_range.invalid.end_before_start'|trans({}, 'cocorico') }}<br>
+        </div>
+
+        <fieldset>
+            <legend class="hidden">date-selection</legend>
+
+            {{ form_widget(form.date_range) }}
+
+            {% if not timeUnitIsDay %}
+                {{ form_widget(form.time_range) }}
+            {% endif %}
+
+            <input type="submit" class="hidden">
+        </fieldset>
+    </div>
+
+    <script>
+        $(function () {
+            var timeUnitIsDay = {{ timeUnitIsDay ? 'true' : 'false' }};
+
+            initDatePickerAjax(function () {
+                jcf.replaceAll("#booking-price-form");
+            });
+
+            /*
+            var $form = $("#booking-price-form");
+
+            $form.submit(function () {
+                //Remove price and submit button
+                //Disable fields and add loading until form is rendered
+                $(this).find("input").attr("readonly", "readonly");
+                $(this).find("select option:not(:selected)").each(function () {
+                    $(this).attr('disabled', 'disabled');
+                });
+                $(".add-info .price, .add-info .loading, a#submit-booking").remove();
+                $(".add-info").prepend('<img class="loading" src="{{ asset("images/loading.gif") }}" /><br>');
+            });
+
+            $("#submit-booking").click(function (e) {
+                e.preventDefault();
+                var $errors = $form.find('div.errors');
+                //Submit form if no errors
+                if (!$errors.length || ($errors.length && !$errors.is(":visible"))) {
+                    if ($("#start-date").val() && $("#end-date").val()) {
+                        if (timeUnitIsDay) {
+                            $form.submit();
+                        } else {
+                            var $holderTimes = $form.find(".time-fields");
+                            var $startHour = $holderTimes.find("[id$=_start_hour]").first();
+                            var $endHour = $holderTimes.find("[id$=_start_minute]").first();
+                            var $startMinute = $holderTimes.find("[id$=_end_hour]").first();
+                            var $endMinute = $holderTimes.find("[id$=_end_minute]").first();
+
+                            if ($startHour.val() && $endHour.val() && $startMinute.val() && $endMinute.val()) {
+                                $form.submit();
+                            }
+                        }
+                    }
+                }
+            });
+            */
+
+        });
+    </script>
+</section>

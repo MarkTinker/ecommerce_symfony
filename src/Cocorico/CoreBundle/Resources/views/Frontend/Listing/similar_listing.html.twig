@@ -1,5 +1,6 @@
 {% trans_default_domain 'cocorico_listing' %}
 
+{% if results|length > 0 %}
 <section class="widget similar-ads">
     <h1 class="text-center color-pink">YOU MAY ALSO LIKE</h1>
 
@@ -22,6 +23,7 @@
         {%- for result in results.getIterator() -%}
             {% set listing = result[0] %}
             {% set listing_user = listing.user %}
+            {% set listing_designer = listing.designer %}
             {% set listing_translation = listing.translations[app.request.locale] %}
             {% set price = (listing.price / 100) | format_price(app.request.locale, 0) %}
             {% set retailprice = (listing.retailprice / 100) | format_price(app.request.locale, 0) %}
@@ -46,7 +48,7 @@
 
                         <div class="post-content">                                                
                             <div class="textbox">
-                                <h2>{{ listing_user.firstName|upper }} {{ listing_user.lastName|upper }}</h2>
+                                <h2>{{ listing_designer.name|upper }}</h2>
                                 <h2>{{ listing_translation.title }}</h2>
                                 <h2>{{ retailprice }}</h2>
                                 <div class="row">
@@ -61,3 +63,4 @@
         {% endfor %}
     </div>    
 </section>
+{% endif %}
