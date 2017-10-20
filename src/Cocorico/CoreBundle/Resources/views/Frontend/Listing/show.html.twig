@@ -222,61 +222,9 @@
         { 'id': listing.id }
         )) }}
 
-        <div class="row moreinfo container">
-            <div class="row">
-                <div class="col-md-6 text-left leftpart">
-                    <a href="">Rent from this designer</a>
-                    <a href="">Rent from this owner</a>
-                </div>
-                <div class="col-md-6 text-right rightpart">
-                    <a href="" class="color-pink">Rent more</a>
-                    <a href="">Clothing</a>
-                    <a href="">Shoes</a>
-                    <a href="">Bags</a>
-                    <a href="">Accessories</a>
-                </div>
-            </div>            
-
-            <div class="infosection row">
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="row">
-                        <div class="col-md-4">                            
-                            <img src="{{ asset('images/delivery.png') }}">
-                            <h3 class="text-center color-pink">DELIVERY</h3>
-                            <p class="text-center">
-                                Sed ut perspiciatis unde omnis
-                                iste natus error sit voluptatem
-                                accusantium doloremque
-                                laudantium, totam rem aperiam,
-                                eaque ipsa illo inventore.
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <img src="{{ asset('images/return.png') }}">
-                            <h3 class="text-center color-pink">RETURN</h3>
-                            <p class="text-center">
-                                Nam libero tempore, cum soluta
-                                nobis est eligendi optio cumque
-                                nihil impedit quo minus id quod
-                                maxime placeat facere possimus,
-                                omnis voluptas 
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <img src="{{ asset('images/help_and_advice.png') }}">
-                            <h3 class="text-center color-pink">HELP & ADVICE</h3>
-                            <p class="text-center">
-                                At vero eos et accusamus
-                                et iusto odio dignissimos
-                                ducimus qui blanditiis
-                                praesentium voluptatum deleniti
-                                atque corrupti est, omnis dolor.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {# similar results#}
+        {{ render(controller('CocoricoCoreBundle:Frontend/MoreInfo:index')) }}
+        
         
         {% endblock %}
         {% block modal %}

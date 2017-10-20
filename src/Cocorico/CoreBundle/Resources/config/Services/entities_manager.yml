@@ -11,6 +11,11 @@ services:
             - "%cocorico.listing_availability_status%"
             - "@event_dispatcher"
 
+    cocorico.moreinfo.manager:
+        class: Cocorico\CoreBundle\Model\Manager\MoreInfoManager
+        arguments:
+            - "@doctrine.orm.entity_manager"
+
     cocorico.listing.manager:
         class: Cocorico\CoreBundle\Model\Manager\ListingManager
         arguments:
