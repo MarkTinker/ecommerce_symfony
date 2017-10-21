@@ -42,10 +42,20 @@
                 'description'
             )
             ->add(
+                'filename'
+            )
+            ->add(
                 'published', 
                 null,
                 array(
                     'label' => 'admin.page.published.label'
+                )
+            )
+            ->add(
+                'file',
+                'file',
+                array(
+                    'required' => false
                 )
             )
             ->add(
@@ -66,6 +76,23 @@
             );
     }
 
+    public function prePersist($moreinfo)
+    {
+        $this->manageFileUpload($moreinfo);
+    }
+
+    public function preUpdate($moreinfo)
+    {
+        $this->manageFileUpload($moreinfo);
+    }
+
+    private function manageFileUpload($moreinfo)
+    {
+        if ($moreinfo->getFile()) {
+            $moreinfo->refreshUpdated();
+        }
+    }
+
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
     }
@@ -75,6 +102,7 @@
         $listMapper
             ->add('title')        
             ->add('url')
+            ->add('filename')
             ->add('description')
             ->add('published')
             ->add(

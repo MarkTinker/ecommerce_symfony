@@ -24,7 +24,7 @@
   */
   class MoreInfo extends BaseMoreInfo
   {
-    use ORMBehaviors\Timestampable\Timestampable;
+    use ORMBehaviors\Timestampable\Timestampable;    
 
     /**
      * 
@@ -39,6 +39,7 @@
     public function __construct()
     {
         $this->published = false;
+        $this->updated = new \DateTime("now");
     }
 
     /**
@@ -50,6 +51,4 @@
     {
         return $this->id;
     }
-
-
-  }
+}
