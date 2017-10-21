@@ -19,7 +19,7 @@
   * MoreInfo
   *
   * @ORM\Entity
-  *
+  * @ORM\HasLifecycleCallbacks
   * @ORM\Table(name="more_info")
   */
   class MoreInfo extends BaseMoreInfo
@@ -50,5 +50,40 @@
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * Manages the copying of the file to the relevant place on the server
+     */
+    public function upload()
+    {
+        // the file property can be empty if the field is not required
+        if (null === $this->getFile()) {
+            return;
+        }
+
+        // we use the original file name here but you should
+        // sanitize it at least to avoid any security issues
+
+        // move takes the target directory and target filename as params
+        $this->getFile()->move(
+            $this->getUploadRootDir(),
+            $this->getFile()->getClientOriginalName()
+        );
+
+        // set the path property to the filename where you've saved the file
+        $this->filename = $this->getFile()->getClientOriginalName();
+
+        // clean up the file property as you won't need it anymore
+        $this->setFile(null);
+    }
+
+    /**
+     * Lifecycle callback to upload the file to the server
+     * @ORM\PrePersist
+     * @ORM\PreUpdate
+     */
+    public function lifecycleFileUpload() {
+        $this->upload();
     }
 }

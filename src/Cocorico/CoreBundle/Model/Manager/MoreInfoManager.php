@@ -25,7 +25,13 @@ class MoreInfoManager
     public function getMoreinfos()
     {
         //$moreinfos = $this->getRepository()->findAll();
-        $moreinfos = $this->em->getRepository(MoreInfo::class)->findAll();
+        //$moreinfos = $this->em->getRepository(MoreInfo::class)->findAll();
+        $repository = $this->em->getRepository(MoreInfo::class);
+        $query = $repository->createQueryBuilder('p')
+            ->where('p.published = true')
+            ->getQuery();
+        $moreinfos = $query->getResult();
+        
         return $moreinfos;
     }
 }

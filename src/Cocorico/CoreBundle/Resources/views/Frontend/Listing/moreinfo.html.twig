@@ -19,7 +19,7 @@
             <div class="col-md-10 col-md-offset-1">
                 <div class="row">
                     {% for moreinfo in moreinfos %}
-                    {% set fileurl = 'images/upload'~moreinfo.filename %}
+                    {% set fileurl = '/images/upload/'~moreinfo.filename %}
                     <div class="col-md-4">
                         <img src="{{ asset(fileurl)}}">
                         <h3 class="text-center color-pink">{{ moreinfo.title }}</h3>

@@ -42,9 +42,6 @@
                 'description'
             )
             ->add(
-                'filename'
-            )
-            ->add(
                 'published', 
                 null,
                 array(
