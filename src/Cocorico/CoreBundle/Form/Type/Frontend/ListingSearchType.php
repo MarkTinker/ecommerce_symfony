@@ -21,7 +21,6 @@ class ListingSearchType extends ListingSearchResultType
         parent::buildForm($builder, $options);
 
         $builder
-            ->remove('price_range')
             ->remove('characteristics')
             ->remove('sort_by')
             ->remove('delivery')

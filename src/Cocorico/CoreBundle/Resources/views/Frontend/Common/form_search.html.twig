@@ -3,7 +3,7 @@
 {% include 'CocoricoCoreBundle:Frontend/Common:_flash.html.twig' %}
 <!-- form-category -->
 
-<div class="col-sm-3 col-xs-12 container-padding">
+<div class="col-sm-2 col-xs-12 container-padding">
 {{ form_start(form, {'attr': {'class': 'form-category alt col-xs-12'}}) }}
 
 {{ form_errors(form) }}
@@ -18,6 +18,17 @@
         </div>        
     </div>
 
+    <!-- range-area -->
+    <div class="range-area">
+        <!-- range-holder -->
+        {{ form_widget(form.price_range) }}
+    </div>
+
+    <div class="selection-holder btn-block text-right">
+        <button type="submit" class="btn btn-default" style="padding: 6px 14px 6px;">
+            {{ 'listing.filter'|trans }}
+        </button>
+    </div>
     {% block form_search_filters %}
     {% endblock %}
 

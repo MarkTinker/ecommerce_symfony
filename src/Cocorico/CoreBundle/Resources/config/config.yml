@@ -178,7 +178,7 @@ liip_imagine:
             quality: 100
             filters:
                 auto_rotate: ~
-                thumbnail: { size: [%cocorico.listing_img_xxmedium_w%, %cocorico.listing_img_xxmedium_h%], mode: outbound , cache_type: public, cache_expires: 1 months }
+                thumbnail: { size: [%cocorico.listing_img_xxmedium_w%, %cocorico.listing_img_xxmedium_h%], mode: inset , cache_type: public, cache_expires: 1 months }
         listing_xmedium:
             quality: 100
             filters:
@@ -201,11 +201,11 @@ liip_imagine:
                 upscale: { min: [%cocorico.listing_img_xlarge_w%, %cocorico.listing_img_xlarge_h%] }
                 thumbnail: { size: [%cocorico.listing_img_xlarge_w%, %cocorico.listing_img_xlarge_h%], mode: outbound, cache_type: public, cache_expires: 1 months, allow_upscale: true }
         listing_large:
-            quality: 85
+            quality: 100
             filters:
                 auto_rotate: ~
                 upscale: { min: [%cocorico.listing_img_large_w%, %cocorico.listing_img_large_h%] }
-                thumbnail: { size: [%cocorico.listing_img_large_w%, %cocorico.listing_img_large_h%], mode: outbound, cache_type: public, cache_expires: 1 months, allow_upscale: true }
+                thumbnail: { size: [%cocorico.listing_img_large_w%, %cocorico.listing_img_large_h%], mode: inset, cache_type: public, cache_expires: 1 months, allow_upscale: true }                
 
 lexik_currency:
     currencies:

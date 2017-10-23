@@ -48,7 +48,7 @@
         {% endblock %}
 
         {% block main %}
-            <div class="col-sm-9 col-xs-12">
+            <div class="col-sm-10 col-xs-12">
                 <h1>
                     {{ seo_title }}
                     <small>
@@ -82,12 +82,13 @@
                                 {% set listing_translation = listing.translations[app.request.locale] %}
                                 {% set listing_location = listing.location %}
                                 {% set listing_user = listing.user %}
+                                {% set listing_designer = listing.designer %}
                                 {% set price = (listing.price / 100) | format_price(app.request.locale, 0) %}
                                 {% set retailprice = (listing.retailprice / 100) | format_price(app.request.locale, 0) %}
                                 {% set listing_image = listing.images|length ? listing.images[0].name : ListingImageConstants.IMAGE_DEFAULT %}
                                 {% set user_image = listing_user.images|length ? listing_user.images[0].name : UserImageConstants.IMAGE_DEFAULT %}
     
-                                <article class="listing-post col-md-4 col-sm-6 col-xs-12">
+                                <article class="listing-post col-md-3 col-sm-6 col-xs-12">
                                     <a href="javascript:void(0)" id="favourite-{{ listing.id }}" class="favourit">
                                         <i class="fa fa-heart-o"></i>
                                         <i class="fa fa-heart"></i>
@@ -106,7 +107,7 @@
     
                                             <div class="post-content">                                                
                                                 <div class="textbox">
-                                                    <h2>{{ listing_user.firstName|upper }} {{ listing_user.lastName|upper }}</h2>
+                                                    <h2>{{ listing_designer != null ? listing_designer.name|upper : '' }}</h2>
                                                     <h2>{{ listing_translation.title }}</h2>
                                                     <h2>{{ retailprice }}</h2>
                                                     <div class="row">

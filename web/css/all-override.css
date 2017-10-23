@@ -330,11 +330,10 @@ a:active, a:hover {
     height: auto;
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
-    width: auto;
+    width: 100%;
 }
 #user_contact.gallery-small .slideset,
 #user_contact.gallery-small .slideset .slide {
@@ -1247,8 +1246,8 @@ images css for making it 4:3
 
 .container .row .twocolumns .listing-area .listing-holder .listing-post .listing-box .frame .post-info .img-holder,
 .listing-area .listing-holder .listing-post .frame .post-info .img-holder {
-    width: 384px;
-    height: 440px;
+    width: 100%;
+    height: 370px;
     position: relative;
     margin: 0 auto;
 }
@@ -3145,7 +3144,7 @@ iShareCloset Colors
 }
 @media (min-width: 768px) {
     .container-padding {
-        padding: 0 60px;
+        padding: 0 44px;
     }
 }
 
@@ -3279,6 +3278,9 @@ iShareCloset Colors
     padding: 0;
 }
 
+.listing-area .listing-holder{
+    padding-right:30px;
+}
 .listing-area .listing-holder .listing-post .listing-box h1 {
     font-family: "gothamrnd_book";
 }
@@ -3722,4 +3724,12 @@ iShareCloset Colors
 
 .vertical-holder .vertical-slider .vertical-slideset {
     z-index: 1;
+}
+
+.range-area {
+    width: 100%;
+}
+
+.range-holder {
+    width: 100%;
 }

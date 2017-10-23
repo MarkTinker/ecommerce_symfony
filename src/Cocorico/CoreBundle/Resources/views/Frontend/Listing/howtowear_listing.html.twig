@@ -1,3 +1,4 @@
+{% if results|length > 0 %}
 <div id="howtowearit" class="row">
     <div class="col-md-2 col-xs-12"><h1>HOW TO WEAR IT</h1></div>
     <div class="col-md-9 col-xs-12">
@@ -43,4 +44,7 @@
         </article>
         {% endfor %}
     </div>
-</div>
+</div> <!-- #howtowaer -->
+{% else %}
+<h1 class="text-center">Nothing to show now</h1>
+{% endif %}

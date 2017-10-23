@@ -137,7 +137,8 @@ class ListingSearchResultType extends AbstractType
             $dateRangeEnd = $dateRange->getEnd();
         }
 
-       /* $builder
+        $builder
+        /*
             ->add(
                 'date_range',
                 'date_range',
@@ -159,15 +160,15 @@ class ListingSearchResultType extends AbstractType
                     'display_mode' => $this->daysDisplayMode,
                     'min_start_delay' => $this->minStartDelay
                 )
-            )
+            )*/
             ->add(
                 'price_range',
                 new PriceRangeType($this->currency),
                 array(
-                    /** @Ignore *//*
+                    /** @Ignore */
                     'label' => false
                 )
-            );*/
+            );
 
         //CHARACTERISTICS
         $characteristics = $listingSearchRequest->getCharacteristics();

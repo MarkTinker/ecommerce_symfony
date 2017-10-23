@@ -5811,7 +5811,7 @@ span.btn:focus {
     position: relative;
     background: #e8e8e8;
     border-radius: 4px;
-    margin: 0 -10px 40px;
+    margin: 0 -10px 0px;
     padding: 15px 166px 15px 19px;
 }
 
@@ -6023,7 +6023,7 @@ span.btn:focus {
 
 .range-holder .range-box {
     margin: 0 18px 0 0;
-    padding: 5px 15px 15px;
+    padding: 0;
 }
 
 .range-holder .range-box:after {

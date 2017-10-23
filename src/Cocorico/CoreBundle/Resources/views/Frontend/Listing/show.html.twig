@@ -175,12 +175,13 @@
                         </div>                        
                     </div>
                 </aside> <!-- /.sidebar -->
-            </div> <!-- /.twocolumns -->            
-        </div><!-- /.container -->       
-        {# how to wear it #}
-        {{ render(controller('CocoricoCoreBundle:Frontend/ListingSearch:howtowearListing',
-        { 'id': listing.id }
-        )) }}
+            </div> <!-- /.twocolumns -->
+
+            {# how to wear it #}
+            {{ render(controller('CocoricoCoreBundle:Frontend/ListingSearch:howtowearListing',
+            { 'id': listing.id }
+            )) }}
+        </div><!-- /.container -->
 
         {# similar results #}
         {{ render(controller('CocoricoCoreBundle:Frontend/ListingSearch:similarListing',

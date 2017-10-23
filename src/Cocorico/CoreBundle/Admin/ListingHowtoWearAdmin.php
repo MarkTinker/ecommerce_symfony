@@ -34,10 +34,10 @@
     {
         $formMapper
             ->add(
-                'listing_id1'
+                'listingId1'
             )
             ->add(
-                'listing_id2'
+                'listingId2'
             );
     }
 
@@ -45,15 +45,15 @@
     {
         $datagridMapper
             ->add(
-                'listing_id1'
+                'listingId1'
             );
     }
 
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-        ->add('listing_id1')        
-        ->add('listing_id2')
+        ->add('listingId1')        
+        ->add('listingId2')
         ->add(
             '_action',
             'actions',

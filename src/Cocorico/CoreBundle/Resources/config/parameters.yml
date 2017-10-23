@@ -227,8 +227,8 @@ parameters:
     cocorico.listing_img_xmedium_h: 150
     cocorico.listing_img_medium_w: 275
     cocorico.listing_img_medium_h: 206
-    cocorico.listing_img_large_w: 384
-    cocorico.listing_img_large_h: 288
+    cocorico.listing_img_large_w: 354
+    cocorico.listing_img_large_h: 380
     cocorico.listing_img_xlarge_w: 527
     cocorico.listing_img_xlarge_h: 395
     cocorico.listing_img_xxlarge_w: 680
