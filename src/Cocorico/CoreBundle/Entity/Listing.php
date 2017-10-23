@@ -15,6 +15,7 @@ use Cocorico\CoreBundle\Model\BaseListing;
 use Cocorico\CoreBundle\Model\ListingOptionInterface;
 use Cocorico\MessageBundle\Entity\Thread;
 use Cocorico\UserBundle\Entity\User;
+use Cocorico\CoreBundle\Entity\Designer;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
@@ -65,7 +66,7 @@ class Listing extends BaseListing
     /**
      * @Assert\NotBlank(message="assert.not_blank")
      * 
-     * @ORM\ManyToOne(targetEntity="Cocorico\CoreBundle\Entity\Designer", inversedBy="listings", cascade={"persist"})
+     * @ORM\ManyToOne(targetEntity="Cocorico\CoreBundle\Entity\Designer", cascade={"persist"})
      * @ORM\JoinColumn(name="designer_id", referencedColumnName="id", nullable=false, onDelete="CASCADE")
      * 
      * @var Designer
@@ -99,6 +100,12 @@ class Listing extends BaseListing
      *
      */
     private $listingListingCharacteristics;
+
+    /**
+     * @ORM\OneToMany(targetEntity="ListingHowtoWear", mappedBy="listingId1")
+     * 
+     */
+    private $listingHowtoWear;
 
     /**
      *
@@ -310,7 +317,7 @@ class Listing extends BaseListing
      * @param  \Cocorico\CoreBundle\Entity\Designer $designer
      * @return Listing
      */
-    public function setDesigner($designer = null)
+    public function setDesigner(Designer $designer = null)
     {
         $this->designer = $designer;
 

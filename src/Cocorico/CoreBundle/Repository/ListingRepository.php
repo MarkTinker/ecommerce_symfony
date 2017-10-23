@@ -34,6 +34,8 @@ class ListingRepository extends EntityRepository
             ->addSelect("partial cat.{id, locale, name}")
             ->addSelect("partial i.{id, name}")
             ->addSelect("partial u.{id, firstName, lastName}")
+            ->addSelect("partial d.{id, name}")
+            ->addSelect("partial h.{id, listingId1, listingId2}")
             //->addSelect("partial ln.{id}")
             ->addSelect("partial ln.{id, city, route, country}")
             ->addSelect("partial co.{id, lat, lng}")
@@ -48,7 +50,9 @@ class ListingRepository extends EntityRepository
             //Join::WITH: Avoid exclusion of listings with no categories (disable inner join)
             ->leftJoin('ca.translations', 'cat', Query\Expr\Join::WITH, 'cat.locale = :locale')
             ->leftJoin('l.images', 'i')
+            ->leftJoin('l.listingHowtoWear', 'h')
             ->leftJoin('l.user', 'u')
+            ->leftJoin('l.designer', 'd')
             ->leftJoin('u.images', 'ui', Query\Expr\Join::WITH, 'ui.position = 1')
             ->leftJoin('l.location', 'ln')
             ->leftJoin('ln.coordinate', 'co');

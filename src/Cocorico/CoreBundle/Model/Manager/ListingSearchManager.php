@@ -412,6 +412,34 @@ class ListingSearchManager
     }
 
     /**
+     * gethowtowearListingsByIds returns the listings, depending upon ids provided
+     *
+     * @param        id $id
+     *
+     * @return Paginator|null
+     */
+    public function gethowtowearListingsByIds($id, $locale)
+    {
+        $queryBuilder = $this->getRepository()->getFindQueryBuilder();
+
+        //Where
+        $queryBuilder
+            ->where('t.locale = :locale')
+            ->andWhere('l.status = :listingStatus')            
+            ->andWhere('h.listingId1 = :id')
+            ->setParameter('listingStatus', Listing::STATUS_PUBLISHED)
+            ->setParameter('id', $id)
+            ->setParameter('locale', $locale);
+        
+        //Query
+        $query = $queryBuilder->getQuery();
+
+        $query->setHydrationMode(Query::HYDRATE_ARRAY);
+
+        return new Paginator($query);
+    }
+
+    /**
      * @return int
      */
     public function getListingDefaultStatus()

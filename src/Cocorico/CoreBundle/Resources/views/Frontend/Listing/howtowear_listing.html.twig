@@ -1,0 +1,46 @@
+<div id="howtowearit" class="row">
+    <div class="col-md-2 col-xs-12"><h1>HOW TO WEAR IT</h1></div>
+    <div class="col-md-9 col-xs-12">
+        {%- for result in results.getIterator() -%}
+        {% set listing = result[0] %}
+        {% set listing_user = listing.user %}
+        {% set listing_designer = listing.designer %}
+        {% set listing_translation = listing.translations[app.request.locale] %}
+        {% set price = (listing.price / 100) | format_price(app.request.locale, 0) %}
+        {% set retailprice = (listing.retailprice / 100) | format_price(app.request.locale, 0) %}
+        {% set listing_image = listing.images|length ? listing.images[0].name : ListingImageConstants.IMAGE_DEFAULT %}
+
+        <article class="listing-post col-md-4 col-sm-6 col-xs-12">
+            <a href="javascript:void(0)" id="favourite-{{ listing.id }}" class="favourit">
+                <i class="fa fa-heart-o"></i>
+                <i class="fa fa-heart"></i>
+                <span class="hidden">favourit</span>
+            </a>
+            <a href="{{ path('cocorico_listing_show', { 'slug': listing_translation.slug }) }}"
+                class="listing-box">
+                <div class="frame">
+
+                    <div class="post-info">
+                        <div class="img-holder">
+                            <img src="{{ (ListingImageConstants.IMAGE_FOLDER ~  listing_image) | imagine_filter('listing_large') }}"
+                                    alt="{{ listing_translation.title ~ " " ~ price }}"/>
+                        </div>
+                    </div>
+
+                    <div class="post-content">                                                
+                        <div class="textbox">
+                            <h2>{{ listing_designer.name|upper }}</h2>
+                            <h2>{{ listing_translation.title }}</h2>
+                            <h2>{{ retailprice }}</h2>
+                            <div class="row">
+                                <h2 class="color-pink col-sm-6" >{{ price }}</h2>
+                                <p class="color-pink col-sm-6 text-right">ADD TO CLOSET</p>
+                            </div>
+                        </div> <!-- /.text-box -->
+                    </div>
+                </div>
+            </a>
+        </article>
+        {% endfor %}
+    </div>
+</div>

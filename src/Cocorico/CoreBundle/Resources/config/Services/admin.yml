@@ -15,11 +15,20 @@ services:
     sonata.admin.designer:
         class: Cocorico\CoreBundle\Admin\DesignerAdmin
         tags:
-            - { name: sonata.admin, manager_type: orm, group: "Users", label: "Designer", label_caalogue: "cocorico_admin_menu" }
+            - { name: sonata.admin, manager_type: orm, group: "Users", label: "Designer", label_catalogue: "cocorico_admin_menu" }
         arguments:
             - ~
             - Cocorico\CoreBundle\Entity\Designer
-            - ~        
+            - ~
+
+    sonata.admin.listinghowtowear:
+        class: Cocorico\CoreBundle\Admin\ListingHowtoWearAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Listings", label: "How to Wear", label_catalogue: "cocorico_admin_menu" }
+        arguments:
+            - ~
+            - Cocorico\CoreBundle\Entity\ListingHowtoWear
+            - ~            
 
     sonata.admin.booking:
         class: Cocorico\CoreBundle\Admin\BookingAdmin

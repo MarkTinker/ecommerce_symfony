@@ -316,9 +316,36 @@ class ListingSearchController extends Controller
                 array($id)
             );
         }
-
         return $this->render(
             '@CocoricoCore/Frontend/Listing/similar_listing.html.twig',
+            array(
+                'results' => $results
+            )
+        );
+    }
+
+    /**
+     * howtowearListingAction will list out the how to wear listings what has been
+     * searched.
+     *
+     * @Route("/listing/howtowear_result/{id}", name="cocorico_listing_howtowear")
+     * @Method("GET")
+     *
+     * @param  Request $request
+     * @param int      $id
+     *
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function howtowearListingAction(Request $request, $id = null)
+    {
+        $results = new ArrayCollection();
+        
+        $results = $this->get("cocorico.listing_search.manager")->gethowtowearListingsByIds(
+            $id,
+            $request->getLocale()
+        );
+        return $this->render(
+            '@CocoricoCore/Frontend/Listing/howtowear_listing.html.twig',
             array(
                 'results' => $results
             )
