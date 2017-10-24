@@ -26,8 +26,8 @@ class MoreInfoManager
     {
         //$moreinfos = $this->getRepository()->findAll();
         //$moreinfos = $this->em->getRepository(MoreInfo::class)->findAll();
-        
-        $repository = $this->em->getRepository(MoreInfo::class);
+
+        $repository = $this->em->getRepository(MoreInfo::class_name);
         $query = $repository->createQueryBuilder('p')
             ->where('p.published = true')
             ->getQuery();
