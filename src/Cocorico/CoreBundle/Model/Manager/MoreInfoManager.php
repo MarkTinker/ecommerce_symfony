@@ -27,12 +27,22 @@ class MoreInfoManager
         //$moreinfos = $this->getRepository()->findAll();
         //$moreinfos = $this->em->getRepository(MoreInfo::class)->findAll();
 
-        $repository = $this->em->getRepository(MoreInfo::class_name);
+        //$repository = $this->em->getRepository(MoreInfo::class);
+        $repository = $this->getRepository();
         $query = $repository->createQueryBuilder('p')
             ->where('p.published = true')
             ->getQuery();
         $moreinfos = $query->getResult();
         
         return $moreinfos;
+    }
+
+    /**
+     *
+     * @return BookingBankWireRepository
+     */
+    public function getRepository()
+    {
+        return $this->em->getRepository('CocoricoCoreBundle:MoreInfo');
     }
 }
