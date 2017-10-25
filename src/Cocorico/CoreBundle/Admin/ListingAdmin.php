@@ -419,6 +419,11 @@ class ListingAdmin extends Admin
                 array('label' => 'admin.listing.user_phone.label')
             )
             ->add(
+                'designer',
+                null,
+                array('label' => 'Designer')
+            )
+            ->add(
                 'title',
                 null,
                 array('label' => 'admin.listing.title.label')
@@ -508,6 +513,7 @@ class ListingAdmin extends Admin
         return array(
             'Id' => 'id',
             'Status' => 'statusText',
+            'Designer' => 'designer',
             'Offerer' => 'user.fullname',
             'Email' => 'user.Email',
             'Phone' => 'user.Phone',
@@ -533,6 +539,4 @@ class ListingAdmin extends Admin
         $collection->remove('create');
         $collection->remove('delete');
     }
-
-
 }
