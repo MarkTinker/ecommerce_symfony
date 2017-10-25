@@ -247,6 +247,14 @@ class ListingSearchManager
                         ->setParameter('searchword', '%'.$searchWord.'%');
         }
 
+        //OwnerId
+        $ownerid = $listingSearchRequest->getOwnerid();
+        if($ownerid)
+        {
+            $queryBuilder->where('u.id = :ownerid')
+            ->setParameter('ownerid', $ownerid);
+        }
+
         $event = new ListingSearchEvent($listingSearchRequest, $queryBuilder);
         $this->dispatcher->dispatch(ListingSearchEvents::LISTING_SEARCH, $event);
         $queryBuilder = $event->getQueryBuilder();

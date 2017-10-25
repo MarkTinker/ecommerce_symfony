@@ -3610,6 +3610,14 @@ iShareCloset Colors
     margin-top: 50px;
 }
 
+#profile .profile-style a {
+    font-family: "rounded_eleganceregular";
+    font-weight: 200;
+    font-size: 17pt;
+    margin-top: 20px;
+    display: block;
+}
+
 #sidebar .favourit.active .fa-heart-o {
     display: none;
 }

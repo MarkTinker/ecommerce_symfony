@@ -47,6 +47,8 @@ class ListingSearchRequest implements TranslationContainerInterface
 
     //searchword
     protected $searchword;
+    //ownerid
+    protected $ownerid;
 
     public static $sortByValues = array(
         'recommended' => 'listing.search.sort_by.recommended',
@@ -117,6 +119,12 @@ class ListingSearchRequest implements TranslationContainerInterface
         if($searchword) {
             $this->searchword = $searchword;
         }
+
+        //OwnerId
+        $ownerid = $this->request->query->get("ownerid");
+        if($ownerid) {
+            $this->ownerid = $ownerid;
+        }
     }
 
     /**
@@ -178,10 +186,26 @@ class ListingSearchRequest implements TranslationContainerInterface
     /**
      * @return ListingLocationSearchRequest
      */
-     public function getSearchword()
-     {
-         return $this->searchword;
-     }
+    public function getSearchword()
+    {
+        return $this->searchword;
+    }
+
+    /**
+     * @param mixed $ownerid
+     */
+    public function setOwnerid($ownerid)
+    {
+        $this->ownerid = $ownerid;
+    }
+
+    /**
+     * @return ListingLocationSearchRequest
+     */
+    public function getOwnerid()
+    {
+        return $this->ownerid;
+    }
  
      /**
       * @param mixed $location
