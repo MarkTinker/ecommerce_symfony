@@ -209,6 +209,10 @@ parameters:
     cocorico.user_img_contact_h: 160
     cocorico.user_img_profile_w: 308
     cocorico.user_img_profile_h: 231
+    cocorico.user_favimgsml_profile_w: 156
+    cocorico.user_favimg_profile_h: 200
+    cocorico.user_favimgbig_profile_w: 245
+    cocorico.user_favimgbig_profile_h: 310
 
     #Listing
     #Max/Min images by listing

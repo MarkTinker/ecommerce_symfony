@@ -58,7 +58,7 @@ filter="?jsqueeze" output='js/compiled/upload.js' %}
                 if (!$parent.find('img.loading').length) {
                     $parent.prepend('<img class="loading" src="{{ asset('images/loading.gif') }}" /><br>');
                 }
-                var $filesLI = $("ul#files-to-upload li");
+                var $filesLI = $("ul{{ upload_imgshow }} li");
                 var nbFilesToUpload = $filesLI.length; //filesToUpload.length;
                 var nbFilesUploaded = 0;
                 var orderedUploadedFiles = [];
@@ -91,7 +91,7 @@ filter="?jsqueeze" output='js/compiled/upload.js' %}
             });
 
             //Sortable
-            $("#files-to-upload, #files-uploaded").sortable();
+            $("{{upload_imgshow}}, #files-uploaded").sortable();
 
             //Reordering sortable images
             var collectionElt = $(".collection.files-list");
@@ -170,7 +170,7 @@ filter="?jsqueeze" output='js/compiled/upload.js' %}
                 return false;
             }
             console.log(data);
-            data.context = $('<li data-id="' + fileId + '"/>').appendTo("#files-to-upload");
+            data.context = $('<li data-id="' + fileId + '"/>').appendTo("{{upload_imgshow}}");
             fileId++;
 
             $.each(data.files, function (index, file) {

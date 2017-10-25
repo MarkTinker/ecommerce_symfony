@@ -338,6 +338,15 @@ class User extends BaseUser implements ParticipantInterface
     protected $images;
 
     /**
+     * @ORM\OneToMany(targetEntity="UserFavoriteImage", mappedBy="user", cascade={"persist", "remove"}, orphanRemoval=true)
+     * @ORM\OrderBy({"position" = "asc"})
+     * 
+     * @var UserFavoriteImage[]
+     */
+    protected $usrfavoriteimgs;
+
+
+    /**
      * @ORM\OneToMany(targetEntity="UserLanguage", mappedBy="user", cascade={"persist", "remove"}, orphanRemoval=true)
      *
      * @var UserLanguage[]
@@ -390,6 +399,7 @@ class User extends BaseUser implements ParticipantInterface
     {
         $this->listings = new ArrayCollection();
         $this->images = new ArrayCollection();
+        $this->usrfavoriteimgs = new ArrayCollection();
         $this->languages = new ArrayCollection();
         $this->links = new ArrayCollection();
         $this->messages = new ArrayCollection();
@@ -940,6 +950,41 @@ class User extends BaseUser implements ParticipantInterface
     public function getImages()
     {
         return $this->images;
+    }
+
+    /**
+     * Add usrfavoriteimgs
+     *
+     * @param \Cocorico\UserBundle\Entity\UserFavoriteImage $image
+     *
+     * @return Listing
+     */
+    public function addUsrfavoriteimgs(UserFavoriteImage $image)
+    {
+        $image->setUser($this); //Because the owning side of this relation is user image
+        $this->usrfavoriteimgs[] = $image;
+
+        return $this;
+    }
+
+    /**
+     * Remove usrfavoriteimgs
+     *
+     * @param \Cocorico\UserBundle\Entity\UserImage $image
+     */
+    public function removeUsrfavoriteimgs(UserFavoriteImage $image)
+    {
+        $this->usrfavoriteimgs->removeElement($image);
+    }
+
+    /**
+     * Get usrfavoriteimgs
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getUsrfavoriteimgs()
+    {
+        return $this->usrfavoriteimgs;
     }
 
     /**

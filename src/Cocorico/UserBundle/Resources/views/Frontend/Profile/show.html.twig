@@ -58,19 +58,33 @@
                         <div class="col-md-5 profile-favourite">
                             <h3 class="color-pink">Favorite closet items right now : </h3>
                             <div class="row">
+                                {% set image_fav = user.usrfavoriteimgs|length > 0 and user.usrfavoriteimgs.get(0) ? user.usrfavoriteimgs.get(0).name : UserImageConstants.IMAGE_DEFAULT %}
+                                {% set images_fav = user.usrfavoriteimgs %}
+                                {% set index = 0 %}
+
+                                {% for img in images_fav if index < 3 %}
+                                
+                                {% if index == 0 %}
+                                {% if index == 0 and user.usrfavoriteimgs|length > 1%}
                                 <div class="col-md-4">
+                                {% endif %}
                                     <div class="img-container fav-1">
-                                        <img src="{{ asset('images/favourite_1.png') }}">
-                                    </div>
+                                        <img src="{{ (FavImageConstants.IMAGE_FOLDER ~ img.name) | imagine_filter('user_favsmall') }}"/>
+                                    </div>                                                                    
+                                {% elseif index == 1%}
                                     <div class="img-container fav-2">
-                                        <img src="{{ asset('images/favourite_2.png') }}">
-                                    </div>                                    
-                                </div>
+                                        <img src="{{ (FavImageConstants.IMAGE_FOLDER ~ img.name) | imagine_filter('user_favsmall') }}"/>
+                                    </div>
+                                    </div>
+                                {% elseif index == 2 %}
                                 <div class="col-md-6">
                                     <div class="img-container fav-3">
-                                        <img src="{{ asset('images/favourite_3.png') }}">                                        
+                                            <img src="{{ (FavImageConstants.IMAGE_FOLDER ~ img.name) | imagine_filter('user_favbig') }}"/>
                                     </div>                                    
                                 </div>
+                                {% endif %}
+                                {% set index = index + 1 %}
+                                {% endfor %}
                             </div>
                         </div>
                         <div class="col-md-7 profile-style">

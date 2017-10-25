@@ -26,11 +26,11 @@
                 <div class="form-holder columns-holder alt">
                     <h2>{{ 'user.about.title'|trans }}</h2>
                     <!-- about-info -->
-                    <div class="about-info">
-                        <div id="images-new" class="column">
+                    <div class="about-info row">
+                        <div id="images-new" class="col-md-6">
                             {{ form_errors(form.image.new) }}
                             <div class="image-upload-holder">
-                                {% set image_user = user.images|length > 0 and user.images.get(0) ? user.images.get(0).name : UserImageConstants.IMAGE_DEFAULT %}
+                                {% set image_user = user.images|length > 0 and user.images.get(0) ? user.images.get(0).name : ListingImageConstants.IMAGE_DEFAULT %}
                                 <div class="img-holder files">
                                     <img src="{{ (UserImageConstants.IMAGE_FOLDER ~ image_user) | imagine_filter('user_small') }}"/>
                                 </div>
@@ -56,9 +56,9 @@
                                 {{ form_errors(form.images) }}
                                 {{ form_widget(form.images ) }}
                             </div>
-                        </div>
+                        </div> <!-- /#images-new -->
 
-                        <div class="column">
+                        <div class="col-md-6">
                             <h3>{{ 'profile.languages.title'|trans }}</h3>
 
                             <div class="field-row from">
@@ -187,7 +187,39 @@
                                 </div>                                
                             </div> <!-- /.messaegs-area -->
 
-                            <div class="field-row">
+                            <h2 class="text-center">Favorite Images</h2>
+                            <div id="favorite-images-new" class="row">                                
+                                {{ form_errors(form.favimage.favorite_new) }}
+                                <div class="image-upload-holder">
+                                    {% set image_fav = user.usrfavoriteimgs|length > 0 and user.usrfavoriteimgs.get(0) ? user.usrfavoriteimgs.get(0).name : UserImageConstants.IMAGE_DEFAULT %}
+                                    <div class="img-holder files">
+                                        <img src="{{ (FavImageConstants.IMAGE_FOLDER ~ image_fav) | imagine_filter('user_small') }}"/>
+                                    </div>
+                                    {{ form_widget(form.favimage.favorite_new ) }}
+                                </div>
+    
+                                {{ form_errors(form.favimage.favorite_uploaded) }}
+                                {{ form_widget(form.favimage.favorite_uploaded ) }}
+    
+                                <div id="drop-zone">
+                                    {{ 'profile.drop.files'|trans }}
+                                </div>
+    
+                                <div id="progress" class="progress">
+                                    <div class="progress-bar progress-bar-success"></div>
+                                </div>
+    
+                                <h3>{{ 'profile.images.to_upload.title'|trans }}</h3>
+                                <ul id="favfiles-to-upload" class="images-list"></ul>
+    
+    
+                                <div class="files-list">
+                                    {{ form_errors(form.usrfavoriteimgs) }}
+                                    {{ form_widget(form.usrfavoriteimgs ) }}
+                                </div>
+                            </div> <!-- /#images-new -->
+
+                            <div class="row field-row">
                                 <h2>{{'social.link.and.blog'|trans}}</h2>
                                 <label>{{ 'profile.url.label'|trans }}</label>
                                 <div class="input-group">
@@ -218,8 +250,7 @@
                                         {{ form_row(links) }}
                                     {% endif %}
                                 </ul>
-
-                            </div> <!-- /.field-row -->
+                            </div> <!-- /.field-row -->                            
                         </div>
                     </div>
                 </div>
@@ -240,9 +271,19 @@
     {% include '@CocoricoCore/Frontend/Common/js/_upload_js.html.twig' with {
     'upload_elt': '#user_image_new',
     'upload_images': '#user_image_uploaded',
+    'upload_imgshow': '#files-to-upload',
     'upload_url': oneup_uploader_endpoint('user_images') ~ "?user_id=" ~ app.user.id ,
     'upload_max': user_img_max,
     } only %}
+
+    {#Files upload#}
+    {% include '@CocoricoCore/Frontend/Common/js/_upload_js.html.twig' with {
+        'upload_elt': '#user_favimage_favorite_new',
+        'upload_images': '#user_favimage_favorite_uploaded',
+        'upload_imgshow': '#favfiles-to-upload',
+        'upload_url': oneup_uploader_endpoint('fav_images') ~ "?user_id=" ~ app.user.id ,
+        'upload_max': user_img_max,
+        } only %}
 
     {% include '@CocoricoUser/Dashboard/Profile/js/_translator_js.html.twig' only %}
 

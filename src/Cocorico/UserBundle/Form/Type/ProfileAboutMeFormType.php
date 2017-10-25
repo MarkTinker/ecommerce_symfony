@@ -15,6 +15,8 @@ use Cocorico\CoreBundle\Form\Type\ImageType;
 use Cocorico\CoreBundle\Form\Type\LanguageFilteredType;
 use Cocorico\UserBundle\Entity\User;
 use Cocorico\UserBundle\Entity\UserImage;
+use Cocorico\UserBundle\Entity\UserFavoriteImage;
+use Cocorico\UserBundle\Form\Type\FavImageType;
 use JMS\TranslationBundle\Model\Message;
 use JMS\TranslationBundle\Translation\TranslationContainerInterface;
 use Symfony\Component\Form\AbstractType;
@@ -34,6 +36,11 @@ class ProfileAboutMeFormType extends AbstractType implements TranslationContaine
      * @var array uploaded files
      */
     protected $uploaded;
+
+    /**
+     * @var array favorite image uploaded files
+     */
+    protected $favorite_uploaded;
 
     /**
      * @param string       $class The User class name
@@ -92,6 +99,20 @@ class ProfileAboutMeFormType extends AbstractType implements TranslationContaine
                 array(
                     'allow_delete' => true,
                     'type' => new UserImageType(),
+                    /** @Ignore */
+                    'label' => false
+                )
+            )
+            ->add(
+                'favimage',
+                new FavImageType()
+            )
+            ->add(
+                'usrfavoriteimgs',
+                'collection',
+                array(
+                    'allow_delete' => true,
+                    'type' => new UserFavoriteImageType,
                     /** @Ignore */
                     'label' => false
                 )
@@ -186,6 +207,10 @@ class ProfileAboutMeFormType extends AbstractType implements TranslationContaine
                     // capture uploaded files and store them for onSubmit event
                     $this->uploaded = $data["image"]['uploaded'];
                 }
+                if (array_key_exists('favorite_uploaded', $data["favimage"])) {
+                    // capture uploaded files and store them for onSubmit event
+                    $this->favorite_uploaded = $data["favimage"]['favorite_uploaded'];
+                }
             }
         );
 
@@ -207,6 +232,21 @@ class ProfileAboutMeFormType extends AbstractType implements TranslationContaine
                         $userImage->setName($image);
                         $userImage->setPosition($nbImages + $i + 1);
                         $user->addImage($userImage);
+                    }
+
+                    $event->setData($user);
+                }
+
+                if ($this->favorite_uploaded) {
+                    $nbImages = $user->getUsrfavoriteimgs()->count();
+                    //Add new images
+                    $imagesUploadedArray = explode(",", trim($this->favorite_uploaded, ","));
+                    foreach ($imagesUploadedArray as $i => $image) {
+                        $userFavoriteImage = new UserFavoriteImage();
+                        $userFavoriteImage->setuser($user);
+                        $userFavoriteImage->setName($image);
+                        $userFavoriteImage->setPosition($nbImages + $i + 1);
+                        $user->addUsrfavoriteimgs($userFavoriteImage);
                     }
 
                     $event->setData($user);

@@ -82,6 +82,14 @@ oneup_uploader:
             namer: cocorico.namer.image_namer
             storage:
                 directory: %kernel.root_dir%/../web/uploads/users/images/
+        fav_images:
+            max_size: 8000000
+            frontend: blueimp
+            allowed_mimetypes: ["image/gif", "image/jpeg", "image/png"]
+            enable_progress: true
+            namer: cocorico.namer.image_namer
+            storage:
+                directory: %kernel.root_dir%/../web/uploads/users/fav_images/
 
 liip_imagine:
     cache: ~
@@ -111,6 +119,18 @@ liip_imagine:
             filters:
                 auto_rotate: ~
                 thumbnail: { size: [%cocorico.user_img_profile_w%, %cocorico.user_img_profile_h%], mode: inset, cache_type: public, cache_expires: 1 months }
+        user_favsmall:
+            quality: 100
+            filters:
+                auto_rotate: ~
+                thumbnail: { size: [%cocorico.user_favimgsml_profile_w%, %cocorico.user_favimg_profile_h%], mode: inset, cache_type: public, cache_expires: 1 months }
+        user_favbig:
+            quality: 100
+            filters:
+                auto_rotate: ~
+                thumbnail: { size: [%cocorico.user_favimgbig_profile_w%, %cocorico.user_favimgbig_profile_h%], mode: inset, cache_type: public, cache_expires: 1 months }
+
+
 
 hwi_oauth:
     connect:

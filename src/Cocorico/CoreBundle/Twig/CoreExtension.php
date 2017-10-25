@@ -369,6 +369,8 @@ class CoreExtension extends \Twig_Extension implements \Twig_Extension_GlobalsIn
 
         $userImage = new \ReflectionClass("Cocorico\UserBundle\Entity\UserImage");
         $userImageConstants = $userImage->getConstants();
+        $favImage = new \ReflectionClass("Cocorico\UserBundle\Entity\UserFavoriteImage");
+        $favImageConstants = $favImage->getConstants();
 
         $booking = new \ReflectionClass("Cocorico\CoreBundle\Entity\Booking");
         $bookingConstants = $booking->getConstants();
@@ -399,6 +401,7 @@ class CoreExtension extends \Twig_Extension implements \Twig_Extension_GlobalsIn
             'ListingAvailabilityConstants' => $listingAvailabilityConstants,
             'ListingImageConstants' => $listingImageConstants,
             'UserImageConstants' => $userImageConstants,
+            'FavImageConstants' => $favImageConstants,
             'BookingConstants' => $bookingConstants,
             'BookingBankWireConstants' => $bookingBankWireConstants,
             'BookingPayinRefundConstants' => $bookingPayinRefundConstants,

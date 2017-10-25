@@ -503,7 +503,8 @@ li.time-fields {
 }
 
 /*Edit_images.html.twig*/
-#listing_images .jcf-file, #user_images .jcf-file {
+#listing_images .jcf-file, #user_images .jcf-file,
+#user_usrfavoriteimgs .jcf-file {
     display: none;
 }
 
@@ -3732,4 +3733,12 @@ iShareCloset Colors
 
 .range-holder {
     width: 100%;
+}
+#favorite-images-new {
+    width: 100%;
+    float: none;
+}
+#user_usrfavoriteimgs .files-list .img-thumbnail {
+    height: 180px;
+    overflow: hidden;
 }
