@@ -1,12 +1,9 @@
 <?php
 
 /*
- * This file is part of 
+ * This file is created by Matthieu Baillieu
  *
- *
- * 
- * 
- * 
+ * 10/25/2017 - tinkergotinker@gmail.com
  */
 
 namespace Cocorico\CoreBundle\Model;

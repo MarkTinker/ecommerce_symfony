@@ -104,6 +104,21 @@ class ListingAdmin extends Admin
                 )
             )
             ->add(
+                'designer'
+            )
+            /*
+            ->add(
+                'designer'
+            ), 
+                'sonata_type_model_list', 
+                array(
+                    'label' => 'Designer'
+                ),
+                array(
+                    'admin_code' => 'cocorico.corebundle.admin.designer',
+                    )
+            )*/
+            ->add(
                 'translations',
                 'a2lix_translations',
                 array(
@@ -419,7 +434,7 @@ class ListingAdmin extends Admin
                 array('label' => 'admin.listing.user_phone.label')
             )
             ->add(
-                'designer',
+                'designer.name',
                 null,
                 array('label' => 'Designer')
             )
@@ -513,8 +528,8 @@ class ListingAdmin extends Admin
         return array(
             'Id' => 'id',
             'Status' => 'statusText',
-            'Designer' => 'designer',
             'Offerer' => 'user.fullname',
+            'Designer' => 'designer.name',
             'Email' => 'user.Email',
             'Phone' => 'user.Phone',
             'Listing Title' => 'title',

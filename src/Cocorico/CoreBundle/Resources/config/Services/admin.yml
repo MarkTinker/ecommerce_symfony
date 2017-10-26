@@ -21,6 +21,18 @@ services:
             - Cocorico\CoreBundle\Entity\Designer
             - ~
 
+    sonata.admin.homemenu:
+        class: Cocorico\CoreBundle\Admin\HomeMenuAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Site", label: "Menu", label_catalogue: "cocorico_admin_menu" }
+        arguments:
+            - ~
+            - Cocorico\CoreBundle\Entity\HomeMenu
+            - ~
+        calls:
+            - [ setTranslationDomain, [SonataAdminBundle]]
+            - [ setLocales, [%cocorico.locales%]]
+
     sonata.admin.listinghowtowear:
         class: Cocorico\CoreBundle\Admin\ListingHowtoWearAdmin
         tags:

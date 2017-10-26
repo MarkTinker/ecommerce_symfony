@@ -136,6 +136,7 @@ class Listing extends BaseListing
     public function __construct()
     {
         $this->images = new ArrayCollection();
+        $this->designer = new ArrayCollection();
         $this->listingListingCharacteristics = new ArrayCollection();
         $this->listingListingCategories = new ArrayCollection();
         $this->discounts = new ArrayCollection();

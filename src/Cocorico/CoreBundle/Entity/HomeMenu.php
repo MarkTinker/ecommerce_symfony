@@ -1,43 +1,37 @@
 <?php
+
 /**
- * This file is Created by Matthieu
+ * This file is created by Matthieu
  * 
- * tinkergotinker@gmail.com
- * 
- * 10/19/2017
+ * 10/25/2017 tinkergotinker@gmail.com
  */
 
- namespace Cocorico\CoreBundle\Entity;
+namespace Cocorico\CoreBundle\Entity;
 
- use Cocorico\CoreBundle\Model\BaseMoreInfo;
- use Doctrine\ORM\Mapping as ORM;
- use Gedmo\Mapping\Annotation as Gedmo;
- use Knp\DoctrineBehaviors\Model as ORMBehaviors;
- use Symfony\Component\Validator\Constraints as Assert;
+use Cocorico\CoreBundle\Model\BaseHomeMenu;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
+use Knp\DoctrineBehaviors\Model as ORMBehaviors;
+use Symfony\Component\Validator\Constraints as Assert;
 
- /**
-  * MoreInfo
-  *
-  * @ORM\Entity
-  * @ORM\HasLifecycleCallbacks
-  * @ORM\Table(name="more_info")
-  */
-  class MoreInfo extends BaseMoreInfo
-  {
-    use ORMBehaviors\Timestampable\Timestampable;    
+/**
+ * HomeMenu
+ * 
+ * @ORM\Entity
+ * @ORM\HasLifecycleCallbacks
+ * @ORM\Table(name="homemenu")
+ */
+class HomeMenu extends BaseHomeMenu
+{
+    use ORMBehaviors\Timestampable\Timestampable;
 
     /**
+     * @ORM\Column(type="integer")
      * @ORM\Id
-     * @ORM\Column(name="id", type="integer", nullable=false)     
-     * @ORM\GeneratedValue(strategy="IDENTITY")
-     * @var integer
+     * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
-
-    public function __construct()
-    {
-        $this->updated = new \DateTime("now");
-    }
 
     /**
      * Get id
@@ -47,6 +41,11 @@
     public function getId()
     {
         return $this->id;
+    }
+
+    public function __construct()
+    {
+        $this->updated = new \DateTime("now");
     }
 
     /**
@@ -69,7 +68,7 @@
         );
 
         // set the path property to the filename where you've saved the file
-        $this->filename = $this->getFile()->getClientOriginalName();
+        $this->imgname = $this->getFile()->getClientOriginalName();
 
         // clean up the file property as you won't need it anymore
         $this->setFile(null);
