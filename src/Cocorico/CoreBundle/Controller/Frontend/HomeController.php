@@ -41,4 +41,21 @@ class HomeController extends Controller
             )
         );
     }
+
+    public function menuAction(Request $request)
+    {
+        $homemenuRepository = $this->getDoctrine()->getRepository('CocoricoCoreBundle:HomeMenu');
+        $homemenus = $homemenuRepository->findAll();
+
+        $categoryRepository = $this->getDoctrine()->getRepository('CocoricoCoreBundle:ListingCategory');
+        $categories = $categoryRepository->findAll();
+        
+        return $this->render(
+            'CocoricoCoreBundle:Frontend\Home:menu.html.twig',
+            array(
+                'homemenus' => $homemenus,
+                'categories' => $categories,
+            )
+        );
+    }
 }

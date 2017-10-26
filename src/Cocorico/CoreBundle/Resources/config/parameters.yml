@@ -239,6 +239,9 @@ parameters:
     cocorico.listing_img_xxlarge_h: 510
     cocorico.upload_image_w: 120
     cocorico.upload_image_h: 90
+    #Menu Image Size (px)
+    cocorico.menu_image_w: 754
+    cocorico.menu_image_h: 443
 
     #Maps size (px)
     cocorico.listing_new_map_w: 100

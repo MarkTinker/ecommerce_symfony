@@ -1,0 +1,56 @@
+{% trans_default_domain 'cocorico' %}
+
+
+<div class="row">        
+    <form id="category_form" method="get" action="/en/listing/search_result" novalidate="novalidate">
+    <input id="searchword" type="hidden" value="" name="searchword">
+    <input type="hidden" id="page" name="page" value="1">
+    <div id="menu" class="col-xs-10">
+        <nav class="navbar navbar-default">
+            <div id="nav" class="collapse navbar-collapse">
+                <ul class="nav nav-justified">
+                    <li>
+                        <a href="{{ path('cocorico_home') }}"
+                            tabindex="8"> {{ 'nav.menu.home'|trans }}
+                        </a>
+                    </li>
+                    {% for menu in homemenus %}
+                        <li class="dropdown">                                
+                            <a href="{{ path('cocorico_page_show', { 'slug': 'nav.who_we_are.slug'|trans }) }}"
+                            class="dropbtn"> {{ menu.name }}
+                            </a>
+                            <!-- .dropdown-content -->
+                            <div class="dropdown-content">
+                                <div class="row">
+                                    <!-- .col-md-6 -->
+                                    <div class="col-md-6">                                        
+                                        <ul>
+                                            <h2 class="text-left color-pink">{{ menu.title }}</h2>
+                                            <li><a href="">Editor's Picks</a></li>
+                                            <li><a href="">Added this Week</a></li>
+                                            <li><a href="">Added this Month</a></li>
+                                            <li><a href="">Featured Gallery</a></li>
+                                        </ul>
+                                    </div> <!-- /.col-md-6 -->
+                                    <!-- .col-md-6 -->
+                                    <div class="col-md-6">
+                                        <div class="img-container">
+                                            {% set imgurl = 'images/upload/menuimgs/' ~ menu.imgname %}
+                                            <img src="{{ asset( imgurl | imagine_filter('menu_category'))  }}">
+                                            <p class="text-right">{{ menu.description }} </p>
+                                        </div>                                        
+                                    </div> <!-- /.col-md-6 -->
+                                </div><!-- /.row -->
+                            </div> <!-- /.dropdown-content -->
+                        </li><!-- /.dropdown -->
+                    {% endfor %}
+                    
+                </ul>                
+            </div><!-- /#nav -->            
+        </nav>
+    </div> <!-- /#menu -->
+    </form>
+    <div id="search-ajaxform" class="col-xs-2">
+        {{ render(controller('CocoricoCoreBundle:Frontend/ListingSearch:searchHomeForm')) }}
+    </div>
+</div><!-- /.row -->

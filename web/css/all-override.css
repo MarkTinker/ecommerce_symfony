@@ -3667,9 +3667,6 @@ iShareCloset Colors
     overflow: hidden;    
 }
 
-.dropdown .dropdown-content .img-container img{
-    width: 100%;
-}
 .navbar {
     position: static;
 }
