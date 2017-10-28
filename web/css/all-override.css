@@ -3659,7 +3659,8 @@ iShareCloset Colors
     list-style: none;
     margin: 0 auto;
     display: inline-block;
-    padding-top: 130px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .dropdown .dropdown-content .img-container {

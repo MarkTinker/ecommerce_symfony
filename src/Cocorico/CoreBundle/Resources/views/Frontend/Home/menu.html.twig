@@ -26,13 +26,21 @@
                                     <div class="col-md-6">                                        
                                         <ul>
                                             <h2 class="text-left color-pink">{{ menu.title }}</h2>
-                                            {% for category in categories %}
-                                                {% if category.parent != null %}
-                                                    {% if category.parent.name == menu.title %}
-                                                        <li><a href="">{{ category.name }}</a></li>
-                                                    {% endif %}
-                                                {% endif %}
-                                            {% endfor %}                                            
+                                            {% if menu.title == "Editor's Picks" %}
+                                                <li><a href="">Editor's Picks</a></li>
+                                                <li><a href="">Added this week</a></li>
+                                                <li><a href="">Added this month</a></li>
+                                                <li><a href="">Featured Gallery</a></li>
+                                            {% else %}
+                                                {% for category in categories %}
+                                                    {% if category.parent != null %}
+                                                        {% if category.parent.name == menu.title %}
+                                                            <li><a href="">{{ category.name }}</a></li>
+                                                        {% endif %}
+                                                    {% endif %}                                                    
+                                                {% endfor %}
+                                                <li><a href="">Browse All</a></li>
+                                            {% endif %}
                                         </ul>
                                     </div> <!-- /.col-md-6 -->
                                     <!-- .col-md-6 -->
