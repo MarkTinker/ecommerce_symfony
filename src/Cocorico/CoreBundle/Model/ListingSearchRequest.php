@@ -50,6 +50,9 @@ class ListingSearchRequest implements TranslationContainerInterface
     //ownerid
     protected $ownerid;
 
+    //after date;
+    protected $createdAfter;
+
     public static $sortByValues = array(
         'recommended' => 'listing.search.sort_by.recommended',
         'price' => 'listing.search.sort_by.price'
@@ -120,6 +123,13 @@ class ListingSearchRequest implements TranslationContainerInterface
             $this->searchword = $searchword;
         }
 
+        //createdAfter
+        $createdAfter = $this->request->query->get("createdAfter");
+        if($createdAfter) {
+            $this->createdAfter = $createdAfter;
+        }
+        
+        //var_dump ($this->request->query); exit;
         //OwnerId
         $ownerid = $this->request->query->get("ownerid");
         if($ownerid) {
@@ -189,6 +199,22 @@ class ListingSearchRequest implements TranslationContainerInterface
     public function getSearchword()
     {
         return $this->searchword;
+    }
+
+    /**
+     * @param date $createdAfer
+     */
+    public function setCreatedAfter($createdAfter)
+    {
+        $this->createdAfter = $createdAfter;
+    }
+
+    /**
+     * @return ListingSearachRequest
+     */
+    public function getCreatedAfter()
+    {
+        return $this->createdAfter;
     }
 
     /**

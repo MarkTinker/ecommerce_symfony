@@ -21,6 +21,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class ListingSearchController extends Controller
 {
@@ -38,8 +39,8 @@ class ListingSearchController extends Controller
         $markers = array();
         $resultsIterator = new \ArrayIterator();
         $nbResults = 0;
-
-        /** @var ListingSearchRequest $listingSearchRequest */
+        
+        /** @var ListingSearchRequest $listingSearchRequest */        
         $listingSearchRequest = $this->get('cocorico.listing_search_request');
         $form = $this->createSearchResultForm($listingSearchRequest);
 
@@ -100,6 +101,129 @@ class ListingSearchController extends Controller
             )
         );
 
+    }
+
+    /**
+     * Custom Search Action
+     */
+    public function customSearchAction(Request $request, $listingSearchRequest)
+    {
+        $markers = array();
+        $resultsIterator = new \ArrayIterator();
+        $nbResults = 0;
+
+        $form = $this->createSearchResultForm($listingSearchRequest);
+        
+        $form->handleRequest($request);
+        
+        if ($form->isSubmitted() && $form->isValid()) {
+            $listingSearchRequest = $form->getData();
+
+            $results = $this->get("cocorico.listing_search.manager")->search(
+                $listingSearchRequest,
+                $request->getLocale()
+            );
+            $nbResults = $results->count();
+            $resultsIterator = $results->getIterator();
+            $markers = $this->getMarkers($request, $results, $resultsIterator);
+
+            //Persist similar listings id
+            $listingSearchRequest->setSimilarListings(array_column($markers, 'id'));
+
+            //Persist listing search request in session
+            $this->get('session')->set('listing_search_request', $listingSearchRequest);
+
+        } else {
+            foreach ($form->getErrors(true) as $error) {
+                $this->get('session')->getFlashBag()->add(
+                    'error',
+                    /** @Ignore */
+                    $this->get('translator')->trans($error->getMessage(), $error->getMessageParameters(), 'cocorico')
+                );
+            }
+        }
+
+        //Breadcrumbs
+        $breadcrumbs = $this->get('cocorico.breadcrumbs_manager');
+        $breadcrumbs->addListingResultItems($this->get('request_stack')->getCurrentRequest(), $listingSearchRequest);
+
+        //Add params to view through event listener
+        $event = new ListingSearchActionEvent($request);
+        $this->get('event_dispatcher')->dispatch(ListingSearchEvents::LISTING_SEARCH_ACTION, $event);
+        $extraViewParams = $event->getExtraViewParams();
+
+        return $this->render(
+            '@CocoricoCore/Frontend/ListingResult/result.html.twig',
+            array_merge(
+                array(
+                    'results' => $resultsIterator,
+                    'nb_results' => $nbResults,
+                    'markers' => $markers,
+                    'listing_search_request' => $listingSearchRequest,
+                    'pagination' => array(
+                        'page' => $listingSearchRequest->getPage(),
+                        'pages_count' => ceil($nbResults / $listingSearchRequest->getMaxPerPage()),
+                        'route' => $request->get('_route'),
+                        'route_params' => $request->query->all()
+                    ),
+                ),
+                $extraViewParams
+            )
+        );
+        
+    }
+
+    /**
+     * Listings search result added 1week before.
+     *
+     * @Route("/listing/week", name="cocorico_listing_search_result_week")
+     * @Method("GET")
+     *
+     * @param  Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function searchWeekAction(Request $request)
+    {
+        $date = date('Y-m-d', strtotime('-7 days'));
+        $request->query->set('createdAfter', $date);
+        $request->query->set('page', '1');
+
+        $listingSearchRequest = $this->get('cocorico.listing_search_request');
+
+        $response = $this->forward('CocoricoCoreBundle:Frontend/ListingSearch:customSearch',
+            array(
+                'request' => $request,
+                'listingSearchRequest' => $listingSearchRequest
+            )
+        );
+        return $response;
+    }
+    /**
+     * Listing search result added 1month before
+     * 
+     * @Route("/listing/month", name="cocorico_listing_search_result_month")
+     * @Method("GET")
+     * 
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function searchMonthAction(Request $request)
+    {
+        //$date = date("Y-m-d", strtotime( date( "Y-m-d", strtotime( date("Y-m-d") ) ) . "-1 month" ) );
+        $date = date('Y-m-d', strtotime('-1 month'));
+
+        $request->query->set('createdAfter', $date);
+        $request->query->set('page', '1');
+
+        $listingSearchRequest = $this->get('cocorico.listing_search_request');
+
+        $response = $this->forward('CocoricoCoreBundle:Frontend/ListingSearch:customSearch',
+            array(
+                'request' => $request,
+                'listingSearchRequest' => $listingSearchRequest
+            )
+        );
+        return $response;
     }
 
     /**

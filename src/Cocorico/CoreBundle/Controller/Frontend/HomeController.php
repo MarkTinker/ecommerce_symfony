@@ -50,11 +50,15 @@ class HomeController extends Controller
         $categoryRepository = $this->getDoctrine()->getRepository('CocoricoCoreBundle:ListingCategory');
         $categories = $categoryRepository->findAll();
         
+        $designerRepository = $this->getDoctrine()->getRepository('CocoricoCoreBundle:Designer');
+        $designers = $designerRepository->findAll();
+
         return $this->render(
             'CocoricoCoreBundle:Frontend\Home:menu.html.twig',
             array(
                 'homemenus' => $homemenus,
                 'categories' => $categories,
+                'designers' => $designers,
             )
         );
     }

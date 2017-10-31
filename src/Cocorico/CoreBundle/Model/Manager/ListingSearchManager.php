@@ -243,7 +243,7 @@ class ListingSearchManager
         
         if($searchWord)
         {            
-            $queryBuilder->where('t.title LIKE :searchword OR t.description LIKE :searchword')
+            $queryBuilder->andWhere('t.title LIKE :searchword OR t.description LIKE :searchword')
                         ->setParameter('searchword', '%'.$searchWord.'%');
         }
 
@@ -251,8 +251,16 @@ class ListingSearchManager
         $ownerid = $listingSearchRequest->getOwnerid();
         if($ownerid)
         {
-            $queryBuilder->where('u.id = :ownerid')
-            ->setParameter('ownerid', $ownerid);
+            $queryBuilder->andWhere('u.id = :ownerid')
+                ->setParameter('ownerid', $ownerid);
+        }
+
+        //createdAfter
+        $createdAfter = $listingSearchRequest->getCreatedAfter();        
+        if($createdAfter)
+        {
+            $queryBuilder->andWhere('l.createdAt >= :createdAfter')
+                ->setParameter('createdAfter', $createdAfter);
         }
 
         $event = new ListingSearchEvent($listingSearchRequest, $queryBuilder);

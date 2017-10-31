@@ -28,9 +28,20 @@
                                             <h2 class="text-left color-pink">{{ menu.title }}</h2>
                                             {% if menu.title == "Editor's Picks" %}
                                                 <li><a href="">Editor's Picks</a></li>
-                                                <li><a href="">Added this week</a></li>
-                                                <li><a href="">Added this month</a></li>
+                                                <li><a href="{{ path('cocorico_listing_search_result_week') }}">Added this week</a></li>
+                                                <li><a href="{{ path('cocorico_listing_search_result_month') }}">Added this month</a></li>
                                                 <li><a href="">Featured Gallery</a></li>
+                                            {% elseif menu.title == "Designers" %}
+                                            <div class="inner-addon left-addon">
+                                                <i class="fa fa-search"></i>
+                                                <input type="text" class="form-control" id="designers" placeholder="Search for names..">
+                                            </div>
+                                            
+                                            <ul id="designers_ul" size="10">
+                                                {% for designer in designers %}
+                                                    <li><a href="#">{{ designer.name }}</a></li>
+                                                {% endfor %}
+                                            </ul>
                                             {% else %}
                                                 {% for category in categories %}
                                                     {% if category.parent != null %}

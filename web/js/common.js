@@ -32,6 +32,30 @@ $(function () {
     });
     // end of menu javascript
 
+    // designers select menu javascript
+    $('#designers').on('keyup', function(e){
+        // Declare variables
+        var input, filter, ul, li, a, i;
+        input = document.getElementById('designers');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("designers_ul");
+        li = ul.getElementsByTagName('li');
+        
+        console.log('INput'+ filter);
+        console.log(li.length);
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            console.log(a);
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    });
+    // end designers select menu javascript
+
     $('.display-tab .dropdown-menu li a').on("click", function (e) {
         var selectTabs = $(this).parents('.display-tab').attr('data-id');
         if (selectTabs == 'offerer' || selectTabs == 'asker') {
