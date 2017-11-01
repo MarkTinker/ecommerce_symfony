@@ -43,4 +43,9 @@ class Designer extends BaseDesigner
     {
         return $this->id;
     }
+    
+    public function __toString()
+    {
+        return (string)$this->getTitle();
+    }
 }
