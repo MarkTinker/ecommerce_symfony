@@ -173,6 +173,12 @@ services:
         parent:  cocorico.form.type.listing_search_result
         tags:
             - { name: form.type, alias: listing_search_home }
+    
+    cocorico.form.type.listing_search_category:
+        class: Cocorico\CoreBundle\Form\Type\Frontend\ListingSearchCategoryType
+        parent: cocorico.form.type.listing_search_result
+        tags:
+            - { name: form.type, alias: listing_search_category }
 
     cocorico.form.type.listing_characteristic:
         class: Cocorico\CoreBundle\Form\Type\ListingCharacteristicType

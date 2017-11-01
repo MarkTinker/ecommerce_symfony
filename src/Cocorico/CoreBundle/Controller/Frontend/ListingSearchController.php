@@ -82,6 +82,15 @@ class ListingSearchController extends Controller
         $this->get('event_dispatcher')->dispatch(ListingSearchEvents::LISTING_SEARCH_ACTION, $event);
         $extraViewParams = $event->getExtraViewParams();
 
+        /*
+        var_dump($listingSearchRequest->getPage());
+        var_dump(ceil($nbResults / $listingSearchRequest->getMaxPerPage()));
+        var_dump($request->get('_route'));
+        var_dump($request->query->all());
+        exit;
+        */
+        
+
         return $this->render(
             '@CocoricoCore/Frontend/ListingResult/result.html.twig',
             array_merge(
@@ -104,7 +113,7 @@ class ListingSearchController extends Controller
     }
 
     /**
-     * Custom Search Action
+     * Custom Search Action with Category
      */
     public function customSearchAction(Request $request, $listingSearchRequest)
     {
@@ -112,7 +121,7 @@ class ListingSearchController extends Controller
         $resultsIterator = new \ArrayIterator();
         $nbResults = 0;
 
-        $form = $this->createSearchResultForm($listingSearchRequest);
+        $form = $this->createSearchCategoryForm($listingSearchRequest);
         
         $form->handleRequest($request);
         
@@ -151,6 +160,15 @@ class ListingSearchController extends Controller
         $event = new ListingSearchActionEvent($request);
         $this->get('event_dispatcher')->dispatch(ListingSearchEvents::LISTING_SEARCH_ACTION, $event);
         $extraViewParams = $event->getExtraViewParams();
+
+        /*
+        var_dump($listingSearchRequest->getPage());
+        var_dump(ceil($nbResults / $listingSearchRequest->getMaxPerPage()));
+        var_dump($request->get('_route'));
+        var_dump($request->query->all());
+        exit;
+        */
+        
 
         return $this->render(
             '@CocoricoCore/Frontend/ListingResult/result.html.twig',
@@ -198,6 +216,7 @@ class ListingSearchController extends Controller
         );
         return $response;
     }
+
     /**
      * Listing search result added 1month before
      * 
@@ -217,6 +236,29 @@ class ListingSearchController extends Controller
 
         $listingSearchRequest = $this->get('cocorico.listing_search_request');
 
+        $response = $this->forward('CocoricoCoreBundle:Frontend/ListingSearch:customSearch',
+            array(
+                'request' => $request,
+                'listingSearchRequest' => $listingSearchRequest
+            )
+        );
+        return $response;
+    }
+
+    /**
+     * Listing search result by Category
+     * 
+     * @Route("/listing/category", name="cocorico_listing_search_result_category")
+     * @Method("GET")
+     * 
+     * @param Request $request
+     * @param integer $id
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function searchCategoryAction(Request $request)
+    {        
+        $listingSearchRequest = $this->get('cocorico.listing_search_request');
+        
         $response = $this->forward('CocoricoCoreBundle:Frontend/ListingSearch:customSearch',
             array(
                 'request' => $request,
@@ -351,6 +393,26 @@ class ListingSearchController extends Controller
         $form = $this->get('form.factory')->createNamed(
             '',
             'listing_search_home',
+            $listingSearchRequest,
+            array(
+                'method' => 'GET',
+                'action' => $this->generateUrl('cocorico_listing_search_result'),
+            )
+        );
+
+        return $form;
+    }
+
+    /**
+     * @param  ListingSearchRequest $listingSearchRequest
+     *
+     * @return \Symfony\Component\Form\Form|\Symfony\Component\Form\FormInterface
+     */
+    private function createSearchCategoryForm(ListingSearchRequest $listingSearchRequest)
+    {
+        $form = $this->get('form.factory')->createNamed(
+            '',
+            'listing_search_category',
             $listingSearchRequest,
             array(
                 'method' => 'GET',

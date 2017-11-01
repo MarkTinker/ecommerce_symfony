@@ -43,14 +43,18 @@
                                                 {% endfor %}
                                             </ul>
                                             {% else %}
+                                                {% set browseall = [] %}
                                                 {% for category in categories %}
                                                     {% if category.parent != null %}
                                                         {% if category.parent.name == menu.title %}
-                                                            <li><a href="">{{ category.name }}</a></li>
+                                                        {% set browseall = browseall|merge([category.id]) %}
+                                                        {% set one_arr = [] %}
+                                                        {% set one_arr = one_arr|merge([category.id])%}
+                                                            <li><a href="{{ path('cocorico_listing_search_result_category', {'categories': one_arr, 'page': '1'}) }}">{{ category.name }}</a></li>
                                                         {% endif %}
-                                                    {% endif %}                                                    
+                                                    {% endif %}
                                                 {% endfor %}
-                                                <li><a href="">Browse All</a></li>
+                                                <li><a href="{{ path('cocorico_listing_search_result_category', {'categories': browseall, 'page': '1'}) }}">Browse All</a></li>
                                             {% endif %}
                                         </ul>
                                     </div> <!-- /.col-md-6 -->
