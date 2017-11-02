@@ -53,6 +53,10 @@ class ListingSearchRequest implements TranslationContainerInterface
     //after date;
     protected $createdAfter;
 
+    //designer
+    /** @var integer designer */
+    protected $designer;
+
     public static $sortByValues = array(
         'recommended' => 'listing.search.sort_by.recommended',
         'price' => 'listing.search.sort_by.price'
@@ -128,7 +132,12 @@ class ListingSearchRequest implements TranslationContainerInterface
         if($createdAfter) {
             $this->createdAfter = $createdAfter;
         }
-        
+
+        //designer
+        $designer = $this->request->query->get("designer");
+        if($designer) {
+            $this->designer = (integer)$designer;
+        }
         //var_dump ($this->request->query); exit;
         //OwnerId
         $ownerid = $this->request->query->get("ownerid");
@@ -215,6 +224,22 @@ class ListingSearchRequest implements TranslationContainerInterface
     public function getCreatedAfter()
     {
         return $this->createdAfter;
+    }
+
+    /**
+     * @param string $designer
+     */
+    public function setDesigner($designer)
+    {
+        $this->designer = $designer;
+    }
+
+    /**
+     * @return ListingSearchRequest
+     */
+    public function getDesigner()
+    {
+        return $this->designer;
     }
 
     /**

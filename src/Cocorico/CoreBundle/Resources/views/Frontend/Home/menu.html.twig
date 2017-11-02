@@ -39,7 +39,7 @@
                                             
                                             <ul id="designers_ul" size="10">
                                                 {% for designer in designers %}
-                                                    <li><a href="#">{{ designer.name }}</a></li>
+                                                    <li><a href="{{ path('cocorico_listing_search_result',{'designer': designer.id, 'page' : '1'}) }}">{{ designer.name }}</a></li>
                                                 {% endfor %}
                                             </ul>
                                             {% else %}

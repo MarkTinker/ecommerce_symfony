@@ -263,6 +263,14 @@ class ListingSearchManager
                 ->setParameter('createdAfter', $createdAfter);
         }
 
+        //designer
+        $designer = $listingSearchRequest->getDesigner();
+        if($designer)
+        {
+            $queryBuilder->andWhere('d.id = :designer')
+                ->setParameter('designer', $designer);
+        }
+
         $event = new ListingSearchEvent($listingSearchRequest, $queryBuilder);
         $this->dispatcher->dispatch(ListingSearchEvents::LISTING_SEARCH, $event);
         $queryBuilder = $event->getQueryBuilder();
