@@ -3750,8 +3750,13 @@ iShareCloset Colors
     height: 180px;
 }
 
+#designers_fav {
+    list-style: none;
+    padding-left: 0;
+    margin: 10px 0;
+}
 #designers_ul {
-    max-height: 250px;
+    max-height: 200px;
     list-style: none;
     overflow: hidden;
     overflow-y: scroll;

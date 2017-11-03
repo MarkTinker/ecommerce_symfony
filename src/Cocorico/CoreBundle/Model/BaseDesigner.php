@@ -30,10 +30,19 @@ abstract class BaseDesigner
     protected $name;
 
     /**
+     * @Assert\NotBlank(message="assert.not_blank")
+     * 
+     * @ORM\Column(name="favorite", type="boolean", nullable=false)
+     * 
+     * @var boolean
+     */
+    protected $favorite = false;
+
+    /**
      * Set name
      *
      * @param  string $name
-     * @return Listing
+     * @return Designer
     */
     public function setName($name)
     {
@@ -50,5 +59,28 @@ abstract class BaseDesigner
     public function getName()
     {
         return $this->name;
+    }
+
+    /**
+     * Set favorite
+     * 
+     * @param boolean $favorite
+     * @return Designer
+    */
+    public function setFavorite($favorite)
+    {
+        $this->favorite = $favorite;
+
+        return $this;
+    }
+
+    /**
+     * Get favorite
+     * 
+     * @return boolean
+     */
+    public function getFavorite()
+    {
+        return $this->favorite;
     }
 }

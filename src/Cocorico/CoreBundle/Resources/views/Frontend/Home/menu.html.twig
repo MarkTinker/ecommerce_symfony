@@ -36,7 +36,11 @@
                                                 <i class="fa fa-search"></i>
                                                 <input type="text" class="form-control" id="designers" placeholder="Search for names..">
                                             </div>
-                                            
+                                            <ul id="designers_fav">
+                                                {% for designer in designers if designer.favorite %}
+                                                    <li><a href="{{ path('cocorico_listing_search_result',{'designer': designer.id, 'page' : '1'}) }}">{{ designer.name }}</a></li>
+                                                {% endfor %}
+                                            </ul>                                            
                                             <ul id="designers_ul" size="10">
                                                 {% for designer in designers %}
                                                     <li><a href="{{ path('cocorico_listing_search_result',{'designer': designer.id, 'page' : '1'}) }}">{{ designer.name }}</a></li>

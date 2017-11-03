@@ -32,7 +32,14 @@
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('name', 'text');            
+            ->add('name', 'text')
+            ->add(
+                'favorite',
+                null,
+                array(
+                    'label'=>'Favorite'
+                )
+            );
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
@@ -44,6 +51,13 @@
     {
         $listMapper
             ->add('name')
+            ->add(
+                'favorite',
+                'boolean',
+                array(
+                    'label'=>'favorite'
+                )
+            )
             ->add(
                 '_action',
                 'actions',
