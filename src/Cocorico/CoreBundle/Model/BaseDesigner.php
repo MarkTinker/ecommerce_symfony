@@ -30,9 +30,8 @@ abstract class BaseDesigner
     protected $name;
 
     /**
-     * @Assert\NotBlank(message="assert.not_blank")
      * 
-     * @ORM\Column(name="favorite", type="boolean", nullable=false)
+     * @ORM\Column(name="favorite", type="boolean", nullable=true)
      * 
      * @var boolean
      */

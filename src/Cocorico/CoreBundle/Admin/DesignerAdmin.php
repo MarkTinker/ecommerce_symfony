@@ -37,7 +37,8 @@
                 'favorite',
                 null,
                 array(
-                    'label'=>'Favorite'
+                    'label' => 'Favorite',
+                    'required' => false
                 )
             );
     }
