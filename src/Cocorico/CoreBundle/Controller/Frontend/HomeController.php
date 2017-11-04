@@ -44,6 +44,8 @@ class HomeController extends Controller
 
     public function menuAction(Request $request)
     {
+        $this->getDoctrine()->getManager()->clear();
+
         $homemenuRepository = $this->getDoctrine()->getRepository('CocoricoCoreBundle:HomeMenu');
         $homemenus = $homemenuRepository->findAll();
 
@@ -51,8 +53,9 @@ class HomeController extends Controller
         $categories = $categoryRepository->findAll();
         
         $designerRepository = $this->getDoctrine()->getRepository('CocoricoCoreBundle:Designer');
-        $designers = $designerRepository->findBy(array(), array('name'=>'asc'));
 
+        $designers = $designerRepository->findBy(array(), array('name'=>'asc'));
+        //$designers = $designerRepository->findAll();
         return $this->render(
             'CocoricoCoreBundle:Frontend\Home:menu.html.twig',
             array(

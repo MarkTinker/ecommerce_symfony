@@ -31,7 +31,7 @@ abstract class BaseDesigner
 
     /**
      * 
-     * @ORM\Column(name="favorite", type="boolean", nullable=true)
+     * @ORM\Column(name="favorite", type="boolean", nullable=false)
      * 
      * @var boolean
      */
