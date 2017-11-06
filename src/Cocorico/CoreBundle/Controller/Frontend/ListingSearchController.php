@@ -81,7 +81,14 @@ class ListingSearchController extends Controller
         $event = new ListingSearchActionEvent($request);
         $this->get('event_dispatcher')->dispatch(ListingSearchEvents::LISTING_SEARCH_ACTION, $event);
         $extraViewParams = $event->getExtraViewParams();
+        $markers = $this->getMarkers($request, $results, $resultsIterator);
 
+        //Persist similar listings id
+        $listingSearchRequest->setSimilarListings(array_column($markers, 'id'));
+
+        //Persist listing search request in session
+        $this->get('session')->set('listing_search_request', $listingSearchRequest);
+        
         /*
         var_dump($listingSearchRequest->getPage());
         var_dump(ceil($nbResults / $listingSearchRequest->getMaxPerPage()));
@@ -110,6 +117,57 @@ class ListingSearchController extends Controller
             )
         );
 
+    }
+
+    /**
+     * Listings search result.
+     *
+     * @Route("/listing/editorpick", name="cocorico_listing_search_result_editorpick")
+     * @Method("GET")
+     *
+     * @param  Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function editorPickAction(Request $request)
+    {
+        $markers = array();
+        $resultsIterator = new \ArrayIterator();
+        $nbResults = 0;
+
+        $request->query->set('page', '1');
+
+        $this->getDoctrine()->getManager()->clear();
+
+        $editorPickRepository = $this->getDoctrine()->getRepository('CocoricoCoreBundle:EditorPick');
+        $results = $editorPickRepository->findAll();
+        if($results == null)
+        {
+            $nbResults = 0;
+        }
+        else
+        {
+            $nbResults = $results->count();
+        }
+        //$results = $results['listing'];
+        //var_dump($results); exit;
+
+        $listingSearchRequest = $this->get('cocorico.listing_search_request');
+
+        return $this->render(
+            '@CocoricoCore/Frontend/ListingResult/result.html.twig',
+            array(
+                'results' => $resultsIterator,
+                'nb_results' => $nbResults,
+                'markers' => $markers,
+                'listing_search_request' => $listingSearchRequest,
+                'pagination' => array(
+                    'page' => $listingSearchRequest->getPage(),
+                    'pages_count' => ceil($nbResults / $listingSearchRequest->getMaxPerPage()),
+                    'route' => $request->get('_route'),
+                    'route_params' => $request->query->all()
+                )
+            )
+        );
     }
 
     /**

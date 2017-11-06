@@ -58,6 +58,19 @@ services:
             - [ setIncludeVat, [%cocorico.include_vat%]]
             - [ setBundlesEnabled, [%kernel.bundles%]]
 
+    sonata.admin.listing_category:
+        class: Cocorico\CoreBundle\Admin\ListingCategoryAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Listings",  label: "Category", label_catalogue: "cocorico_admin_menu" }
+        arguments:
+            - ~
+            - Cocorico\CoreBundle\Entity\ListingCategory
+            - ~
+        calls:
+            - [ setTranslationDomain, [SonataAdminBundle]]
+            - [ setLocales, [%cocorico.locales%]]
+            - [ setBundlesEnabled, [%kernel.bundles%]]
+
     sonata.admin.listing_characteristic:
         class: Cocorico\CoreBundle\Admin\ListingCharacteristicAdmin
         tags:
@@ -81,19 +94,6 @@ services:
         calls:
             - [ setTranslationDomain, [SonataAdminBundle]]
             - [ setLocales, [%cocorico.locales%]]
-
-    sonata.admin.listing_category:
-        class: Cocorico\CoreBundle\Admin\ListingCategoryAdmin
-        tags:
-            - { name: sonata.admin, manager_type: orm, group: "Listings",  label: "Category", label_catalogue: "cocorico_admin_menu" }
-        arguments:
-            - ~
-            - Cocorico\CoreBundle\Entity\ListingCategory
-            - ~
-        calls:
-            - [ setTranslationDomain, [SonataAdminBundle]]
-            - [ setLocales, [%cocorico.locales%]]
-            - [ setBundlesEnabled, [%kernel.bundles%]]
 
     sonata.admin.booking_bank_wire:
         class: Cocorico\CoreBundle\Admin\BookingBankWireAdmin
@@ -128,9 +128,17 @@ services:
     sonata.admin.more_info:
         class: Cocorico\CoreBundle\Admin\MoreInfoAdmin
         tags:
-            - { name: sonata.admin, manager_type: orm, group: "Site", label: "More Info", label_caalogue: "cocorico_admin_menu" }
+            - { name: sonata.admin, manager_type: orm, group: "Site", label: "More Info", label_catalogue: "cocorico_admin_menu" }
         arguments:
             - ~
             - Cocorico\CoreBundle\Entity\MoreInfo
             - ~     
-
+    
+    sonata.admin.editor_pick:
+        class: Cocorico\CoreBundle\Admin\EditorPickAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Listings", label: "Editor Pick", label_catalogue: "cocorico_admin_menu" }
+        arguments:
+            - ~
+            - Cocorico\CoreBundle\Entity\EditorPick
+            - ~
