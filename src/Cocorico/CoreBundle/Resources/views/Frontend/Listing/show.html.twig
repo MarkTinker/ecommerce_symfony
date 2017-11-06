@@ -74,8 +74,8 @@
                                         {% for image in listing.images %}
                                             <!-- slide -->
                                             <div class="slide" {% if loop.index > 1 %} style="display:none;"{% endif %}>
-                                                <img src="{{ (ListingImageConstants.IMAGE_FOLDER ~ image.name) | imagine_filter('listing_xxlarge') }}"
-                                                        alt="{{ listing_translation.title ~ " " ~ price }}"/>
+                                                <img width="510" data-toggle="magnify" src="{{ (ListingImageConstants.IMAGE_FOLDER ~ image.name) | imagine_filter('listing_xxlarge') }}"
+                                                    alt="{{ listing_translation.title ~ " " ~ price }}"/>
                                             </div>
                                         {% endfor %}
                                     </div>
@@ -209,6 +209,7 @@
     {% javascripts
     'js/vendor/fullcalendar/fullcalendar.min.js'
     'js/vendor/fullcalendar/lang-all.js'
+    'js/vendor/bootstrap-magnify.min.js'
 
     filter="jsqueeze" output='js/compiled/calendar.js' %}
     <script src="{{ asset_url }}"></script>
@@ -253,6 +254,8 @@
                     '{{ "multiselect.none_selected"|trans({}, "cocorico") }}',
                     '{{ "multiselect.num_selected"|trans({}, "cocorico") }}'
             );
+
+            
         });
     </script>
     

@@ -235,8 +235,8 @@ parameters:
     cocorico.listing_img_large_h: 380
     cocorico.listing_img_xlarge_w: 527
     cocorico.listing_img_xlarge_h: 395
-    cocorico.listing_img_xxlarge_w: 680
-    cocorico.listing_img_xxlarge_h: 510
+    cocorico.listing_img_xxlarge_w: 1020
+    cocorico.listing_img_xxlarge_h: 1020
     cocorico.upload_image_w: 120
     cocorico.upload_image_h: 90
     #Menu Image Size (px)
