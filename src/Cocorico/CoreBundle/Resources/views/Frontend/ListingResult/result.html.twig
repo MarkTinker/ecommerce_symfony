@@ -78,7 +78,11 @@
                         <div class="listing-holder row">
                             <!-- post -->
                             {%- for listing in results -%}
-                                {% set listing = listing[0] %}
+                                {% if editorpick is not defined %}
+                                    {% set listing = listing[0] %}
+                                {% else %}
+                                    {% set listing = listing %}
+                                {% endif %}
                                 {% set listing_translation = listing.translations[app.request.locale] %}
                                 {% set listing_location = listing.location %}
                                 {% set listing_user = listing.user %}

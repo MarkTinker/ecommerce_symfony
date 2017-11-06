@@ -88,15 +88,6 @@ class ListingSearchController extends Controller
 
         //Persist listing search request in session
         $this->get('session')->set('listing_search_request', $listingSearchRequest);
-        
-        /*
-        var_dump($listingSearchRequest->getPage());
-        var_dump(ceil($nbResults / $listingSearchRequest->getMaxPerPage()));
-        var_dump($request->get('_route'));
-        var_dump($request->query->all());
-        exit;
-        */
-        
 
         return $this->render(
             '@CocoricoCore/Frontend/ListingResult/result.html.twig',
@@ -130,44 +121,40 @@ class ListingSearchController extends Controller
      */
     public function editorPickAction(Request $request)
     {
-        $markers = array();
-        $resultsIterator = new \ArrayIterator();
-        $nbResults = 0;
 
+        $editorpick_ids = [];
         $request->query->set('page', '1');
 
         $this->getDoctrine()->getManager()->clear();
 
         $editorPickRepository = $this->getDoctrine()->getRepository('CocoricoCoreBundle:EditorPick');
-        $results = $editorPickRepository->findAll();
-        if($results == null)
+        $editorPicks = $editorPickRepository->findAll();
+        if($editorPicks == null)
         {
-            $nbResults = 0;
+            $editorpick_ids[] = -1;
         }
         else
         {
-            $nbResults = $results->count();
+            //$results = $results['listing'];
+            $editorpick_ids = [];
+            foreach($editorPicks as $editorPick)    
+            {
+                $listing = $editorPick->getListing();
+                $editorpick_ids[] = $listing->getId();
+            }
         }
-        //$results = $results['listing'];
-        //var_dump($results); exit;
+        $request->query->set('editorpick', $editorpick_ids);
+        $request->query->set('page', '1');
 
         $listingSearchRequest = $this->get('cocorico.listing_search_request');
 
-        return $this->render(
-            '@CocoricoCore/Frontend/ListingResult/result.html.twig',
+        $response = $this->forward('CocoricoCoreBundle:Frontend/ListingSearch:customSearch',
             array(
-                'results' => $resultsIterator,
-                'nb_results' => $nbResults,
-                'markers' => $markers,
-                'listing_search_request' => $listingSearchRequest,
-                'pagination' => array(
-                    'page' => $listingSearchRequest->getPage(),
-                    'pages_count' => ceil($nbResults / $listingSearchRequest->getMaxPerPage()),
-                    'route' => $request->get('_route'),
-                    'route_params' => $request->query->all()
-                )
+                'request' => $request,
+                'listingSearchRequest' => $listingSearchRequest
             )
         );
+        return $response;
     }
 
     /**
@@ -226,8 +213,6 @@ class ListingSearchController extends Controller
         var_dump($request->query->all());
         exit;
         */
-        
-
         return $this->render(
             '@CocoricoCore/Frontend/ListingResult/result.html.twig',
             array_merge(
@@ -246,7 +231,6 @@ class ListingSearchController extends Controller
                 $extraViewParams
             )
         );
-        
     }
 
     /**

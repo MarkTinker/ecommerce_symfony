@@ -43,7 +43,7 @@ class EditorPickAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->add('listing.name')
+            ->add('listing.title')
             ->add(
                 '_action',
                 'actions',

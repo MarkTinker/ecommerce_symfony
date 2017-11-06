@@ -57,6 +57,9 @@ class ListingSearchRequest implements TranslationContainerInterface
     /** @var integer designer */
     protected $designer;
 
+    //editorpicks
+    protected $editorpicks;
+
     public static $sortByValues = array(
         'recommended' => 'listing.search.sort_by.recommended',
         'price' => 'listing.search.sort_by.price'
@@ -143,6 +146,12 @@ class ListingSearchRequest implements TranslationContainerInterface
         $ownerid = $this->request->query->get("ownerid");
         if($ownerid) {
             $this->ownerid = $ownerid;
+        }
+
+        //editorpicks
+        $editorpicks = $this->request->query->get("editorpick");
+        if($editorpicks) {
+            $this->editorpicks = $editorpicks;
         }
     }
 
@@ -240,6 +249,22 @@ class ListingSearchRequest implements TranslationContainerInterface
     public function getDesigner()
     {
         return $this->designer;
+    }
+
+    /**
+     * @param array $editorpicks
+     */
+    public function setEditorpicks($editorpicks)
+    {
+        $this->editorpicks = $editorpicks;
+    }
+
+    /**
+     * @return ListingSearchRequest
+     */
+    public function getEditorpicks()
+    {
+        return $this->editorpicks;
     }
 
     /**

@@ -271,6 +271,14 @@ class ListingSearchManager
                 ->setParameter('designer', $designer);
         }
 
+        //editorpick
+        $editorpicks = $listingSearchRequest->getEditorpicks();
+        if (count($editorpicks)) {
+            $queryBuilder
+                ->andWhere("l.id IN (:editorpicks)")
+                ->setParameter("editorpicks", $editorpicks);
+        }
+
         $event = new ListingSearchEvent($listingSearchRequest, $queryBuilder);
         $this->dispatcher->dispatch(ListingSearchEvents::LISTING_SEARCH, $event);
         $queryBuilder = $event->getQueryBuilder();
