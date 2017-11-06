@@ -511,6 +511,7 @@
     {#Files upload#}
     {% include '@CocoricoCore/Frontend/Common/js/_upload_js.html.twig' with {
     'upload_elt': '#listing_image_new',
+    'upload_imgshow': '#files-to-upload',
     'upload_images': '#listing_image_uploaded',
     'upload_url': oneup_uploader_endpoint('listing_images') ~ "?listing_id=0" ,
     'upload_max': listing_img_max - listing.images.count,
