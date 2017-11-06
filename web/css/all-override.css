@@ -309,7 +309,6 @@ a:active, a:hover {
     border: none;
 }
 
-.gallery-slider .slide img,
 .gallery-small .slideset .slide img,
 #listing_images .files-list .img-thumbnail img,
 #images-new .image-upload-holder .img-holder img,
@@ -3294,11 +3293,13 @@ iShareCloset Colors
 #photos > .gallery-slider > .gallery-slideset > .slide {
     margin: 0 auto;
 }
-.gallery-slider .slide img {
+/*
+.gallery-slider .slide small {
     width: 100%;
     max-width: 646px;
     margin: 0 auto;
 }
+*/
 #main > .row > .container-fluid {
     padding: 0 40px;
 }

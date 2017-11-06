@@ -9819,7 +9819,10 @@ h1.listing-title a {
     border-color: #b5b9bd;
 }
 
-.gallery-slider .slide img,
+.gallery-slider .slide img {
+    margin: 0 auto;
+    display: block;
+}
 .gallery-slider .vertical-slide img {
     width: 100%;
     height: auto;
