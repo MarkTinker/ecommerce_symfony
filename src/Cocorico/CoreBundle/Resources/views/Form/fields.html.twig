@@ -685,7 +685,7 @@
             </div>
         </div>
         {% if "date_hidden" not in form.end.vars.block_prefixes %}
-            <div class="col">
+            <div class="col" style="display: none;">
                 {{ form_errors(form.end) }}
                 <strong class="title">
                     {{ form_label(form.end) }}
@@ -706,6 +706,10 @@
                         }
                     }) }}
                 </div>
+            </div>
+            <div class="col">
+                <a id="two_week" class="selected"><span>Two weeks</span></a>                
+                <a id="four_week"><span>Four weeks</span></a>                
             </div>
         {% else %}
             {#hidden#}

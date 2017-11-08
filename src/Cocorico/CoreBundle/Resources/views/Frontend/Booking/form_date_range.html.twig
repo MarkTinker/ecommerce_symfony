@@ -28,13 +28,129 @@
     </div>
 
     <script>
+        $( document ).ready( function(){
+            var today = new Date();
+            var month = today.getMonth()+1;
+            var day = today.getDate();
+            
+            var output = (day<10 ? '0' : '') + day + '/' +
+                (month<10 ? '0' : '') + month + '/' +
+                today.getFullYear();
+            $('#start-date').val(output);
+            var days = 14;
+            var end_date = today;
+            end_date.setDate(today.getDate() + days);
+
+            // Get String of End Date
+            var month = end_date.getMonth()+1;
+            var day = end_date.getDate();
+
+            var output = (day<10 ? '0' : '') + day + '/' +
+            (month<10 ? '0' : '') + month + '/' +
+            end_date.getFullYear();
+            $('#end-date').val(output);
+            $("#start-date").datepicker({ 
+                dateFormat: 'dd/mm/yy',
+                onSelect: function(dateText, inst) {
+                    // Get Start_date
+                    var start_date =  $.datepicker.parseDate("dd/mm/yy",  dateText);
+                    console.log(start_date);
+                    // Check if date is valid
+                    if (isNaN(start_date.valueOf()))
+                        // Invalide date
+                        return;
+                    
+                    // Number of Days to add
+                    var days = 14;
+                    if($('#two_week').hasClass('selected'))
+                    {
+                        days = 14;
+                    }
+                    else
+                    {
+                        days = 28;                    
+                    }
+                    output = getDesiredDate(start_date ,days);
+                    
+                    $('#end-date').val(output);
+                    
+                }
+            });
+
+            $('#start-date').on('change', function(){
+                
+            });
+            $('#two_week').on('click', function(){
+                // Toggle Effect
+                $('#two_week').addClass('selected');
+                $('#four_week').removeClass('selected');
+
+                // Get Start_date
+                var start_date =  $.datepicker.parseDate("dd/mm/yy",  $('#start-date').val());
+
+                // Check if date is valid
+                if (isNaN(start_date.valueOf()))
+                    // Invalide date
+                    return;
+
+                // Number of Days to add
+                var days = 14;
+
+                output = getDesiredDate(start_date ,days);
+                
+                $('#end-date').val(output);
+            });
+            $('#four_week').on('click', function(){
+                // Toggle Effect
+                $('#four_week').addClass('selected');
+                $('#two_week').removeClass('selected');
+
+                // Get Start_date
+                var start_date =  $.datepicker.parseDate("dd/mm/yy",  $('#start-date').val());
+                
+                // Check if date is valid
+                if (isNaN(start_date.valueOf()))
+                    // Invalide date
+                    return;
+
+                // Number of Days to add
+                var days = 28;
+
+                output = getDesiredDate(start_date ,days);
+                
+                $('#end-date').val(output);
+            });
+
+            function getDesiredDate(startdate, days)
+            {
+                start_date = startdate;
+                // Get End_Date
+                var end_date = start_date;
+                end_date.setDate(start_date.getDate() + days);
+
+                // Check if end date is valid
+                if (isNaN(end_date.valueOf()))
+                // Invalide date
+                    return null;
+
+                // Get String of End Date
+                var month = end_date.getMonth()+1;
+                var day = end_date.getDate();
+
+                var output = (day<10 ? '0' : '') + day + '/' +
+                (month<10 ? '0' : '') + month + '/' +
+                end_date.getFullYear();
+                return output;
+            }
+            
+        });
         $(function () {
             var timeUnitIsDay = {{ timeUnitIsDay ? 'true' : 'false' }};
 
             initDatePickerAjax(function () {
                 jcf.replaceAll("#booking-price-form");
             });
-
+            
             /*
             var $form = $("#booking-price-form");
 

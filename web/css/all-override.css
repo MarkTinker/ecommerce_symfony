@@ -3764,6 +3764,39 @@ iShareCloset Colors
     margin-top: 15px;
 }
 
+.date-selection .col:last-child {
+    margin-top: 33px;
+}
+
+#two_week {
+    margin-right: 5px;
+}
+
+#four_week {
+    margin-left:  5px;
+}
+#two_week,
+#four_week {
+    cursor: pointer;
+    color: #333;
+    padding: 4px;
+    border: 1px solid #000;
+    font-size: 0.8em;
+    vertical-align: middle;
+    transition: all 0.3s ease 0s;
+    opacity: 1.0;
+}
+#two_week.selected,
+#four_week.selected {    
+    font-size: 1.2em;
+    color: #000;
+}
+
+#two_week:hover,
+#four_week:hover {
+    opacity: 0.7;
+}
+
 /*
 ****************
 Magnify CSS

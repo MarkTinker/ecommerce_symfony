@@ -454,8 +454,7 @@ function initDatePickerAjax(callbackSuccess, parentDatesElt) {
         });
 
         inputs.datepicker({
-            dateFormat: "dd/mm/yy",
-            showOptions: { direction: "up" },
+            dateFormat: "dd/mm/yy",            
             minDate: today,
             onSelect: function (selectedDate, inst) {
                 var input = $(this);
