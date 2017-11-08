@@ -51,6 +51,7 @@
             $('#end-date').val(output);
             $("#start-date").datepicker({ 
                 dateFormat: 'dd/mm/yy',
+                minDate: 0,
                 onSelect: function(dateText, inst) {
                     // Get Start_date
                     var start_date =  $.datepicker.parseDate("dd/mm/yy",  dateText);
